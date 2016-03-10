@@ -46,6 +46,11 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: "quizDescriptionController"
 	});
 	
+		$routeProvider.when('/sentConfirmation', {                                          
+		templateUrl: 'sentConfirmation/sentConfirmationTemplate.html',        
+		controller: "sentConfirmationController"
+	});
+	
 	$routeProvider.otherwise({
 		redirectTo: '/'
 	});
