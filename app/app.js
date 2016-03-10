@@ -1,4 +1,10 @@
-var app = angular.module("quizApp", ['ngRoute']);
+var app=angular.module("quizApp", ['ngRoute']);
+
+app.factory('quizData', function() {
+	var data=$http.get('questions.json');
+	return data;
+});
+
 
 app.config(['$routeProvider', function($routeProvider) {  
 	
