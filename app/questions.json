@@ -1,130 +1,82 @@
 {
-    "quizIdentity": "personality-test-1",
+    "quizIdentity": "maryQuiz",
     "quizType": "personality",
     "header": {
-        "titleText": "Which NG developer are you?"
+        "titleText": "Which Mary are You?"
     },
     "questions": [
         {
-            "question": "How does Javascript make you feel?",
+            "question": "How many woods could a woodchuck chuck?",
             "multiChoiceAnswers": [
                 {
-                    "answer" : "Elated",
-                    "buckets": ["Fabio", "Patrick"]
+                    "answer" : "12",
+                    "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "Benign",
-                    "buckets": ["Alex", "Stephan"]
+                    "answer" : "Blue?",
+                    "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "Furious",
-                    "buckets": ["Rob", "John"]
+                    "answer" : "yes",
+                    "buckets": ["Romantc"]
                 },
                 {
-                    "answer" : "Hysterical",
-                    "buckets": ["Francis", "Grant"]
+                    "answer" : "Can woodchucks even chuck wood?",
+                    "buckets": ["Romantic"]
                 }
             ]
         },
         {
-            "question": "How mature do you think you are?",
+            "question": "yes?",
             "multiChoiceAnswers": [
                 {
-                    "answer" : "Reasonably high",
-                    "buckets": ["John", "Fabio", "Patrick"]
+                    "answer" : "No",
+                    "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "Appropriate for my age",
-                    "buckets": ["Francis", "Alex"]
+                    "answer" : "yes",
+                    "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "Disappointingly low, given my age",
-                    "buckets": ["Stephan", "Grant"]
+                    "answer" : "maybe",
+                    "buckets": ["Romantic"]
                 },
                 {
                     "answer" : "Barely toddler-level",
-                    "buckets": ["Rob"]
+                    "buckets": ["Neoclassisist"]
                 }
             ]
         },
         {
-            "question": "T-Shirts... how many conference freebie or \"hilarious\" ones do you own?",
+            "question": "Max is great",
             "multiChoiceAnswers": [
                 {
-                    "answer" : "They're all I've got in life",
-                    "buckets": ["Patrick", "Grant"]
+                    "answer" : "Hes the best!",
+                    "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "A few",
-                    "buckets": ["Rob", "Fabio", "John"]
+                    "answer" : "OMG Max is totes the best",
+                    "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "None",
-                    "buckets": ["Francis", "Alex"]
+                    "answer" : "10/10",
+                    "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "I disdain them utterly",
-                    "buckets": ["Stephan"]
+                    "answer" : "yes",
+                    "buckets": ["Neoclassisist"]
                 }
             ]
         }
     ],
     "resultBuckets": [
         {
-            "id": "Alex",
-            "title": "You're an Alex",
-            "share": "I'm an Alex, according to the Which Guardian Developer Are You quiz",
-            "href": "http://www.behindthename.com/name/Alex",
-            "youtubeId": "xmhnNUotIaE"
+            "id": "Romantic",
+            "title": "Longer Description here"
         },
         {
-            "id": "John",
-            "title": "You're a John",
-            "share": "I'm a John, according to the Which Guardian Developer Are You quiz",
-            "href": "http://www.behindthename.com/name/John",
-            "youtubeId": "xmhnNUotIaE"
+            "id": "Neoclassisist",
+            "title": "Longer Description here"
         },
-        {
-            "id": "Francis",
-            "title": "You're a Francis",
-            "share": "I'm a Francis, according to the Which Guardian Developer Are You quiz",
-            "href": "http://www.behindthename.com/name/Francis",
-            "youtubeId": "xmhnNUotIaE"
-        },
-        {
-            "id": "Rob",
-            "title": "You're a Rob",
-            "share": "I'm a Rob, according to the Which Guardian Developer Are You quiz",
-            "href": "http://www.behindthename.com/name/Rob",
-            "youtubeId": "xmhnNUotIaE"
-        },
-        {
-            "id": "Stephan",
-            "title": "You're a Stephan",
-            "share": "I'm a Stephan, according to the Which Guardian Developer Are You quiz",
-            "href": "http://www.behindthename.com/name/Stephan",
-            "youtubeId": "xmhnNUotIaE"
-        },
-        {
-            "id": "Patrick",
-            "title": "You're a Patrick",
-            "share": "I'm a Patrick, according to the Which Guardian Developer Are You quiz",
-            "href": "http://www.behindthename.com/name/Patrick",
-            "youtubeId": "xmhnNUotIaE"
-        },
-        {
-            "id": "Grant",
-            "title": "You're a Grant",
-            "share": "I'm a Grant, according to the Which Guardian Developer Are You quiz",
-            "href": "http://www.behindthename.com/name/Grant",
-            "youtubeId": "xmhnNUotIaE"
-        },
-        {
-            "id": "Fabio",
-            "title": "You're a Fabio",
-            "share": "I'm a Fabio, according to the Which Guardian Developer Are You quiz",
-            "href": "http://www.behindthename.com/name/Fabio",
-            "youtubeId": "xmhnNUotIaE"
-        }
     ]
 }
