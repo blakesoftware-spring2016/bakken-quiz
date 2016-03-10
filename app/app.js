@@ -41,6 +41,11 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: "quitPageController"
 	});
 	
+	$routeProvider.when('/quizDescriptions', {                                          
+		templateUrl: 'quizDescriptions/quizDescriptionTemplate.html',        
+		controller: "quizDescriptionController"
+	});
+	
 	$routeProvider.otherwise({
 		redirectTo: '/'
 	});
