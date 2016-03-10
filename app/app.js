@@ -9,56 +9,62 @@ app.factory('quizData', function() {
 app.config(['$routeProvider', function($routeProvider) {  
 	
 	$routeProvider.when('/touchToBegin', {                                          
-		templateUrl: 'touchToBegin/touchToBeginTemplate.html',        
+		templateUrl: 'app/touchToBegin/touchToBeginTemplate.html',        
 		controller: "touchToBeginController"
 	});
 	
 	$routeProvider.when('/shareResults', {                                          
-		templateUrl: 'shareResults/shareResultsTemplate.html',        
+		templateUrl: 'app/shareResults/shareResultsTemplate.html',        
 		controller: "shareResultsController"
 	});
 	
 	$routeProvider.when('/results', {                                          
-		templateUrl: 'results/resultsTemplate.html',        
+		templateUrl: 'app/results/resultsTemplate.html',        
 		controller: "resultsController"
 	});
 	
-	$routeProvider.when('/question', {                                          
-		templateUrl: 'question/questionTemplate.html',        
+	$routeProvider.when('/question/:question-num', {                                          
+		templateUrl: 'app/question/questionTemplate.html',        
 		controller: "questionController"
 	});
 	
 	$routeProvider.when('/privacy', {                                          
-		templateUrl: 'privacy/privacyTemplate.html',        
+		templateUrl: 'app/privacy/privacyTemplate.html',        
 		controller: "privacyController"
 	});
 	
 	$routeProvider.when('/chooseQuiz', {                                          
-		templateUrl: 'chooseQuiz/chooseQuizTemplate.html',        
+		templateUrl: 'app/chooseQuiz/chooseQuizTemplate.html',        
 		controller: "chooseQuizController"
 	});
 	
 	$routeProvider.when('/other-page', {          
-		templateUrl: 'templates/other-page-template.html'  
+		templateUrl: 'app/templates/other-page-template.html'  
 	});
 	
 	$routeProvider.when('/quitPage', {                                          
-		templateUrl: 'quitPage/quitPage.html',        
+		templateUrl: 'app/quitPage/quitPage.html',        
 		controller: "quitPageController"
 	});
 	
 	$routeProvider.when('/quizDescriptions', {                                          
-		templateUrl: 'quizDescriptions/quizDescriptionTemplate.html',        
+		templateUrl: 'app/quizDescriptions/quizDescriptionTemplate.html',        
 		controller: "quizDescriptionController"
 	});
 	
-		$routeProvider.when('/sentConfirmation', {                                          
-		templateUrl: 'sentConfirmation/sentConfirmationTemplate.html',        
+	$routeProvider.when('/sentConfirmation', {                                          
+		templateUrl: 'app/sentConfirmation/sentConfirmationTemplate.html',        
 		controller: "sentConfirmationController"
 	});
 	
 	$routeProvider.otherwise({
-		redirectTo: '/touchToBegin'
+		redirectTo: 'app/touchBegin/touchBeginTemplate.html'
 	});
+	
+}]);
+
+app.controller('questionController',['$routeParams', function($routeParams) {  
+	
+	console.log($routeParams.question-num);
 	
 }]);
