@@ -32,13 +32,27 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: "chooseQuizController"
 	});
 	
-	
 	$routeProvider.when('/other-page', {          
 		templateUrl: 'templates/other-page-template.html'  
 	});
 	
+	$routeProvider.when('/quitPage', {                                          
+		templateUrl: 'quitPage/quitPage.html',        
+		controller: "quitPageController"
+	});
+	
+	$routeProvider.when('/quizDescriptions', {                                          
+		templateUrl: 'quizDescriptions/quizDescriptionTemplate.html',        
+		controller: "quizDescriptionController"
+	});
+	
+		$routeProvider.when('/sentConfirmation', {                                          
+		templateUrl: 'sentConfirmation/sentConfirmationTemplate.html',        
+		controller: "sentConfirmationController"
+	});
+	
 	$routeProvider.otherwise({
-		redirectTo: '/'
+		redirectTo: '/touchToBegin'
 	});
 	
 }]);

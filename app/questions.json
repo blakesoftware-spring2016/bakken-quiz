@@ -1,0 +1,82 @@
+{
+    "quizIdentity": "maryQuiz",
+    "quizType": "personality",
+    "header": {
+        "titleText": "Which Mary are You?"
+    },
+    "questions": [
+        {
+            "question": "How many woods could a woodchuck chuck?",
+            "multiChoiceAnswers": [
+                {
+                    "answer" : "12",
+                    "buckets": ["Neoclassisist"]
+                },
+                {
+                    "answer" : "Blue?",
+                    "buckets": ["Neoclassisist"]
+                },
+                {
+                    "answer" : "yes",
+                    "buckets": ["Romantc"]
+                },
+                {
+                    "answer" : "Can woodchucks even chuck wood?",
+                    "buckets": ["Romantic"]
+                }
+            ]
+        },
+        {
+            "question": "yes?",
+            "multiChoiceAnswers": [
+                {
+                    "answer" : "No",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "answer" : "yes",
+                    "buckets": ["Neoclassisist"]
+                },
+                {
+                    "answer" : "maybe",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "answer" : "Barely toddler-level",
+                    "buckets": ["Neoclassisist"]
+                }
+            ]
+        },
+        {
+            "question": "Max is great",
+            "multiChoiceAnswers": [
+                {
+                    "answer" : "Hes the best!",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "answer" : "OMG Max is totes the best",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "answer" : "10/10",
+                    "buckets": ["Neoclassisist"]
+                },
+                {
+                    "answer" : "yes",
+                    "buckets": ["Neoclassisist"]
+                }
+            ]
+        }
+    ],
+    "resultBuckets": [
+        {
+            "id": "Romantic",
+            "title": "Longer Description here"
+        },
+        {
+            "id": "Neoclassisist",
+            "title": "Longer Description here"
+        },
+    ]
+}
