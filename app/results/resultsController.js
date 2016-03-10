@@ -1,4 +1,4 @@
-app.controller("resultsController", ['$scope','$location', function($scope, $location) {
+app.controller("resultsController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
 
     
 }]);

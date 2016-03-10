@@ -1,4 +1,4 @@
-app.controller("shareResultsController", ['$scope','$location', function($scope, $location) {
+app.controller("shareResultsController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
 
     
 }]);
