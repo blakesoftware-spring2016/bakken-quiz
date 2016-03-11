@@ -1,9 +1,10 @@
-<header>{{data.title}}</header>
+<header>
+<div id="quizTitle"> {{data.title}} </div>
+    <a href="#/quitPage"><button type="button" class="navButton" id="menuButton">Menu</button></a>
+</header>
 <div class="content">
-    <div>
-        <a href="#/quitPage"><button type="button" class="navButton">Main Menu</button></a>
-    </div>
-    <div>{{questionTitle}}</div>
+
+    <div class="question"> {{questionTitle}} </div>
     <div class="answerContainer">
         <div class="answer"
 			ng-repeat="answer in questionAnswers track by $index"
@@ -11,9 +12,11 @@
 			ng-click="select($index)">{{answer.answer}}</div>
     </div>
 	{{selected}}
+ 
+</div>
+<footer>
     <div class="buttonContainer">
         <button class="navButton" type="button" id="backButton" ng-click="back()">Back</button>
-		<button class="navButton" type="button" id="nextButton" ng-click="next()">Next</button>
+        <button class="navButton" type="button" id="nextButton" ng-click="next()">Next</button>
     </div>
-</div>
-<footer></footer>
+</footer>
