@@ -23,7 +23,7 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: "resultsController"
 	});
 	
-	$routeProvider.when('/question/:question-num', {                                          
+	$routeProvider.when('/question/:questionNum', {                                          
 		templateUrl: 'app/question/questionTemplate.html',        
 		controller: "questionController"
 	});
@@ -65,6 +65,6 @@ app.config(['$routeProvider', function($routeProvider) {
 
 app.controller('questionController',['$routeParams', function($routeParams) {  
 	
-	console.log($routeParams.question-num);
+	console.log($routeParams.questionNum);
 	
 }]);
