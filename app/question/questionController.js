@@ -9,7 +9,7 @@ app.controller("questionController", ['$scope','$location', 'quizData', '$routeP
         }
     };
     $scope.back = function() {
-        if($routeParams == 0) {
+        if ($routeParams == 0) {
             $location.path('/quizDescriptions');
         } else {
             $location.path('/question/' + String(Number($routeParams.questionNum) - 1));
