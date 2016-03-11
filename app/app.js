@@ -1,5 +1,9 @@
 var app = angular.module('quizApp', ['ngRoute']);
 
+app.factory('quizData', function($http) {
+	return $http.get('app/questions.json');
+});
+
 app.config(['$routeProvider', function($routeProvider) {
 	
 	$routeProvider.when('/touchBegin', {
