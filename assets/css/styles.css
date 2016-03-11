@@ -76,3 +76,27 @@ footer {
 	border: 1px solid;
 	font-size: 20px;
 }
+
+.description p {
+  text-align: center;
+}
+
+#chooseMary {
+  float: left;
+}
+
+#chooseRomantic {
+  float: right;
+}
+
+.maryDescription {
+  float: left;
+}
+
+.romanticDescription {
+  float: right;
+}
+
+#chooseContent {
+  width: 60%;
+}
