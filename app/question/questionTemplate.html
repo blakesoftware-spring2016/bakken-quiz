@@ -1,27 +1,19 @@
 <header>Are You a Romantic?</header>
 <div class="content">
-    <div>    
+    <div>
         <button type="button" class="navButton" onclick="mainMenu()">Main Menu</button>
     </div>
-        
+    <div>What do you enjoy doing on saturday afternoons?</div>
     <div>
-        What do you enjoy doing on saturday afternoons?
-    </div>
-        
-    <div>
-        <ul>
+        <ul><!-- Add the ng-repeat to the ul -->
             <li>
-                <input type="radio"><label>Homework</label>
-            </li>
-            <li>
-                <input type="radio"><label>Rolling in dirt</label>
+                <input type="radio"><label>Homework<!-- add a data binding here --></label>
             </li>
         </ul>
     </div>
-        
     <div class="buttonContainer">
         <button class="navButton" type="button" id="nextButton" ng-click="next()">Next</button>
         <button class="navButton" type="button" id="backButton" ng-click="back()">Back</button>
     </div>
 </div>
-<footer></footer> 
+<footer></footer>
