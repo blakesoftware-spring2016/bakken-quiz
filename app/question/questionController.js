@@ -3,8 +3,8 @@ app.controller("questionController", ['$scope','$location', 'quizData', '$routeP
         if($routeParams == quizData.questions[quizData.questions.length - 1]) {
             $location.path('/results');
         } else {
-            $location.path('/question/' + (Number($routeParams.question-num) + 1));
-            console.log(Number($routeParams.question-num) + 1);
+            $location.path('/question/' + (Number($routeParams.questionNum) + 1));
+            console.log(Number($routeParams.questionNum) + 1);
         };
     };
     
@@ -12,8 +12,8 @@ app.controller("questionController", ['$scope','$location', 'quizData', '$routeP
         if($routeParams == quizData.questions[0]) {
             $location.path('/quizDescriptions');
         } else {
-            $location.path('/question/' + (Number($routeParams.question-num) - 1));
-            console.log(Number($routeParams.question-num) - 1);
+            $location.path('/question/' + (Number($routeParams.questionNum) - 1));
+            console.log(Number($routeParams.questionNum) - 1);
         };
     };
 }]);
