@@ -1,19 +1,18 @@
 app.controller("questionController", ['$scope','$location', 'quizData', '$routeParams', function($scope, $location, quizData, $routeParams) {
+	var data = quizData.$$state.value.data;
     $scope.next = function() {
-        if($routeParams == quizData.questions[quizData.questions.length - 1]) {
+		// As always, Angular's syntax is terrible...but it kinda works!
+		if ($routeParams.questionNum == data.questions.length - 1) {
             $location.path('/results');
         } else {
-            $location.path('/question/' + (Number($routeParams.question-num) + 1));
-            console.log(Number($routeParams.question-num) + 1);
-        };
+            $location.path('/question/' + String(Number($routeParams.questionNum) + 1));
+        }
     };
-    
     $scope.back = function() {
-        if($routeParams == quizData.questions[0]) {
+        if($routeParams == 0) {
             $location.path('/quizDescriptions');
         } else {
-            $location.path('/question/' + (Number($routeParams.question-num) - 1));
-            console.log(Number($routeParams.question-num) - 1);
+            $location.path('/question/' + String(Number($routeParams.questionNum) - 1));
         };
     };
 }]);
