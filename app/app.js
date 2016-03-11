@@ -1,60 +1,54 @@
-var app=angular.module("quizApp", ['ngRoute']);
+var app = angular.module('quizApp', ['ngRoute']);
 
-app.factory('quizData', function() {
-	var data=$http.get('questions.json');
-	return data;
+app.factory('quizData', function($http) {
+	return $http.get('app/questions.json');
 });
 
-
-app.config(['$routeProvider', function($routeProvider) {  
+app.config(['$routeProvider', function($routeProvider) {
 	
-	$routeProvider.when('/touchBegin', {                                          
-		templateUrl: 'app/touchBegin/touchBeginTemplate.html',        
-		controller: "touchBeginController"
+	$routeProvider.when('/touchBegin', {
+		templateUrl: 'app/touchBegin/touchBeginTemplate.html',
+		controller: 'touchBeginController'
 	});
 	
-	$routeProvider.when('/shareResults', {                                          
-		templateUrl: 'app/shareResults/shareResultsTemplate.html',        
-		controller: "shareResultsController"
+	$routeProvider.when('/shareResults', {
+		templateUrl: 'app/shareResults/shareResultsTemplate.html',
+		controller: 'shareResultsController'
 	});
 	
-	$routeProvider.when('/results', {                                          
-		templateUrl: 'app/results/resultsTemplate.html',        
-		controller: "resultsController"
+	$routeProvider.when('/results', {
+		templateUrl: 'app/results/resultsTemplate.html',
+		controller: 'resultsController'
 	});
 	
-	$routeProvider.when('/question/:questionNum', {                                          
-		templateUrl: 'app/question/questionTemplate.html',        
-		controller: "questionController"
+	$routeProvider.when('/question/:questionNum', {
+		templateUrl: 'app/question/questionTemplate.html',
+		controller: 'questionController'
 	});
 	
-	$routeProvider.when('/privacy', {                                          
-		templateUrl: 'app/privacy/privacyTemplate.html',        
-		controller: "privacyController"
+	$routeProvider.when('/privacy', {
+		templateUrl: 'app/privacy/privacyTemplate.html',
+		controller: 'privacyController'
 	});
 	
-	$routeProvider.when('/chooseQuiz', {                                          
-		templateUrl: 'app/chooseQuiz/chooseQuizTemplate.html',        
-		controller: "chooseQuizController"
+	$routeProvider.when('/chooseQuiz', {
+		templateUrl: 'app/chooseQuiz/chooseQuizTemplate.html',
+		controller: 'chooseQuizController'
 	});
 	
-	$routeProvider.when('/other-page', {          
-		templateUrl: 'app/templates/other-page-template.html'  
+	$routeProvider.when('/quitPage', {
+		templateUrl: 'app/quitPage/quitPage.html',
+		controller: 'quitPageController'
 	});
 	
-	$routeProvider.when('/quitPage', {                                          
-		templateUrl: 'app/quitPage/quitPage.html',        
-		controller: "quitPageController"
+	$routeProvider.when('/quizDescriptions', {
+		templateUrl: 'app/quizDescriptions/quizDescriptionTemplate.html',
+		controller: 'quizDescriptionController'
 	});
 	
-	$routeProvider.when('/quizDescriptions', {                                          
-		templateUrl: 'app/quizDescriptions/quizDescriptionTemplate.html',        
-		controller: "quizDescriptionController"
-	});
-	
-	$routeProvider.when('/sentConfirmation', {                                          
-		templateUrl: 'app/sentConfirmation/sentConfirmationTemplate.html',        
-		controller: "sentConfirmationController"
+	$routeProvider.when('/sentConfirmation', {
+		templateUrl: 'app/sentConfirmation/sentConfirmationTemplate.html',
+		controller: 'sentConfirmationController'
 	});
 	
 	$routeProvider.otherwise({
@@ -63,7 +57,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	
 }]);
 
-app.controller('questionController',['$routeParams', function($routeParams) {  
+app.controller('questionController',['$routeParams', function($routeParams) {
 	
 	console.log($routeParams.questionNum);
 	
