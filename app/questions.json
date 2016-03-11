@@ -1,9 +1,5 @@
 {
-    "quizIdentity": "maryQuiz",
-    "quizType": "personality",
-    "header": {
-        "titleText": "Which Mary are You?"
-    },
+    "titleText": "Which Mary are You?",
     "questions": [
         {
             "question": "How many woods could a woodchuck chuck?",
@@ -48,7 +44,7 @@
             ]
         },
         {
-            "question": "Max is great",
+            "question": "Is Max great?",
             "multiChoiceAnswers": [
                 {
                     "answer" : "Hes the best!",
@@ -77,6 +73,6 @@
         {
             "id": "Neoclassisist",
             "title": "Longer Description here"
-        },
+        }
     ]
 }
