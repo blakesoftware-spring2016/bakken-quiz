@@ -1,9 +1,5 @@
 var app = angular.module('quizApp', ['ngRoute']);
 
-app.factory('quizData', function($http) {
-	return $http.get('app/questions.json');
-});
-
 app.config(['$routeProvider', function($routeProvider) {
 	
 	$routeProvider.when('/touchBegin', {
@@ -54,11 +50,5 @@ app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.otherwise({
 		redirectTo: '/touchBegin'
 	});
-	
-}]);
-
-app.controller('questionController',['$routeParams', function($routeParams) {
-	
-	console.log($routeParams.questionNum);
 	
 }]);
