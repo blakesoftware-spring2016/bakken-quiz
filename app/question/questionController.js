@@ -18,7 +18,7 @@ app.controller("questionController", ['$scope','$location', 'quizData', '$routeP
     };
 
     $scope.questionNumber = Number($routeParams.questionNum);
-    $scope.questionData = quizData[questionNumber];
+    $scope.questionData = quizData.questions[questionNumber];
     $scope.questionTitle = questionData.question;
 
     //Array containing answer objects with "answer": question text, "buckets": []
