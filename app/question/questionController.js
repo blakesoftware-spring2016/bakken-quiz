@@ -9,7 +9,6 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	    $scope.question = $scope.questions[$scope.questionNum];
 	    $scope.questionTitle = $scope.question.question;
 		
-	    // Array containing answer objects with "answer": question text, "buckets": []
 	    $scope.questionAnswers = $scope.question.multiChoiceAnswers;
 		
 	});
