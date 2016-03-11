@@ -37,7 +37,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	});
 	
 	$routeProvider.when('/quitPage', {
-		templateUrl: 'app/quitPage/quitPage.html',
+		templateUrl: 'app/quitPage/quitPageTemplate.html',
 		controller: 'quitPageController'
 	});
 	
