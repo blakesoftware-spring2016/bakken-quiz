@@ -143,12 +143,12 @@ p.description {
 .answer {
   margin: 10px;
   display: inline-block;
-  padding-top: 200px;
-  height: 50px;
-  width: 300px;
+  padding-top: 174px;
+  height: 43px;
+  width: 258px;
   border: 1px solid;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 20px;
 }
 
@@ -157,12 +157,14 @@ p.description {
 }
 
 .answerContainer {
-  margin-top: 20px;
-  width: 55%;
-  position: absolute;
+  margin-top: 40px;
+  width: 564px;
+	margin-left: 230px;
+
+  /*position: absolute;
   top: 55%;
   left: 55%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
 
 .question {
@@ -171,7 +173,7 @@ p.description {
   font-weight: bold;
   text-align: center;
   position: absolute;
-  top: 15%;
+  top: 90px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
