@@ -1,7 +1,8 @@
-app.controller("questionController", ['$scope','$location', '$routeParams', '$http', function($scope, $location, $routeParams, $http) {
+app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
 	
-	$http.get('app/questions.json').then(function(response) {
+	quizData.then(function(response) {
 		
+		$scope.data = response.data;
 		$scope.questions = response.data.questions;
 		
 		$scope.questionNum = Number($routeParams.questionNum);
@@ -18,16 +19,28 @@ app.controller("questionController", ['$scope','$location', '$routeParams', '$ht
 		if ($routeParams.questionNum == $scope.questions.length - 1) {
             $location.path('/results');
         } else {
-            $location.path('/question/' + String(Number($routeParams.questionNum) + 1));
+            $location.path('/question/' + String(++$scope.questionNum));
         };
     };
 	
     $scope.back = function() {
-        if ($routeParams == 0) {
+        if ($scope.questionNum == 0) {
             $location.path('/quizDescriptions');
         } else {
-            $location.path('/question/' + String(Number($routeParams.questionNum) - 1));
+            $location.path('/question/' + String(--$scope.questionNum));
         };
     };
+	
+	$scope.isSelected = function($index) {
+		if ($scope.question.selected == $index) {
+			return true;
+		} else {
+			return false;
+		}
+	};
+	
+	$scope.select = function($index) {
+		$scope.question.selected = $index;
+	};
 	
 }]);
