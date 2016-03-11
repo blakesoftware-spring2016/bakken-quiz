@@ -8,9 +8,9 @@ app.factory('quizData', function() {
 
 app.config(['$routeProvider', function($routeProvider) {  
 	
-	$routeProvider.when('/touchToBegin', {                                          
-		templateUrl: 'app/touchToBegin/touchToBeginTemplate.html',        
-		controller: "touchToBeginController"
+	$routeProvider.when('/touchBegin', {                                          
+		templateUrl: 'app/touchBegin/touchBeginTemplate.html',        
+		controller: "touchBeginController"
 	});
 	
 	$routeProvider.when('/shareResults', {                                          
@@ -58,7 +58,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	});
 	
 	$routeProvider.otherwise({
-		redirectTo: 'app/touchBegin/touchBeginTemplate.html'
+		redirectTo: '/touchBegin'
 	});
 	
 }]);
