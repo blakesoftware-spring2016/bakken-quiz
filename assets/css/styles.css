@@ -222,13 +222,18 @@ p.description {
 
 .resultsButtonContainer {
   /*width: 25%;*/
-	width:340px;
+	width: 340px;
   margin: auto;
 }
 
 .sentButtonContainer {
-  width: 30%;
+  width: 360px;
   margin: auto;
+}
+
+.sentButtonContainer button {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #mainMenuButton {
