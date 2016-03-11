@@ -1,0 +1,78 @@
+/* THIS IS THE RIGHT CSS */
+
+header {
+	height: 70px;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.content {
+	height: 568px;
+}
+
+.content p {
+	text-align: center;
+	font-size: 30px;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+
+.description {
+	width: 80%;
+	margin: auto;
+	font-size: 20px;
+}
+
+.buttonContainer {
+	display: inline-block;
+	width: 100%;
+}
+
+footer {
+	height: 100px;
+}
+
+.navButton {
+	width: 160px;
+	height: 90px;
+	border-radius: 10px;
+	background-color: white;
+	border: 1px solid;
+	font-size: 40px;
+}
+
+#backButton {
+	float: left;
+	margin: 10px;
+}
+
+#nextButton {
+	float: right;
+	margin: 10px;
+}
+
+#menuButton {
+	float: left;
+}
+
+#sendResultsButton {
+	width: 160px;
+	height: 90px;
+	border-radius: 10px;
+	background-color: white;
+	border: 1px solid;
+	font-size: 40px;
+	float: right;
+}
+
+.chooseButton {
+	width: 160px;
+	height: 90px;
+	border-radius: 10px;
+	background-color: white;
+	border: 1px solid;
+	font-size: 20px;
+}
