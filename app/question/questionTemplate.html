@@ -1,19 +1,26 @@
-<header>Are You a Romantic?</header>
+<header>{{data.title}}</header>
+<style>
+
+	.selected {
+		color: blue
+	};
+	
+</style>
 <div class="content">
     <div>
         <button type="button" class="navButton" onclick="mainMenu()">Main Menu</button>
     </div>
-    <div>{{6+4}}</div>
-    <div>
-        <ul><!-- Add the ng-repeat to the ul -->
-            <li>
-                <input type="radio"><label>Homework<!-- add a data binding here --></label>
-            </li>
-        </ul>
+    <div>{{questionTitle}}</div>
+    <div class="answerContainer">
+        <div class="answer"
+			ng-repeat="answer in questionAnswers track by $index"
+			ng-class="{selected: isSelected($index)}"
+			ng-click="select($index)">{{answer.answer}}</div>
     </div>
+	{{selected}}
     <div class="buttonContainer">
-        <button class="navButton" type="button" id="nextButton" ng-click="next()">Next</button>
         <button class="navButton" type="button" id="backButton" ng-click="back()">Back</button>
+		<button class="navButton" type="button" id="nextButton" ng-click="next()">Next</button>
     </div>
 </div>
 <footer></footer>
