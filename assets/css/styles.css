@@ -252,3 +252,17 @@ p .description {
 	margin-left: 10px;
 	margin-top: 60px;
 }
+
+.userInput input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 600px;
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.contentShareResultsForm {
+  padding-left: 20px;
+  padding-top: 40px;
+}
