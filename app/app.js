@@ -21,7 +21,7 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: 'resultsController'
 	});
 	
-	$routeProvider.when('/question/:questionNum', {
+	$routeProvider.when('/question/:quizID/:questionNum', {
 		templateUrl: 'app/question/questionTemplate.html',
 		controller: 'questionController'
 	});
