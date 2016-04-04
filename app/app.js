@@ -7,47 +7,47 @@ app.factory('quizData', function($http) {
 app.config(['$routeProvider', function($routeProvider) {
 	
 	$routeProvider.when('/touchBegin', {
-		templateUrl: 'app/touchBegin/touchBeginTemplate.html',
+		templateUrl: 'app/templates/touchBegin.html',
 		controller: 'touchBeginController'
 	});
 	
 	$routeProvider.when('/shareResults', {
-		templateUrl: 'app/shareResults/shareResultsTemplate.html',
+		templateUrl: 'app/templates/shareResults.html',
 		controller: 'shareResultsController'
 	});
 	
 	$routeProvider.when('/results', {
-		templateUrl: 'app/results/resultsTemplate.html',
+		templateUrl: 'app/templates/results.html',
 		controller: 'resultsController'
 	});
 	
 	$routeProvider.when('/question/:quizID/:questionNum', {
-		templateUrl: 'app/question/questionTemplate.html',
+		templateUrl: 'app/templates/question.html',
 		controller: 'questionController'
 	});
 	
 	$routeProvider.when('/privacy', {
-		templateUrl: 'app/privacy/privacyTemplate.html',
+		templateUrl: 'app/templates/privacy.html',
 		controller: 'privacyController'
 	});
 	
 	$routeProvider.when('/chooseQuiz', {
-		templateUrl: 'app/chooseQuiz/chooseQuizTemplate.html',
+		templateUrl: 'app/templates/chooseQuiz.html',
 		controller: 'chooseQuizController'
 	});
 	
 	$routeProvider.when('/quitPage', {
-		templateUrl: 'app/quitPage/quitPageTemplate.html',
+		templateUrl: 'app/templates/quitPage.html',
 		controller: 'quitPageController'
 	});
 	
 	$routeProvider.when('/quizDescriptions', {
-		templateUrl: 'app/quizDescriptions/quizDescriptionTemplate.html',
+		templateUrl: 'app/templates/quizDescription.html',
 		controller: 'quizDescriptionController'
 	});
 	
 	$routeProvider.when('/sentConfirmation', {
-		templateUrl: 'app/sentConfirmation/sentConfirmationTemplate.html',
+		templateUrl: 'app/templates/sentConfirmation.html',
 		controller: 'sentConfirmationController'
 	});
 	
