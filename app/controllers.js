@@ -1,7 +1,12 @@
 //chooseQuizController
 app.controller("chooseQuizController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-
-
+    document.getElementsByClassName("chooseMary").onclick = function() {
+        int quizID = 0;
+    };
+    
+    document.getElementsByClassName("chooseRomantic").onclick = function() {
+        int quizID = 1;
+    };
 }]);
 
 
