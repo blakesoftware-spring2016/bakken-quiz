@@ -14,19 +14,19 @@ app.controller("privacyController", ['$scope','$location', 'quizData', function(
 
 //questionController
 app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
-
+	
 	quizData.then(function(response) {
-
+		
 		$scope.data = response.data;
 		$scope.questions = response.data.questions;
-
+		
 		$scope.questionNum = Number($routeParams.questionNum);
-	  $scope.question = $scope.questions[$scope.questionNum];
-	  $scope.questionTitle = $scope.question.question;
-
-	  // Array containing answer objects with "answer": question text, "buckets": []
-	  $scope.questionAnswers = $scope.question.multiChoiceAnswers;
-
+		$scope.question = $scope.questions[$scope.questionNum];
+		$scope.questionTitle = $scope.question.question;
+		
+		// Array containing answer objects with "answer": question text, "buckets": []
+		$scope.questionAnswers = $scope.question.multiChoiceAnswers;
+		
 	});
 
 	$scope.next = function() {
