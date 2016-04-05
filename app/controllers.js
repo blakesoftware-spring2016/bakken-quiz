@@ -1,7 +1,12 @@
 //chooseQuizController
 app.controller("chooseQuizController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-
-
+    document.getElementsByClassName("chooseMary").onclick = function() {
+        var quizID = 0;
+    };
+    
+    document.getElementsByClassName("chooseRomantic").onclick = function() {
+        var quizID = 1;
+    };
 }]);
 
 
@@ -63,13 +68,13 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 
 //quitPageController
 app.controller("quitPageController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-
+    
 
 }]);
 
 
 //quizDescriptionsController
-app.controller("quizDescriptionController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
+app.controller("quizDescriptionController", ['$scope','$location','$routParams', 'quizData', function($scope, $location, $routeParams, quizData) {
 
 
 }]);
