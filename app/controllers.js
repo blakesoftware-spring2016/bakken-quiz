@@ -74,8 +74,8 @@ app.controller("quitPageController", ['$scope','$location', 'quizData', function
 
 
 //quizDescriptionsController
-app.controller("quizDescriptionController", ['$scope','$location','$routParams', 'quizData', function($scope, $location, $routeParams, quizData) {
-
+app.controller("quizDescriptionController", ['$scope','$location','$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
+    if ($rou)
 
 }]);
 
