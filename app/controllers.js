@@ -1,11 +1,11 @@
 //chooseQuizController
 app.controller("chooseQuizController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
     document.getElementsByClassName("chooseMary").onclick = function() {
-        var quizID = 0;
+        $location.path('/quizDescription/0');
     };
     
     document.getElementsByClassName("chooseRomantic").onclick = function() {
-        var quizID = 1;
+        $location.path('/quizDescription/1');
     };
 }]);
 
@@ -45,7 +45,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 
     $scope.back = function() {
         if ($scope.questionNum == 0) {
-            $location.path('/quizDescriptions');
+            $location.path('/quizDescription');
         } else {
             $location.path('/question/' + String(--$scope.questionNum));
         };
@@ -75,7 +75,13 @@ app.controller("quitPageController", ['$scope','$location', 'quizData', function
 
 //quizDescriptionsController
 app.controller("quizDescriptionController", ['$scope','$location','$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
-    if ($rou)
+    
+    quizData.then(function(response) {
+        $scope.data = response.data;
+		$scope.questions = response.data.questions;
+        
+        $scope.quizID = $routeParams.quizID;
+    });
 
 }]);
 
