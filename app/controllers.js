@@ -1,12 +1,6 @@
 //chooseQuizController
 app.controller("chooseQuizController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-    document.getElementsByClassName("chooseMary").onclick = function() {
-        var quizID = 0;
-    };
     
-    document.getElementsByClassName("chooseRomantic").onclick = function() {
-        var quizID = 1;
-    };
 }]);
 
 
@@ -33,7 +27,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		$scope.answers = $scope.question.answers;
 		
 	});
-
+	
 	$scope.next = function() {
 		// As always, Angular's syntax is terrible...but it kinda works!
 		if ($routeParams.questionNum == $scope.questions.length - 1) {
@@ -42,15 +36,15 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
             $location.path('/question/' + String($scope.quizID) + '/' + String(++$scope.questionID));
         }
     };
-
+	
     $scope.back = function() {
         if ($scope.questionNum == 0) {
-            $location.path('/quizDescriptions');
+            $location.path('/quizDescription');
         } else {
 			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
         };
     };
-
+	
 	$scope.isSelected = function($index) {
 		if ($scope.question.selected == $index) {
 			return true;
@@ -58,24 +52,32 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 			return false;
 		}
 	};
-
+	
 	$scope.select = function($index) {
 		$scope.question.selected = $index;
 	};
-
+	
 }]);
 
 
 //quitPageController
 app.controller("quitPageController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
     
-
+	
+	
 }]);
 
 
 //quizDescriptionsController
 app.controller("quizDescriptionController", ['$scope','$location','$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
     
+    quizData.then(function(response) {
+        
+        var quizID = $routeParams.quizID;
+        $scope.data = response.data[quizID];
+		
+    });
+	
 }]);
 
 
