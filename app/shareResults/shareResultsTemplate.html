@@ -3,13 +3,24 @@
 	<a href="#/quitPage"><button type="button" class="navButton" id="menuButton">Menu</button></a>
 	<a href="#/sentConfirmation"><button class="navButton" id="sendResultsButton">Send</button></a>
 </header>
-<div class="contentShareResultsForm">
-	<div class="userInput">
-		<input type="text" name="firstname" placeholder="Enter First Name" autocomplete="off" required>
+<form name="shareResultsForm" class="shareResultsForm">
+		<!-- <input type="text" name="firstname" placeholder="Enter First Name" autocomplete="off" required>
 
 		<input type="text" name="lastname" placeholder="Enter Last Name" autocomplete"off" required>
 		
-		<input type="text" name="email" placeholder="Enter Valid Email Address" autocomplete="off" required>
+		<input type="text" name="email" placeholder="Enter Valid Email Address" autocomplete="off" required> -->
+
+		<label>First Name:</label>
+    <div ng-messages="shareResultsForm.firstName.$error">
+      <input type="text" name="firstName" ng-model="firstName" required placeholder="Enter First Name"/>
+      <div ng-if="shareResultsForm.$dirty" class="errorText">
+        <div ng-message="required" class="required"> First name is required </div>
+      </div>
+    </div>
+  </form>
+
+
+
 	</div>
  
 
