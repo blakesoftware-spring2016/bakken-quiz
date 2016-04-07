@@ -21,7 +21,7 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: 'resultsController'
 	});
 	
-	$routeProvider.when('/question/:quizID/:questionNum', {
+	$routeProvider.when('/question/:quizID/:questionID', {
 		templateUrl: 'app/templates/question.html',
 		controller: 'questionController'
 	});
@@ -41,7 +41,7 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: 'quitPageController'
 	});
 	
-	$routeProvider.when('/quizDescriptions/:quizID', {
+	$routeProvider.when('/quizDescription/:quizID', {
 		templateUrl: 'app/templates/quizDescription.html',
 		controller: 'quizDescriptionController'
 	});

@@ -22,15 +22,15 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	
 	quizData.then(function(response) {
 		
-		$scope.data = response.data;
-		$scope.questions = response.data.questions;
+		// Get parameters from route
+		var quizID = $routeParams.quizID;
+		var questionID = $routeParams.questionID;
 		
-		$scope.questionNum = Number($routeParams.questionNum);
-		$scope.question = $scope.questions[$scope.questionNum];
-		$scope.questionTitle = $scope.question.question;
-		
-		// Array containing answer objects with "answer": question text, "buckets": []
-		$scope.questionAnswers = $scope.question.multiChoiceAnswers;
+		// Make all data associated with the current quiz available to the template
+		$scope.quiz = response.data[quizID];
+		$scope.questions = $scope.quiz.questions;
+		$scope.question = $scope.questions[$scope.questionID];
+		$scope.answers = $scope.question.answers;
 		
 	});
 
@@ -39,15 +39,15 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		if ($routeParams.questionNum == $scope.questions.length - 1) {
             $location.path('/results');
         } else {
-            $location.path('/question/' + String(++$scope.questionNum));
-        };
+            $location.path('/question/' + String($scope.quizID) + '/' + String(++$scope.questionID));
+        }
     };
 
     $scope.back = function() {
         if ($scope.questionNum == 0) {
             $location.path('/quizDescriptions');
         } else {
-            $location.path('/question/' + String(--$scope.questionNum));
+			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
         };
     };
 
@@ -75,8 +75,7 @@ app.controller("quitPageController", ['$scope','$location', 'quizData', function
 
 //quizDescriptionsController
 app.controller("quizDescriptionController", ['$scope','$location','$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
-    if ($rou)
-
+    
 }]);
 
 

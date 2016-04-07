@@ -1,14 +1,14 @@
 <header>
-<div id="quizTitle"> {{data.title}} </div>
+<div id="quizTitle"> {{quiz.title}} </div>
     <a href="#/quitPage"><button type="button" class="navButton" id="menuButton">Menu</button></a>
 </header>
 <div class="content">
-    <div class="question"> {{questionTitle}} </div>
+    <div class="question"> {{question.question}} </div>
     <div class="answerContainer">
         <div class="answer"
-			ng-repeat="answer in questionAnswers track by $index"
+			ng-repeat="answer in answers track by $index"
 			ng-class="{selected: isSelected($index)}"
-			ng-click="select($index)">{{answer.answer}}</div>
+			ng-click="select($index)">{{answer.text}}</div>
     </div>
 </div>
 <footer>
