@@ -4,63 +4,63 @@
     "questions": [
         {
             "question": "How many woods could a woodchuck chuck?",
-            "multiChoiceAnswers": [
+            "answers": [
                 {
-                    "answer" : "12",
+                    "text" : "12",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "Blue?",
+                    "text" : "Blue?",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Romantc"]
                 },
                 {
-                    "answer" : "Can woodchucks even chuck?",
+                    "text" : "Can woodchucks even chuck?",
                     "buckets": ["Romantic"]
                 }
             ]
         },
         {
             "question": "yes?",
-            "multiChoiceAnswers": [
+            "answers": [
                 {
-                    "answer" : "No",
+                    "text" : "No",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "maybe",
+                    "text" : "maybe",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "Not sure",
+                    "text" : "Not sure",
                     "buckets": ["Neoclassisist"]
                 }
             ]
         },
         {
             "question": "Is Max great?",
-            "multiChoiceAnswers": [
+            "answers": [
                 {
-                    "answer" : "Hes the best!",
+                    "text" : "Hes the best!",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "OMG Max is totes the best",
+                    "text" : "OMG Max is totes the best",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "10/10",
+                    "text" : "10/10",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Neoclassisist"]
                 }
             ]
@@ -82,63 +82,63 @@
     "questions": [
         {
             "question": "How many woods could a woodchuck chuck? (V2)",
-            "multiChoiceAnswers": [
+            "answers": [
                 {
-                    "answer" : "12",
+                    "text" : "12",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "Blue?",
+                    "text" : "Blue?",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Romantc"]
                 },
                 {
-                    "answer" : "Can woodchucks even chuck?",
+                    "text" : "Can woodchucks even chuck?",
                     "buckets": ["Romantic"]
                 }
             ]
         },
         {
             "question": "yes?",
-            "multiChoiceAnswers": [
+            "answers": [
                 {
-                    "answer" : "No",
+                    "text" : "No",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "maybe",
+                    "text" : "maybe",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "Not sure",
+                    "text" : "Not sure",
                     "buckets": ["Neoclassisist"]
                 }
             ]
         },
         {
             "question": "Is Max great?",
-            "multiChoiceAnswers": [
+            "answers": [
                 {
-                    "answer" : "Hes the best!",
+                    "text" : "Hes the best!",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "OMG Max is totes the best",
+                    "text" : "OMG Max is totes the best",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "10/10",
+                    "text" : "10/10",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Neoclassisist"]
                 }
             ]
