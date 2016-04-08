@@ -1,9 +1,9 @@
 <header>
-<div id="quizTitle"> {{quiz.title}} </div>
+	<div id="quizTitle">{{quiz.title}}</div>
     <a href="#/quitPage"><button type="button" class="navButton" id="menuButton">Menu</button></a>
 </header>
 <div class="content">
-    <div class="question"> {{question.question}} </div>
+    <div class="question">{{question.text}}</div>
     <div class="answerContainer">
         <div class="answer"
 			ng-repeat="answer in answers track by $index"
