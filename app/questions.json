@@ -1,65 +1,66 @@
-{
+[{
     "title": "Which Mary are You?",
+	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "questions": [
         {
-            "question": "How many woods could a woodchuck chuck?",
-            "multiChoiceAnswers": [
+            "text": "How many woods could a woodchuck chuck?",
+            "answers": [
                 {
-                    "answer" : "12",
+                    "text" : "12",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "Blue?",
+                    "text" : "Blue?",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Romantc"]
                 },
                 {
-                    "answer" : "Can woodchucks even chuck?",
+                    "text" : "Can woodchucks even chuck?",
                     "buckets": ["Romantic"]
                 }
             ]
         },
         {
-            "question": "yes?",
-            "multiChoiceAnswers": [
+            "text": "yes?",
+            "answers": [
                 {
-                    "answer" : "No",
+                    "text" : "No",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "maybe",
+                    "text" : "maybe",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "Not sure",
+                    "text" : "Not sure",
                     "buckets": ["Neoclassisist"]
                 }
             ]
         },
         {
-            "question": "Is Max great?",
-            "multiChoiceAnswers": [
+            "text": "Is Max great?",
+            "answers": [
                 {
-                    "answer" : "Hes the best!",
+                    "text" : "Hes the best!",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "OMG Max is totes the best",
+                    "text" : "OMG Max is totes the best",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "answer" : "10/10",
+                    "text" : "10/10",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "answer" : "yes",
+                    "text" : "yes",
                     "buckets": ["Neoclassisist"]
                 }
             ]
@@ -75,4 +76,82 @@
             "title": "Longer Description here"
         }
     ]
-}
+}, {
+    "title": "Are you legit?",
+	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "questions": [
+        {
+            "text": "How many woods could a woodchuck chuck? (V2)",
+            "answers": [
+                {
+                    "text" : "12",
+                    "buckets": ["Neoclassisist"]
+                },
+                {
+                    "text" : "Blue?",
+                    "buckets": ["Neoclassisist"]
+                },
+                {
+                    "text" : "yes",
+                    "buckets": ["Romantc"]
+                },
+                {
+                    "text" : "Can woodchucks even chuck?",
+                    "buckets": ["Romantic"]
+                }
+            ]
+        },
+        {
+            "text": "yes?",
+            "answers": [
+                {
+                    "text" : "No",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "text" : "yes",
+                    "buckets": ["Neoclassisist"]
+                },
+                {
+                    "text" : "maybe",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "text" : "Not sure",
+                    "buckets": ["Neoclassisist"]
+                }
+            ]
+        },
+        {
+            "text": "Is Max great?",
+            "answers": [
+                {
+                    "text" : "Hes the best!",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "text" : "OMG Max is totes the best",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "text" : "10/10",
+                    "buckets": ["Neoclassisist"]
+                },
+                {
+                    "text" : "yes",
+                    "buckets": ["Neoclassisist"]
+                }
+            ]
+        }
+    ],
+    "resultBuckets": [
+        {
+            "id": "Romantic",
+            "title": "Longer Description here"
+        },
+        {
+            "id": "Neoclassisist",
+            "title": "Longer Description here"
+        }
+    ]
+}]
