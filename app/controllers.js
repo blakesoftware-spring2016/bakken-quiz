@@ -76,6 +76,7 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
         var quizID = $routeParams.quizID;
         $scope.data = response.data[quizID];
 		
+		$scope.question_href = '#/question/' + quizID + '/0';
     });
 	
 }]);
