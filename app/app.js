@@ -1,8 +1,27 @@
-var app = angular.module('quizApp', ['ngRoute', 'ngMessages']);
+var app = angular.module('quizApp', ['ngRoute']);
 
 app.factory('quizData', function($http) {
 	return $http.get('app/questions.json');
 });
+
+app.directive('overwriteEmail', function() {
+  var EMAIL_REGEXP = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+
+  return {
+    require: '?ngModel',
+    link: function(scope, elm, attrs, ctrl) {
+
+      if (ctrl && ctrl.$validators.email) {
+
+        ctrl.$validators.email = function(modelValue) {
+          return ctrl.$isEmpty(modelValue) || EMAIL_REGEXP.test(modelValue);
+        };
+      }
+    }
+  };
+  
+});
+
 
 app.config(['$routeProvider', function($routeProvider) {
 	

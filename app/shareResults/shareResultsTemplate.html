@@ -1,31 +1,44 @@
 <header>
 	Share Results!
 	<a href="#/quitPage"><button type="button" class="navButton" id="menuButton">Menu</button></a>
-	<a href="#/sentConfirmation"><button class="navButton" id="sendResultsButton">Send</button></a>
+	<button class="navButton" id="sendResultsButton" ng-click="checkEmails()">Send</button>
 </header>
-<form name="shareResultsForm" class="shareResultsForm">
-		<!-- <input type="text" name="firstname" placeholder="Enter First Name" autocomplete="off" required>
+<form name="shareResultsForm" class="shareResultsForm" ng-submit="submitForm(shareResultsForm)">
 
-		<input type="text" name="lastname" placeholder="Enter Last Name" autocomplete"off" required>
-		
-		<input type="text" name="email" placeholder="Enter Valid Email Address" autocomplete="off" required> -->
-
-		<label>First Name:</label>
-    <div ng-messages="shareResultsForm.firstName.$error">
-      <input type="text" name="firstName" ng-model="firstName" required placeholder="Enter First Name"/>
-      <div ng-if="shareResultsForm.$dirty" class="errorText">
-        <div ng-message="required" class="required"> First name is required </div>
-      </div>
-    </div>
-  </form>
-
-
-
+	<label>First Name:</label>
+	<div>
+		<input type="text" name="firstName" ng-model="firstName" required autocomplete="off" placeholder="Enter First Name" />
+		<span ng-show="shareResultsForm.firstName.$error.required && shareResultsForm.firstName.$dirty" class="errorText"> *First Name is Required! </span>
 	</div>
- 
-
+	<br> </br>
+	<label>Last Name:</label>
+	<div>
+		<input type="text" name="lastName" ng-model="lastName" required autocomplete="off" placeholder="Enter Last Name" />
+		<span ng-show="shareResultsForm.lastName.$error.required && shareResultsForm.lastName.$dirty" class="errorText"> *Last Name is Required! </span>
 	</div>
+
+	<br> </br>
+	<label>Email Address:</label>
+	<div>
+		<input type="email" name="email" ng-model="email" overwrite-email required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)" />
+		<span ng-show="shareResultsForm.email.$error.required && shareResultsForm.email.$dirty" class="errorText"> *Email is required! </span>
+		<span ng-show="shareResultsForm.email.$error.email" class="errorText"> *Invalid email address </span>
+	</div>
+
+	<label>Re-Enter Email Address:</label>
+	<div>
+		<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Re-Enter Email Address"/>
+		<span ng-show="shareResultsForm.emailCheck.$error.required && shareResultsForm.emailCheck.$dirty" class="errorText"> *Re-Entered Email is required! </span>
+	
+	</div>
+
+<!--ng-model-options="{ updateOn: 'blur' }-->
+
+
+</form>
+
 <footer>
-	<a href="#/results"><button type="button" class="navbutton" id="backToResultsButton">Back to Results</button></a>
+	<a href="#/results"> <button class="navbutton" id="backToResultsButton"> Back to Results</button> </a> 
+
 </footer>
 
