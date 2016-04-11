@@ -16,7 +16,7 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: 'shareResultsController'
 	});
 	
-	$routeProvider.when('/results', {
+	$routeProvider.when('/results/:quizID', {
 		templateUrl: 'app/templates/results.html',
 		controller: 'resultsController'
 	});

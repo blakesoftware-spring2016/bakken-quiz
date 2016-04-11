@@ -25,7 +25,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	$scope.next = function() {
 		// As always, Angular's syntax is terrible...but it kinda works!
 		if ($scope.questionID == $scope.questions.length - 1) {
-            $location.path('/results');
+            $location.path('/results/' + String($scope.quizID));
         } else {
             $location.path('/question/' + String($scope.quizID) + '/' + String(++$scope.questionID));
         }
@@ -70,8 +70,14 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 }]);
 
 //resultsController
-app.controller("resultsController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
+app.controller("resultsController", ['$scope','$location', '$routeParams' 'quizData', function($scope, $location, $routeParams, quizData) {
 	
+    quizData.then(function(response) {
+        var quizID = $routeParams.quizID;
+        $scope.data = response.data[quizID];
+		$scope.question_href = '#/question/' + quizID + '/0';
+    });                                 
+    
 }]);
 
 //sentConfirmationController
