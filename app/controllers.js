@@ -75,7 +75,19 @@ app.controller("resultsController", ['$scope','$location', '$routeParams' 'quizD
     quizData.then(function(response) {
         var quizID = $routeParams.quizID;
         $scope.data = response.data[quizID];
-		$scope.question_href = '#/question/' + quizID + '/0';
+		
+		var results = {};
+        
+        for(i = 0; i < questions.length; i++) {
+			var answer = scope.data[i].answers[scope.data[i].selected];
+		
+			if(typeof results[answer.bucket] === 'undefined') {
+				results[answer.bucket] = 1;
+			} else {
+				results[answer.bucket]++;
+			}
+		
+		}
     });                                 
     
 }]);
