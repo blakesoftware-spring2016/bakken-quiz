@@ -27,8 +27,9 @@
 
 	<label>Re-Enter Email Address:</label>
 	<div>
-		<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Re-Enter Email Address"/>
-		<span ng-show="shareResultsForm.emailCheck.$error.required && shareResultsForm.emailCheck.$dirty" class="errorText"> *Re-Entered Email is required! </span>
+		<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Re-Enter Email Address" value-matches="email"/>
+		<span ng-show="shareResultsForm.emailCheck.$dirty && shareResultsForm.emailCheck.$invalid" class="errorText"> *Emails do not match!</span>
+		
 	
 	</div>
 

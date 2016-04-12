@@ -97,10 +97,13 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData', func
 
   		};
 
-  	angular.forEach($scope.shareResultsForm.$error.required, function(field) {
-    field.$setDirty();
-});
-};
+  		angular.forEach($scope.shareResultsForm.$error.required, function(field) {
+    		field.$setDirty();
+    		
+
+		});
+  
+	};
 
 
 
