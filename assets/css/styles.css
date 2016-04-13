@@ -2,6 +2,8 @@
 
 body {
 	margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -14,9 +16,10 @@ header {
 
 .content {
 	/*max-height: 568px;*/
-	max-height: 508px;
+	height: 100%;
 	margin-top: 30px;
 	margin-bottom: 30px;
+    width: 100%;
 }
 
 .content p {
