@@ -81,7 +81,16 @@ app.controller("sentConfirmationController", ['$scope','$location', 'quizData', 
 
 //shareResultsController
 app.controller("shareResultsController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-	
+	$scope.checkEmails = function() {
+		if($scope.shareResultsForm.$valid) {
+			$location.path('/sentConfirmation');
+
+  		};
+
+  		angular.forEach($scope.shareResultsForm.$error.required, function(field) {
+    		field.$setDirty();
+		});
+	};
 }]);
 
 //touchBeginController

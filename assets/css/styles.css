@@ -256,7 +256,7 @@ p .description {
 	margin-top: 60px;
 }
 
-.userInput input {
+  input {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 600px;
@@ -268,4 +268,12 @@ p .description {
 .contentShareResultsForm {
   padding-left: 20px;
   padding-top: 40px;
+}
+
+input.ng-invalid.ng-dirty {
+  border: 1px solid red;
+}
+
+.errorText {
+  color: red;
 }
