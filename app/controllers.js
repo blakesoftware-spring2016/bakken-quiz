@@ -91,24 +91,51 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 }]);
 
 //resultsController
-app.controller("resultsController", ['$scope','$location', '$routeParams' 'quizData', function($scope, $location, $routeParams, quizData) {
+app.controller("resultsController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
 	
     quizData.then(function(response) {
         var quizID = $routeParams.quizID;
-        $scope.data = response.data[quizID];
+        $scope.quiz = response.data[quizID];
+			   
+		$scope.questions = $scope.quiz.questions;
 		
 		var results = {};
+		var target; // counter for majorityQuiz
         
-        for(i = 0; i < questions.length; i++) {
-			var answer = scope.data[i].answers[scope.data[i].selected];
-		
-			if(typeof results[answer.bucket] === 'undefined') {
-				results[answer.bucket] = 1;
-			} else {
-				results[answer.bucket]++;
+        for(var i = 0; i < $scope.questions.length; i++) {
+			var question = $scope.questions[i];
+			var answer = question.answers[question.selected];
+			// loops through each bucket array
+			for(var j = 0; j < answer.buckets.length; j++){
+				// counts answers for all buckets
+				if(typeof results[answer.buckets[j]] === 'undefined') {
+					results[answer.buckets[j]] = 1;
+				} else {
+					results[answer.buckets[j]]++;
+				}
+				// counts target answers
+				if(answer.buckets === "Target") {
+					target++;
+				}
 			}
-		
 		}
+		
+		var greatest;
+		for(var prop in results) {
+			if(!greatest || results.prop > results.greatest){
+				greatest = prop;
+			}
+		}
+		
+		if($scope.quiz.type == "percentageQuiz") {
+			var percentage = results.greatest/$scope.questions.length;
+		} else if ($scope.quiz.type == "majorityQuiz") {
+			var percentage = target / $scope.questions.length;
+			var answerIndex = Math.floor(percentage * $scope.quiz.resultBuckets.length);
+			$scope.title = $scope.quiz.resultBuckets[answerIndex].title;
+			
+		}
+		
     });                                 
     
 }]);

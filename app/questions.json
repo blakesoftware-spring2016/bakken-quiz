@@ -1,5 +1,6 @@
 [{
-    "title": "Which Mary are You?",
+    "title": "Are you a Romantic?",
+	"type": "percentageQuiz",
 	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "questions": [
         {
@@ -7,19 +8,19 @@
             "answers": [
                 {
                     "text" : "12",
-                    "buckets": ["Neoclassisist"]
+					"buckets": ["rand"]
                 },
                 {
                     "text" : "Blue?",
-                    "buckets": ["Neoclassisist"]
+					"buckets": ["rand"]
                 },
                 {
-                    "text" : "yes",
-                    "buckets": ["Romantic"]
+                    "text" : "target",
+                    "buckets": ["Target"]
                 },
                 {
-                    "text" : "Can woodchucks even chuck?",
-                    "buckets": ["Romantic"]
+                    "text" : "target",
+                    "buckets": ["Target"]
                 }
             ]
         },
@@ -27,20 +28,20 @@
             "text": "yes?",
             "answers": [
                 {
-                    "text" : "No",
-                    "buckets": ["Romantic"]
+                    "text" : "target",
+                    "buckets": ["Target"]
                 },
                 {
                     "text" : "yes",
-                    "buckets": ["Neoclassisist"]
+					"buckets": ["rand"]
                 },
                 {
-                    "text" : "maybe",
-                    "buckets": ["Romantic"]
+                    "text" : "target",
+                    "buckets": ["Target"]
                 },
                 {
                     "text" : "Not sure",
-                    "buckets": ["Neoclassisist"]
+					"buckets": ["rand"]
                 }
             ]
         },
@@ -48,36 +49,70 @@
             "text": "Is Max great?",
             "answers": [
                 {
-                    "text" : "Hes the best!",
-                    "buckets": ["Romantic"]
+                    "text" : "target",
+                    "buckets": ["Target"]
                 },
                 {
-                    "text" : "OMG Max is totes the best",
-                    "buckets": ["Romantic"]
+                    "text" : "target",
+                    "buckets": ["Target"]
                 },
                 {
                     "text" : "10/10",
-                    "buckets": ["Neoclassisist"]
+					"buckets": ["rand"]
                 },
                 {
                     "text" : "yes",
-                    "buckets": ["Neoclassisist"]
+					"buckets": ["rand"]
                 }
             ]
-        }
+        },
+        {
+            "text": "Is Max great?",
+            "answers": [
+                {
+                    "text" : "target",
+                    "buckets": ["Target"]
+                },
+                {
+                    "text" : "target",
+                    "buckets": ["Target"]
+                },
+                {
+                    "text" : "10/10",
+					"buckets": ["rand"]
+                },
+                {
+                    "text" : "yes",
+					"buckets": ["rand"]
+                }
+			]
+		}
     ],
     "resultBuckets": [
         {
-            "id": "Romantic",
-            "title": "Longer Description here"
+			"description": "81% - 100%",
+            "title": "You’re definitely a Romantic! Like the Romantics of Mary’s time, you’re probably influenced by emotion, letting your heart guide your decisions. You might easily identify with and have great empathy for others but spend a lot of time inwardly reflecting on life. Romantics believe that an individual has infinite potential for spiritual and intellectual growth. This acute sensitivity sometimes leads to depression, insecurity, and doubt. Instead of conforming to societal norms, you value originality and innovation. The Romantic view of art is idealistic, serving a higher purpose. Perhaps your creativity comes from within rather than taking inspiration from others or the outside world. Believing that the universe is more than the sum of its parts, you have a holistic understanding of nature, viewing everything in life as interconnected and organic. "
         },
         {
-            "id": "Neoclassisist",
-            "title": "Longer Description here"
+			"description": "61% - 80%",
+            "title": "You lean more towards the Romantic, with an occasional Neoclassical thought! You’re spontaneous and have an intensity for life, something for which Romantics are known. Instead of observing the world, your creativity comes from within. You place a high level of importance on imagination, invention, and experimentation. While you are very independent, this independence can be liberating but also isolating. Some Romantics even see themselves as self-sacrificing outcasts. You have a great appreciation for the arts, such as literature, music, painting, and poetry. Like the Romantics of Mary’s era, you believe in the creative spirit that anyone can be an artist ifthey have the imagination and innate talent. As a Romantic, you seek harmony between body, mind, and soul, while exploring how humanity fits within the framework of the natural word. "
+        },
+        {
+			"description": "41% - 60%",
+            "title": "You’re a balance between Romantic and Neoclassical...little bit of both! You may be the most like Mary Shelley, who, although known for being a radical, was also quite conservative. While you believe strongly in family and tradition, you aren’t afraid to go it alone or try new things. You appreciate the past but are forward thinking. Details are important to you. Often taking a practical, simplistic approach to things, you are clear headed, thoughtful, and reflective. When considering nature, you try to find unity between the scientific and the organic. Your heart is on the bigger picture, preferring unorthodox solutions to more rules, which often pollute and restrict great minds. People may think you have elements of genius, but you work hard for your accomplishments. "
+        },
+        {
+            "description": "21% - 140%",
+            "title": "You lean more towards the Neoclassical, with a little Romantic thrown in! You take a logical approach to things, relying on your common sense and intellect, rather than emotion, to make decisions. You usually think of others first. Like many Neoclassicists, you appreciate structure and order. Neoclassicists value authenticity, often drawing upon the art and culture of the past. Instead of coming up with new ideas, you might take pre-existing concepts, improving and building on their foundations. When it comes to nature, you view each element individually. Because of this, sometimes you may not see the forest for the trees. You believe that, with hard work, anybody can do anything. As Thomas Edison said, “Genius is 1% inspiration and 99% perspiration.”"
+        },
+        {
+            "description": "0% - 20%",
+            "title": "You’re not very Romantic at all! In Mary’s day you might be considered a Neoclassicist. Carefully calculating the consequences of your actions before making decisions, you’re strongly influenced by reason. You tend to follow the rules and practice self-control. Neoclassicists strive for realism in art, so you may believe that the imitation is the sincerest form of flattery. You respect the past and value tradition. Why reinvent the wheel? In your view, science can explain everything. You view the universe as a giant clock that can be taken apart. This attention to detail comes in handy, but sometimes it causes you to miss the whole story. You respect established principles and institutions and defend liberty and integrity, focusing on what’s best for society over individuals."
         }
     ]
 }, {
     "title": "Are you legit?",
+	"type": "majorityQuiz",
 	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "questions": [
         {
