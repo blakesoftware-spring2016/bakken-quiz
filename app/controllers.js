@@ -120,5 +120,6 @@ app.controller('touchBeginController', ['$scope','$location', function($scope, $
 app.controller('popupController', function($scope, $uibModalInstance) {
     $scope.dismiss = function(value) {
         $uibModalInstance.close(value);
+        
     };
 })
