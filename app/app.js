@@ -36,7 +36,7 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: 'chooseQuizController'
 	});
 	
-	$routeProvider.when('/quitPage', {
+	$routeProvider.when('/quitPage/:quizID', {
 		templateUrl: 'app/templates/quitPage.html',
 		controller: 'quitPageController'
 	});
