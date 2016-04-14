@@ -9,7 +9,7 @@ app.controller("privacyController", ['$scope','$location', 'quizData', function(
 }]);
 
 //questionController
-app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
+app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', '$uibModal', function($scope, $location, $routeParams, quizData, $uibModal) {
 	
 	quizData.then(function(response) {
 		// Get parameters from route
@@ -51,6 +51,21 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		$scope.question.selected = $index;
 	};
 	
+    $scope.open = function() {
+
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'app/templates/popupContent.html',
+            controller: 'popupController',
+            size: 'lg'
+        });
+
+        modalInstance.result.then(function(selectedItem) {
+            $scope.selected = selectedItem;
+        });
+  };
+
+    
 }]);
 
 //quitPageController
@@ -101,3 +116,9 @@ app.controller('touchBeginController', ['$scope','$location', function($scope, $
 	};
 	
 }]);
+
+app.controller('popupController', function($scope, $uibModalInstance) {
+    $scope.dismiss = function(value) {
+        $uibModalInstance.close(value);
+    };
+})
