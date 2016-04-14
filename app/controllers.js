@@ -54,8 +54,29 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 }]);
 
 //quitPageController
-app.controller("quitPageController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
+app.controller("quitPageController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
     
+	quizData.then(function(response) {
+		// Get parameters from route
+		$scope.quizID = $routeParams.quizID;
+		// Make all data associated with the current quiz available to the template
+		$scope.questions = response.data[$scope.quizID].questions;
+	});
+	
+	$scope.cancel = function() {
+		window.history.back();
+	};
+	
+	$scope.quit = function() {
+		// Delete all user data if they decide to quit
+		for (var i = 0; i < $scope.questions.length; i++) {
+			delete $scope.questions[i].selected;
+		}
+		// Redirect to choose quiz page
+		$location.path('/chooseQuiz');
+	};
+	
+	
 }]);
 
 //quizDescriptionsController
