@@ -4,6 +4,9 @@ app.factory('quizData', function($http) {
 	return $http.get('app/questions.json');
 });
 
+var session_answers = [];
+var session_quiz;
+
 app.config(['$routeProvider', function($routeProvider) {
 	
 	$routeProvider.when('/touchBegin', {
