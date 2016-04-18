@@ -69,9 +69,7 @@ app.controller("quitPageController", ['$scope','$location', '$routeParams', 'qui
 	
 	$scope.quit = function() {
 		// Delete all user data if they decide to quit
-		for (var i = 0; i < $scope.questions.length; i++) {
-			delete $scope.questions[i].selected;
-		}
+		delete session_answers;
 		// Redirect to choose quiz page
 		$location.path('/chooseQuiz');
 	};
@@ -92,7 +90,7 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
     });
 	
 	for(var i = 0; i < $scope.questions.length; i++){
-		session_answers[i] = null;	
+		session_answers.push(null);
 	};
 	
 }]);
