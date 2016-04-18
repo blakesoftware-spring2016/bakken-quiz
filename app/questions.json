@@ -1,70 +1,354 @@
 [{
     "title": "Which Mary are You?",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "questions": [
+	"description": "A teenage runaway and young mother, Mary Shelley was an author known as the mother of science fiction. But she also was a dreamer, nurturer, artist, intellectual, rebel, and trailblazer. Who are you?" [
         {
-            "text": "How many woods could a woodchuck chuck?",
+            "text": "What is your dream job?",
             "answers": [
                 {
-                    "text" : "12",
-                    "buckets": ["Neoclassisist"]
+                    "text" : "Professor",
+                    "buckets": ["Intellectual"]
                 },
                 {
-                    "text" : "Blue?",
-                    "buckets": ["Neoclassisist"]
+                    "text" : "Astronaut",
+                    "buckets": ["Dreamer"]
                 },
                 {
-                    "text" : "yes",
-                    "buckets": ["Romantc"]
+                    "text" : "Job? Who needs a job?",
+                    "buckets": ["Rebel"]
                 },
                 {
-                    "text" : "Can woodchucks even chuck?",
-                    "buckets": ["Romantic"]
+                    "text" : "Graphic Designer",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "Inventor",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Day care Provider",
+                    "buckets": ["Nurturer"]
                 }
             ]
         },
         {
-            "text": "yes?",
+            "text": "What is your dream job?",
             "answers": [
                 {
-                    "text" : "No",
-                    "buckets": ["Romantic"]
+                    "text" : "Learning more about the ancient world in Rome ",
+                    "buckets": ["Intellectual"]
                 },
                 {
-                    "text" : "yes",
-                    "buckets": ["Neoclassisist"]
+                    "text" : "Disney World",
+                    "buckets": ["Dreamer"]
                 },
                 {
-                    "text" : "maybe",
-                    "buckets": ["Romantic"]
+                    "text" : "Wherever life takes me ",
+                    "buckets": ["Rebel"]
                 },
                 {
-                    "text" : "Not sure",
-                    "buckets": ["Neoclassisist"]
+                    "text" : "Visiting the Louvre in Paris",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "Exploring Antarctica ",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Camping in a national park ",
+                    "buckets": ["Nurturer"]
                 }
             ]
         },
         {
-            "text": "Is Max great?",
+            "text": "My favorite kind of music is...",
             "answers": [
                 {
-                    "text" : "Hes the best!",
-                    "buckets": ["Romantic"]
+                    "text" : "Classical",
+                    "buckets": ["Intellectual"]
                 },
                 {
-                    "text" : "OMG Max is totes the best",
-                    "buckets": ["Romantic"]
+                    "text" : "Film Score",
+                    "buckets": ["Dreamer"]
                 },
                 {
-                    "text" : "10/10",
-                    "buckets": ["Neoclassisist"]
+                    "text" : "Punk Rock",
+                    "buckets": ["Rebel"]
                 },
                 {
-                    "text" : "yes",
-                    "buckets": ["Neoclassisist"]
+                    "text" : "That which inspires me ",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "My own compositions ",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Folk",
+                    "buckets": ["Nurturer"]
                 }
             ]
-        }
+        },
+        {
+            "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
+            "answers": [
+                {
+                    "text" : "Book",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "Hammock",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "Boat. Nothing can keep me here! ",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "Journal",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "A flag to plant on my newly discovered island! ",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "A friend or pet to keep me company ",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
+        {
+            "text": "What is your dream job?",
+            "answers": [
+                {
+                    "text" : "Stephen Hawking ",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "John Lennon",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "James Dean",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "Pablo Picasso",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "Mary Shelley ",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Jane Goodall",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
+        {
+            "text": "Which word would your friends use to describe you? ",
+            "answers": [
+                {
+                    "text" : "Smart",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "Idealistic",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "Free Spirited",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "Creative",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "Bold",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Caring",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
+        {
+            "text": "When hosting a party, you...",
+            "answers": [
+                {
+                    "text" : "Invite a mix of people to ensure good conversation ",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "Create a party theme ",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "I’m crashing someone else’s party ",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "Develop an awesome playlist ",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "Start the conga line",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Make sure there’s enough food for everyone",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
+        {
+            "text": "What is your dream car? ",
+            "answers": [
+                {
+                    "text" : "Something that’s fuel efficient",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "Flying car",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "Motorcycle",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "Antique or Classic Car ",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "Something fast!",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Something with room for my whole family ",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
+        {
+            "text": "What matters most to you? ",
+            "answers": [
+                {
+                    "text" : "Ideas",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "Dreams",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "Freedom",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "Creativity",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "Discovery",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Family",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
+        {
+            "text": "Describe your fashion style.",
+            "answers": [
+                {
+                    "text" : "Practical ",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "Pajamas",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "I don’t care what I wear ",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "Trendy",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "Fashion-forward ",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Comfortable ",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
+        {
+            "text": "Your ideal meal for dinner is...",
+            "answers": [
+                {
+                    "text" : "Well balanced",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "Something I can create  from whatever’s on hand ",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "The weirder the better",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "I’m too busy to eat ",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "My own version of a classic dish ",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "Comfort food ",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
+                {
+            "text": "You’re lost. What do you do? ",
+            "answers": [
+                {
+                    "text" : "Use the GPS ",
+                    "buckets": ["Intellectual"]
+                },
+                {
+                    "text" : "I don’t care. The possibilities are endless. ",
+                    "buckets": ["Dreamer"]
+                },
+                {
+                    "text" : "I know exactly where I’m going.",
+                    "buckets": ["Rebel"]
+                },
+                {
+                    "text" : "I look for signs and follow my intuition. ",
+                    "buckets": ["Artist"]
+                },
+                {
+                    "text" : "I find my own way and make a new path. ",
+                    "buckets": ["Trailblazer"]
+                },
+                {
+                    "text" : "I ask for directions ",
+                    "buckets": ["Nurturer"]
+                }
+            ]
+        },
     ],
     "resultBuckets": [
         {
