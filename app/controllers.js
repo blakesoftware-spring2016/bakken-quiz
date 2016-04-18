@@ -87,11 +87,11 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 		$scope.quiz = response.data[quizID];
 		$scope.questions = $scope.quiz.questions;
 		
+		for(var i = 0; i < $scope.questions.length; i++){
+			session_answers.push(null);
+		};
+		
     });
-	
-	for(var i = 0; i < $scope.questions.length; i++){
-		session_answers.push(null);
-	};
 	
 }]);
 
