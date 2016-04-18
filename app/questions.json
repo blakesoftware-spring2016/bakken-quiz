@@ -77,72 +77,165 @@
         }
     ]
 }, {
-    "title": "Are you legit?",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "title": "Are You A Romantic??",
+	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18thand early 19th centuries. It came about as a reaction to Neoclassicism, prevalent in the previous century. Are you a Romantic?",
     "questions": [
         {
-            "text": "How many woods could a woodchuck chuck? (V2)",
+            "text": "Where would you like to live?",
             "answers": [
                 {
-                    "text" : "12",
+                    "text" : "City",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "text" : "Blue?",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "yes",
-                    "buckets": ["Romantc"]
-                },
-                {
-                    "text" : "Can woodchucks even chuck?",
+                    "text" : "Mountains",
                     "buckets": ["Romantic"]
                 }
             ]
         },
         {
-            "text": "yes?",
+            "text": "Are you a night owl or an early bird?",
             "answers": [
                 {
-                    "text" : "No",
+                    "text" : "Night Owl",
                     "buckets": ["Romantic"]
                 },
                 {
-                    "text" : "yes",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "maybe",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "Not sure",
+                    "text" : "Early Bird",
                     "buckets": ["Neoclassisist"]
                 }
             ]
         },
         {
-            "text": "Is Max great?",
+            "text": "Which picture looks most like your bedroom?",
             "answers": [
                 {
-                    "text" : "Hes the best!",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "OMG Max is totes the best",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "10/10",
+                    "text" : "(Need Picture)",
                     "buckets": ["Neoclassisist"]
                 },
                 {
-                    "text" : "yes",
+                    "text" : "(Need another picture)",
+                    "buckets": ["Romantic"]
+                }
+            ]
+        },
+        {
+            "text": "The pursuit of knowledge should be about:",
+            "answers": [
+                {
+                    "text" : "Looking for facts",
                     "buckets": ["Neoclassisist"]
+                },
+                {
+                    "text" : "Searching for hidden truth",
+                    "buckets": ["Romantic"]
                 }
             ]
         }
+        {
+            "text": "It’s a critical game and your team is behind. What do you do? (Use photos)",
+            "answers": [
+                {
+                    "text" : "Give an inspiring speech that rallies your teammates to dig deep and win.",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "text" : "Analyze the other team’s weaknesses and calculate which play you think might succeed.",
+                    "buckets": ["Neoclassisist"]
+                }
+            ]
+        },
+        {
+            "text": "How would you pick a college major?",
+            "answers": [
+                {
+                    "text" : "Choose one that will lead to a secure career path",
+                    "buckets": ["Neoclassicist"]
+                },
+                {
+                    "text" : "Follow your passion ",
+                    "buckets": ["Romantic"]
+                }
+            ]
+        },
+        {
+            "text": "You have a slumber party with friends. What do you do?",
+            "answers": [
+                {
+                    "text" : "Invent ghost stories and share them face paint and put on a play",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "text" : "Play board games",
+                    "buckets": ["Neoclassisist"]
+                }
+            ]
+        },
+        {
+            "text": "What is your ideal holiday meal?",
+            "answers": [
+                {
+                    "text" : "Strictly Grandma’s recipes",
+                    "buckets": ["Neoclassicist"]
+                },
+                {
+                    "text" : "A new menu every year",
+                    "buckets": ["Romantic"]
+                }
+            ]
+        },
+        {
+            "text": "Creativity comes from",
+            "answers": [
+                {
+                    "text" : "Within",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "text" : "Being inspired by others",
+                    "buckets": ["Neoclassisist"]
+                }
+            ]
+        },
+        {
+            "text": "Rules are meant to be:",
+            "answers": [
+                {
+                    "text" : "Followed",
+                    "buckets": ["Neoclassicist"]
+                },
+                {
+                    "text" : "Broken",
+                    "buckets": ["Romantic"]
+                }
+            ]
+        },
+        {
+            "text": "How do you reflect at the end of a long day?",
+            "answers": [
+                {
+                    "text" : "Write in your journal",
+                    "buckets": ["Romantic"]
+                },
+                {
+                    "text" : "Talk to your friends",
+                    "buckets": ["Neoclassisist"]
+                }
+            ]
+        },
+        {
+            "text": "You’re shopping for a new car. You…",
+            "answers": [
+                {
+                    "text" : "Check under the hood to make sure all the parts look good.",
+                    "buckets": ["Neoclassicist"]
+                },
+                {
+                    "text" : "Trust that it works just fine and take it for a spin.",
+                    "buckets": ["Romantic"]
+                }
+            ]
+        },
     ],
     "resultBuckets": [
         {
