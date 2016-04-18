@@ -40,7 +40,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
     };
 	
 	$scope.isSelected = function($index) {
-		if ($scope.question.selected === $index) {
+		if (session_answers[$scope.question] === $index) {
 			return true;
 		} else {
 			return false;
@@ -48,7 +48,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	};
 	
 	$scope.select = function($index) {
-		$scope.question.selected = $index;
+		session_answers[$scope.question] = $index;
 	};
 	
 }]);
@@ -86,7 +86,14 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
         var quizID = $routeParams.quizID;
         $scope.data = response.data[quizID];
 		$scope.question_href = '#/question/' + quizID + '/0';
+		$scope.quiz = response.data[quizID];
+		$scope.questions = $scope.quiz.questions;
+		
     });
+	
+	for(var i = 0; i < $scope.questions.length; i++){
+		session_answers[i] = null;	
+	};
 	
 }]);
 
@@ -103,6 +110,7 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 		var target; // counter for majorityQuiz
         
         for(var i = 0; i < $scope.questions.length; i++) {
+			debugger;
 			var question = $scope.questions[i];
 			var answer = question.answers[question.selected];
 			// loops through each bucket array
