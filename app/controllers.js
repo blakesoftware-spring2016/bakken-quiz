@@ -1,16 +1,46 @@
+app.controller('timeoutController', ['$scope', '$location', '$timeout', function($scope, $location, $timeout) {
+	$scope.timeoutAfter = 7000;
+	$scope.timer;
+
+	$scope.executeOnTimeout = function() {
+    $location.path('/touchBegin');
+    $scope.makeTimer();
+		return;
+  }
+
+	$scope.makeTimer = function() {
+		timer = $timeout($scope.executeOnTimeout, $scope.timeoutAfter);
+		return;
+	}
+
+  $scope.resetTimer = function() {
+    $timeout.cancel(timer);
+    $scope.makeTimer();
+		return;
+  }
+
+	$scope.makeTimer();
+
+	document.onmousemove = $scope.resetTimer;
+	document.onkeydown = $scope.resetTimer;
+	document.onclick = $scope.resetTimer;
+}]);
+
+
+
 //chooseQuizController
 app.controller("chooseQuizController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-    
+
 }]);
 
 //privacyController
 app.controller("privacyController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-	
+
 }]);
 
 //questionController
 app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', '$uibModal', function($scope, $location, $routeParams, quizData, $uibModal) {
-	
+
 	quizData.then(function(response) {
 		// Get parameters from route
 		$scope.quizID = $routeParams.quizID;
@@ -21,7 +51,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		$scope.question = $scope.questions[$scope.questionID];
 		$scope.answers = $scope.question.answers;
 	});
-	
+
 	$scope.next = function() {
 		// As always, Angular's syntax is terrible...but it kinda works!
 		if ($scope.questionID == $scope.questions.length - 1) {
@@ -30,7 +60,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
             $location.path('/question/' + String($scope.quizID) + '/' + String(++$scope.questionID));
         }
     };
-	
+
     $scope.back = function() {
         if ($scope.questionID == 0) {
             $location.path('/quizDescription/' + String($scope.quizID));
@@ -38,7 +68,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
         };
     };
-	
+
 	$scope.isSelected = function($index) {
 		if ($scope.question.selected === $index) {
 			return true;
@@ -46,11 +76,11 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 			return false;
 		}
 	};
-	
+
 	$scope.select = function($index) {
 		$scope.question.selected = $index;
 	};
-	
+
     $scope.open = function() {
 
         var modalInstance = $uibModal.open({
@@ -65,33 +95,33 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
         });
   };
 
-    
+
 }]);
 
 //quitPageController
 app.controller("quitPageController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-    
+
 }]);
 
 //quizDescriptionsController
 app.controller("quizDescriptionController", ['$scope','$location','$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
-    
+
     quizData.then(function(response) {
         var quizID = $routeParams.quizID;
         $scope.data = response.data[quizID];
 		$scope.question_href = '#/question/' + quizID + '/0';
     });
-	
+
 }]);
 
 //resultsController
 app.controller("resultsController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-	
+
 }]);
 
 //sentConfirmationController
 app.controller("sentConfirmationController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-	
+
 }]);
 
 //shareResultsController
@@ -110,11 +140,11 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData', func
 
 //touchBeginController
 app.controller('touchBeginController', ['$scope','$location', function($scope, $location) {
-	
+
 	$scope.buttonClick = function() {
 		$location.path('/chooseQuiz');
 	};
-	
+
 }]);
 
 app.controller('popupController', function($scope, $uibModalInstance) {
@@ -122,4 +152,4 @@ app.controller('popupController', function($scope, $uibModalInstance) {
         $uibModalInstance.close(value);
         
     };
-})
+});
