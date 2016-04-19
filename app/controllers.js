@@ -40,15 +40,12 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
     };
 	
 	$scope.isSelected = function($index) {
-		if ($scope.question.selected === $index) {
-			return true;
-		} else {
-			return false;
-		}
+		if (session_answers[$scope.questionID] === $index) return true;
+		else return false;
 	};
 	
 	$scope.select = function($index) {
-		$scope.question.selected = $index;
+		session_answers[$scope.questionID] = $index;
 	};
 	
 }]);
@@ -69,9 +66,7 @@ app.controller("quitPageController", ['$scope','$location', '$routeParams', 'qui
 	
 	$scope.quit = function() {
 		// Delete all user data if they decide to quit
-		for (var i = 0; i < $scope.questions.length; i++) {
-			delete $scope.questions[i].selected;
-		}
+		delete session_answers;
 		// Redirect to choose quiz page
 		$location.path('/chooseQuiz');
 	};
@@ -83,9 +78,16 @@ app.controller("quitPageController", ['$scope','$location', '$routeParams', 'qui
 app.controller("quizDescriptionController", ['$scope','$location','$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
     
     quizData.then(function(response) {
+		
         var quizID = $routeParams.quizID;
-        $scope.data = response.data[quizID];
+		$scope.quiz = response.data[quizID];
 		$scope.question_href = '#/question/' + quizID + '/0';
+		$scope.questions = $scope.quiz.questions;
+		
+		for (var i = 0; i < $scope.questions.length; i++) {
+			session_answers.push(null);
+		}
+		
     });
 	
 }]);
@@ -94,6 +96,7 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 app.controller("resultsController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
 	
     quizData.then(function(response) {
+		
 		var quizID = $routeParams.quizID;
         var quiz = response.data[quizID];
 		var questions = quiz.questions;
@@ -140,10 +143,10 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 			}
 			// Loop through each possible category to determine the most frequent/greatest
 			var greatest_category;
-			for (var category in results) {
+			for (var category in results_count) {
 				// If the greatest category doesn't exist, set it
 				// If the current category is greater than the greatest category, update the greatest category
-				if (!greatest_category || results.category > results.greatest_category) {
+				if (!greatest_category || results_count.category > results_count.greatest_category) {
 					greatest_category = category;
 				}
 			}
@@ -153,6 +156,7 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 			$scope.title = final_result.title;
 			$scope.description = final_result.description;
 		}
+		
     });
     
 }]);
