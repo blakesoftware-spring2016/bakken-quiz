@@ -1,157 +1,415 @@
 [{
     "title": "Which Mary are You?",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "questions": [
-        {
-            "text": "How many woods could a woodchuck chuck?",
-            "answers": [
-                {
-                    "text" : "12",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "Blue?",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "yes",
-                    "buckets": ["Romantc"]
-                },
-                {
-                    "text" : "Can woodchucks even chuck?",
-                    "buckets": ["Romantic"]
-                }
-            ]
-        },
-        {
-            "text": "yes?",
-            "answers": [
-                {
-                    "text" : "No",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "yes",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "maybe",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "Not sure",
-                    "buckets": ["Neoclassisist"]
-                }
-            ]
-        },
-        {
-            "text": "Is Max great?",
-            "answers": [
-                {
-                    "text" : "Hes the best!",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "OMG Max is totes the best",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "10/10",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "yes",
-                    "buckets": ["Neoclassisist"]
-                }
-            ]
-        }
-    ],
-    "resultBuckets": [
-        {
-            "id": "Romantic",
-            "title": "Longer Description here"
-        },
-        {
-            "id": "Neoclassisist",
-            "title": "Longer Description here"
-        }
-    ]
+	"type": "multi",
+	"description": "A teenage runaway and young mother, Mary Shelley was an author known as the mother of science fiction. But she also was a dreamer, nurturer, artist, intellectual, rebel, and trailblazer. Who are you?",
+	"questions": [{
+	    "text": "What is your dream job?",
+	    "answers": [{
+	            "text" : "Professor",
+	            "buckets": ["Intellectual"]
+	        }, {
+	            "text" : "Astronaut",
+	            "buckets": ["Dreamer"]
+	        }, {
+	            "text" : "Job? Who needs a job?",
+	            "buckets": ["Rebel"]
+	        }, {
+	            "text" : "Graphic Designer",
+	            "buckets": ["Artist"]
+	        }, {
+	            "text" : "Inventor",
+	            "buckets": ["Trailblazer"]
+	        }, {
+	            "text" : "Day care Provider",
+	            "buckets": ["Nurturer"]
+	    }]
+	}, {
+        "text": "Where would you like to go on vacation? What kind of vacation?",
+        "answers": [{
+            "text" : "Learning more about the ancient world in Rome",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Disney World",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "Wherever life takes me ",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "Visiting the Louvre in Paris",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "Exploring Antarctica",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Camping in a national park ",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+        "text": "My favorite kind of music is...",
+        "answers": [{
+            "text" : "Classical",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Film Score",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "Punk Rock",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "That which inspires me",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "My own compositions",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Folk",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+        "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
+        "answers": [{
+            "text" : "Book",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Hammock",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "Boat. Nothing can keep me here!",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "Journal",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "A flag to plant on my newly discovered island!",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "A friend or pet to keep me company",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+	    "text": "Who would you most like to have dinner with?",
+	    "answers": [{
+            "text" : "Stephen Hawking ",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "John Lennon",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "James Dean",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "Pablo Picasso",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "Mary Shelley ",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Jane Goodall",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+        "text": "Which word would your friends use to describe you?",
+        "answers": [{
+            "text" : "Smart",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Idealistic",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "Free Spirited",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "Creative",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "Bold",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Caring",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+        "text": "When hosting a party, you...",
+        "answers": [{
+            "text" : "Invite a mix of people to ensure good conversation",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Create a party theme",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "I’m crashing someone else’s party",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "Develop an awesome playlist",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "Start the conga line",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Make sure there’s enough food for everyone",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+        "text": "What is your dream car?",
+        "answers": [{
+            "text" : "Something that’s fuel efficient",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Flying car",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "Motorcycle",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "Antique or Classic Car",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "Something fast!",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Something with room for my whole family",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+        "text": "What matters most to you?",
+        "answers": [{
+            "text" : "Ideas",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Dreams",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "Freedom",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "Creativity",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "Discovery",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Family",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+        "text": "Describe your fashion style.",
+        "answers": [{
+            "text" : "Practical",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Pajamas",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "I don’t care what I wear",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "Trendy",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "Fashion-forward",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Comfortable",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+    	"text": "Your ideal meal for dinner is...",
+    	"answers": [{
+            "text" : "Well balanced",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "Something I can create  from whatever’s on hand",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "The weirder the better",
+            "buckets": ["Rebel"]
+        },{
+            "text" : "I’m too busy to eat",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "My own version of a classic dish",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "Comfort food ",
+            "buckets": ["Nurturer"]
+        }]
+    }, {
+        "text": "You’re lost. What do you do?",
+        "answers": [{
+            "text" : "Use the GPS",
+            "buckets": ["Intellectual"]
+        }, {
+            "text" : "I don’t care. The possibilities are endless.",
+            "buckets": ["Dreamer"]
+        }, {
+            "text" : "I know exactly where I’m going.",
+            "buckets": ["Rebel"]
+        }, {
+            "text" : "I look for signs and follow my intuition.",
+            "buckets": ["Artist"]
+        }, {
+            "text" : "I find my own way and make a new path.",
+            "buckets": ["Trailblazer"]
+        }, {
+            "text" : "I ask for directions",
+            "buckets": ["Nurturer"]
+        }]
+    }],
+	"results": {
+		"Intellectual": {
+			"title": "You're an intellectual!",
+			"description": "Like Mary, you crave information and love learning. You’re reading all the time, always looking for new concepts to grapple with. You enjoy a spirited philosophical debate, even if drives your friends crazy."
+		},
+		"Dreamer": {
+			"title": "You're a dreamer!",
+			"description": "Like Mary, you spend your time in a world of fantasy. While this sometimes leads to unrealistic goals, you always have an idea in your head or a project in mind.",
+			"quote": "“My dreams were all my own; I accounted for them to nobody; they were my refuge when annoyed—my dearest pleasure when free.” –Mary Shelley"
+		},
+		"Rebel": {
+			"title": "You're a rebel!",
+			"description": "Like Mary, you don’  t conform to established traditions or conventions. You are progressive. Although this sometimes gets you into trouble, you have strong opinions and aren’t afraid to express them."
+		},
+		"Artist": {
+			"title": "You're an artist!",
+			"description": "Like Mary, you like to express your feelings through the arts. Maybe you’re a writer like Mary or maybe you’re a musician, actor, or painter. You channel your imagination into creative activities, which are sometimes misunderstood by others. But often, you create a masterpiece!",
+			"quote": "“As a child I scribbled; and my favourite pastime, during the hours given me for recreation, was to ‘write stories.’” –Mary Shelley"
+		},
+		"Trailblazer": {
+			"title": "You're a trailblazer!",
+			"description": "Like Mary, the Mother of Science Fiction, you like to clear your own path for others to follow. You are a pioneer, not afraid to adventure into undiscovered territories. The journey may be risky, but you believe the rewards are worth it."
+		},
+		"Nurturer": {
+			"title": "You're a nurturer!",
+			"description": "Like Mary, you have great compassion and empathy for those around you. You create a supportive and encouraging environment for others to flourish and thrive. Although, sometimes this means your needs take a back seat to theirs."
+		}
+	}
 }, {
-    "title": "Are you legit?",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "questions": [
-        {
-            "text": "How many woods could a woodchuck chuck? (V2)",
-            "answers": [
-                {
-                    "text" : "12",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "Blue?",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "yes",
-                    "buckets": ["Romantc"]
-                },
-                {
-                    "text" : "Can woodchucks even chuck?",
-                    "buckets": ["Romantic"]
-                }
-            ]
-        },
-        {
-            "text": "yes?",
-            "answers": [
-                {
-                    "text" : "No",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "yes",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "maybe",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "Not sure",
-                    "buckets": ["Neoclassisist"]
-                }
-            ]
-        },
-        {
-            "text": "Is Max great?",
-            "answers": [
-                {
-                    "text" : "Hes the best!",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "OMG Max is totes the best",
-                    "buckets": ["Romantic"]
-                },
-                {
-                    "text" : "10/10",
-                    "buckets": ["Neoclassisist"]
-                },
-                {
-                    "text" : "yes",
-                    "buckets": ["Neoclassisist"]
-                }
-            ]
-        }
-    ],
-    "resultBuckets": [
-        {
-            "id": "Romantic",
-            "title": "Longer Description here"
-        },
-        {
-            "id": "Neoclassisist",
-            "title": "Longer Description here"
-        }
-    ]
+    "title": "Are You A Romantic?",
+	"type": "percentage",
+	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18thand early 19th centuries. It came about as a reaction to Neoclassicism, prevalent in the previous century. Are you a Romantic?",
+    "questions": [{
+        "text": "Where would you like to live?",
+        "answers": [{
+            "text" : "City",
+            "target": false
+        }, {
+            "text" : "Mountains",
+            "target": true
+        }]
+    }, {
+        "text": "Are you a night owl or an early bird?",
+        "answers": [{
+            "text" : "Night Owl",
+            "target": true
+        }, {
+            "text" : "Early Bird",
+            "target": false
+        }]
+    }, {
+        "text": "Which picture looks most like your bedroom?",
+        "answers": [{
+            "text" : "Insert picture",
+            "target": false
+        }, {
+            "text" : "Insert another picture",
+            "target": true
+        }]
+    }, {
+        "text": "The pursuit of knowledge should be about:",
+        "answers": [{
+            "text" : "Looking for facts",
+            "target": false
+        }, {
+            "text" : "Searching for hidden truth",
+            "target": true
+        }]
+    }, {
+        "text": "It’s a critical game and your team is behind. What do you do?",
+        "answers": [{
+            "text" : "Give an inspiring speech that rallies your teammates to dig deep and win.",
+            "target": true
+        }, {
+            "text" : "Analyze the other team’s weaknesses and calculate which play you think might succeed.",
+            "target": false
+        }]
+    }, {
+        "text": "How would you pick a college major?",
+        "answers": [{
+            "text" : "Choose one that will lead to a secure career path",
+            "target": false
+        }, {
+            "text" : "Follow your passion ",
+            "target": true
+        }]
+    }, {
+        "text": "You have a slumber party with friends. What do you do?",
+        "answers": [{
+            "text" : "Invent ghost stories and share them face paint and put on a play",
+            "target": true
+        }, {
+            "text" : "Play board games",
+            "target": false
+        }]
+    }, {
+        "text": "What is your ideal holiday meal?",
+        "answers": [{
+            "text" : "Strictly Grandma’s recipes",
+            "target": false
+        }, {
+            "text" : "A new menu every year",
+            "target": true
+        }]
+    }, {
+        "text": "Creativity comes from",
+        "answers": [{
+            "text" : "Within",
+            "target": true
+        }, {
+            "text" : "Being inspired by others",
+            "target": false
+        }]
+    }, {
+        "text": "Rules are meant to be:",
+        "answers": [{
+            "text" : "Followed",
+            "target": false
+        }, {
+            "text" : "Broken",
+            "target": true
+        }]
+	}, {
+        "text": "How do you reflect at the end of a long day?",
+        "answers": [{
+            "text" : "Write in your journal",
+            "target": true
+        }, {
+        	"text" : "Talk to your friends",
+            "target": false
+        }]
+    }, {
+        "text": "You’re shopping for a new car. You…",
+        "answers": [{
+            "text" : "Check under the hood to make sure all the parts look good.",
+            "target": false
+        }, {
+            "text" : "Trust that it works just fine and take it for a spin.",
+            "target": true
+        }]
+    }],
+	"results": [{
+		"title": "0% - 20% Romantic",
+		"description": "You’re not very Romantic at all! In Mary’s day you might be considered a Neoclassicist. Carefully calculating the consequences of your actions before making decisions, you’re strongly influenced by reason. You tend to follow the rules and practice self-control. Neoclassicists strive for realism in art, so you may believe that the imitation is the sincerest form of flattery. You respect the past and value tradition. Why reinvent the wheel? In your view, science can explain everything. You view the universe as a giant clock that can be taken apart. This attention to detail comes in handy, but sometimes it causes you to miss the whole story. You respect established principles and institutions and defend liberty and integrity, focusing on what’s best for society over individuals."
+	}, {
+		"title": "21% - 40% Romantic",
+		"description": "You lean more towards the Neoclassical, with a little Romantic thrown in! You take a logical approach to things, relying on your common sense and intellect, rather than emotion, to make decisions. You usually think of others first. Like many Neoclassicists, you appreciate structure and order. Neoclassicists value authenticity, often drawing upon the art and culture of the past. Instead of coming up with new ideas, you might take pre-existing concepts, improving and building on their foundations. When it comes to nature, you view each element individually. Because of this, sometimes you may not see the forest for the trees. You believe that, with hard work, anybody can do anything. As Thomas Edison said, “Genius is 1% inspiration and 99% perspiration.”"
+	}, {
+		"title": "41% - 60% Romantic",
+		"description": "You’re a balance between Romantic and Neoclassical...little bit of both! You may be the most like Mary Shelley, who, although known for being a radical, was also quite conservative. While you believe strongly in family and tradition, you aren’t afraid to go it alone or try new things. You appreciate the past but are forward thinking. Details are important to you. Often taking a practical, simplistic approach to things, you are clear headed, thoughtful, and reflective. When considering nature, you try to find unity between the scientific and the organic. Your heart is on the bigger picture, preferring unorthodox solutions to more rules, which often pollute and restrict great minds. People may think you have elements of genius, but you work hard for your accomplishments. "
+    }, {
+		"title": "61% - 80% Romantic",
+		"description": "You lean more towards the Romantic, with an occasional Neoclassical thought! You’re spontaneous and have an intensity for life, something for which Romantics are known. Instead of observing the world, your creativity comes from within. You place a high level of importance on imagination, invention, and experimentation. While you are very independent, this independence can be liberating but also isolating. Some Romantics even see themselves as self-sacrificing outcasts. You have a great appreciation for the arts, such as literature, music, painting, and poetry. Like the Romantics of Mary’s era, you believe in the creative spirit that anyone can be an artist ifthey have the imagination and innate talent. As a Romantic, you seek harmony between body, mind, and soul, while exploring how humanity fits within the framework of the natural word. "
+    }, {
+		"title": "81% - 100% Romantic",
+		"description": "You’re definitely a Romantic! Like the Romantics of Mary’s time, you’re probably influenced by emotion, letting your heart guide your decisions. You might easily identify with and have great empathy for others but spend a lot of time inwardly reflecting on life. Romantics believe that an individual has infinite potential for spiritual and intellectual growth. This acute sensitivity sometimes leads to depression, insecurity, and doubt. Instead of conforming to societal norms, you value originality and innovation. The Romantic view of art is idealistic, serving a higher purpose. Perhaps your creativity comes from within rather than taking inspiration from others or the outside world. Believing that the universe is more than the sum of its parts, you have a holistic understanding of nature, viewing everything in life as interconnected and organic. "
+	}]
 }]

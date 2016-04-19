@@ -1,7 +1,7 @@
 <div class="backgroundQuestion">
 <header>
 	<div id="quizTitle">{{quiz.title}}</div>
-    <button type="button" class="navButton" id="menuButton" ng-click="open()">Menu</button>
+        <button type="button" class="navButton" id="menuButton" ng-click="open()">Menu</button>
 </header>
 <div class="content">
     <div class="question">{{question.text}}</div>
@@ -9,10 +9,16 @@
         <div class="answer"
 			ng-repeat="answer in answers track by $index"
 			ng-class="{selected: isSelected($index)}"
-			ng-click="select($index)">{{answer.text}}</div>
+			ng-click="select($index)">
+			<img class="answerImage" ng-if="answer.image" ng-src="answer.image" />
+			<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
+		</div>
     </div>
 </div>
 <footer>
+    <div>
+        <progressBar></progressBar>
+    </div>
     <div class="buttonContainer">
         <button class="navButton" type="button" id="backButton" ng-click="back()">Back</button>
         <button class="navButton" type="button" id="nextButton" ng-click="next()">Next</button>

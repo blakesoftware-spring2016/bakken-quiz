@@ -1,0 +1,12 @@
+{
+	"name": "bakken-quiz",
+	"devDependencies": {
+		"babel-core": "6.7.2",
+	},
+	"scripts": {
+		"build": "npm install && sdakfj"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	}
+}
