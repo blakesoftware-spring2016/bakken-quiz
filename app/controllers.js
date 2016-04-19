@@ -87,9 +87,9 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
         modalInstance.result.then(function(selectedItem) {
             $scope.selected = selectedItem;
         });
-  };
-
-
+	
+	};
+	
 }]);
 
 //quitPageController
@@ -200,6 +200,21 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 		
     });
 	
+    $scope.open = function() {
+
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'app/templates/popupContent.html',
+            controller: 'popupController',
+            size: 'lg'
+        });
+
+        modalInstance.result.then(function(selectedItem) {
+            $scope.selected = selectedItem;
+        });
+		
+	};
+
 }]);
 
 //sentConfirmationController
@@ -207,30 +222,72 @@ app.controller("sentConfirmationController", ['$scope','$location', 'quizData', 
 	
 }]);
 
-//shareResultsController
-app.controller("shareResultsController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
+app.controller("shareResultsController", ['$scope','$location', 'quizData','$uibModal', function($scope, $location, quizData, $uibModal) {
 	
 	$scope.checkEmails = function() {
+		
 		if ($scope.shareResultsForm.$valid) {
-			$location.path('/sentConfirmation');
+			var modalInstance = $uibModal.open({
+	            animation: true,
+	            templateUrl: 'app/templates/popupContentSent.html',
+	            controller: 'popupControllerSent',
+	            size: 'lg'
+	        });
+	        modalInstance.result.then(function(selectedItem) {
+	            $scope.selected = selectedItem;
+	        });
+			// $location.path('/sentConfirmation');
   		}
+		
   		angular.forEach($scope.shareResultsForm.$error.required, function(field) {
     		field.$setDirty();
 		});
+		
 	};
+  
+    $scope.open = function() {
+
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'app/templates/popupContent.html',
+            controller: 'popupController',
+            size: 'lg'
+        });
+		
+        modalInstance.result.then(function(selectedItem) {
+            $scope.selected = selectedItem;
+        });
+		
+    };
 	
 }]);
 
 //touchBeginController
 app.controller('touchBeginController', ['$scope','$location', function($scope, $location) {
-
+	
 	$scope.buttonClick = function() {
 		$location.path('/chooseQuiz');
 	};
-
+	
 }]);
 
 app.controller('popupController', function($scope, $uibModalInstance) {
+	
+	$scope.dismiss = function(value) {
+        $uibModalInstance.close(value);
+    };
+	
+});
+
+app.controller('popupControllerSent', function($scope, $uibModalInstance) {
+    
+	$scope.dismiss = function(value) {
+        $uibModalInstance.close(value);
+    };
+	
+});
+
+app.controller('popupControllerAge', function($scope, $uibModalInstance) {
     
 	$scope.dismiss = function(value) {
         $uibModalInstance.close(value);
