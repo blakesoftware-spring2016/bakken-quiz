@@ -1,16 +1,43 @@
+app.controller('timeoutController', ['$scope', '$location', '$timeout', function($scope, $location, $timeout) {
+	
+	$scope.timeoutAfter = 7000;
+	$scope.timer;
+	
+	$scope.executeOnTimeout = function() {
+		$location.path('/touchBegin');
+		$scope.makeTimer();
+	}
+	
+	$scope.makeTimer = function() {
+		timer = $timeout($scope.executeOnTimeout, $scope.timeoutAfter);
+	}
+	
+	$scope.resetTimer = function() {
+		$timeout.cancel(timer);
+		$scope.makeTimer();
+	}
+	
+	$scope.makeTimer();
+	
+	window.onmousemove = $scope.resetTimer;
+	window.onkeydown = $scope.resetTimer;
+	window.onclick = $scope.resetTimer;
+	
+}]);
+
 //chooseQuizController
 app.controller("chooseQuizController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-    
+
 }]);
 
 //privacyController
 app.controller("privacyController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
-	
+
 }]);
 
 //questionController
-app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
-	
+app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', '$uibModal', function($scope, $location, $routeParams, quizData, $uibModal) {
+
 	quizData.then(function(response) {
 		// Get parameters from route
 		$scope.quizID = $routeParams.quizID;
@@ -21,7 +48,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		$scope.question = $scope.questions[$scope.questionID];
 		$scope.answers = $scope.question.answers;
 	});
-	
+
 	$scope.next = function() {
 		// As always, Angular's syntax is terrible...but it kinda works!
 		if ($scope.questionID == $scope.questions.length - 1) {
@@ -30,7 +57,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
             $location.path('/question/' + String($scope.quizID) + '/' + String(++$scope.questionID));
         }
     };
-	
+
     $scope.back = function() {
         if ($scope.questionID == 0) {
             $location.path('/quizDescription/' + String($scope.quizID));
@@ -38,16 +65,31 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
         };
     };
-	
+
 	$scope.isSelected = function($index) {
 		if (session_answers[$scope.questionID] === $index) return true;
 		else return false;
 	};
-	
+
 	$scope.select = function($index) {
 		session_answers[$scope.questionID] = $index;
 	};
-	
+
+    $scope.open = function() {
+
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'app/templates/popupContent.html',
+            controller: 'popupController',
+            size: 'lg'
+        });
+
+        modalInstance.result.then(function(selectedItem) {
+            $scope.selected = selectedItem;
+        });
+  };
+
+
 }]);
 
 //quitPageController
@@ -71,12 +113,11 @@ app.controller("quitPageController", ['$scope','$location', '$routeParams', 'qui
 		$location.path('/chooseQuiz');
 	};
 	
-	
 }]);
 
 //quizDescriptionsController
 app.controller("quizDescriptionController", ['$scope','$location','$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
-    
+
     quizData.then(function(response) {
 		
         var quizID = $routeParams.quizID;
@@ -89,7 +130,7 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 		}
 		
     });
-	
+
 }]);
 
 //resultsController
@@ -158,7 +199,7 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 		}
 		
     });
-    
+	
 }]);
 
 //sentConfirmationController
@@ -169,13 +210,30 @@ app.controller("sentConfirmationController", ['$scope','$location', 'quizData', 
 //shareResultsController
 app.controller("shareResultsController", ['$scope','$location', 'quizData', function($scope, $location, quizData) {
 	
+	$scope.checkEmails = function() {
+		if ($scope.shareResultsForm.$valid) {
+			$location.path('/sentConfirmation');
+  		}
+  		angular.forEach($scope.shareResultsForm.$error.required, function(field) {
+    		field.$setDirty();
+		});
+	};
+	
 }]);
 
 //touchBeginController
 app.controller('touchBeginController', ['$scope','$location', function($scope, $location) {
-	
+
 	$scope.buttonClick = function() {
 		$location.path('/chooseQuiz');
 	};
-	
+
 }]);
+
+app.controller('popupController', function($scope, $uibModalInstance) {
+    
+	$scope.dismiss = function(value) {
+        $uibModalInstance.close(value);
+    };
+	
+});
