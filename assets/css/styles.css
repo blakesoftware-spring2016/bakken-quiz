@@ -168,7 +168,10 @@ footer {
 .answer {
   margin: 10px;
   display: inline-block;
-  padding-top: 115px;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 46px;
   width: 243px;
   text-align: center;
@@ -186,7 +189,7 @@ footer {
 .answerContainer {
 
   position: absolute;
-  width: 564px;
+  width: 100%;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -225,7 +228,7 @@ footer {
 
 .resultsDescription {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   width: 660px;
   position: absolute;
   top: 40%;
@@ -271,8 +274,17 @@ footer {
 }
 
 .shareResultsForm {
-	margin-left: 10px;
-	margin-top: 60px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+}
+
+label {
+  font-size: 20px;
+  color: white;
 }
 
   input {
@@ -330,6 +342,13 @@ input.ng-invalid.ng-dirty {
 
 .backgroundShareResults {
   background-image: url("../images/shareResults.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+
+}
+.backgroundTouchBegin {
+  background-image: url("../images/touchBegin.png");
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
