@@ -5,7 +5,6 @@ app.factory('quizData', function($http) {
 });
 
 var session_answers = [];
-var session_quiz;
 
 app.config(['$routeProvider', function($routeProvider) {
 	
