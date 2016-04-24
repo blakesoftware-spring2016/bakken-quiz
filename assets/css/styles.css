@@ -34,14 +34,6 @@ header {
   justify-content: space-between;
 }
 
-.footer {
-	height: 100px;
-  padding-bottom: 1%;
-  width: 90%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
 .navButton {
 	width: 133px;
 	height: 56px;
@@ -156,23 +148,21 @@ header {
 
 }
 
-
-
 #quitContainer {
   margin: auto;
 	width: 360px;
 }
 
 .answer {
-  vertical-align: middle;
+  vertical-align: center;
+  flex-grow: 1;
+  flex-basis: 200px;
+  justify-content: space-between;
   margin: 10px;
-  display: inline-block;
   padding-top: 57px;
   padding-bottom: 57px;
   padding-left: 10px;
   padding-right: 10px;
-  height: 46px;
-  width: 243px;
   text-align: center;
   color: white;
   background-color: rgba(0,0,0, 0.5);
@@ -186,8 +176,16 @@ header {
 }
 
 .answerContainer {
+  height: 600px;
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 240px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .question {
