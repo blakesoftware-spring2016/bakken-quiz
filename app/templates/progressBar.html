@@ -6,7 +6,9 @@
         <img src="assets/images/rightBracket.png">
     </div>
     <div id="middle">
-        <hr class="progressDivs progressLine" ng-repeat-start="q in questions">
+        <hr class="progressDivs progressLine" ng-repeat-start="q in questions track by $index">
+            <div class="numberDiv" ng-if="$index == questionID">{{$index+1}}/{{questions.length}}</div>
         <point class="progressDivs progressPoint" ng-repeat-end></point>
+        <hr class="progressDivs progressLine"> 
     </div>
 </div>

@@ -14,7 +14,8 @@ function createDivs(numberOfQuestions) {
             document.getElementById("middle").appendChild(newLine);
         }   
     } 
-}                                                                                                                                                              
+}                                                                                                    
+*/
 
 function createNumberDiv(blockNumber,numberOfQuestions) {
     var newNumberDiv = document.createElement("div");
@@ -28,7 +29,6 @@ function createNumberDiv(blockNumber,numberOfQuestions) {
 function removeNumberDiv(blockNumber) {
     document.getElementById(blockNumberString + "Number").remove();
 }
-*/
 
 //////////////////////js code for advancing and retreating////////////////////////////
 
