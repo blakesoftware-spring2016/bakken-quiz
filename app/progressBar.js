@@ -15,8 +15,6 @@ function createDivs(numberOfQuestions) {
     } 
 }
 
-createDivs(10);
-
 function createNumberDiv(blockNumber,numberOfQuestions) {
     var newNumberDiv = document.createElement("div");
     newNumberDiv.className = "numberDiv";
@@ -41,7 +39,7 @@ var newNumberDiv = document.createElement("div");
 newNumberDiv.className = "numberDiv";
 newNumberDiv.id = blockNumberString + "Number";
 questionNumber = blockNumber / 2;
-newNumberDiv.innerHTML += questionNumber.toString() + "/10";
+newNumberDiv.innerHTML += questionNumber.toString() + "/12";
 document.getElementById(blockNumberString).appendChild(newNumberDiv);
 
 function updateBlockUp() {

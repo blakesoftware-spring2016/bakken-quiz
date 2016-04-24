@@ -50,6 +50,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	});
 
 	$scope.next = function() {
+        incrementUp(12);
 		// As always, Angular's syntax is terrible...but it kinda works!
 		if ($scope.questionID == $scope.questions.length - 1) {
             $location.path('/results/' + String($scope.quizID));
@@ -59,6 +60,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
     };
 
     $scope.back = function() {
+        incrementDown(12);
         if ($scope.questionID == 0) {
             $location.path('/quizDescription/' + String($scope.quizID));
         } else {
