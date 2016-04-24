@@ -211,8 +211,12 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
             size: 'lg'
         });
 
-        modalInstance.result.then(function(selectedItem) {
-            $scope.selected = selectedItem;
+        modalInstance.result.then(function(dismissVal) {
+            if(dismissVal === "Yes") {
+				for(var property in session_answers) {
+					delete session_answers[property];
+				};
+			};
         });
 
 	};
@@ -235,8 +239,13 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData','$uib
 	            controller: 'popupControllerSent',
 	            size: 'lg'
 	        });
-	        modalInstance.result.then(function(selectedItem) {
-	            $scope.selected = selectedItem;
+	        modalInstance.result.then(function(dismissVal) {
+				if(dismissVal === "Yes") {
+					console.log("dismissVal");
+					for(var property in session_answers) {
+						delete session_answers[property];
+					};
+				};
 	        });
 			// $location.path('/sentConfirmation');
   		}
@@ -256,8 +265,13 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData','$uib
             size: 'lg'
         });
 
-        modalInstance.result.then(function(selectedItem) {
-            $scope.selected = selectedItem;
+        modalInstance.result.then(function(dismissVal) {
+            if(dismissVal === "Yes") {
+				console.log("dismissVal");
+				for(var property in session_answers) {
+					delete session_answers[property];
+				};
+			};
         });
 
     };
