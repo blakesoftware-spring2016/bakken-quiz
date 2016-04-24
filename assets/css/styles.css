@@ -387,10 +387,10 @@ input.ng-invalid.ng-dirty {
 }
 
 .progressPoint {
-    border: 3px solid #E8E8E8;
-    height: 8px;
-    width: 8px;
-    border-radius: 200px;
+    border: 4px solid #E8E8E8;
+    height: 9.8px;
+    width: 9.8px;
+    border-radius: 100%;
     color: white;
     float: left;
 }
@@ -430,19 +430,19 @@ hr.progressLine {
 }
 
 .answeredPoint {
-    border: 10px solid #E8E8E8;
-    height: 14px;
-    width: 14px;
+    border: 14px solid #E8E8E8;
+    height: 9.8px;
+    width: 9.8px;
     border-radius: 100%;
     color: white;
     float: left;
 }
 
 .numberDiv {
-    width: 116px;
-    margin-top: 20px;
+    width: 112.8px;
+    margin-top: 17px;
     margin-left: -53px;
-    height: 56px;
+    height: 54px;
     background: #E8E8E8;
     font-family: 'source_sans_probold';
     font-size: 25pt;
