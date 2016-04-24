@@ -186,8 +186,7 @@ footer {
 }
 
 .answerContainer {
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   margin-top: 60px;
 
 }
@@ -348,6 +347,7 @@ input.ng-invalid.ng-dirty {
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
+}
 /* progress bar styling */
 
 @font-face {
