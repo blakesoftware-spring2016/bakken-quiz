@@ -1,14 +1,14 @@
 <div id="progressBarContainer">
     <div id="leftBracket">
-        <img src="leftBracket.png">
+        <img src="assets/images/leftBracket.png">
     </div>
     <div id="rightBracket">
-        <img src="rightBracket.png">
+        <img src="assets/images/rightBracket.png">
     </div>
     <div id="middle">
+        <hr class="progressDivs progressLine" ng-repeat-start="q in questions track by $index">
+            <div class="numberDiv" ng-if="$index == questionID">{{$index+1}}/{{questions.length}}</div>
+        <point class="progressDivs progressPoint" ng-repeat-end></point>
+        <hr class="progressDivs progressLine"> 
     </div>
 </div>
-<!-- <div id="buttonContainer">
-    <button id="backButton" onclick="incrementDown(10)"> Back </button>
-    <button id="nextButton" onclick="incrementUp(10)"> Next </button>
-</div> -->

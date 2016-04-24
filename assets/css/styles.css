@@ -1,7 +1,7 @@
 /* THIS IS THE RIGHT CSS */
 
 body {
-	margin: 0;
+  margin: 0;
   height: 100%;
   width: 100%;
 }
@@ -346,6 +346,7 @@ input.ng-invalid.ng-dirty {
   width: 1024px;
   height: 768px;
 }
+
 /* progress bar styling */
 
 @font-face {

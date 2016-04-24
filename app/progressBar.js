@@ -1,4 +1,5 @@
 
+/*
 function createDivs(numberOfQuestions) {
     var numberOfDivs = (2*numberOfQuestions) + 1;
     for (divNumber = 1; divNumber <= numberOfDivs; divNumber++) {
@@ -13,9 +14,8 @@ function createDivs(numberOfQuestions) {
             document.getElementById("middle").appendChild(newLine);
         }   
     } 
-}
-
-createDivs(10);
+}                                                                                                    
+*/
 
 function createNumberDiv(blockNumber,numberOfQuestions) {
     var newNumberDiv = document.createElement("div");
@@ -30,18 +30,20 @@ function removeNumberDiv(blockNumber) {
     document.getElementById(blockNumberString + "Number").remove();
 }
 
-//////////////////////temporary js code for advancing and retreating////////////////////////////
+//////////////////////js code for advancing and retreating////////////////////////////
 
-/* bockNumber is the question number in the context of the div numbers */
+// blockNumber is the question number in the context of the div numbers 
+
+/*
 var blockNumber = 2;
 var blockNumberString = blockNumber.toString();
-document.getElementById(blockNumberString).className += " answeredPoint";
+document.getElementById(blockNumberString + "Number").className += " answeredPoint";
 
 var newNumberDiv = document.createElement("div");
 newNumberDiv.className = "numberDiv";
 newNumberDiv.id = blockNumberString + "Number";
 questionNumber = blockNumber / 2;
-newNumberDiv.innerHTML += questionNumber.toString() + "/10";
+newNumberDiv.innerHTML += questionNumber.toString() + "/12";
 document.getElementById(blockNumberString).appendChild(newNumberDiv);
 
 function updateBlockUp() {
@@ -83,6 +85,9 @@ function incrementDown(numberOfQuestions) {
         createNumberDiv(blockNumber,numberOfQuestions);
     }
 }
+
+*/
+
 /////////////////////////////////////////////////////////////////////////////////////////
 
 
