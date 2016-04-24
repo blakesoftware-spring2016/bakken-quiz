@@ -80,7 +80,15 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
         var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: 'app/templates/popupContent.html',
-            controller: 'popupController',
+            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+				$scope.popupTitle = "Are you sure you want to quit?";
+				$scope.confirm = "Yes";
+				$scope.back = "No";
+				
+				$scope.dismiss = function(value) {
+        			$uibModalInstance.close(value);
+				};
+			}],
             size: 'lg'
         });
 
@@ -136,7 +144,7 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 }]);
 
 //resultsController
-app.controller("resultsController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
+app.controller("resultsController", ['$scope','$location', '$routeParams', 'quizData', '$uibModal', function($scope, $location, $routeParams, quizData, $uibModal) {
 
     quizData.then(function(response) {
 
@@ -207,7 +215,15 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
         var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: 'app/templates/popupContent.html',
-            controller: 'popupController',
+            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+				$scope.popupTitle = "Are you sure you want to quit?";
+				$scope.confirm = "Yes";
+				$scope.back = "No";
+				
+				$scope.dismiss = function(value) {
+        			$uibModalInstance.close(value);
+				};
+			}],
             size: 'lg'
         });
 
@@ -216,6 +232,31 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 				for(var property in session_answers) {
 					delete session_answers[property];
 				};
+			};
+        });
+
+	};
+	
+	$scope.ageCheck = function() {
+
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'app/templates/popupContent.html',
+            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+				$scope.popupTitle = "Are you 13 or older?";
+				$scope.confirm = "Yes";
+				$scope.back = "No";
+				
+				$scope.dismiss = function(value) {
+        			$uibModalInstance.close(value);
+				};
+			}],
+            size: 'lg'
+        });
+		console.log("ageCheck");
+        modalInstance.result.then(function(dismissVal) {
+            if(dismissVal === "Yes") {
+				$location.path('/shareResults');
 			};
         });
 
@@ -235,13 +276,21 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData','$uib
 		if ($scope.shareResultsForm.$valid) {
 			var modalInstance = $uibModal.open({
 	            animation: true,
-	            templateUrl: 'app/templates/popupContentSent.html',
-	            controller: 'popupControllerSent',
+	            templateUrl: 'app/templates/popupContent.html',
+	            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+					$scope.popupTitle = "Are you sure you want to quit?";
+					$scope.confirm = "Yes";
+					$scope.back = "No";
+				
+					$scope.dismiss = function(value) {
+        				$uibModalInstance.close(value);
+					};
+				}],
 	            size: 'lg'
 	        });
+			
 	        modalInstance.result.then(function(dismissVal) {
 				if(dismissVal === "Yes") {
-					console.log("dismissVal");
 					for(var property in session_answers) {
 						delete session_answers[property];
 					};
@@ -261,13 +310,20 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData','$uib
         var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: 'app/templates/popupContent.html',
-            controller: 'popupController',
+            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+				$scope.popupTitle = "Are you sure you want to quit?";
+				$scope.confirm = "Yes";
+				$scope.back = "No";
+				
+				$scope.dismiss = function(value) {
+        			$uibModalInstance.close(value);
+				};
+			}],
             size: 'lg'
         });
 
         modalInstance.result.then(function(dismissVal) {
             if(dismissVal === "Yes") {
-				console.log("dismissVal");
 				for(var property in session_answers) {
 					delete session_answers[property];
 				};
@@ -286,27 +342,3 @@ app.controller('touchBeginController', ['$scope','$location', function($scope, $
 	};
 
 }]);
-
-app.controller('popupController', function($scope, $uibModalInstance) {
-
-	$scope.dismiss = function(value) {
-        $uibModalInstance.close(value);
-    };
-
-});
-
-app.controller('popupControllerSent', function($scope, $uibModalInstance) {
-
-	$scope.dismiss = function(value) {
-        $uibModalInstance.close(value);
-    };
-
-});
-
-app.controller('popupControllerAge', function($scope, $uibModalInstance) {
-
-	$scope.dismiss = function(value) {
-        $uibModalInstance.close(value);
-    };
-
-});
