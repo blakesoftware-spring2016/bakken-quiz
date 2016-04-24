@@ -42,7 +42,15 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
         var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: 'app/templates/popupContent.html',
-            controller: 'popupController',
+            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+				$scope.popupTitle = "Are you sure you want to quit?";
+				$scope.confirm = "Yes";
+				$scope.back = "No";
+
+				$scope.dismiss = function(value) {
+        			$uibModalInstance.close(value);
+				};
+			}],
             size: 'lg'
         });
 

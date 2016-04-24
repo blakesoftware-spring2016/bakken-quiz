@@ -5,12 +5,25 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData','$uib
 		if ($scope.shareResultsForm.$valid) {
 			var modalInstance = $uibModal.open({
 	            animation: true,
-	            templateUrl: 'app/templates/popupContentSent.html',
-	            controller: 'popupControllerSent',
+	            templateUrl: 'app/templates/popupContent.html',
+	            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+					$scope.popupTitle = "Are you sure you want to quit?";
+					$scope.confirm = "Yes";
+					$scope.back = "No";
+
+					$scope.dismiss = function(value) {
+        				$uibModalInstance.close(value);
+					};
+				}],
 	            size: 'lg'
 	        });
-	        modalInstance.result.then(function(selectedItem) {
-	            $scope.selected = selectedItem;
+
+	        modalInstance.result.then(function(dismissVal) {
+				if(dismissVal === "Yes") {
+					for(var property in session_answers) {
+						delete session_answers[property];
+					};
+				};
 	        });
 			// $location.path('/sentConfirmation');
   		}
@@ -26,12 +39,24 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData','$uib
         var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: 'app/templates/popupContent.html',
-            controller: 'popupController',
+            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+				$scope.popupTitle = "Are you sure you want to quit?";
+				$scope.confirm = "Yes";
+				$scope.back = "No";
+
+				$scope.dismiss = function(value) {
+        			$uibModalInstance.close(value);
+				};
+			}],
             size: 'lg'
         });
 
-        modalInstance.result.then(function(selectedItem) {
-            $scope.selected = selectedItem;
+        modalInstance.result.then(function(dismissVal) {
+            if(dismissVal === "Yes") {
+				for(var property in session_answers) {
+					delete session_answers[property];
+				};
+			};
         });
 
     };
