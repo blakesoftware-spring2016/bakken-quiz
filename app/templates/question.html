@@ -1,7 +1,6 @@
 <div class="backgroundQuestion">
 <header>
 	<div id="quizTitle">{{quiz.title}}</div>
-        <button type="button" class="navButton" id="menuButton" ng-click="open()">Menu</button>
 </header>
 <div class="content">
     <div class="question">{{question.text}}</div>
@@ -21,6 +20,7 @@
     </div>
     <div class="buttonContainer">
         <button class="navButton" type="button" id="backButton" ng-click="back()">Back</button>
+        <button class="navButton" type="button" id="menuButton" ng-click="open()">Menu</button>
         <button class="navButton" type="button" id="nextButton" ng-click="next()">Next</button>
     </div>
 </footer>
