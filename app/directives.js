@@ -32,6 +32,6 @@ app.directive('valueMatches', ['$parse', function($parse) {
 
 app.directive('progressBar', function() {
     return {
-        template: 'progressBar.html'
-    }
+        templateUrl: 'progressBar.html' 
+    };
 });
