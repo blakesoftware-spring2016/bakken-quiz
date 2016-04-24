@@ -84,8 +84,12 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
             size: 'lg'
         });
 
-        modalInstance.result.then(function(selectedItem) {
-            $scope.selected = selectedItem;
+        modalInstance.result.then(function(dismissVal) {
+            if(dismissVal === "Yes") {
+				for(var property in session_answers) {
+					delete session_answers[property];
+				};
+			};
         });
 
 	};
@@ -107,8 +111,6 @@ app.controller("quitPageController", ['$scope','$location', '$routeParams', 'qui
 	};
 
 	$scope.quit = function() {
-		// Delete all user data if they decide to quit
-		delete session_answers;
 		// Redirect to choose quiz page
 		$location.path('/chooseQuiz');
 	};
