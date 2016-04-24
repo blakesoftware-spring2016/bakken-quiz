@@ -1,8 +1,8 @@
 <div class="backgroundShareResults">
-<header>
+<div class="header">
 	<button type="button" class="navButton" id="menuButton" ng-click="open()">Menu</button>
 	<button class="navButton" id="sendResultsButton" ng-click="checkEmails()" >Send</button>
-</header>
+</div>
 <form name="shareResultsForm" class="shareResultsForm" ng-submit="submitForm(shareResultsForm)">
 
 	<label>First Name:</label>
@@ -29,8 +29,8 @@
 	<div>
 		<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Re-Enter Email Address" value-matches="email"/>
 		<span ng-show="shareResultsForm.emailCheck.$dirty && shareResultsForm.emailCheck.$invalid" class="errorText"> *Emails do not match!</span>
-		
-	
+
+
 	</div>
 
 <!--ng-model-options="{ updateOn: 'blur' }-->
@@ -38,9 +38,8 @@
 
 </form>
 
-<footer>
-	<a href="#/results"> <button class="navbutton" id="backToResultsButton"> Back to Results</button> </a> 
+<div class="footer">
+	<a href="#/results"> <button class="navbutton" id="backToResultsButton"> Back to Results</button> </a>
 
-</footer>
 </div>
-
+</div>
