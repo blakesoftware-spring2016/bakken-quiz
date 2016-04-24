@@ -186,10 +186,12 @@ header {
 }
 
 .answerContainer {
+  padding-top: 240px;
   text-align: center;
 }
 
 .question {
+  position: absolute;
   display: inline-block;
   width: 80%;
   padding-left: 10%;
