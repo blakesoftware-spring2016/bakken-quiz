@@ -37,7 +37,7 @@ html, body {
 	width: 150px;
 	height: 56px;
 	background: rgba(0, 0, 0, 0.3);
-	border: 2px solid white;
+	border: 3px solid white;
 	font-size: 20px;
 	font-family: "Source Sans Pro";
 	font-weight: bold;
@@ -215,10 +215,10 @@ html, body {
 
 
 .maryDescription {
-	width: 480px;
+	width: 40%;
 	position: absolute;
-	top: 50%;
-	left: 54%;
+	top: 42%;
+	left: 55%;
 	color: white;
 	display: inline-block;
 	text-align: center;
@@ -234,13 +234,18 @@ html, body {
 }
 
 .romanticDescription {
-	width: 480px;
+	width: 40%;
 	position: absolute;
-	top: 50%;
-	left: 2%;
+	top: 42%;
+	left: 5%;
 	color: white;
 	display: inline-block;
 	text-align: center;
+}
+
+.description {
+	font-size: 25px;
+	margin-bottom: 23%;
 }
 
 .romanticHead {
@@ -256,9 +261,13 @@ html, body {
 	height: 62px;
 	color: white;
 	background-color: rgba(0,0,0, 0.5);
-	border: 1px solid white;
+	border: 3px solid white;
 	font-size: 20px;
 	margin: 0 auto;
+}
+
+button {
+		font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
 }
 
 .quizDescription {
