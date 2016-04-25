@@ -286,15 +286,15 @@ button {
 	width: 360px;
 }
 
-#quitButton {
-  width: 160px;
-  height: 90px;
-  border-radius: 10px;
-  background-color: white;
-  border: 1px solid;
+#anotherQuizButton {
+  width: 190px;
+  height: 60px;
+  background: rgba(0,0,0, 0.3);
+  border: 2px solid white;
   font-size: 20px;
-  float: left;
-  margin-top: 50px;
+  color: white;
+  float: right;
+  margin-right: 7.5px;
 
 }
 
@@ -310,23 +310,21 @@ button {
 }
 
 #shareResultsButton {
-  width: 160px;
-  height: 90px;
-  border-radius: 10px;
-  background-color: white;
-  border: 1px solid;
+  width: 190px;
+  height: 60px;
+  background: rgba(0,0,0, 0.3);
+  border: 2px solid white;
   font-size: 20px;
+  color: white;
   float: right;
-  margin-top: 50px;
+  margin-left: 7.5px;
+
 }
 
 .resultsButtonContainer {
-	width: 340px;
-  margin: auto;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 95%;
+  padding-right: 5%;
+  height: 90px;
 
 }
 
@@ -404,6 +402,7 @@ input.ng-invalid.ng-dirty {
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
+  margin: 0 auto -90px;
 }
 
 .backgroundSummaryMary {
