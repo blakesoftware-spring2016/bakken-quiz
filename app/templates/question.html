@@ -1,25 +1,27 @@
-<div class="backgroundQuestion">
-	<div class="content">
-	    <div class="question">{{question.text}}</div>
-	    <div class="answerContainer">
-	        <div class="answer"
-				ng-repeat="answer in answers track by $index"
-				ng-class="{selected: isSelected($index)}"
-				ng-click="select($index)">
-				<img class="answerImage" ng-if="answer.image" ng-src="answer.image" />
-				<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
-			</div>
-	    </div>
-	   <div class="footer">
-	       <div>
-	            <progress-bar></progress-bar>
-	        </div>
-    	   </div>
-    </div>
-</div>
-
-<div class="buttonContainer">
-            <button class="navButton" type="button" id="backButton" ng-click="back()">Back</button>
-            <button class="navButton" type="button" id="menuButton" ng-click="open()">Menu</button>
-            <button class="navButton" type="button" id="nextButton" ng-click="next()">Next</button>
+<div class="questionContainer">
+    <div class="question">{{question.text}}</div>
+    <div class="answerContainer">
+        <div class="answer"
+			ng-repeat="answer in answers track by $index"
+			ng-class="{selected: isSelected($index)}"
+			ng-click="select($index)">
+			<img class="answerImage" ng-if="answer.image" ng-src="answer.image" />
+			<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
+		</div>
+	</div>
+	<div class="buttonContainer">
+		<button class="navButton" id="backButton" ng-click="back()">Back</button>
+		<button class="navButton" id="menuButton" ng-click="open()">Menu</button>
+		<button class="navButton" id="nextButton" ng-click="next()">Next</button>
+	</div>
+	<div class="progressContainer">
+        <img class="leftBracket" src="assets/images/leftBracket.png">
+		<div class="progressBar">
+			<div class="progressLine" ng-repeat-start="question in questions track by $index"></div>
+			<div class="numberDiv" ng-if="$index == questionID">{{$index + 1}}/{{questions.length}}</div>
+			<div class="progressPoint" ng-class="{questionPoint: $index == questionID}" ng-repeat-end></div>
+			<div class="progressLine"></div>
+		</div>
+		<img class="rightBracket" src="assets/images/rightBracket.png">
+	</div>
 </div>

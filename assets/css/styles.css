@@ -1,64 +1,193 @@
-/* THIS IS THE RIGHT CSS */
+/* Global */
 
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-header {
-	height: 70px;
-	padding-top: 1%;
-	text-align: center;
-	font-size: 50px;
-	font-weight: bold;
-}
-
-.content {
+html, body {
+	width: 100%;
 	height: 100%;
-  width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+	overflow: hidden;
 }
 
-.description {
-	width: 80%;
-	margin: auto;
-	font-size: 30px;
+/* Fonts */
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Regular.ttf');
 }
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Bold.ttf');
+}
+
+/* Navigation buttons */
 
 .buttonContainer {
-  display: flex;
-  padding-right: 10%;
-  padding-left: 10%;
-  width: 80%;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .navButton {
-	width: 133px;
+	width: 150px;
 	height: 56px;
-	background-color: rgba(0,0,0, 0.5);
-	border: 1px solid white;
-	font-size: 30px;
-  color: white;
+	background: rgba(0, 0, 0, 0.3);
+	border: 2px solid white;
+	font-size: 20px;
+	font-family: "Source Sans Pro";
+	font-weight: bold;
+	color: white;
 }
 
-#backButton {
+/* Question page */
+
+.questionContainer {
+	width: 1024px;
+	height: 768px;
+	background: url("../images/question.png");
+}
+
+.question {
+	width: 100%;
+	height: 100px;
+	margin-top: 100px;
+	float: left;
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100px;
+}
+
+.answerContainer {
+	width: 800px;
+	height: 360px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.answer {
+	flex-grow: 1;
+	flex-basis: 200px;
+	margin: 6px;
+	justify-content: space-between;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0, 0.3);
+	border: 2px solid white;
+	font-size: 20px;
+	position: relative;
+}
+
+.answerImage {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+}
+
+.answerText {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	font-size: 22px;
+}
+
+.selected {
+	background: white;
+	color: black;
+}
+
+.buttonContainer {
+	width: 800px;
+	padding: 5px;
+	margin: 20px auto 0 auto;
+	box-sizing: border-box;
+}
+
+/* Progress Bar */
+
+.progressContainer {
+	width: calc(100% - 100px);
+	height: 100px;
+	margin: 20px 50px 0 50px;
 	float: left;
 }
 
-#nextButton {
-	float: right;
+.leftBracket {
+    float: left;
 }
 
-#menuButton {
-  margin: auto 0;
+.progressBar {
+	width: calc(100% - (35px * 2));
+    height: 49px;
+	float: left;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.progressLine {
+	height: 4px;
+	float: left;
+    flex-grow: 1;
+	background: white;
+	align-self: center;
+}
+
+.progressPoint {
+    height: 8px;
+    width: 8px;
+	border: 3px solid white;
+    border-radius: 100%;
+    float: left;
+	align-self: center;
+}
+
+.questionPoint {
+	border: 8px solid white;
+}
+
+.rightBracket {
+    float: right;
+}
+
+.numberDiv {
+    width: 80px;
+	height: 40px;
+	margin-left: calc(-40px + (24px / 2));
+	margin-top: 34px;
+	position: absolute;
+    background: white;
+    line-height: 40px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	color: #4b6a9b;
+}
+
+/* MISCELLANEOUS THINGS THAT NEED TO BE ORGANIZED */
 
 #sendResultsButton {
 	width: 160px;
 	height: 90px;
-	background-color: rgba(0,0,0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	border: 1px solid white;
 	font-size: 40px;
 	float: right;
@@ -88,119 +217,65 @@ header {
 .maryDescription {
 	width: 480px;
 	position: absolute;
-  top: 50%;
-  left: 54%;
-  color: white;
-  display: inline-block;
+	top: 50%;
+	left: 54%;
+	color: white;
+	display: inline-block;
 	text-align: center;
 	margin-top: 0px;
-
 }
 
 .maryHead {
-  color: white;
-  position: absolute;
-  top: 30%;
-  left: 58%;
-  font-size: 40px;
-
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 58%;
+	font-size: 40px;
 }
 
 .romanticDescription {
 	width: 480px;
-  position: absolute;
-  top: 50%;
-  left: 2%;
-  color: white;
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	color: white;
 	display: inline-block;
 	text-align: center;
 }
 
 .romanticHead {
-  color: white;
-  position: absolute;
-  top: 30%;
-  left: 6%;
-  font-size: 40px;
-
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 6%;
+	font-size: 40px;
 }
 
-
 .chooseQuiz {
-  width: 204px;
-  height: 62px;
-  color: white;
-  background-color: rgba(0,0,0, 0.5);
-  border: 1px solid white;
-  font-size: 20px;
+	width: 204px;
+	height: 62px;
+	color: white;
+	background-color: rgba(0,0,0, 0.5);
+	border: 1px solid white;
+	font-size: 20px;
 	margin: 0 auto;
 }
 
 .quizDescription {
-  width: 564px;
-  font-size: 25px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-
+	width: 564px;
+	font-size: 25px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
 }
 
 #quitContainer {
-  margin: auto;
+	margin: auto;
 	width: 360px;
 }
-
-.answer {
-  vertical-align: center;
-  flex-grow: 1;
-  flex-basis: 200px;
-  justify-content: space-between;
-  margin: 10px;
-  padding-top: 57px;
-  padding-bottom: 57px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  color: white;
-  background-color: rgba(0,0,0, 0.5);
-  border: 1px solid white;
-  font-size: 20px;
-}
-
-.selected {
-  background-color: rgb(255,255,255);
-  color: black;
-}
-
-.answerContainer {
-  height: 600px;
-  display: flex;
-  padding-left: 80px;
-  padding-right: 80px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 240px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.question {
-  position: absolute;
-  display: inline-block;
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 150px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-}
-
 
 #quitButton {
   width: 160px;
@@ -343,112 +418,6 @@ input.ng-invalid.ng-dirty {
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
-}
-
-/* progress bar styling */
-
-@font-face {
-    font-family: 'source_sans_probold';
-    src: url('../fonts/sourcesanspro-bold-webfont.eot');
-    src: url('../fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
-         url('../fonts/sourcesanspro-bold-webfont.woff') format('woff'),
-         url('../fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
-         url('../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-#progressBarContainer {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 45%;
-    height: 50px;
-    width: 90%;
-}
-
-#middle {
-    height: 30px;
-    width: 92%;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-
-}
-
-.progressDivs {
-    align-self: center;
-    float: right;
-}
-
-.progressPoint {
-    border: 4px solid #E8E8E8;
-    height: 9.8px;
-    width: 9.8px;
-    border-radius: 100%;
-    color: white;
-    float: left;
-}
-
-hr.progressLine {
-    background-color: #E8E8E8;
-    border-top: 1px solid #E8E8E8;
-	border-bottom: 1px solid #E8E8E8;
-    border-left: 1px solid #E8E8E8;
-    border-right: 1px solid #E8E8E8;
-    height: 1px;
-    width: 25px;
-    float: left;
-    flex-grow: 1;
-}
-
-#leftBracket {
-    height: 50px;
-    width: 35px;
-    float: left;
-}
-
-#leftBracket img {
-    width: 100%;
-    height: auto;
-}
-
-#rightBracket {
-    height: 50px;
-    width: 35px;
-    float: right;
-}
-
-#rightBracket img {
-    width: 100%;
-    height: auto;
-}
-
-.answeredPoint {
-    border: 14px solid #E8E8E8;
-    height: 9.8px;
-    width: 9.8px;
-    border-radius: 100%;
-    color: white;
-    float: left;
-}
-
-.numberDiv {
-    width: 112.8px;
-    margin-top: 17px;
-    margin-left: -53px;
-    height: 54px;
-    background: #E8E8E8;
-    font-family: 'source_sans_probold';
-    font-size: 25pt;
-    color: #4b6a9b;
-    text-align: center;
-    line-height: 56px;
 }
 
 .modalheader {
