@@ -29,15 +29,3 @@ app.directive('valueMatches', ['$parse', function($parse) {
 		}
 	};
 }]);
-
-app.directive('progressBar', function() {
-    function link(scope, element, attrs) {
-        console.log("its working");
-        //createDivs(12);
-        
-    }
-    return {
-        templateUrl: 'app/templates/progressBar.html',
-        link: link
-    };
-});
