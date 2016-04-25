@@ -141,27 +141,31 @@ html, body {
 	display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 0.5px;
+    box-sizing: border-box;
 }
 
 .progressLine {
-	height: 4px;
+	height: 3.5px;
 	float: left;
     flex-grow: 1;
-	background: white;
+	background: #eef0f4;
 	align-self: center;
+    /*background-color: #eef0f4;
+    box-shadow: 0 0 5px 0.5px #eef0f4;*/
 }
 
 .progressPoint {
     height: 8px;
     width: 8px;
-	border: 3px solid white;
+	border: 3px solid #eef0f4;
     border-radius: 100%;
     float: left;
 	align-self: center;
 }
 
 .questionPoint {
-	border: 8px solid white;
+	border: 8px solid #eef0f4;
 }
 
 .rightBracket {
@@ -174,7 +178,7 @@ html, body {
 	margin-left: calc(-40px + (24px / 2));
 	margin-top: 34px;
 	position: absolute;
-    background: white;
+    background: #eef0f4;
     line-height: 40px;
 	text-align: center;
 	font-size: 26px;
