@@ -63,57 +63,9 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 		}
 
     });
-
-    $scope.open = function() {
-
-        var modalInstance = $uibModal.open({
-            animation: true,
-            templateUrl: 'app/templates/popupContent.html',
-            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
-				$scope.popupTitle = "Are you sure you want to quit?";
-				$scope.confirm = "Yes";
-				$scope.back = "No";
-
-				$scope.dismiss = function(value) {
-        			$uibModalInstance.close(value);
-				};
-			}],
-            size: 'lg'
-        });
-
-        modalInstance.result.then(function(dismissVal) {
-            if(dismissVal === "Yes") {
-				for(var property in session_answers) {
-					delete session_answers[property];
-				};
-			};
-        });
-
-	};
-
-	$scope.ageCheck = function() {
-
-        var modalInstance = $uibModal.open({
-            animation: true,
-            templateUrl: 'app/templates/popupContent.html',
-            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
-				$scope.popupTitle = "Are you 13 or older?";
-				$scope.confirm = "Yes";
-				$scope.back = "No";
-
-				$scope.dismiss = function(value) {
-        			$uibModalInstance.close(value);
-				};
-			}],
-            size: 'lg'
-        });
-		console.log("ageCheck");
-        modalInstance.result.then(function(dismissVal) {
-            if(dismissVal === "Yes") {
-				$location.path('/shareResults');
-			};
-        });
-
-	};
-
+    
+    $scope.continue = function() {
+      $location.path('/shareResults');
+    };
+    
 }]);
