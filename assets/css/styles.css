@@ -33,17 +33,6 @@ html, body {
 	justify-content: space-between;
 }
 
-.navButton {
-	width: 150px;
-	height: 56px;
-	background: rgba(0, 0, 0, 0.3);
-	border: 3px solid white;
-	font-size: 20px;
-	font-family: "Source Sans Pro";
-	font-weight: bold;
-	color: white;
-}
-
 /* Question page */
 
 .questionContainer {
@@ -188,25 +177,6 @@ html, body {
 
 /* MISCELLANEOUS THINGS THAT NEED TO BE ORGANIZED */
 
-#sendResultsButton {
-	width: 160px;
-	height: 90px;
-	background-color: rgba(0, 0, 0, 0.3);
-	border: 1px solid white;
-	font-size: 40px;
-	float: right;
-	margin-right: 10px;
-}
-
-#backToResultsButton {
-	width: 160px;
-	height: 90px;
-	border-radius: 10px;
-	background-color: white;
-	border: 1px solid;
-	font-size: 20px;
-	margin-top: 18px;
-}
 
 .chooseButton {
 	width: 160px;
@@ -261,14 +231,7 @@ html, body {
 }
 
 .chooseQuiz {
-	width: 204px;
-	height: 62px;
-	color: white;
-	background-color: rgba(0,0,0, 0.5);
-	border: 3px solid white;
-	font-size: 20px;
 	margin: 0 auto;
-	padding: 0;
 }
 
 button {
@@ -292,15 +255,8 @@ button {
 }
 
 #anotherQuizButton {
-  width: 190px;
-  height: 60px;
-  background: rgba(0,0,0, 0.3);
-  border: 2px solid white;
-  font-size: 20px;
-  color: white;
   float: right;
-  margin-right: 7.5px;
-
+  margin-right: 9px;
 }
 
 .resultsDescription {
@@ -315,15 +271,8 @@ button {
 }
 
 #shareResultsButton {
-  width: 190px;
-  height: 60px;
-  background: rgba(0,0,0, 0.3);
-  border: 2px solid white;
-  font-size: 20px;
-  color: white;
   float: right;
-  margin-left: 7.5px;
-
+  margin-left: 9px;
 }
 
 .resultsButtonContainer {
@@ -455,4 +404,23 @@ input.ng-invalid.ng-dirty {
 
 .quizDescNav:first-of-type {
 	margin-right: 50px;
+}
+
+
+button {
+	width: 204px;
+	height: 62px;
+	border: 3px solid white;
+	background: rgba(0, 0, 0, 0.3);
+	border: 3px solid white;
+	padding: 0;
+	font-size: 20px;
+	font-family: "Source Sans Pro";
+	font-weight: bold;
+	color: white;
+}
+
+.shareResultsButtonContainer {
+	position: absolute;
+	bottom: 28px;
 }
