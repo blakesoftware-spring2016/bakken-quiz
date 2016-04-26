@@ -1,5 +1,13 @@
 app.controller("resultsController", ['$scope','$location', '$routeParams', 'quizData', '$uibModal', function($scope, $location, $routeParams, quizData, $uibModal) {
 
+  //Set correct background
+  if ($routeParams.quizID === "0") {
+    $(".backgroundResults").addClass("backgroundMaryResults");
+  }
+  else {
+    $(".backgroundResults").addClass("backgroundRomanticResults");
+  }
+
     quizData.then(function(response) {
 
 		var quizID = $routeParams.quizID;
@@ -63,13 +71,13 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 		}
 
     });
-    
+
     $scope.continue = function() {
       $location.path('/shareResults');
     };
-    
+
     $scope.back = function() {
       $location.path('/chooseQuiz');
     };
-    
+
 }]);
