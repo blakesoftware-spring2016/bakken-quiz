@@ -141,27 +141,31 @@ html, body {
 	display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 0.5px;
+    box-sizing: border-box;
 }
 
 .progressLine {
-	height: 4px;
+	height: 3.5px;
 	float: left;
     flex-grow: 1;
-	background: white;
+	background: #eef0f4;
 	align-self: center;
+    /*background-color: #eef0f4;
+    box-shadow: 0 0 5px 0.5px #eef0f4;*/
 }
 
 .progressPoint {
     height: 8px;
     width: 8px;
-	border: 3px solid white;
+	border: 3px solid #eef0f4;
     border-radius: 100%;
     float: left;
 	align-self: center;
 }
 
 .questionPoint {
-	border: 8px solid white;
+	border: 8px solid #eef0f4;
 }
 
 .rightBracket {
@@ -174,7 +178,7 @@ html, body {
 	margin-left: calc(-40px + (24px / 2));
 	margin-top: 34px;
 	position: absolute;
-    background: white;
+    background: #eef0f4;
     line-height: 40px;
 	text-align: center;
 	font-size: 26px;
@@ -287,15 +291,15 @@ button {
 	width: 360px;
 }
 
-#quitButton {
-  width: 160px;
-  height: 90px;
-  border-radius: 10px;
-  background-color: white;
-  border: 1px solid;
+#anotherQuizButton {
+  width: 190px;
+  height: 60px;
+  background: rgba(0,0,0, 0.3);
+  border: 2px solid white;
   font-size: 20px;
-  float: left;
-  margin-top: 50px;
+  color: white;
+  float: right;
+  margin-right: 7.5px;
 
 }
 
@@ -311,23 +315,21 @@ button {
 }
 
 #shareResultsButton {
-  width: 160px;
-  height: 90px;
-  border-radius: 10px;
-  background-color: white;
-  border: 1px solid;
+  width: 190px;
+  height: 60px;
+  background: rgba(0,0,0, 0.3);
+  border: 2px solid white;
   font-size: 20px;
+  color: white;
   float: right;
-  margin-top: 50px;
+  margin-left: 7.5px;
+
 }
 
 .resultsButtonContainer {
-	width: 340px;
-  margin: auto;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 95%;
+  padding-right: 5%;
+  height: 90px;
 
 }
 
@@ -405,6 +407,7 @@ input.ng-invalid.ng-dirty {
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
+  margin: 0 auto -90px;
 }
 
 .backgroundSummaryMary {
