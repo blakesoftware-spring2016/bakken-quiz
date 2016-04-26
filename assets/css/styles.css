@@ -313,14 +313,24 @@ label {
   input {
   margin-top: 10px;
   margin-bottom: 10px;
+	border: none;
   border-radius: 10px;
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(255,255,255, 0.8);
   width: 600px;
-  height: 30px;
-  font-size: 20px;
+  height: 50px;
+  font-size: 26px;
   padding: 5px;
-  color: black;
+  color: #475f95;
+	box-shadow: none;
+	outline: none;
 }
+
+
+::-webkit-input-placeholder {
+   color: #475f95;
+	 padding-left: 15px;
+}
+
 
 .contentShareResultsForm {
   padding-left: 20px;
