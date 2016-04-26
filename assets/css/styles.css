@@ -431,3 +431,8 @@ button {
 #sendResultsButton {
 	margin-left: 18px;
 }
+
+
+.navButton {
+	width: 146px;
+}
