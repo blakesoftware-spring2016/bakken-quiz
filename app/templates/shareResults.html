@@ -1,3 +1,10 @@
+<div ng-show="showPopup" class="popupBackground" ng-click="showPopup=false"> </div>
+<div ng-show="showPopup" class="popuptest">
+    <p> Your results have been sent!</p>
+    <button ng-click="showPopup = false; continue()"> Back to Results </button>
+  <button ng-click="showPopup = false; back()"> Take Another Quiz </button>
+
+  
 <div class="backgroundShareResults">
 <form name="shareResultsForm" class="shareResultsForm" ng-submit="submitForm(shareResultsForm)">
 
