@@ -379,8 +379,16 @@ input.ng-invalid.ng-dirty {
   margin: 0 auto -100px;
 }
 
-.backgroundResults {
+.backgroundRomanticResults {
   background-image: url("../images/romanticResults.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto -90px;
+}
+
+.backgroundMaryResults {
+  background-image: url("../images/maryQuestion.png");
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
