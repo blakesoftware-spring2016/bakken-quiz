@@ -38,7 +38,7 @@ html, body {
 .questionContainer {
 	width: 1024px;
 	height: 768px;
-	background: url("../images/question.png");
+	/*background: url("../images/question.png");*/
 }
 
 .question {
@@ -363,8 +363,16 @@ input.ng-invalid.ng-dirty {
   height: 768px;
 }
 
-.backgroundQuestion {
-  background-image: url("../images/question.png");
+.backgroundMaryQuestion {
+  background-image: url("../images/maryQuestion.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto -100px;
+}
+
+.backgroundRomanticQuestion {
+  background-image: url("../images/romQuestion.png");
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
@@ -386,6 +394,15 @@ input.ng-invalid.ng-dirty {
   height: 768px;
   margin: 0 auto -100px;
 }
+
+/* Will need to happen eventually, but no image for it is currently available */
+/*.backgroundSummaryRomantic {
+	background-image: url("../images/summary.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
+}*/
 
 .backgroundShareResults {
   background-image: url("../images/shareResults.png");
