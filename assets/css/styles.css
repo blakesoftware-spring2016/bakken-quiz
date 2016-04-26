@@ -220,6 +220,7 @@ html, body {
 .description {
 	font-size: 25px;
 	margin-bottom: 23%;
+	color: white;
 }
 
 .romanticHead {
@@ -298,12 +299,11 @@ button {
 }
 
 .shareResultsForm {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-
+	position: relative;
+	width: 70%;
+	top: 19%;
+	left: 501px;
+	transform: translateX(-50%);
 }
 
 label {
@@ -311,25 +311,35 @@ label {
   color: white;
 }
 
-  input {
-  margin-top: 10px;
-  margin-bottom: 10px;
+input {
+  margin-top: 11px;
+  margin-bottom: 11px;
 	border: none;
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.8);
-  width: 600px;
-  height: 50px;
+  width: 100%;
+  height: 54px;
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
   font-size: 26px;
   padding: 5px;
+	padding-left: 15px;
   color: #475f95;
 	box-shadow: none;
 	outline: none;
 }
 
 
+.shareResultsDescription {
+	position: relative;
+	width: 70%;
+	top: 19%;
+	left: 501px;
+	transform: translateX(-50%);
+}
+
+
 ::-webkit-input-placeholder {
    color: #475f95;
-	 padding-left: 15px;
 }
 
 
@@ -444,8 +454,8 @@ button {
 	border: 3px solid white;
 	padding: 0;
 	font-size: 20px;
-	font-family: "Source Sans Pro";
-	font-weight: bold;
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+	font-weight: 600;
 	color: white;
 }
 
