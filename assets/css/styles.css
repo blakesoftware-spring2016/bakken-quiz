@@ -257,7 +257,6 @@ button {
 
 #anotherQuizButton {
   float: right;
-  margin-right: 9px;
 }
 
 .resultsDescription {
@@ -273,7 +272,7 @@ button {
 
 #shareResultsButton {
   float: right;
-  margin-left: 9px;
+  margin-left: 18px;
 }
 
 .resultsButtonContainer {
@@ -440,8 +439,15 @@ button {
 	color: white;
 }
 
+
 .shareResultsButtonContainer {
 	position: absolute;
 	bottom: 28px;
->>>>>>> master
+	right: 0;
+	padding-right: 5%;
+}
+
+
+#sendResultsButton {
+	margin-left: 18px;
 }
