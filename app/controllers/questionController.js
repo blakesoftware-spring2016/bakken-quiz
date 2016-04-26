@@ -1,5 +1,13 @@
 app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', '$uibModal', function($scope, $location, $routeParams, quizData, $uibModal) {
 
+	//Set correct background
+	if ($routeParams.quizID === "0") {
+		$(".questionContainer").addClass("backgroundMaryQuestion");
+	}
+	else {
+		$(".questionContainer").addClass("backgroundRomanticQuestion");
+	}
+
 	quizData.then(function(response) {
 		// Get parameters from route
 		$scope.quizID = $routeParams.quizID;
@@ -20,13 +28,13 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
         }
     };
 
-    $scope.back = function() {
-        if ($scope.questionID == 0) {
-            $location.path('/quizDescription/' + String($scope.quizID));
-        } else {
-			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
-        };
-    };
+	$scope.back = function() {
+      if ($scope.questionID == 0) {
+          $location.path('/quizDescription/' + String($scope.quizID));
+      } else {
+		$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
+      };
+  };
 
 	$scope.isSelected = function($index) {
 		if (session_answers[$scope.questionID] === $index) return true;
@@ -36,7 +44,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	$scope.select = function($index) {
 		session_answers[$scope.questionID] = $index;
 	};
-	
+
 	$scope.continue = function() {
 		for(var property in session_answers) {
 			delete session_answers[property];
