@@ -1,14 +1,14 @@
 <div ng-show="agePopup" class="popupBackground" ng-click="showPopup=false"> </div>
 <div ng-show="agePopup" class="popuptest">
     <p> Are you 13+</p>
-    <button ng-click="showPopup = false; continue()"> Yes </button>
-  <button ng-click="showPopup = false"> No </button>
+    <button ng-click="agePopup = false; continue()"> Yes </button>
+  <button ng-click="agePopup = false"> No </button>
 </div>
 
 <div ng-show="showPopup" class="popupBackground" ng-click="showPopup=false"> </div>
 <div ng-show="showPopup" class="popuptest">
-    <p> Are you 13+</p>
-    <button ng-click="showPopup = false; continue()"> Yes </button>
+    <p> Take another quiz?</p>
+    <button ng-click="showPopup = false; back()"> Yes </button>
   <button ng-click="showPopup = false"> No </button>
 </div>
 

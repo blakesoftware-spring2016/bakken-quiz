@@ -68,4 +68,8 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
       $location.path('/shareResults');
     };
     
+    $scope.back = function() {
+      $location.path('/chooseQuiz');
+    };
+    
 }]);
