@@ -388,8 +388,6 @@ input.ng-invalid.ng-dirty {
     font-family
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .popuptest {
   text-align: center;
   z-index: 1002;
@@ -407,9 +405,8 @@ input.ng-invalid.ng-dirty {
   height: 100%;
   background: rgba(0,0,0, 0.7);
   position: absolute;
-=======
-=======
->>>>>>> master
+}
+
 .quizDescNav button {
 	padding: 0px;
 	width: 204px;
@@ -427,9 +424,6 @@ input.ng-invalid.ng-dirty {
 
 .quizDescNav:first-of-type {
 	margin-right: 50px;
-<<<<<<< HEAD
->>>>>>> master
-=======
 }
 
 
