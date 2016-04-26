@@ -36,6 +36,13 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	$scope.select = function($index) {
 		session_answers[$scope.questionID] = $index;
 	};
+	
+	$scope.continue = function() {
+		for(var property in session_answers) {
+			delete session_answers[property];
+		};
+		$location.path('/chooseQuiz');
+	}
 
     $scope.open = function() {
 

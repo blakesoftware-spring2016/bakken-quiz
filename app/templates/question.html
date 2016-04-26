@@ -1,3 +1,10 @@
+<div ng-show="showPopup" class="popupBackground" ng-click="showPopup=false"> </div>
+<div ng-show="showPopup" class="popuptest">
+    <p> Quit?</p>
+    <button ng-click="showPopup = false; continue()"> Yes </button>
+	<button ng-click="showPopup = false"> No </button>
+</div>
+
 <div class="questionContainer">
     <div class="question">{{question.text}}</div>
     <div class="answerContainer">
@@ -11,7 +18,7 @@
 	</div>
 	<div class="buttonContainer">
 		<button class="navButton" id="backButton" ng-click="back()">Back</button>
-		<button class="navButton" id="menuButton" ng-click="open()">Menu</button>
+		<button class="navButton" id="menuButton" ng-click="showPopup = true">Menu</button>
 		<button class="navButton" id="nextButton" ng-click="next()">Next</button>
 	</div>
 	<div class="progressContainer">
@@ -25,3 +32,4 @@
 		<img class="rightBracket" src="assets/images/rightBracket.png">
 	</div>
 </div>
+
