@@ -25,11 +25,10 @@
         <img class="leftBracket" src="assets/images/leftBracket.png">
 		<div class="progressBar">
 			<div class="progressLine" ng-repeat-start="question in questions track by $index"></div>
-			<div class="numberDiv" ng-if="$index == questionID">{{$index + 1}}/{{questions.length}}</div>
+			<div class="numberDiv {{classToAddToNumberDiv}}" ng-if="$index == questionID">{{$index + 1}}/{{questions.length}}</div>
 			<div class="progressPoint" ng-class="{questionPoint: $index == questionID}" ng-repeat-end></div>
 			<div class="progressLine"></div>
 		</div>
 		<img class="rightBracket" src="assets/images/rightBracket.png">
 	</div>
 </div>
-
