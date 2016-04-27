@@ -172,9 +172,15 @@ html, body {
 	text-align: center;
 	font-size: 26px;
 	font-weight: bold;
+}
+
+.maryText {
 	color: #4b6a9b;
 }
 
+.romanticText {
+	color: #595959;
+}
 /* MISCELLANEOUS THINGS THAT NEED TO BE ORGANIZED */
 
 
