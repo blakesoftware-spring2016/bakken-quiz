@@ -38,7 +38,7 @@ html, body {
 .questionContainer {
 	width: 1024px;
 	height: 768px;
-	background: url("../images/question.png");
+	/*background: url("../images/question.png");*/
 }
 
 .question {
@@ -220,6 +220,7 @@ html, body {
 .description {
 	font-size: 25px;
 	margin-bottom: 23%;
+	color: white;
 }
 
 .romanticHead {
@@ -298,12 +299,11 @@ button {
 }
 
 .shareResultsForm {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-
+	position: relative;
+	width: 70%;
+	top: 19%;
+	left: 501px;
+	transform: translateX(-50%);
 }
 
 label {
@@ -311,17 +311,37 @@ label {
   color: white;
 }
 
-  input {
-  margin-top: 10px;
-  margin-bottom: 10px;
+input {
+  margin-top: 11px;
+  margin-bottom: 11px;
+	border: none;
   border-radius: 10px;
-  background-color: rgba(255,255,255, 0.5);
-  width: 600px;
-  height: 30px;
-  font-size: 20px;
+  background-color: rgba(255,255,255, 0.8);
+  width: 100%;
+  height: 54px;
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+  font-size: 26px;
   padding: 5px;
-  color: black;
+	padding-left: 15px;
+  color: #475f95;
+	box-shadow: none;
+	outline: none;
 }
+
+
+.shareResultsDescription {
+	position: relative;
+	width: 70%;
+	top: 19%;
+	left: 501px;
+	transform: translateX(-50%);
+}
+
+
+::-webkit-input-placeholder {
+   color: #475f95;
+}
+
 
 .contentShareResultsForm {
   padding-left: 20px;
@@ -343,16 +363,32 @@ input.ng-invalid.ng-dirty {
   height: 768px;
 }
 
-.backgroundQuestion {
-  background-image: url("../images/question.png");
+.backgroundMaryQuestion {
+  background-image: url("../images/maryQuestion.png");
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
   margin: 0 auto -100px;
 }
 
-.backgroundResults {
+.backgroundRomanticQuestion {
+  background-image: url("../images/romQuestion.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto -100px;
+}
+
+.backgroundRomanticResults {
   background-image: url("../images/romanticResults.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto -90px;
+}
+
+.backgroundMaryResults {
+  background-image: url("../images/maryQuestion.png");
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
@@ -366,6 +402,15 @@ input.ng-invalid.ng-dirty {
   height: 768px;
   margin: 0 auto -100px;
 }
+
+/* Will need to happen eventually, but no image for it is currently available */
+/*.backgroundSummaryRomantic {
+	background-image: url("../images/summary.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
+}*/
 
 .backgroundShareResults {
   background-image: url("../images/shareResults.png");
@@ -434,8 +479,8 @@ button {
 	border: 3px solid white;
 	padding: 0;
 	font-size: 20px;
-	font-family: "Source Sans Pro";
-	font-weight: bold;
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+	font-weight: 600;
 	color: white;
 }
 
@@ -450,4 +495,9 @@ button {
 
 #sendResultsButton {
 	margin-left: 18px;
+}
+
+
+.navButton {
+	width: 146px;
 }
