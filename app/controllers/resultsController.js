@@ -73,11 +73,15 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
     });
 
     $scope.continue = function() {
-      $location.path('/shareResults');
+		$location.path('/shareResults');
     };
-
+	
+	//Take another quiz "yes"
     $scope.back = function() {
-      $location.path('/chooseQuiz');
+		for(var property in session_answers) {
+			delete session_answers[property];
+		};
+		$location.path('/chooseQuiz');
     };
 
 }]);
