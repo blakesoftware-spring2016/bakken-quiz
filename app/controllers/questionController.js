@@ -3,9 +3,11 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	//Set correct background
 	if ($routeParams.quizID === "0") {
 		$(".questionContainer").addClass("backgroundMaryQuestion");
+		$scope.classToAddToNumberDiv = "maryText";
 	}
 	else {
 		$(".questionContainer").addClass("backgroundRomanticQuestion");
+		$scope.classToAddToNumberDiv = "romanticText";
 	}
 
 	quizData.then(function(response) {
