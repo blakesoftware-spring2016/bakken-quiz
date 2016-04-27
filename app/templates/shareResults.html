@@ -21,13 +21,13 @@
 
 		<div>
 			<input type="email" name="email" ng-model="email" overwrite-email required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)" />
-			<span ng-show="shareResultsForm.email.$error.required && shareResultsForm.email.$dirty" class="errorText"> *Email is required! </span>
-			<span ng-show="shareResultsForm.email.$error.email" class="errorText"> *Invalid email address </span>
+			<span ng-show="shareResultsForm.email.$error.required && shareResultsForm.email.$dirty && submitted" class="errorText"> *Email is required! </span>
+			<span ng-show="shareResultsForm.email.$error.email &&submitted" class="errorText"> *Invalid email address </span>
 		</div>
 
 		<div>
 			<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Re-Enter Email Address" value-matches="email"/>
-			<span ng-show="shareResultsForm.emailCheck.$dirty && shareResultsForm.emailCheck.$invalid" class="errorText"> *Emails do not match!</span>
+			<span ng-show="shareResultsForm.emailCheck.$dirty && shareResultsForm.emailCheck.$invalid && submitted" class="errorText"> *Emails do not match!</span>
 
 
 		</div>
@@ -39,6 +39,6 @@
 	<p class="description shareResultsDescription">The Bakken Musem will use this information to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	<div class="shareResultsButtonContainer">
 		<a href="#/results"> <button id="backToResultsButton"> Back to Results</button> </a>
-		<button id="sendResultsButton" ng-click="checkEmails()" >Send</button>
+		<button id="sendResultsButton" ng-click="checkEmails(); submitted = true;">Send</button>
 	</div>
 </div>
