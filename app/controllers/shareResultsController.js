@@ -8,16 +8,21 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData','$uib
 
 	};
 
-      $scope.back = function() {
+    $scope.back = function() {
 		for(var property in session_answers) {
 			delete session_answers[property];
 		};
+
 		$location.path('/chooseQuiz');
-	  };
-      
-      $scope.continue = function() {
+	};
+
+    $scope.continue = function() {
 		$location.path('/results');
 	};
-      
-      
+    
+
+    $scope.backResults = function() {
+    	window.history.back();  
+	};
+
 }]);
