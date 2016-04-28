@@ -6,7 +6,7 @@
 </div>
 
 <div class="questionContainer">
-    <div class="question {{romanticStyleClass}}">{{question.text}}</div>
+    <div class="question {{romanticStyleClass}} {{questionOverflowClass}}">{{question.text}}</div>
     <div class="answerContainer {{romanticStyleClass}}">
         <div class="answer {{romanticStyleClass}}"
 			ng-repeat="answer in answers track by $index"
