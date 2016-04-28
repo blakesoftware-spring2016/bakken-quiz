@@ -54,16 +54,8 @@ html, body {
 }
 
 .question.romanticStyle {
-	width: 100%;
-	height: 100px;
 	margin-top: 132px;
 	margin-bottom: 23px;
-	float: left;
-	color: white;
-	font-size: 32px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 100px;
 }
 
 .answerContainer {
@@ -80,13 +72,7 @@ html, body {
 .answerContainer.romanticStyle {
 	width: 770px;
 	height: 270px;
-	margin: auto;
 	margin-bottom: 67px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-between;
-	box-sizing: border-box;
 }
 
 .answer {
@@ -103,16 +89,7 @@ html, body {
 }
 
 .answer.romanticStyle {
-	flex-grow: 1;
-	flex-basis: 200px;
 	margin: 10px;
-	justify-content: space-between;
-	text-align: center;
-	color: white;
-	background: rgba(0,0,0, 0.3);
-	border: 3px solid white;
-	font-size: 20px;
-	position: relative;
 }
 
 .answerImage {
@@ -149,8 +126,6 @@ html, body {
 
 .buttonContainer.romanticStyle {
 	width: 744px;
-	margin: 20px auto 0 auto;
-	box-sizing: border-box;
 }
 
 /* Progress Bar */
