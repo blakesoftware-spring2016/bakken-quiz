@@ -7,7 +7,7 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 		var questions = quiz.questions;
 		// For percentage quizzes, in which the answer is essentially boolean
 		// And the result is calculated based the percentage of the questions the user idenfifies with the target property
-		if (quiz.type === 'percentage') {
+		if (quiz.type === 'bool') {
 			var target_count = 0;
 			// Loop through each question
 			for (var i = 0; i < questions.length; i++) {
