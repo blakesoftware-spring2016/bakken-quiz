@@ -1,6 +1,6 @@
-<div ng-show="showPopup" class="popupBackground" ng-click="showPopup=false"> </div>
-<div ng-show="showPopup" class="popupNew">
-	<p> Your results have been sent!</p>
+<div ng-show="showPopup && shareResultsForm.$valid" class="popupBackground" ng-click="showPopup=false"> </div>
+<div ng-show="showPopup && shareResultsForm.$valid" class="popupNew">
+	<p class="popupText"> Your results have been sent!</p>
 	<button ng-click="showPopup = false; continue()" class="popupButton"> Back to Results </button>
 	<button ng-click="showPopup = false; back()" class="popupButton"> Take Another Quiz </button>
 </div>
@@ -25,6 +25,6 @@
 	<p class="description shareResultsDescription">The Bakken Musem will use this information to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	<div class="shareResultsButtonContainer">
 		<button id="backToResultsButton" ng-click="backResults()"> Back to Results</button> </a>
-		<button id="sendResultsButton" ng-click="checkEmails(); submitted = true;">Send</button>
+		<button id="sendResultsButton" ng-click="checkEmails(); submitted = true; showPopup = true">Send</button>
 	</div>
 </div>
