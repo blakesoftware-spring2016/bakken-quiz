@@ -1,4 +1,4 @@
-app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', '$uibModal', function($scope, $location, $routeParams, quizData, $uibModal) {
+app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData, $uibModal) {
 
 	// Set correct background
 	if ($routeParams.quizID === '0') {

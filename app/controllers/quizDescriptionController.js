@@ -8,7 +8,7 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 		$scope.start_quiz = function() {
 			// As the user is starting a new quiz, delete all previous session data
 			session_answers = {};
-			$location.path('/question/' + quizID + '/0')
+			$location.path('/question/' + quizID + '/0');
 		}
 		
     });
