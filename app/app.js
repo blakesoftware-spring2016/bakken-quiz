@@ -28,19 +28,8 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: 'questionController'
 	});
 	
-	$routeProvider.when('/privacy', {
-		templateUrl: 'app/templates/privacy.html',
-		controller: 'privacyController'
-	});
-	
 	$routeProvider.when('/chooseQuiz', {
-		templateUrl: 'app/templates/chooseQuiz.html',
-		controller: 'chooseQuizController'
-	});
-	
-	$routeProvider.when('/quitPage/:quizID', {
-		templateUrl: 'app/templates/quitPage.html',
-		controller: 'quitPageController'
+		templateUrl: 'app/templates/chooseQuiz.html'
 	});
 	
 	$routeProvider.when('/quizDescription/:quizID', {
