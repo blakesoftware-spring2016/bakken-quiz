@@ -20,19 +20,28 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 			var target_count = 0;
 			// Loop through each question
 			for (var i = 0; i < questions.length; i++) {
-				// Fetch the selected answer using the session data
-				var answer = questions[i].answers[session_answers[i]];
-				// If the selected answerk idenfifies with the target property, increment it
-				if (answer.target) target_count++;
+				// Only continue with calculataion if the user answered the given question
+				if (typeof session_answers[i] !== 'undefined') {
+					// Fetch the selected answer using the session data
+					var answer = questions[i].answers[session_answers[i]];
+					// If the selected answerk idenfifies with the target property, increment it
+					if (answer.target) target_count++;
+				}
 			}
-			// Calculate the percentage of answers that identify with the target
-			var percentage = target_count / questions.length;
+			// Calculate the percentage of answers that identify with the target based upon the number of questions that were answered
+			// Unanswered questions are not included in percentage calculataion
+			var percentage = target_count / Object.keys(session_answers).length;
 			// Determine the actual result based on the percentage
-			var final_result = quiz.results[Math.floor(percentage * quiz.results.length)];
+			var result_index = Math.floor(percentage * quiz.results.length);
+			// If the percentage is 1, the array index gets screwed up...so fix it
+			if (percentage === 1) result_index--;
+			var result = quiz.results[result_index];
 			// So... now we know the result!
 			// Make it available to the template
-			$scope.title = final_result.title;
-			$scope.description = final_result.description;
+			$scope.results = [{
+				title: result.title,
+				description: result.description
+			}];
 		}
 		// For multiple selection quizzes, in which each answer choice can be assigned to one or more 'buckets'
 		// The category in which the user has the most 'buckets' defines the result
@@ -40,35 +49,49 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 			var results_count = {};
 			// Loop through each question
 			for (var i = 0; i < questions.length; i++) {
-				// Fetch the selected answer using the session data
-				var answer = questions[i].answers[session_answers[i]];
-				// Loop through each answers' buckets
-				for (var j = 0; j < answer.buckets.length; j++) {
-					var bucket = answer.buckets[j];
-					// Add the bucket to the results object if it doesn't already exist
-					if (typeof results_count[bucket] === 'undefined') {
-						results_count[bucket] = 1;
-					}
-					// Or increment the bucket count in the results object if it does exist
-					else {
-						results_count[bucket]++;
+				// Only continue with calculataion if the user answered the given question
+				if (typeof session_answers[i] !== 'undefined') {
+					// Fetch the selected answer using the session data
+					var answer = questions[i].answers[session_answers[i]];
+					// Loop through each answers' buckets
+					for (var j = 0; j < answer.buckets.length; j++) {
+						var bucket = answer.buckets[j];
+						// Add the bucket to the results object if it doesn't already exist
+						if (typeof results_count[bucket] === 'undefined') {
+							results_count[bucket] = 1;
+						}
+						// Or increment the bucket count in the results object if it does exist
+						else {
+							results_count[bucket]++;
+						}
 					}
 				}
 			}
 			// Loop through each possible category to determine the most frequent/greatest
-			var greatest_category;
+			var greatest_num = 0;
+			var greatest_categories = [];
 			for (var category in results_count) {
 				// If the greatest category doesn't exist, set it
-				// If the current category is greater than the greatest category, update the greatest category
-				if (!greatest_category || results_count.category > results_count.greatest_category) {
-					greatest_category = category;
+				// If the current category is greater than the greatest category, replace the array with the greatest category
+				if (results_count[category] > greatest_num) {
+					greatest_num = results_count[category];
+					greatest_categories = [category];
+				}
+				// If the current category has the same frequency of the greatest, add it to the array of greatest categories
+				else if (results_count[category] === greatest_num) {
+					greatest_categories.push(category);
 				}
 			}
 			// So... now we know the result!
-			// Make it available to the template
-			var final_result = quiz.results[greatest_category];
-			$scope.title = final_result.title;
-			$scope.description = final_result.description;
+			// Make results available to the template
+			$scope.results = [];
+			for (var i = 0; i < greatest_categories.length; i++) {
+				var result = quiz.results[greatest_categories[i]];
+				$scope.results.push({
+					title: result.title,
+					description: result.description
+				});
+			}
 		}
 
     });
@@ -89,15 +112,7 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 			}],
             size: 'lg'
         });
-
-        modalInstance.result.then(function(dismissVal) {
-            if(dismissVal === "Yes") {
-				for(var property in session_answers) {
-					delete session_answers[property];
-				};
-			};
-        });
-
+		
 	};
 
 	$scope.ageCheck = function() {
@@ -109,18 +124,16 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 				$scope.popupTitle = "Are you 13 or older?";
 				$scope.confirm = "Yes";
 				$scope.back = "No";
-
 				$scope.dismiss = function(value) {
         			$uibModalInstance.close(value);
 				};
 			}],
             size: 'lg'
         });
-		console.log("ageCheck");
         modalInstance.result.then(function(dismissVal) {
-            if(dismissVal === "Yes") {
+            if (dismissVal === "Yes") {
 				$location.path('/shareResults');
-			};
+			}
         });
 
 	};
