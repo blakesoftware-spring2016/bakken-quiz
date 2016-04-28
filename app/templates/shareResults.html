@@ -1,15 +1,13 @@
 <div ng-show="showPopup" class="popupBackground" ng-click="showPopup=false"> </div>
-<div ng-show="showPopup" class="popuptest">
+<div ng-show="showPopup" class="popupNew">
 	<p> Your results have been sent!</p>
-	<button ng-click="showPopup = false; continue()"> Back to Results </button>
-	<button ng-click="showPopup = false; back()"> Take Another Quiz </button>
+	<button ng-click="showPopup = false; continue()" class="popupButton"> Back to Results </button>
+	<button ng-click="showPopup = false; back()" class="popupButton"> Take Another Quiz </button>
 </div>
 <div class="backgroundShareResults">
-	<div>
 	<form name="shareResultsForm" class="shareResultsForm" ng-submit="submitForm(shareResultsForm)">
 			<input type="text" name="firstName" ng-model="firstName" required autocomplete="off" placeholder="Enter First Name" />
 			<span ng-show="shareResultsForm.firstName.$error.required && shareResultsForm.firstName.$dirty" class="errorText"> *First Name is Required! </span>
-		</div>
 		<div>
 			<input type="text" name="lastName" ng-model="lastName" required autocomplete="off" placeholder="Enter Last Name" />
 			<span ng-show="shareResultsForm.lastName.$error.required && shareResultsForm.lastName.$dirty" class="errorText"> *Last Name is Required! </span>
