@@ -1,9 +1,9 @@
 <div class="backgroundSummaryMary">
-  <div class="content">
-      <div class="quizDescription">{{quiz.description}}</div>
-  </div>
+	<div class="content">
+		<div class="quizDescription">{{quiz.description}}</div>
+	</div>
 </div>
  <div class="quizDescNav">
-  	<a href="#/chooseQuiz"><button id="backButton">Back</button></a>
-  	<a href="{{question_href}}"><button id="nextButton">Play</button></a>
+	<a href="#/chooseQuiz"><button id="backButton">Back</button></a>
+	<button id="nextButton" ng-click="start_quiz()">Play</button>
  </div>
