@@ -125,13 +125,13 @@ html, body {
 }
 
 .buttonContainer {
-	width: 740px;
+	width: 738px;
 	margin: 20px auto 0 auto;
 	box-sizing: border-box;
 }
 
 .buttonContainer.romanticStyle {
-	width: 744px;
+	width: 750px;
 }
 
 /* Progress Bar */
@@ -230,10 +230,12 @@ html, body {
 }
 
 .maryHead {
+	white-space: nowrap;
 	color: white;
 	position: absolute;
 	top: 30%;
-	left: 58%;
+	left: 75%;
+	transform: translateX(-50%);
 	font-size: 40px;
 }
 
@@ -257,7 +259,8 @@ html, body {
 	color: white;
 	position: absolute;
 	top: 30%;
-	left: 6%;
+	left: 25%;
+	transform: translateX(-50%);
 	font-size: 40px;
 }
 
