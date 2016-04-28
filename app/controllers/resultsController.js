@@ -5,6 +5,15 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 		var quizID = $routeParams.quizID;
         var quiz = response.data[quizID];
 		var questions = quiz.questions;
+		// Add Easter egg if the user doesn't answer any questions
+		// Exit out of calculation to prevent errors
+		if (Object.keys(session_answers).length === 0) {
+			$scope.results = [{
+				title: 'INSERT TITLE FOR EASTER EGG HERE',
+				description: 'INSERT DESCRIPTION FOR EASTER EGG HERE'
+			}]
+			return;
+		}
 		// For percentage quizzes, in which the answer is essentially boolean
 		// And the result is calculated based the percentage of the questions the user idenfifies with the target property
 		if (quiz.type === 'bool') {
