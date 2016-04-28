@@ -78,6 +78,9 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 
     $scope.back = function() {
       $location.path('/chooseQuiz');
+      for(var property in session_answers) {
+			delete session_answers[property];
+		};
     };
 
 }]);
