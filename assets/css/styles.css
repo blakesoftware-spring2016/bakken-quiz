@@ -230,10 +230,12 @@ html, body {
 }
 
 .maryHead {
+	white-space: nowrap;
 	color: white;
 	position: absolute;
 	top: 30%;
-	left: 58%;
+	left: 75%;
+	transform: translateX(-50%);
 	font-size: 40px;
 }
 
@@ -257,7 +259,8 @@ html, body {
 	color: white;
 	position: absolute;
 	top: 30%;
-	left: 6%;
+	left: 25%;
+	transform: translateX(-50%);
 	font-size: 40px;
 }
 
