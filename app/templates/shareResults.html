@@ -1,37 +1,44 @@
-<div class="backgroundShareResults">
-<form name="shareResultsForm" class="shareResultsForm" ng-submit="submitForm(shareResultsForm)">
+<div ng-show="showPopup" class="popupBackground" ng-click="showPopup=false"> </div>
+<div ng-show="showPopup" class="popuptest">
+    <p> Your results have been sent!</p>
+    <button ng-click="showPopup = false; continue()"> Back to Results </button>
+  <button ng-click="showPopup = false; back()"> Take Another Quiz </button>
 
-	<div>
-		<input type="text" name="firstName" ng-model="firstName" required autocomplete="off" placeholder="Enter First Name" />
-		<span ng-show="shareResultsForm.firstName.$error.required && shareResultsForm.firstName.$dirty" class="errorText"> *First Name is Required! </span>
-	</div>
-
-	<div>
-		<input type="text" name="lastName" ng-model="lastName" required autocomplete="off" placeholder="Enter Last Name" />
-		<span ng-show="shareResultsForm.lastName.$error.required && shareResultsForm.lastName.$dirty" class="errorText"> *Last Name is Required! </span>
-	</div>
-
-
-	<div>
-		<input type="email" name="email" ng-model="email" overwrite-email required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)" />
-		<span ng-show="shareResultsForm.email.$error.required && shareResultsForm.email.$dirty" class="errorText"> *Email is required! </span>
-		<span ng-show="shareResultsForm.email.$error.email" class="errorText"> *Invalid email address </span>
-	</div>
-
-	<div>
-		<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Re-Enter Email Address" value-matches="email"/>
-		<span ng-show="shareResultsForm.emailCheck.$dirty && shareResultsForm.emailCheck.$invalid" class="errorText"> *Emails do not match!</span>
-
-
-	</div>
-
-<!--ng-model-options="{ updateOn: 'blur' }-->
-
-
-</form>
-
-<div class="shareResultsButtonContainer">
-	<a href="#/results"> <button id="backToResultsButton"> Back to Results</button> </a>
-	<button id="sendResultsButton" ng-click="checkEmails()" >Send</button>
 </div>
+<div class="backgroundShareResults">
+	<form name="shareResultsForm" class="shareResultsForm" ng-submit="submitForm(shareResultsForm)">
+
+		<div>
+			<input type="text" name="firstName" ng-model="firstName" required autocomplete="off" placeholder="Enter First Name" />
+			<span ng-show="shareResultsForm.firstName.$error.required && shareResultsForm.firstName.$dirty" class="errorText"> *First Name is Required! </span>
+		</div>
+
+		<div>
+			<input type="text" name="lastName" ng-model="lastName" required autocomplete="off" placeholder="Enter Last Name" />
+			<span ng-show="shareResultsForm.lastName.$error.required && shareResultsForm.lastName.$dirty" class="errorText"> *Last Name is Required! </span>
+		</div>
+
+
+		<div>
+			<input type="email" name="email" ng-model="email" overwrite-email required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)" />
+			<span ng-show="shareResultsForm.email.$error.required && shareResultsForm.email.$dirty && submitted" class="errorText"> *Email is required! </span>
+			<span ng-show="shareResultsForm.email.$error.email &&submitted" class="errorText"> *Invalid email address </span>
+		</div>
+
+		<div>
+			<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Re-Enter Email Address" value-matches="email"/>
+			<span ng-show="shareResultsForm.emailCheck.$dirty && shareResultsForm.emailCheck.$invalid && submitted" class="errorText"> *Emails do not match!</span>
+
+
+		</div>
+
+	<!--ng-model-options="{ updateOn: 'blur' }-->
+
+
+	</form>
+	<p class="description shareResultsDescription">The Bakken Musem will use this information to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<div class="shareResultsButtonContainer">
+		<button id="backToResultsButton" ng-click="backResults()"> Back to Results</button> </a>
+		<button id="sendResultsButton" ng-click="checkEmails(); submitted = true;">Send</button>
+	</div>
 </div>
