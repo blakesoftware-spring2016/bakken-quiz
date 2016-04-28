@@ -473,7 +473,8 @@ input.ng-invalid.ng-dirty {
   padding-right: 150px;
   padding-top: 60px;
   height: 411px;
-  background: rgba(255,255,255, 0.85);
+	/* It's possible I am wrong, but I was under the impression we had decided to make popups fully opaque.  I will ask about this tomorrow, but I think it looks godawful if you can see text through it Prev value: 0.85*/
+  background: rgba(255,255,255, 1);
   position: absolute;
   margin-left: 138px;
   margin-top: 147px;
