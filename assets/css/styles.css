@@ -38,13 +38,13 @@ html, body {
 .questionContainer {
 	width: 1024px;
 	height: 768px;
-	/*background: url("../images/question.png");*/
 }
 
 .question {
-	width: 100%;
+	width: 900px;
 	height: 100px;
 	margin-top: 110px;
+	margin-left: 82px;
 	float: left;
 	color: white;
 	font-size: 32px;
@@ -56,6 +56,12 @@ html, body {
 .question.romanticStyle {
 	margin-top: 132px;
 	margin-bottom: 23px;
+}
+
+.question.overflow {
+	line-height: normal;
+	margin-top: 124px;
+	margin-bottom: -14px;
 }
 
 .answerContainer {

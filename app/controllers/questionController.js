@@ -5,12 +5,17 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		$(".questionContainer").addClass("backgroundMaryQuestion");
 		$scope.classToAddToNumberDiv = "maryText";
 		$scope.romanticStyleClass = "";
+
+		if ($routeParams.questionID === "3") {
+			$scope.questionOverflowClass = "overflow";
+		}
 	}
 	else {
 		$(".questionContainer").addClass("backgroundRomanticQuestion");
 		$scope.classToAddToNumberDiv = "romanticText";
 		$scope.romanticStyleClass = "romanticStyle";
 	}
+
 
 
 	quizData.then(function(response) {
