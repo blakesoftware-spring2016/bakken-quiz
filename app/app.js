@@ -4,7 +4,7 @@ app.factory('quizData', function($http) {
 	return $http.get('app/questions.json');
 });
 
-var session_answers = [];
+var session_answers = {};
 
 app.config(['$routeProvider', function($routeProvider) {
 	
