@@ -1,4 +1,4 @@
-var app = angular.module('quizApp', ['ngRoute','ngAnimate', 'ui.bootstrap']);
+var app = angular.module('quizApp', ['ngRoute','ngAnimate']);
 
 app.factory('quizData', function($http) {
 	return $http.get('app/questions.json');
