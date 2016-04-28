@@ -4,11 +4,14 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	if ($routeParams.quizID === "0") {
 		$(".questionContainer").addClass("backgroundMaryQuestion");
 		$scope.classToAddToNumberDiv = "maryText";
+		$scope.romanticStyleClass = "";
 	}
 	else {
 		$(".questionContainer").addClass("backgroundRomanticQuestion");
 		$scope.classToAddToNumberDiv = "romanticText";
+		$scope.romanticStyleClass = "romanticStyle";
 	}
+
 
 	quizData.then(function(response) {
 		// Get parameters from route
