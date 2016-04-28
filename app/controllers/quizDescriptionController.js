@@ -4,13 +4,13 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 
         var quizID = $routeParams.quizID;
 		$scope.quiz = response.data[quizID];
-		$scope.question_href = '#/question/' + quizID + '/0';
-		$scope.questions = $scope.quiz.questions;
-
-		for (var i = 0; i < $scope.questions.length; i++) {
-			session_answers.push(null);
+		
+		$scope.start_quiz = function() {
+			// As the user is starting a new quiz, delete all previous session data
+			session_answers = {};
+			$location.path('/question/' + quizID + '/0')
 		}
-
+		
     });
 
 }]);

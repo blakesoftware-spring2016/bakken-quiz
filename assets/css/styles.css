@@ -38,23 +38,34 @@ html, body {
 .questionContainer {
 	width: 1024px;
 	height: 768px;
-	/*background: url("../images/question.png");*/
 }
 
 .question {
-	width: 100%;
+	width: 900px;
 	height: 100px;
-	margin-top: 100px;
+	margin-top: 110px;
+	margin-left: 82px;
 	float: left;
 	color: white;
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: bold;
 	text-align: center;
 	line-height: 100px;
 }
 
+.question.romanticStyle {
+	margin-top: 132px;
+	margin-bottom: 23px;
+}
+
+.question.overflow {
+	line-height: normal;
+	margin-top: 124px;
+	margin-bottom: -14px;
+}
+
 .answerContainer {
-	width: 800px;
+	width: 750px;
 	height: 360px;
 	margin: auto;
 	display: flex;
@@ -62,6 +73,12 @@ html, body {
 	flex-direction: row;
 	justify-content: space-between;
 	box-sizing: border-box;
+}
+
+.answerContainer.romanticStyle {
+	width: 770px;
+	height: 270px;
+	margin-bottom: 67px;
 }
 
 .answer {
@@ -72,9 +89,13 @@ html, body {
 	text-align: center;
 	color: white;
 	background: rgba(0,0,0, 0.3);
-	border: 2px solid white;
+	border: 3px solid white;
 	font-size: 20px;
 	position: relative;
+}
+
+.answer.romanticStyle {
+	margin: 10px;
 }
 
 .answerImage {
@@ -104,10 +125,13 @@ html, body {
 }
 
 .buttonContainer {
-	width: 800px;
-	padding: 5px;
+	width: 738px;
 	margin: 20px auto 0 auto;
 	box-sizing: border-box;
+}
+
+.buttonContainer.romanticStyle {
+	width: 750px;
 }
 
 /* Progress Bar */
@@ -206,10 +230,12 @@ html, body {
 }
 
 .maryHead {
+	white-space: nowrap;
 	color: white;
 	position: absolute;
 	top: 30%;
-	left: 58%;
+	left: 75%;
+	transform: translateX(-50%);
 	font-size: 40px;
 }
 
@@ -233,7 +259,8 @@ html, body {
 	color: white;
 	position: absolute;
 	top: 30%;
-	left: 6%;
+	left: 25%;
+	transform: translateX(-50%);
 	font-size: 40px;
 }
 
@@ -266,15 +293,18 @@ button {
   float: right;
 }
 
-.resultsDescription {
-  color: white;
-  font-size: 20px;
-  width: 660px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Results page */
 
+.resultsDescription {
+	width: 100%;
+	height: 480px;
+	padding: 0 60px;
+	top: 150px;
+	position: relative;
+	box-sizing: border-box;
+	font-size: 20px;
+	color: white;
+	overflow-y: auto;
 }
 
 #shareResultsButton {
@@ -446,7 +476,8 @@ input.ng-invalid.ng-dirty {
   padding-right: 150px;
   padding-top: 60px;
   height: 411px;
-  background: rgba(255,255,255, 0.85);
+	/* It's possible I am wrong, but I was under the impression we had decided to make popups fully opaque.  I will ask about this tomorrow, but I think it looks godawful if you can see text through it Prev value: 0.85*/
+  background: rgba(255,255,255, 1);
   position: absolute;
   margin-left: 138px;
   margin-top: 147px;

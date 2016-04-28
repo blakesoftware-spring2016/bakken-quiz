@@ -4,11 +4,10 @@
     <button ng-click="showPopup = false; continue()" class="popupButton">YES</button>
 	<button ng-click="showPopup = false" class="popupButton">NO</button>
 </div>
-
 <div class="questionContainer">
-    <div class="question">{{question.text}}</div>
-    <div class="answerContainer">
-        <div class="answer"
+    <div class="question {{romanticStyleClass}} {{questionOverflowClass}}">{{question.text}}</div>
+    <div class="answerContainer {{romanticStyleClass}}">
+        <div class="answer {{romanticStyleClass}}"
 			ng-repeat="answer in answers track by $index"
 			ng-class="{selected: isSelected($index)}"
 			ng-click="select($index)">
@@ -16,7 +15,7 @@
 			<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
 		</div>
 	</div>
-	<div class="buttonContainer">
+	<div class="buttonContainer {{romanticStyleClass}}">
 		<button class="navButton" id="backButton" ng-click="back()">Back</button>
 		<button class="navButton" id="menuButton" ng-click="showPopup = true">Menu</button>
 		<button class="navButton" id="nextButton" ng-click="next()">Next</button>
