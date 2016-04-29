@@ -442,13 +442,13 @@ input.ng-invalid.ng-dirty {
 }
 
 /* Will need to happen eventually, but no image for it is currently available */
-/*.backgroundSummaryRomantic {
-	background-image: url("../images/summary.png");
+.backgroundSummaryRomantic {
+	background-image: url("../images/romanticDescription.png");
 	background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
-}*/
+}
 
 .backgroundShareResults {
   background-image: url("../images/shareResults.png");
