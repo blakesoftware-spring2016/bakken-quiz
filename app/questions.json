@@ -101,7 +101,7 @@
         }, {
             "text" : "A friend or pet to keep me company",
             "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000025560371_Large.jpg "
+			"image": "assets/images/5A_2WhichMary/4_iStock_000025560371_Large.jpg"
         }]
     }, {
 	    "text": "Who would you most like to have dinner with?",
@@ -170,22 +170,28 @@
         "text": "What is your dream car?",
         "answers": [{
             "text" : "Something that’s fuel efficient",
-            "buckets": ["Intellectual"]
+            "buckets": ["Intellectual"],
+			"image": "assets/images/5A_2WhichMary/8_iStock_000040936556_Illustration.jpg"
         }, {
             "text" : "Flying car",
-            "buckets": ["Dreamer"]
+            "buckets": ["Dreamer"],
+			"image": "assets/images/5A_2WhichMary/8_iStock_000040348198_Illustration.jpg"
         }, {
             "text" : "Motorcycle",
-            "buckets": ["Rebel"]
+            "buckets": ["Rebel"],
+			"image": "assets/images/5A_2WhichMary/8_iStock_000027759681_Large.jpg"
         }, {
             "text" : "Antique or Classic Car",
-            "buckets": ["Artist"]
+            "buckets": ["Artist"],
+			"image": "assets/images/5A_2WhichMary/8_iStock_000046155402_Large.jpg"
         }, {
             "text" : "Something fast!",
-            "buckets": ["Trailblazer"]
+            "buckets": ["Trailblazer"],
+			"image": "assets/images/5A_2WhichMary/8_iStock_000064278079_Large.jpg"
         }, {
             "text" : "Something with room for my whole family",
-            "buckets": ["Nurturer"]
+            "buckets": ["Nurturer"],
+			"image": "assets/images/5A_2WhichMary/8_iStock_000007832768_Large.jpg"
         }]
     }, {
         "text": "What matters most to you?",
@@ -233,22 +239,28 @@
     	"text": "Your ideal meal for dinner is...",
     	"answers": [{
             "text" : "Well balanced",
-            "buckets": ["Intellectual"]
+            "buckets": ["Intellectual"],
+			"image": "assets/images/5A_2WhichMary/11_iStock_000070093865_Large.jpg"
         }, {
             "text" : "Something I can create  from whatever’s on hand",
-            "buckets": ["Dreamer"]
+            "buckets": ["Dreamer"],
+			"image": "assets/images/5A_2WhichMary/11_iStock_000076795251_Large.jpg"
         }, {
             "text" : "The weirder the better",
-            "buckets": ["Rebel"]
+            "buckets": ["Rebel"],
+			"image": "assets/images/5A_2WhichMary/11_iStock_000067570009_Medium.jpg"
         },{
             "text" : "I’m too busy to eat",
-            "buckets": ["Artist"]
+            "buckets": ["Artist"],
+			"image": "assets/images/5A_2WhichMary/11_iStock_000033887876_Large.jpg "
         }, {
             "text" : "My own version of a classic dish",
-            "buckets": ["Trailblazer"]
+            "buckets": ["Trailblazer"],
+			"image": "assets/images/5A_2WhichMary/11_iStock_000004284326_Large.jpg "
         }, {
             "text" : "Comfort food ",
-            "buckets": ["Nurturer"]
+            "buckets": ["Nurturer"],
+			"image": "assets/images/5A_2WhichMary/11_iStock_000003274487_Large.jpg "
         }]
     }, {
         "text": "You’re lost. What do you do?",
