@@ -554,6 +554,7 @@ button {
 	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
 	font-weight: 600;
 	color: white;
+	outline: none;
 }
 
 
