@@ -377,7 +377,7 @@
     }, {
         "text": "You have a slumber party with friends. What do you do?",
         "answers": [{
-            "text" : "Invent ghost stories and share them face paint and put on a play",
+            "text" : "Invent and share ghost stories, face paint and put on a play",
             "target": true
         }, {
             "text" : "Play board games",
