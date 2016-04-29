@@ -103,6 +103,7 @@ html, body {
 	height: 100%;
 	position: absolute;
 	z-index: 5;
+	float: left;
 }
 
 .answerText {

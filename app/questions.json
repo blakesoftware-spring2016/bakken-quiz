@@ -79,11 +79,9 @@
     }, {
         "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
         "answers": [{
-            "text" : "Book",
             "buckets": ["Intellectual"],
 			"image": "assets/images/5A_2WhichMary/4_iStock_000077290515_Large.jpg"
         }, {
-            "text" : "Hammock",
             "buckets": ["Dreamer"],
 			"image": "assets/images/5A_2WhichMary/4_iStock_000018812047_Large.jpg"
         }, {
@@ -91,7 +89,6 @@
             "buckets": ["Rebel"],
 			"image": "assets/images/5A_2WhichMary/4_iStock_000039557368_Large.jpg"
         }, {
-            "text" : "Journal",
             "buckets": ["Artist"],
 			"image": "assets/images/5A_2WhichMary/4_iStock_000066744447_Large.jpg"
         }, {
@@ -287,7 +284,8 @@
 	"results": {
 		"Intellectual": {
 			"title": "You're an intellectual!",
-			"description": "Like Mary, you crave information and love learning. You’re reading all the time, always looking for new concepts to grapple with. You enjoy a spirited philosophical debate, even if drives your friends crazy."
+			"description": "Like Mary, you crave information and love learning. You’re reading all the time, always looking for new concepts to grapple with. You enjoy a spirited philosophical debate, even if drives your friends crazy.",
+			"quote": "“We often...sat up in conversation till the morning light. There was never any lack of subjects, and, grave or gay, we were always interested.” –Mary Shelley"
 		},
 		"Dreamer": {
 			"title": "You're a dreamer!",
@@ -305,11 +303,13 @@
 		},
 		"Trailblazer": {
 			"title": "You're a trailblazer!",
-			"description": "Like Mary, the Mother of Science Fiction, you like to clear your own path for others to follow. You are a pioneer, not afraid to adventure into undiscovered territories. The journey may be risky, but you believe the rewards are worth it."
+			"description": "Like Mary, the Mother of Science Fiction, you like to clear your own path for others to follow. You are a pioneer, not afraid to adventure into undiscovered territories. The journey may be risky, but you believe the rewards are worth it.",
+			"quote": "“Invention...does not consist in creating out of void, but out of chaos...Invention consists in the capacity of seizing on the capabilities of a subject, and in the power of moulding and fashioning ideas suggested to it.” –Mary Shelley"
 		},
 		"Nurturer": {
 			"title": "You're a nurturer!",
-			"description": "Like Mary, you have great compassion and empathy for those around you. You create a supportive and encouraging environment for others to flourish and thrive. Although, sometimes this means your needs take a back seat to theirs."
+			"description": "Like Mary, you have great compassion and empathy for those around you. You create a supportive and encouraging environment for others to flourish and thrive. Although, sometimes this means your needs take a back seat to theirs.",
+			"quote": "MY BELOVED FRIEND I waited with the greatest anxiety for your letter. You are well, and that assurance has restored some peace to me."
 		}
 	}
 }, {
@@ -319,33 +319,27 @@
     "questions": [{
         "text": "Where would you like to live?",
         "answers": [{
-            "text" : "City",
             "target": false,
 			"image": "assets/images/5A_1Romantic/1_iStock_000066963861_XXXLarge.jpg"
         }, {
-            "text" : "Mountains",
             "target": true,
 			"image": "assets/images/5A_2WhichMary/1_iStock_000026433153_Double.jpg"
         }]
     }, {
         "text": "Are you a night owl or an early bird?",
         "answers": [{
-            "text" : "Night Owl",
             "target": true,
 			"image": "assets/images/5A_2WhichMary/12_iStock_000016355424_Medium.jpg"
         }, {
-            "text" : "Early Bird",
             "target": false,
 			"image": "assets/images/5A_2WhichMary/12_iStock_000015778971_XXXLarge rev.jpg"
         }]
     }, {
         "text": "Which picture looks most like your bedroom?",
         "answers": [{
-            "text" : "Insert picture",
             "target": false,
 			"image": "assets/images/5A_2WhichMary/2_iStock_000078990241_XXXLarge.jpg"
         }, {
-            "text" : "Insert another picture",
             "target": true,
 			"image": "assets/images/5A_2WhichMary/2_iStock_000011378059_Large.jpg"
         }]
