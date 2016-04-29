@@ -252,15 +252,15 @@
         },{
             "text" : "I’m too busy to eat",
             "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000033887876_Large.jpg "
+			"image": "assets/images/5A_2WhichMary/11_iStock_000033887876_Large.jpg"
         }, {
             "text" : "My own version of a classic dish",
             "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000004284326_Large.jpg "
+			"image": "assets/images/5A_2WhichMary/11_iStock_000004284326_Large.jpg"
         }, {
             "text" : "Comfort food ",
             "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000003274487_Large.jpg "
+			"image": "assets/images/5A_2WhichMary/11_iStock_000003274487_Large.jpg"
         }]
     }, {
         "text": "You’re lost. What do you do?",
@@ -320,37 +320,45 @@
         "text": "Where would you like to live?",
         "answers": [{
             "text" : "City",
-            "target": false
+            "target": false,
+			"image": "assets/images/5A_1Romantic/1_iStock_000066963861_XXXLarge.jpg"
         }, {
             "text" : "Mountains",
-            "target": true
+            "target": true,
+			"image": "assets/images/5A_2WhichMary/1_iStock_000026433153_Double.jpg"
         }]
     }, {
         "text": "Are you a night owl or an early bird?",
         "answers": [{
             "text" : "Night Owl",
-            "target": true
+            "target": true,
+			"image": "assets/images/5A_2WhichMary/12_iStock_000016355424_Medium.jpg"
         }, {
             "text" : "Early Bird",
-            "target": false
+            "target": false,
+			"image": "assets/images/5A_2WhichMary/12_iStock_000015778971_XXXLarge rev.jpg"
         }]
     }, {
         "text": "Which picture looks most like your bedroom?",
         "answers": [{
             "text" : "Insert picture",
-            "target": false
+            "target": false,
+			"image": "assets/images/5A_2WhichMary/2_iStock_000078990241_XXXLarge.jpg"
         }, {
             "text" : "Insert another picture",
-            "target": true
+            "target": true,
+			"image": "assets/images/5A_2WhichMary/2_iStock_000011378059_Large.jpg"
         }]
     }, {
         "text": "The pursuit of knowledge should be about:",
         "answers": [{
             "text" : "Looking for facts",
-            "target": false
+            "target": false,
+			"image": "assets/images/5A_2WhichMary/7_iStock_000046864396_Large.jpg"
         }, {
             "text" : "Searching for hidden truth",
-            "target": true
+            "target": true,
+			"image": "assets/images/5A_2WhichMary/7_iStock_000046866516_Large.jpg "
         }]
     }, {
         "text": "It’s a critical game and your team is behind. What do you do?",
@@ -365,10 +373,12 @@
         "text": "How would you pick a college major?",
         "answers": [{
             "text" : "Choose one that will lead to a secure career path",
-            "target": false
+            "target": false,
+			"image": "assets/images/5A_2WhichMary/4_iStock_000019951335_Large.jpg"
         }, {
             "text" : "Follow your passion ",
-            "target": true
+            "target": true,
+			"image": "assets/images/5A_2WhichMary/4_iStock_000024026920_Large.jpg"
         }]
     }, {
         "text": "You have a slumber party with friends. What do you do?",
@@ -410,10 +420,12 @@
         "text": "How do you reflect at the end of a long day?",
         "answers": [{
             "text" : "Write in your journal",
-            "target": true
+            "target": true,
+			"image": "assets/images/5A_2WhichMary/9_iStock_000060928544_Large.jpg"
         }, {
         	"text" : "Talk to your friends",
-            "target": false
+            "target": false,
+			"image": "assets/images/5A_2WhichMary/9_iStock_000058524006_Large.jpg"
         }]
     }, {
         "text": "You’re shopping for a new car. You…",
