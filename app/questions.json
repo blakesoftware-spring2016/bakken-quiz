@@ -285,7 +285,7 @@
 	}
 }, {
     "title": "Are You A Romantic?",
-	"type": "percentage",
+	"type": "bool",
 	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18thand early 19th centuries. It came about as a reaction to Neoclassicism, prevalent in the previous century. Are you a Romantic?",
     "questions": [{
         "text": "Where would you like to live?",

@@ -293,15 +293,18 @@ button {
   float: right;
 }
 
-.resultsDescription {
-  color: white;
-  font-size: 20px;
-  width: 660px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Results page */
 
+.resultsDescription {
+	width: 100%;
+	height: 480px;
+	padding: 0 60px;
+	top: 150px;
+	position: relative;
+	box-sizing: border-box;
+	font-size: 20px;
+	color: white;
+	overflow-y: auto;
 }
 
 #shareResultsButton {
@@ -345,8 +348,8 @@ label {
 }
 
 input {
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 	border: none;
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.8);
@@ -372,7 +375,8 @@ input {
 
 
 ::-webkit-input-placeholder {
-   color: #475f95;
+   /*color: #475f95;*/
+   color: rgba(65,94,142, 0.5);
 }
 
 
@@ -386,6 +390,7 @@ input.ng-invalid.ng-dirty {
 }
 
 .errorText {
+  position: absolute;
   color: red;
 }
 
@@ -537,6 +542,7 @@ button {
 	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
 	font-weight: 600;
 	color: white;
+	outline: none;
 }
 
 
