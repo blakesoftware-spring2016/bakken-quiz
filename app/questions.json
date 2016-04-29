@@ -323,36 +323,36 @@
 			"image": "assets/images/5A_1Romantic/1_iStock_000066963861_XXXLarge.jpg"
         }, {
             "target": true,
-			"image": "assets/images/5A_2WhichMary/1_iStock_000026433153_Double.jpg"
+			"image": "assets/images/5A_1Romantic/1_iStock_000026433153_Double.jpg"
         }]
     }, {
         "text": "Are you a night owl or an early bird?",
         "answers": [{
             "target": true,
-			"image": "assets/images/5A_2WhichMary/12_iStock_000016355424_Medium.jpg"
+			"image": "assets/images/5A_1Romantic/2_iStock_000016355424_Medium.jpg"
         }, {
             "target": false,
-			"image": "assets/images/5A_2WhichMary/12_iStock_000015778971_XXXLarge rev.jpg"
+			"image": "assets/images/5A_1Romantic/12_iStock_000015778971_XXXLarge rev.jpg"
         }]
     }, {
         "text": "Which picture looks most like your bedroom?",
         "answers": [{
             "target": false,
-			"image": "assets/images/5A_2WhichMary/2_iStock_000078990241_XXXLarge.jpg"
+			"image": "assets/images/5A_1Romantic/2_iStock_000078990241_XXXLarge.jpg"
         }, {
             "target": true,
-			"image": "assets/images/5A_2WhichMary/2_iStock_000011378059_Large.jpg"
+			"image": "assets/images/5A_1Romantic/2_iStock_000011378059_Large.jpg"
         }]
     }, {
         "text": "The pursuit of knowledge should be about:",
         "answers": [{
             "text" : "Looking for facts",
             "target": false,
-			"image": "assets/images/5A_2WhichMary/7_iStock_000046864396_Large.jpg"
+			"image": "assets/images/5A_1Romantic/7_iStock_000046864396_Large.jpg"
         }, {
             "text" : "Searching for hidden truth",
             "target": true,
-			"image": "assets/images/5A_2WhichMary/7_iStock_000046866516_Large.jpg "
+			"image": "assets/images/5A_1Romantic/7_iStock_000046866516_Large.jpg "
         }]
     }, {
         "text": "It’s a critical game and your team is behind. What do you do?",
@@ -368,11 +368,11 @@
         "answers": [{
             "text" : "Choose one that will lead to a secure career path",
             "target": false,
-			"image": "assets/images/5A_2WhichMary/4_iStock_000019951335_Large.jpg"
+			"image": "assets/images/5A_1Romantic/4_iStock_000019951335_Large.jpg"
         }, {
             "text" : "Follow your passion ",
             "target": true,
-			"image": "assets/images/5A_2WhichMary/4_iStock_000024026920_Large.jpg"
+			"image": "assets/images/5A_1Romantic/4_iStock_000024026920_Large.jpg"
         }]
     }, {
         "text": "You have a slumber party with friends. What do you do?",
@@ -415,11 +415,11 @@
         "answers": [{
             "text" : "Write in your journal",
             "target": true,
-			"image": "assets/images/5A_2WhichMary/9_iStock_000060928544_Large.jpg"
+			"image": "assets/images/5A_1Romantic/9_iStock_000060928544_Large.jpg"
         }, {
         	"text" : "Talk to your friends",
             "target": false,
-			"image": "assets/images/5A_2WhichMary/9_iStock_000058524006_Large.jpg"
+			"image": "assets/images/5A_1Romantic/9_iStock_000058524006_Large.jpg"
         }]
     }, {
         "text": "You’re shopping for a new car. You…",
