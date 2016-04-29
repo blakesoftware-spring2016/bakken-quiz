@@ -27,64 +27,81 @@
         "text": "Where would you like to go on vacation? What kind of vacation?",
         "answers": [{
             "text" : "Learning more about the ancient world in Rome",
-            "buckets": ["Intellectual"]
+            "buckets": ["Intellectual"],
+			"image": "assets/images/5A_2WhichMary/2_iStock_000061002134_Large.jpg"
         }, {
             "text" : "Disney World",
-            "buckets": ["Dreamer"]
+            "buckets": ["Dreamer"],
+			"image": "assets/images/5A_2WhichMary/2_iStock_000038897192_Large.jpg"
         }, {
-            "text" : "Wherever life takes me ",
+            "text" : "Wherever life takes me",
             "buckets": ["Rebel"]
         }, {
             "text" : "Visiting the Louvre in Paris",
-            "buckets": ["Artist"]
+            "buckets": ["Artist"],
+			"image": "assets/images/5A_2WhichMary/2_iStock_000051920866_Large.jpg"
         }, {
             "text" : "Exploring Antarctica",
-            "buckets": ["Trailblazer"]
+            "buckets": ["Trailblazer"],
+			"image": "assets/images/5A_2WhichMary/2_iStock_000002571916_Medium.jpg"
         }, {
             "text" : "Camping in a national park ",
-            "buckets": ["Nurturer"]
+            "buckets": ["Nurturer"],
+			"image": "assets/images/5A_2WhichMary/2_iStock_000002571916_Medium.jpg"
         }]
     }, {
         "text": "My favorite kind of music is...",
         "answers": [{
             "text" : "Classical",
-            "buckets": ["Intellectual"]
+            "buckets": ["Intellectual"],
+			"image": "assets/images/5A_2WhichMary/3_iStock_000078233527_Large.jpg"
         }, {
             "text" : "Film Score",
-            "buckets": ["Dreamer"]
+            "buckets": ["Dreamer"],
+			"image": "assets/images/5A_2WhichMary/3_iStock_000072359709_Large.jpg"
         }, {
             "text" : "Punk Rock",
-            "buckets": ["Rebel"]
+            "buckets": ["Rebel"],
+			"image": "assets/images/5A_2WhichMary/3_iStock_000054264106_Large.jpg "
         }, {
             "text" : "That which inspires me",
-            "buckets": ["Artist"]
+            "buckets": ["Artist"],
+			"image": "assets/images/5A_2WhichMary/3_iStock_000038417188_Large.jpg"
         }, {
             "text" : "My own compositions",
-            "buckets": ["Trailblazer"]
+            "buckets": ["Trailblazer"],
+			"image": "assets/images/5A_2WhichMary/3_Music_Compositions_RW.jpg"
         }, {
             "text" : "Folk",
-            "buckets": ["Nurturer"]
+            "buckets": ["Nurturer"],
+			"image": "assets/images/5A_2WhichMary/3_iStock_000085470625_Large.jpg"
         }]
     }, {
         "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
         "answers": [{
             "text" : "Book",
-            "buckets": ["Intellectual"]
+            "buckets": ["Intellectual"],
+			"image": "assets/images/5A_2WhichMary/4_iStock_000077290515_Large.jpg"
         }, {
             "text" : "Hammock",
-            "buckets": ["Dreamer"]
+            "buckets": ["Dreamer"],
+			"image": "assets/images/5A_2WhichMary/4_iStock_000018812047_Large.jpg"
         }, {
             "text" : "Boat. Nothing can keep me here!",
-            "buckets": ["Rebel"]
+            "buckets": ["Rebel"],
+			"image": "assets/images/5A_2WhichMary/4_iStock_000039557368_Large.jpg"
         }, {
             "text" : "Journal",
-            "buckets": ["Artist"]
+            "buckets": ["Artist"],
+			"image": "assets/images/5A_2WhichMary/4_iStock_000066744447_Large.jpg"
         }, {
             "text" : "A flag to plant on my newly discovered island!",
-            "buckets": ["Trailblazer"]
+            "buckets": ["Trailblazer"],
+			"image": "assets/images/5A_2WhichMary/3_iStock_000085470625_Large.jpg"
         }, {
             "text" : "A friend or pet to keep me company",
-            "buckets": ["Nurturer"]
+            "buckets": ["Nurturer"],
+			"image": "assets/images/5A_2WhichMary/4_iStock_000025560371_Large.jpg "
         }]
     }, {
 	    "text": "Who would you most like to have dinner with?",
