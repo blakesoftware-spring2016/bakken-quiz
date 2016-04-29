@@ -2,14 +2,14 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 
 	// Set correct background
 	if ($routeParams.quizID === '0') {
-		$(".questionContainer").addClass("backgroundMaryQuestion");
+		// $(".questionContainer").addClass("backgroundMaryQuestion");
 		$scope.classToAddToNumberDiv = "maryText";
 		$scope.romanticStyleClass = "";
 		if ($routeParams.questionID === "3") {
 			$scope.questionOverflowClass = "overflow";
 		}
 	} else {
-		$(".questionContainer").addClass("backgroundRomanticQuestion");
+		// $(".questionContainer").addClass("backgroundRomanticQuestion");
 		$scope.classToAddToNumberDiv = "romanticText";
 		$scope.romanticStyleClass = "romanticStyle";
 	}
