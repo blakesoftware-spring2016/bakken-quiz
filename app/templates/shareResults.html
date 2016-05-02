@@ -1,7 +1,7 @@
 <div ng-show="showPopup && shareResultsForm.$valid &&submitted" class="popupBackground" ng-click="showPopup=false"> </div>
 <div ng-show="showPopup && shareResultsForm.$valid && submitted" class="popupNew">
 	<p class="popupText"> Your results have been sent!</p>
-	<button ng-click="showPopup = false; continue()" class="popupShareButton"> Back to Results </button>
+	<button ng-click="showPopup = false; backResults()" class="popupShareButton"> Back to Results </button>
 	<button ng-click="showPopup = false; back()" class="popupShareButton"> Take Another Quiz </button>
 </div>
 <div class="backgroundShareResults">
