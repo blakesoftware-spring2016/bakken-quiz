@@ -1,4 +1,4 @@
-app.controller("shareResultsController", ['$scope','$location', 'quizData','$uibModal', function($scope, $location, quizData, $uibModal) {
+app.controller("shareResultsController", ['$scope','$location', 'quizData', function($scope, $location, quizData, $uibModal) {
 	
 	$scope.checkEmails = function() {
 		angular.forEach($scope.shareResultsForm.$error.required, function(field) {
@@ -8,10 +8,6 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData','$uib
 	
     $scope.back = function() {
 		$location.path('/chooseQuiz');
-	};
-	
-    $scope.continue = function() {
-		$location.path('/results');
 	};
     
     $scope.backResults = function() {
