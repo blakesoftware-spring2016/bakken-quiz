@@ -103,6 +103,7 @@ html, body {
 	height: 100%;
 	position: absolute;
 	z-index: 5;
+	
 }
 
 .answerText {
@@ -348,8 +349,8 @@ label {
 }
 
 input {
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 	border: none;
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.8);
@@ -375,7 +376,8 @@ input {
 
 
 ::-webkit-input-placeholder {
-   color: #475f95;
+   /*color: #475f95;*/
+   color: rgba(65,94,142, 0.5);
 }
 
 
@@ -389,6 +391,7 @@ input.ng-invalid.ng-dirty {
 }
 
 .errorText {
+  position: absolute;
   color: red;
 }
 
@@ -440,13 +443,13 @@ input.ng-invalid.ng-dirty {
 }
 
 /* Will need to happen eventually, but no image for it is currently available */
-/*.backgroundSummaryRomantic {
-	background-image: url("../images/summary.png");
+.backgroundSummaryRomantic {
+	background-image: url("../images/romanticDescription.png");
 	background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
-}*/
+}
 
 .backgroundShareResults {
   background-image: url("../images/shareResults.png");
@@ -509,6 +512,18 @@ input.ng-invalid.ng-dirty {
   margin-top: 50px;
 }
 
+.popupShareButton {
+  background-color: rgba(255,255,255, 0);
+  border: 2px solid rgb(65,94,142);
+  color: rgb(65,94,142);
+  width: 188px;
+  height: 50px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
 .quizDescNav button {
 	padding: 0px;
 	width: 204px;
@@ -540,6 +555,7 @@ button {
 	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
 	font-weight: 600;
 	color: white;
+	outline: none;
 }
 
 

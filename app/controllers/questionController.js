@@ -1,19 +1,21 @@
-app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', '$uibModal', function($scope, $location, $routeParams, quizData, $uibModal) {
+app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData, $uibModal) {
 
 	// Set correct background
 	if ($routeParams.quizID === '0') {
-		$(".questionContainer").addClass("backgroundMaryQuestion");
+		// $(".questionContainer").addClass("backgroundMaryQuestion");
+		$scope.questionBackground = "backgroundMaryQuestion";
 		$scope.classToAddToNumberDiv = "maryText";
 		$scope.romanticStyleClass = "";
 		if ($routeParams.questionID === "3") {
 			$scope.questionOverflowClass = "overflow";
 		}
 	} else {
-		$(".questionContainer").addClass("backgroundRomanticQuestion");
+		// $(".questionContainer").addClass("backgroundRomanticQuestion");
+		$scope.questionBackground = "backgroundRomanticQuestion";
 		$scope.classToAddToNumberDiv = "romanticText";
 		$scope.romanticStyleClass = "romanticStyle";
 	}
-	
+
 	quizData.then(function(response) {
 		// Get parameters from route
 		$scope.quizID = $routeParams.quizID;
@@ -24,7 +26,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		$scope.question = $scope.questions[$scope.questionID];
 		$scope.answers = $scope.question.answers;
 	});
-	
+
 	$scope.next = function() {
 		// As always, Angular's syntax is terrible...but it kinda works!
 		if ($scope.questionID == $scope.questions.length - 1) {
@@ -33,7 +35,7 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
             $location.path('/question/' + String($scope.quizID) + '/' + String(++$scope.questionID));
         }
     };
-	
+
 	$scope.back = function() {
 		if ($scope.questionID == 0) {
 			$location.path('/quizDescription/' + String($scope.quizID));
@@ -41,20 +43,20 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
 		};
 	};
-	
+
 	$scope.isSelected = function($index) {
 		if (session_answers[$scope.questionID] === $index) return true;
 		else return false;
 	};
-	
+
 	$scope.select = function($index) {
 		session_answers[$scope.questionID] = $index;
 	};
-	
+
 	$scope.continue = function() {
 		$location.path('/chooseQuiz');
 	}
-	
+
     $scope.open = function() {
         var modalInstance = $uibModal.open({
             animation: true,
@@ -70,5 +72,5 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
             size: 'lg'
         });
 	};
-	
+
 }]);
