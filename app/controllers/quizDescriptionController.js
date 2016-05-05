@@ -1,5 +1,7 @@
 app.controller("quizDescriptionController", ['$scope','$location','$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
 
+
+
     quizData.then(function(response) {
 
         var quizID = $routeParams.quizID;
@@ -12,5 +14,11 @@ app.controller("quizDescriptionController", ['$scope','$location','$routeParams'
 		}
 		
     });
+
+    if ($routeParams.quizID === '0') {
+		$scope.descriptionBackground = "backgroundMaryDescription";
+	} else {
+		$scope.descriptionBackground = "backgroundRomanticDescription";
+	}
 
 }]);
