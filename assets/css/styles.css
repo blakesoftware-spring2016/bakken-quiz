@@ -502,6 +502,35 @@ input.ng-invalid.ng-dirty {
   color: rgb(65,94,142);
 }
 
+.popup13 {
+  text-align: center;
+  z-index: 1002;
+  width: 594px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 60px;
+  height: 411px;
+  /* It's possible I am wrong, but I was under the impression we had decided to make popups fully opaque.  I will ask about this tomorrow, but I think it looks godawful if you can see text through it Prev value: 0.85*/
+  background: rgba(255,255,255, 1);
+  position: absolute;
+  margin-left: 138px;
+  margin-top: 147px;
+}
+
+.popup13Text {
+  font-family: "SourceSansPro-Bold", "Segoe UI", sans-serif !important;
+  font-size: 55px;
+  color: rgb(65,94,142);
+  margin-top: 40px;
+}
+
+.popup13Helper {
+  font-family: "SourceSansPro-Bold", "Segoe UI", sans-serif !important;
+  font-size: 25px;
+  color: rgb(65,94,142);
+  margin-bottom: 20px;
+}
+
 .popupButton {
   background-color: rgba(255,255,255, 0);
   border: 2px solid rgb(65,94,142);
