@@ -436,7 +436,7 @@ input.ng-invalid.ng-dirty {
   margin: 0 auto -90px;
 }
 
-.backgroundSummaryMary {
+.backgroundMaryDescription {
   background-image: url("../images/summary.png");
   background-size: 1024px 768px;
   width: 1024px;
@@ -445,7 +445,7 @@ input.ng-invalid.ng-dirty {
 }
 
 /* Will need to happen eventually, but no image for it is currently available */
-.backgroundSummaryRomantic {
+.backgroundRomanticDescription {
 	background-image: url("../images/romanticDescription.png");
 	background-size: 1024px 768px;
 	width: 1024px;
