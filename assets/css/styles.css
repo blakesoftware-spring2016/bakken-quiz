@@ -421,7 +421,7 @@ input.ng-invalid.ng-dirty {
 }
 
 .backgroundRomanticResults {
-  background-image: url("../images/romanticResults.png");
+  background-image: url("../images/resultsRomantic.png");
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
@@ -429,7 +429,7 @@ input.ng-invalid.ng-dirty {
 }
 
 .backgroundMaryResults {
-  background-image: url("../images/maryQuestion.png");
+  background-image: url("../images/resultsMary.png");
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
@@ -589,7 +589,6 @@ button {
 	outline: none;
 }
 
-
 .shareResultsButtonContainer {
 	position: absolute;
 	bottom: 28px;
@@ -601,7 +600,6 @@ button {
 #sendResultsButton {
 	margin-left: 18px;
 }
-
 
 .navButton {
 	width: 146px;
