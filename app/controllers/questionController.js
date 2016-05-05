@@ -37,8 +37,10 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
     };
 
 	$scope.back = function() {
+		var Q0 = false;
 		if ($scope.questionID == 0) {
 			$location.path('/quizDescription/' + String($scope.quizID));
+			Q0 = true;
 		} else {
 			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
 		};
@@ -56,21 +58,5 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	$scope.continue = function() {
 		$location.path('/chooseQuiz');
 	}
-
-    $scope.open = function() {
-        var modalInstance = $uibModal.open({
-            animation: true,
-            templateUrl: 'app/templates/popupContent.html',
-            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
-				$scope.popupTitle = 'Are you sure you want to quit?';
-				$scope.confirm = 'Yes';
-				$scope.back = 'No';
-				$scope.dismiss = function(value) {
-        			$uibModalInstance.close(value);
-				};
-			}],
-            size: 'lg'
-        });
-	};
 
 }]);
