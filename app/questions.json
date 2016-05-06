@@ -162,8 +162,7 @@
             "buckets": ["Trailblazer"]
         }, {
             "text" : "Create a party theme",
-            "buckets": ["Dreamer"]
-        }, {  
+            "buckets": ["Dreamer"] 
         }]
     }, {
         "text": "What is your dream car?",
