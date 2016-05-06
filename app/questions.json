@@ -28,77 +28,76 @@
         "answers": [{
             "text" : "Learning more about the ancient world in Rome",
             "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000061002134_Large.jpg"
+			"image": "assets/images/whichMary/2rome.jpg"
         }, {
             "text" : "Disney World",
             "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000038897192_Large.jpg"
+			"image": "assets/images/whichMary/2disney.jpg"
         }, {
             "text" : "Wherever life takes me",
             "buckets": ["Rebel"]
         }, {
             "text" : "Visiting the Louvre in Paris",
             "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000051920866_Large.jpg"
+			"image": "assets/images/whichMary/2louvre.jpg"
         }, {
             "text" : "Exploring Antarctica",
             "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000002571916_Medium.jpg"
+			"image": "assets/images/whichMary/2antarctica.jpg"
         }, {
             "text" : "Camping in a national park ",
             "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000060146962_Large.jpg"
+			"image": "assets/images/whichMary/2camping.jpg"
         }]
     }, {
         "text": "My favorite kind of music is...",
         "answers": [{
             "text" : "Classical",
             "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000078233527_Large.jpg"
+			"image": "assets/images/whichMary/3classical.jpg"
         }, {
             "text" : "Film Score",
             "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000072359709_Large.jpg"
+			"image": "assets/images/whichMary/3film.jpg"
         }, {
             "text" : "Punk Rock",
             "buckets": ["Rebel"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000054264106_Large.jpg "
+			"image": "assets/images/whichMary/3punk.jpg"
         }, {
             "text" : "That which inspires me",
             "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000038417188_Large.jpg"
+			"image": "assets/images/whichMary/3inspires.jpg"
         }, {
             "text" : "My own compositions",
             "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/3_Music_Compositions_RW.jpg"
+			"image": "assets/images/whichMary/3myOwn.jpg"
         }, {
             "text" : "Folk",
             "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000085470625_Large.jpg"
+			"image": "assets/images/whichMary/3folk.jpg"
         }]
     }, {
         "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
         "answers": [{
             "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000077290515_Large.jpg"
+			"image": "assets/images/whichMary/4book.jpg"
         }, {
             "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000018812047_Large.jpg"
+			"image": "assets/images/whichMary/4hammock.jpg"
         }, {
             "text" : "Boat. Nothing can keep me here!",
             "buckets": ["Rebel"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000039557368_Large.jpg"
+			"image": "assets/images/whichMary/4boat.jpg"
         }, {
             "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000066744447_Large.jpg"
+			"image": "assets/images/whichMary/4art.jpg"
         }, {
             "text" : "A flag to plant on my newly discovered island!",
-            "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000085470625_Large.jpg"
+            "buckets": ["Trailblazer"]
         }, {
             "text" : "A friend or pet to keep me company",
             "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000025560371_Large.jpg"
+			"image": "assets/images/whichMary/4pet.jpg"
         }]
     }, {
 	    "text": "Who would you most like to have dinner with?",
@@ -168,27 +167,27 @@
         "answers": [{
             "text" : "Something that’s fuel efficient",
             "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000040936556_Illustration.jpg"
+			"image": "assets/images/whichMary/8efficient.jpg"
         }, {
             "text" : "Flying car",
             "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000040348198_Illustration.jpg"
+			"image": "assets/images/whichMary/8flying.jpg"
         }, {
             "text" : "Motorcycle",
             "buckets": ["Rebel"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000027759681_Large.jpg"
+			"image": "assets/images/whichMary/8motorcycle.jpg"
         }, {
             "text" : "Antique or Classic Car",
             "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000046155402_Large.jpg"
+			"image": "assets/images/whichMary/8antique.jpg"
         }, {
             "text" : "Something fast!",
             "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000064278079_Large.jpg"
+			"image": "assets/images/whichMary/8fast.jpg"
         }, {
             "text" : "Something with room for my whole family",
             "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000007832768_Large.jpg"
+			"image": "assets/images/whichMary/8family.jpg"
         }]
     }, {
         "text": "What matters most to you?",
@@ -237,27 +236,27 @@
     	"answers": [{
             "text" : "Well balanced",
             "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000070093865_Large.jpg"
+			"image": "assets/images/whichMary/11balanced.jpg"
         }, {
             "text" : "Something I can create  from whatever’s on hand",
             "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000076795251_Large.jpg"
+			"image": "assets/images/whichMary/11create.jpg"
         }, {
             "text" : "The weirder the better",
             "buckets": ["Rebel"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000067570009_Medium.jpg"
+			"image": "assets/images/whichMary/11weird.jpg"
         },{
             "text" : "I’m too busy to eat",
             "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000033887876_Large.jpg"
+			"image": "assets/images/whichMary/11busy.jpg"
         }, {
             "text" : "My own version of a classic dish",
             "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000004284326_Large.jpg"
+			"image": "assets/images/whichMary/11classic.jpg"
         }, {
             "text" : "Comfort food ",
             "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000003274487_Large.jpg"
+			"image": "assets/images/whichMary/11comfort.jpg"
         }]
     }, {
         "text": "You’re lost. What do you do?",
@@ -320,39 +319,39 @@
         "text": "Where would you like to live?",
         "answers": [{
             "target": false,
-			"image": "assets/images/5A_1Romantic/1_iStock_000066963861_XXXLarge.jpg"
+			"image": "assets/images/romantic/1city.jpg"
         }, {
             "target": true,
-			"image": "assets/images/5A_1Romantic/1_iStock_000026433153_Double.jpg"
+			"image": "assets/images/romantic/1country.jpg"
         }]
     }, {
         "text": "Are you a night owl or an early bird?",
         "answers": [{
             "target": true,
-			"image": "assets/images/5A_1Romantic/2_iStock_000016355424_Medium.jpg"
+			"image": "assets/images/romantic/2nightOwl.jpg"
         }, {
             "target": false,
-			"image": "assets/images/5A_1Romantic/12_iStock_000015778971_XXXLarge rev.jpg"
+			"image": "assets/images/romantic/2earlyBird.jpg"
         }]
     }, {
         "text": "Which picture looks most like your bedroom?",
         "answers": [{
             "target": false,
-			"image": "assets/images/5A_1Romantic/2_iStock_000078990241_XXXLarge.jpg"
+			"image": "assets/images/romantic/3clean.jpg"
         }, {
             "target": true,
-			"image": "assets/images/5A_1Romantic/2_iStock_000011378059_Large.jpg"
+			"image": "assets/images/romantic/3dirty.jpg"
         }]
     }, {
         "text": "The pursuit of knowledge should be about:",
         "answers": [{
             "text" : "Looking for facts",
             "target": false,
-			"image": "assets/images/5A_1Romantic/7_iStock_000046864396_Large.jpg"
+			"image": "assets/images/romantic/4fact.jpg"
         }, {
             "text" : "Searching for hidden truth",
             "target": true,
-			"image": "assets/images/5A_1Romantic/7_iStock_000046866516_Large.jpg "
+			"image": "assets/images/romantic/4truth.jpg"
         }]
     }, {
         "text": "It’s a critical game and your team is behind. What do you do?",
@@ -368,16 +367,16 @@
         "answers": [{
             "text" : "Choose one that will lead to a secure career path",
             "target": false,
-			"image": "assets/images/5A_1Romantic/4_iStock_000019951335_Large.jpg"
+			"image": "assets/images/romantic/6career.jpg"
         }, {
-            "text" : "Follow your passion ",
+            "text" : "Follow your passion",
             "target": true,
-			"image": "assets/images/5A_1Romantic/4_iStock_000024026920_Large.jpg"
+			"image": "assets/images/romantic/6passion.jpg"
         }]
     }, {
         "text": "You have a slumber party with friends. What do you do?",
         "answers": [{
-            "text" : "Invent ghost stories and share them face paint and put on a play",
+            "text" : "Invent and share ghost stories, face paint and put on a play",
             "target": true
         }, {
             "text" : "Play board games",
@@ -415,11 +414,11 @@
         "answers": [{
             "text" : "Write in your journal",
             "target": true,
-			"image": "assets/images/5A_1Romantic/9_iStock_000060928544_Large.jpg"
+			"image": "assets/images/romantic/11journal.jpg"
         }, {
         	"text" : "Talk to your friends",
             "target": false,
-			"image": "assets/images/5A_1Romantic/9_iStock_000058524006_Large.jpg"
+			"image": "assets/images/romantic/11friends.jpg"
         }]
     }, {
         "text": "You’re shopping for a new car. You…",

@@ -338,7 +338,7 @@ button {
 .shareResultsForm {
 	position: relative;
 	width: 70%;
-	top: 19%;
+	top: 14%;
 	left: 501px;
 	transform: translateX(-50%);
 }
@@ -349,9 +349,9 @@ label {
 }
 
 input {
-  margin-top: 20px;
-  margin-bottom: 20px;
-	border: none;
+  margin-top: 40px;
+  margin-bottom: 0px;
+	border: 1px solid rgba(255,255,255, 0.01);
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.8);
   width: 100%;
@@ -369,7 +369,7 @@ input {
 .shareResultsDescription {
 	position: relative;
 	width: 70%;
-	top: 19%;
+	top: 15%;
 	left: 501px;
 	transform: translateX(-50%);
 }
@@ -391,6 +391,8 @@ input.ng-invalid.ng-dirty {
 }
 
 .errorText {
+  margin-top: 3px;
+  margin-left: 10px;
   position: absolute;
   color: red;
 }
@@ -434,7 +436,7 @@ input.ng-invalid.ng-dirty {
   margin: 0 auto -90px;
 }
 
-.backgroundSummaryMary {
+.backgroundMaryDescription {
   background-image: url("../images/summary.png");
   background-size: 1024px 768px;
   width: 1024px;
@@ -443,7 +445,7 @@ input.ng-invalid.ng-dirty {
 }
 
 /* Will need to happen eventually, but no image for it is currently available */
-.backgroundSummaryRomantic {
+.backgroundRomanticDescription {
 	background-image: url("../images/romanticDescription.png");
 	background-size: 1024px 768px;
 	width: 1024px;

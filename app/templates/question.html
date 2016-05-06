@@ -4,6 +4,13 @@
     <button ng-click="showPopup = false; continue()" class="popupButton">YES</button>
 	<button ng-click="showPopup = false" class="popupButton">NO</button>
 </div>
+<div ng-show="weOnQ1" class="popupBackground" ng-click="showPopup=false"> </div>
+<div ng-show="weOnQ1" class="popupNew">
+    <p class="popupText"> Are you sure you want to quit?</p>
+    <button ng-click="weOnQ1 = false; backToDesc()" class="popupButton">YES</button>
+	<button ng-click="weOnQ1 = false" class="popupButton">NO</button>
+</div>
+
 <div class="questionContainer {{questionBackground}}">
     <div class="question {{romanticStyleClass}} {{questionOverflowClass}}">{{question.text}}</div>
     <div class="answerContainer {{romanticStyleClass}}">

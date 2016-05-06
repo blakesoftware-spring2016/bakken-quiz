@@ -1,4 +1,6 @@
-app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData, $uibModal) {
+app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData) {
+
+	$scope.weOnQ1 = false;
 
 	// Set correct background
 	if ($routeParams.quizID === '0') {
@@ -36,41 +38,35 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
         }
     };
 
+
+
 	$scope.back = function() {
 		if ($scope.questionID == 0) {
-			$location.path('/quizDescription/' + String($scope.quizID));
+			$scope.weOnQ1 = true;
 		} else {
 			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
+			$scope.weOnQ1 = false;
+
 		};
 	};
 
 	$scope.isSelected = function($index) {
 		if (session_answers[$scope.questionID] === $index) return true;
 		else return false;
+
 	};
 
 	$scope.select = function($index) {
 		session_answers[$scope.questionID] = $index;
+		console.log($scope.youSure);
 	};
 
 	$scope.continue = function() {
 		$location.path('/chooseQuiz');
 	}
 
-    $scope.open = function() {
-        var modalInstance = $uibModal.open({
-            animation: true,
-            templateUrl: 'app/templates/popupContent.html',
-            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
-				$scope.popupTitle = 'Are you sure you want to quit?';
-				$scope.confirm = 'Yes';
-				$scope.back = 'No';
-				$scope.dismiss = function(value) {
-        			$uibModalInstance.close(value);
-				};
-			}],
-            size: 'lg'
-        });
-	};
+	$scope.backToDesc = function() {
+		$location.path('/quizDescription/' + String($scope.quizID));
+	}
 
 }]);
