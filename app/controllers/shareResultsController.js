@@ -9,10 +9,6 @@ app.controller("shareResultsController", ['$scope','$location', 'quizData', func
     $scope.back = function() {
 		$location.path('/chooseQuiz');
 	};
-	
-    $scope.continue = function() {
-		$location.path('/results');
-	};
     
     $scope.backResults = function() {
     	window.history.back();
