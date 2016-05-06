@@ -1,6 +1,7 @@
 <div ng-show="agePopup" class="popupBackground" ng-click="agePopup=false"> </div>
-<div ng-show="agePopup" class="popupNew">
-	<p class="popupText">Are you 13+?</p>
+<div ng-show="agePopup" class="popup13">
+	<p class="popup13Text">I am 13 years old or older.</p>
+  <p class="popup13Helper">You must be 13 years old or older to share your results</p>
 	<button ng-click="agePopup = false; continue()" class="popupButton">YES</button>
 	<button ng-click="agePopup = false" class="popupButton">NO</button>
 </div>
