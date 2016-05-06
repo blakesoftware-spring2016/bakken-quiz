@@ -459,12 +459,6 @@ input.ng-invalid.ng-dirty {
   margin: 0 auto -100px;
 
 }
-.backgroundTouchBegin {
-  background-image: url("../images/touchBegin.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-}
 
 .modalheader {
     width: 50px;
@@ -574,4 +568,32 @@ button {
 
 .navButton {
 	width: 146px;
+}
+
+/* Touch to begin animation */
+
+.backgroundTouchBegin {
+  background-image: url("../images/touchBegin.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+  animation: pulse 20s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.attractText {
+    width: 1024px;
+    height: 50px;
+    color: beige;
 }
