@@ -6,7 +6,7 @@ app.controller('shareResultsController', function($scope, $location, quizData, $
 		});
 	};
 	
-	$scope.sendResults = function() {
+	$scope.send = function() {
 		$scope.checkEmails();
 		// Send a POST request to the server to send the email
 		var data = {
@@ -29,13 +29,13 @@ app.controller('shareResultsController', function($scope, $location, quizData, $
 		// Show the popup
 		$scope.showPopup = true;
 	};
-	
-    $scope.chooseQuiz = function() {
-		$location.path('/chooseQuiz');
-	};
     
-    $scope.back = function() {
-    	window.history.back();
+    $scope.back = function(event) {
+		$location.path('/results');
+	};
+	
+	$scope.chooseQuiz = function() {
+		$location.path('/chooseQuiz');
 	};
 	
 });
