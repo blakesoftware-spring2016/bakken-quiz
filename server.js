@@ -23,12 +23,17 @@ app.post('/shareResults', (req, res) => {
 	// Create reusable transporter object using the default SMTP transport
 	let transporter = nodemailer.createTransport('smtps://maryshelley.bakken%40gmail.com:hello123world@smtp.gmail.com');
 	// Setup e-mail data with unicode symbols
+	let html = req.body.description;
+	let text = req.body.description;
+	if (req.body.quote) {
+		html += '<br /><br /><i>' + req.body.quote + '</i>';
+		text += '\n\n' + req.body.quote;
+	}
 	let options = {
 		from: '"The Bakken Museum" <maryshelley.bakken@gmail.com>',
 		to: '"' + req.body.firstName + ' ' + req.body.lastName + '" <' + req.body.email + '>',
 		subject: req.body.title,
-		text: req.body.description,
-		html: req.body.description
+		text, html
 	}
 	// Send mail with defined transport object
 	transporter.sendMail(options, (error, info) => {
