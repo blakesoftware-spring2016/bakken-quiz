@@ -12,12 +12,12 @@ app.directive('overwriteEmail', function() {
 	};
 });
 
-app.directive('valueMatches', ['$parse', function($parse) {
+app.directive('valueMatches', function($parse) {
 	return {
 		require: 'ngModel',
 		link: function(scope, elm, attrs, ngModel) {
-			var originalModel = $parse(attrs.valueMatches);
-			secondModel = $parse(attrs.ngModel);
+			var originalModel = $parse(attrs.valueMatches),
+			var secondModel = $parse(attrs.ngModel);
 			// Watch for changes to this input
 			scope.$watch(attrs.ngModel, function(newValue) {
 				ngModel.$setValidity(attrs.name, newValue === originalModel(scope));
@@ -28,4 +28,4 @@ app.directive('valueMatches', ['$parse', function($parse) {
 			});
 		}
 	};
-}]);
+});
