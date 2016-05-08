@@ -208,6 +208,43 @@ html, body {
 .romanticText {
 	color: #595959;
 }
+
+/* Choose Quiz Page */
+
+.chooseQuizContainer {
+	width: 1024px;
+	height: 768px;
+	float: left;
+	background: url("../images/ChooseQuiz.png");
+}
+
+.description {
+	width: 50%;
+	height: 100%;
+	padding: 270px 50px 150px 50px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.description h2 {
+	margin: 0;
+	font-size: 40px;
+}
+
+.description p {
+	flex-grow: 1;
+	font-size: 24px;
+}
+
+.description button {
+	margin: auto;
+	align-self: flex-end;
+}
+
 /* MISCELLANEOUS THINGS THAT NEED TO BE ORGANIZED */
 
 
@@ -345,24 +382,28 @@ button {
 	transform: translateX(-50%);
 }
 
+.quote {
+	font-style: italic;
+}
+
 label {
   font-size: 20px;
   color: white;
 }
 
 input {
-  margin-top: 40px;
-  margin-bottom: 0px;
+	margin-top: 40px;
+	margin-bottom: 0px;
 	border: 1px solid rgba(255,255,255, 0.01);
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.8);
-  width: 100%;
-  height: 54px;
+	border-radius: 10px;
+	background-color: rgba(255,255,255, 0.8);
+	width: 100%;
+	height: 54px;
 	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
-  font-size: 26px;
-  padding: 5px;
+	font-size: 26px;
+	padding: 5px;
 	padding-left: 15px;
-  color: #475f95;
+	color: #475f95;
 	box-shadow: none;
 	outline: none;
 }
@@ -505,44 +546,44 @@ input.ng-invalid.ng-dirty {
 }
 
 .popup13 {
-  text-align: center;
-  z-index: 1002;
-  width: 594px;
-  padding-left: 75px;
-  padding-right: 75px;
-  padding-top: 60px;
-  height: 411px;
-  /* It's possible I am wrong, but I was under the impression we had decided to make popups fully opaque.  I will ask about this tomorrow, but I think it looks godawful if you can see text through it Prev value: 0.85*/
-  background: rgba(255,255,255, 1);
-  position: absolute;
-  margin-left: 138px;
-  margin-top: 147px;
+	text-align: center;
+	z-index: 1002;
+	width: 594px;
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-top: 60px;
+	height: 411px;
+	/* It's possible I am wrong, but I was under the impression we had decided to make popups fully opaque.  I will ask about this tomorrow, but I think it looks godawful if you can see text through it Prev value: 0.85*/
+	background: rgba(255,255,255, 1);
+	position: absolute;
+	margin-left: 138px;
+	margin-top: 147px;
 }
 
 .popup13Text {
-  font-family: "SourceSansPro-Bold", "Segoe UI", sans-serif !important;
-  font-size: 55px;
-  color: rgb(65,94,142);
-  margin-top: 40px;
+	font-family: "SourceSansPro-Bold", "Segoe UI", sans-serif !important;
+	font-size: 55px;
+	color: rgb(65,94,142);
+	margin-top: 40px;
 }
 
 .popup13Helper {
-  font-family: "SourceSansPro-Bold", "Segoe UI", sans-serif !important;
-  font-size: 25px;
-  color: rgb(65,94,142);
-  margin-bottom: 20px;
+	font-family: "SourceSansPro-Bold", "Segoe UI", sans-serif !important;
+	font-size: 25px;
+	color: rgb(65,94,142);
+	margin-bottom: 20px;
 }
 
 .popupButton {
-  background-color: rgba(255,255,255, 0);
-  border: 2px solid rgb(65,94,142);
-  color: rgb(65,94,142);
-  width: 188px;
-  height: 50px;
-  font-size: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 50px;
+	background-color: rgba(255,255,255, 0);
+	border: 2px solid rgb(65,94,142);
+	color: rgb(65,94,142);
+	width: 188px;
+	height: 50px;
+	font-size: 30px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 50px;
 }
 
 .popupShareButton {
