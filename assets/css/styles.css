@@ -9,6 +9,10 @@ html, body {
 	overflow: hidden;
 }
 
+button {
+	text-transform: uppercase;
+}
+
 /* Fonts */
 
 @font-face {
