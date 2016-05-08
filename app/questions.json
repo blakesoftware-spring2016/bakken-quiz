@@ -1,6 +1,7 @@
 [{
     "title": "Which Mary are You?",
 	"type": "multi",
+	"short_description": "Mary Shelley had many sides to her personality. Take the quiz to see which Mary you're most like!",
 	"description": "A teenage runaway and young mother, Mary Shelley was an author known as the mother of science fiction. But she also was a dreamer, nurturer, artist, intellectual, rebel, and trailblazer. Who are you?",
 	"questions": [{
 	    "text": "What is your dream job?",
@@ -326,6 +327,7 @@
 }, {
     "title": "Are You A Romantic?",
 	"type": "bool",
+	"short_description": "Mary came from an era referred to as The Romantic Period. Take the quiz to see how much of a romantic you are!",
 	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18thand early 19th centuries. It came about as a reaction to Neoclassicism, prevalent in the previous century. Are you a Romantic?",
     "questions": [{
         "text": "Where would you like to live?",
