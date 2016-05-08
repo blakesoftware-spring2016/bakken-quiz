@@ -1,16 +1,9 @@
-<div ng-show="showPopup" class="popupBackground" ng-click="showPopup=false"> </div>
+<div ng-show="showPopup" class="popupBackground" ng-click="showPopup = false"> </div>
 <div ng-show="showPopup" class="popupNew">
     <p class="popupText"> Are you sure you want to quit?</p>
-    <button ng-click="showPopup = false; continue()" class="popupButton">YES</button>
+    <button ng-click="showPopup = false; quit()" class="popupButton">YES</button>
 	<button ng-click="showPopup = false" class="popupButton">NO</button>
 </div>
-<div ng-show="weOnQ1" class="popupBackground" ng-click="showPopup=false"> </div>
-<div ng-show="weOnQ1" class="popupNew">
-    <p class="popupText"> Are you sure you want to quit?</p>
-    <button ng-click="weOnQ1 = false; backToDesc()" class="popupButton">YES</button>
-	<button ng-click="weOnQ1 = false" class="popupButton">NO</button>
-</div>
-
 <div class="questionContainer {{questionBackground}}">
     <div class="question {{romanticStyleClass}} {{questionOverflowClass}}">{{question.text}}</div>
     <div class="answerContainer {{romanticStyleClass}}">
@@ -18,13 +11,13 @@
 			ng-repeat="answer in answers track by $index"
 			ng-class="{selected: isSelected($index)}"
 			ng-click="select($index)">
-			<img class="answerImage" ng-if="answer.image" src="{{answer.image}}" />
+			<img class="answerImage" ng-src="{{answer.image}}" />
 			<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
 		</div>
 	</div>
 	<div class="buttonContainer {{romanticStyleClass}}">
 		<button class="navButton" id="backButton" ng-click="back()">Back</button>
-		<button class="navButton" id="menuButton" ng-click="showPopup = true">Menu</button>
+		<button class="navButton" id="menuButton" ng-click="menu()">Menu</button>
 		<button class="navButton" id="nextButton" ng-click="next()">Next</button>
 	</div>
 	<div class="progressContainer">
