@@ -1,24 +1,25 @@
-app.controller("resultsController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData, $uibModal) {
+app.controller('resultsController', function($scope, $location, $routeParams, quizData) {
 	
 	// Set correct background
-	if ($routeParams.quizID === "0") {
-		$(".backgroundResults").addClass("backgroundMaryResults");
+	if (session_quiz === '0') {
+		$('.backgroundResults').addClass('backgroundMaryResults');
 	} else {
-		$(".backgroundResults").addClass("backgroundRomanticResults");
+		$('.backgroundResults').addClass('backgroundRomanticResults');
 	}
 	
     quizData.then(function(response) {
-
-		var quizID = $routeParams.quizID;
+		var quizID = session_quiz;
         var quiz = response.data[quizID];
 		var questions = quiz.questions;
 		// Add Easter egg if the user doesn't answer any questions
 		// Exit out of calculation to prevent errors
 		if (Object.keys(session_answers).length === 0) {
-			$scope.results = [{
+			session_results = {
 				title: 'INSERT TITLE FOR EASTER EGG HERE',
 				description: 'INSERT DESCRIPTION FOR EASTER EGG HERE'
-			}]
+			};
+			// Make results available to the template
+			$scope.result = session_results;
 			return;
 		}
 		// For percentage quizzes, in which the answer is essentially boolean
@@ -45,10 +46,11 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 			var result = quiz.results[result_index];
 			// So... now we know the result!
 			// Make it available to the template
-			$scope.results = [{
+			$scope.result = {
 				title: result.title,
 				description: result.description
-			}];
+			};
+			session_results = $scope.result;
 		}
 		// For multiple selection quizzes, in which each answer choice can be assigned to one or more 'buckets'
 		// The category in which the user has the most 'buckets' defines the result
@@ -59,18 +61,14 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 				// Only continue with calculataion if the user answered the given question
 				if (typeof session_answers[i] !== 'undefined') {
 					// Fetch the selected answer using the session data
-					var answer = questions[i].answers[session_answers[i]];
-					// Loop through each answers' buckets
-					for (var j = 0; j < answer.buckets.length; j++) {
-						var bucket = answer.buckets[j];
-						// Add the bucket to the results object if it doesn't already exist
-						if (typeof results_count[bucket] === 'undefined') {
-							results_count[bucket] = 1;
-						}
-						// Or increment the bucket count in the results object if it does exist
-						else {
-							results_count[bucket]++;
-						}
+					var answer = questions[i].answers[session_answers[i]].bucket;
+					// Add the bucket to the results object if it doesn't already exist
+					if (typeof results_count[answer] === 'undefined') {
+						results_count[answer] = 1;
+					}
+					// Or increment the bucket count in the results object if it does exist
+					else {
+						results_count[answer]++;
 					}
 				}
 			}
@@ -89,18 +87,39 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 					greatest_categories.push(category);
 				}
 			}
-			// So... now we know the result!
-			// Make results available to the template
-			$scope.results = [];
-			for (var i = 0; i < greatest_categories.length; i++) {
-				var result = quiz.results[greatest_categories[i]];
-				$scope.results.push({
-					title: result.title,
-					description: result.description
-				});
+			// If there's a tie...
+			var tie_breaker_priority = 0;
+			while (greatest_categories.length > 1) {
+				// Loop through every question to decide which one is the tie breaker
+				// Begin with the question with the greatest priority (priority 0)
+				for (var i = 0; i < questions.length; i++) {
+					if (questions[i].priority === tie_breaker_priority) {
+						// If there's no answer for the current question, continue to next one
+						if (typeof session_answers[i] === 'undefined') continue;
+						var answer = questions[i].answers[session_answers[i]].bucket;
+						// Loop through each of tied categories to determine if one was the answer
+						for (var j = 0; j < greatest_categories.length; j++) {
+							// If the selected answer was one of the categories that caused the tie, we have a winner!
+							if (greatest_categories[j] === answer) {
+								greatest_categories = [greatest_categories[j]];
+								break;
+							}
+						}
+					}
+				}
+				// If the tie was unresolved, try another tie breaker
+				tie_breaker_priority++;
 			}
+			// So... now we know the result!
+			var result = quiz.results[greatest_categories[0]];
+			session_results = {
+				title: result.title,
+				description: result.description,
+				quote: result.quote
+			};
+			// Make results available to the template
+			$scope.result = session_results;
 		}
-		
     });
 	
     $scope.continue = function() {
@@ -111,4 +130,4 @@ app.controller("resultsController", ['$scope','$location', '$routeParams', 'quiz
 		$location.path('/chooseQuiz');
     };
 	
-}]);
+});
