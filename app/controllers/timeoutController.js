@@ -1,6 +1,6 @@
 app.controller('timeoutController', function($scope, $location, $timeout) {
 	
-	$scope.timeoutAfter = 30000;
+	$scope.timeoutAfter = 360000;
 	$scope.timer;
 	
 	$scope.executeOnTimeout = function() {

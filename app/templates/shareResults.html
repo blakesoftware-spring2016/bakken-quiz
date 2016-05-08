@@ -6,27 +6,27 @@
 </div>
 <div class="backgroundShareResults">
 	<form name="shareResultsForm" class="shareResultsForm">
-		<div>
+		<div class="inputContainer">
 			<input type="text" name="firstName" ng-model="firstName" required autocomplete="off" placeholder="Enter First Name" />
-			<span ng-show="shareResultsForm.firstName.$error.required && shareResultsForm.firstName.$dirty" class="errorText">First Name is required!</span>
+			<div ng-show="shareResultsForm.firstName.$error.required && shareResultsForm.firstName.$dirty" class="errorText">First Name is required!</div>
 		</div>
-		<div>
+		<div class="inputContainer">
 			<input type="text" name="lastName" ng-model="lastName" required autocomplete="off" placeholder="Enter Last Name" />
-			<span ng-show="shareResultsForm.lastName.$error.required && shareResultsForm.lastName.$dirty" class="errorText">Last Name is required!</span>
+			<div ng-show="shareResultsForm.lastName.$error.required && shareResultsForm.lastName.$dirty" class="errorText">Last Name is required!</div>
 		</div>
-		<div>
+		<div class="inputContainer">
 			<input type="email" name="email" ng-model="email" overwrite-email required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)" />
-			<span ng-show="shareResultsForm.email.$error.required && shareResultsForm.email.$dirty && submitted" class="errorText">Email is required!</span>
-			<span ng-show="shareResultsForm.email.$error.email" class="errorText">Invalid email address!</span>
+			<div ng-show="shareResultsForm.email.$error.required && shareResultsForm.email.$dirty && submitted" class="errorText">Email is required!</div>
+			<div ng-show="shareResultsForm.email.$error.email" class="errorText">Invalid email address!</div>
 		</div>
-		<div>
-			<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Re-Enter Email Address" value-matches="email"/>
-			<span ng-show="shareResultsForm.emailCheck.$dirty && shareResultsForm.emailCheck.$invalid" class="errorText">Emails do not match!</span>
+		<div class="inputContainer">
+			<input type="text" name="emailCheck" ng-model="emailCheck" required autocomplete="off" placeholder="Confirm Email Address" value-matches="email"/>
+			<div ng-show="shareResultsForm.emailCheck.$dirty && shareResultsForm.emailCheck.$invalid" class="errorText">Emails do not match!</div>
 		</div>
-		<p class="description shareResultsDescription">The Bakken Musem will use this information to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div class="shareResultsDescription">The Bakken Musem will use this information to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 		<div class="shareResultsButtonContainer">
-			<button id="backToResultsButton" ng-click="backResults()"> Back to Results</button>
-			<button id="sendResultsButton" ng-click="sendResults()">Send</button>
+			<button id="backToResultsButton" ng-click="back()">Back to Results</button>
+			<button id="sendResultsButton" ng-click="send()">Send</button>
 		</div>
 	</form>
 </div>
