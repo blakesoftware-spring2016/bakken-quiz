@@ -16,7 +16,7 @@ app.directive('valueMatches', function($parse) {
 	return {
 		require: 'ngModel',
 		link: function(scope, elm, attrs, ngModel) {
-			var originalModel = $parse(attrs.valueMatches),
+			var originalModel = $parse(attrs.valueMatches);
 			var secondModel = $parse(attrs.ngModel);
 			// Watch for changes to this input
 			scope.$watch(attrs.ngModel, function(newValue) {
