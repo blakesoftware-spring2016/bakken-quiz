@@ -1,12 +1,12 @@
 var app = angular.module('quizApp', ['ngRoute','ngAnimate']);
 
-app.factory('quizData', function($http) {
-	return $http.get('app/questions.json');
-});
-
 var session_results = {};
 var session_answers = {};
 var session_quiz = 0;
+
+app.factory('quizData', function($http) {
+	return $http.get('app/questions.json');
+});
 
 app.config(['$routeProvider', function($routeProvider) {
 	
