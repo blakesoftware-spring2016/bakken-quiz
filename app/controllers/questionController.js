@@ -44,8 +44,13 @@ app.controller('questionController', function($scope, $location, $routeParams, q
 	$scope.back = function() {
 		// If on question one, prompt the user that their data will be deleted
 		if ($scope.questionID == 0) {
-			$scope.showPopup = true;
-			$scope.popupType = 'back';
+			if (Object.keys(session_answers).length === 0) {
+				// If no questions were answered, don't prompt the user to quit
+				$location.path('/description');
+			} else {
+				$scope.showPopup = true;
+				$scope.popupType = 'back';
+			}
 		} else {
 			$location.path('/question/' + String(--$scope.questionID));
 		}
