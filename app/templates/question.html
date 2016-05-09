@@ -4,18 +4,19 @@
     <button ng-click="showPopup = false; quit()" class="popupButton">YES</button>
 	<button ng-click="showPopup = false" class="popupButton">NO</button>
 </div>
-<div class="questionContainer {{questionBackground}}">
-    <div class="question {{romanticStyleClass}} {{questionOverflowClass}}">{{question.text}}</div>
-    <div class="answerContainer {{romanticStyleClass}}">
-        <div class="answer {{romanticStyleClass}}"
+<div class="questionContainer" ng-class="{backgroundMaryQuestion: isMary, backgroundRomanticQuestion: isRomantic}">
+    <div class="question" ng-class="romanticStyle: isRomantic">{{question.text}}</div>
+    <div class="answerContainer" ng-class="romanticStyle: isRomantic">
+        <div class="answer"
 			ng-repeat="answer in answers track by $index"
-			ng-class="{selected: isSelected($index)}"
+			ng-class="{selected: isSelected($index), romanticStyle: isRomantic}"
 			ng-click="select($index)">
-			<img class="answerImage" ng-src="{{answer.image}}" />
+			<div class="overimg" ng-class="{selected: isSelected($index)}"> </div>
+			<img class="answerImage" ng-src="{{answer.image}}"/>
 			<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
 		</div>
 	</div>
-	<div class="buttonContainer {{romanticStyleClass}}">
+	<div class="buttonContainer" ng-class="romanticStyle: isRomantic">
 		<button class="navButton" id="backButton" ng-click="back()">Back</button>
 		<button class="navButton" id="menuButton" ng-click="menu()">Menu</button>
 		<button class="navButton" id="nextButton" ng-click="next()">Next</button>
@@ -24,7 +25,7 @@
         <img class="leftBracket" src="assets/images/leftBracket.png">
 		<div class="progressBar">
 			<div class="progressLine" ng-repeat-start="question in questions track by $index"></div>
-			<div class="numberDiv {{classToAddToNumberDiv}}" ng-if="$index == questionID">{{$index + 1}}/{{questions.length}}</div>
+			<div class="numberDiv" ng-class="{maryText: isMary, romanticText: isRomantic}" ng-if="$index == questionID">{{$index + 1}}/{{questions.length}}</div>
 			<div class="progressPoint" ng-class="{questionPoint: $index == questionID}" ng-repeat-end></div>
 			<div class="progressLine"></div>
 		</div>

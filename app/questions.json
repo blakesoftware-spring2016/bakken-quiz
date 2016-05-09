@@ -7,124 +7,132 @@
 	    "text": "What is your dream job?",
 		"priority": 3,
 	    "answers": [{
+            "text" : "Job? Who needs a job?",
+            "bucket": "Rebel"
+
+        }, {
+            "text" : "Day care Provider",
+            "bucket": "Nurturer"
+
+        }, {
             "text" : "Professor",
             "bucket": "Intellectual"
         }, {
-            "text" : "Astronaut",
-            "bucket": "Dreamer"
-        }, {
-            "text" : "Job? Who needs a job?",
-            "bucket": "Rebel"
+           "text" : "Inventor",
+            "bucket": "Trailblazer"
         }, {
             "text" : "Graphic Designer",
             "bucket": "Artist"
         }, {
-            "text" : "Inventor",
-            "bucket": "Trailblazer"
-        }, {
-            "text" : "Day care Provider",
-            "bucket": "Nurturer"
+            "text" : "Astronaut",
+            "bucket": "Dreamer"
     	}]
 	}, {
         "text": "Where would you like to go on vacation? What kind of vacation?",
 		"priority": 6,
         "answers": [{
-            "text" : "Learning more about the ancient world in Rome",
-            "bucket": "Intellectual",
-			"image": "assets/images/whichMary/2rome.jpg"
-        }, {
-            "text" : "Disney World",
-            "bucket": "Dreamer",
-			"image": "assets/images/whichMary/2disney.jpg"
-        }, {
-            "text" : "Wherever life takes me",
-            "bucket": "Rebel"
+            "text" : "Exploring Antarctica",
+            "bucket": "Trailblazer",
+            "image": "assets/images/whichMary/2antarctica.jpg"
         }, {
             "text" : "Visiting the Louvre in Paris",
             "bucket": "Artist",
-			"image": "assets/images/whichMary/2louvre.jpg"
-        }, {
-            "text" : "Exploring Antarctica",
-            "bucket": "Trailblazer",
-			"image": "assets/images/whichMary/2antarctica.jpg"
+            "image": "assets/images/whichMary/2louvre.jpg"
         }, {
             "text" : "Camping in a national park ",
             "bucket": "Nurturer",
-			"image": "assets/images/whichMary/2camping.jpg"
+            "image": "assets/images/whichMary/2camping.jpg"
+        }, {
+            "text" : "Disney World",
+            "bucket": "Dreamer",
+            "image": "assets/images/whichMary/2disney.jpg"
+        }, {
+            "text" : "Learning more about the ancient world in Rome",
+            "bucket": "Intellectual",
+            "image": "assets/images/whichMary/2rome.jpg"
+        }, {
+            "text" : "Wherever life takes me",
+            "bucket": "Rebel"
+
         }]
     }, {
         "text": "My favorite kind of music is...",
 		"priority": 2,
         "answers": [{
+            "text" : "Folk",
+            "bucket": "Nurturer",
+            "image": "assets/images/whichMary/3folk.jpg"
+        }, {
             "text" : "Classical",
             "bucket": "Intellectual",
-			"image": "assets/images/whichMary/3classical.jpg"
+            "image": "assets/images/whichMary/3classical.jpg"
+
         }, {
             "text" : "Film Score",
             "bucket": "Dreamer",
-			"image": "assets/images/whichMary/3film.jpg"
+            "image": "assets/images/whichMary/3film.jpg"
+
         }, {
             "text" : "Punk Rock",
             "bucket": "Rebel",
-			"image": "assets/images/whichMary/3punk.jpg"
+            "image": "assets/images/whichMary/3punk.jpg"
         }, {
             "text" : "That which inspires me",
             "bucket": "Artist",
-			"image": "assets/images/whichMary/3inspires.jpg"
+            "image": "assets/images/whichMary/3inspires.jpg"
+
         }, {
             "text" : "My own compositions",
             "bucket": "Trailblazer",
-			"image": "assets/images/whichMary/3myOwn.jpg"
-        }, {
-            "text" : "Folk",
-            "bucket": "Nurturer",
-			"image": "assets/images/whichMary/3folk.jpg"
+            "image": "assets/images/whichMary/3myOwn.jpg"
+
         }]
     }, {
         "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
 		"priority": 10,
         "answers": [{
-            "bucket": "Intellectual",
-			"image": "assets/images/whichMary/4book.jpg"
+            "text" : "A friend or pet to keep me company",
+            "bucket": "Nurturer",
+            "image": "assets/images/whichMary/4pet.jpg"
+        }, {
+                        "text" : "Boat. Nothing can keep me here!",
+            "bucket": "Rebel",
+            "image": "assets/images/whichMary/4boat.jpg"
         }, {
             "bucket": "Dreamer",
-			"image": "assets/images/whichMary/4hammock.jpg"
-        }, {
-            "text" : "Boat. Nothing can keep me here!",
-            "bucket": "Rebel",
-			"image": "assets/images/whichMary/4boat.jpg"
-        }, {
-            "bucket": "Artist",
-			"image": "assets/images/whichMary/4art.jpg"
+            "image": "assets/images/whichMary/4hammock.jpg"
         }, {
             "text" : "A flag to plant on my newly discovered island!",
             "bucket": "Trailblazer"
         }, {
-            "text" : "A friend or pet to keep me company",
-            "bucket": "Nurturer",
-			"image": "assets/images/whichMary/4pet.jpg"
+            "bucket": "Artist",
+            "image": "assets/images/whichMary/4art.jpg"
+        }, {
+            "bucket": "Intellectual",
+            "image": "assets/images/whichMary/4book.jpg"
         }]
     }, {
 	    "text": "Who would you most like to have dinner with?",
 		"priority": 4,
 	    "answers": [{
+            "text" : "Mary Shelley ",
+            "bucket": "Trailblazer"
+        }, {
             "text" : "Stephen Hawking ",
             "bucket": "Intellectual"
-        }, {
-            "text" : "John Lennon",
-            "bucket": "Dreamer"
+
         }, {
             "text" : "James Dean",
             "bucket": "Rebel"
         }, {
-            "text" : "Pablo Picasso",
-            "bucket": "Artist"
-        }, {
-            "text" : "Mary Shelley ",
-            "bucket": "Trailblazer"
-        }, {
             "text" : "Jane Goodall",
             "bucket": "Nurturer"
+        }, {
+            "text" : "John Lennon",
+            "bucket": "Dreamer"
+        }, {
+            "text" : "Pablo Picasso",
+            "bucket": "Artist"
         }]
     }, {
         "text": "Which word would your friends use to describe you?",
@@ -152,9 +160,6 @@
         "text": "When hosting a party, you...",
 		"priority": 5,
         "answers": [{
-            "text" : "Invite a mix of people to ensure good conversation",
-            "bucket": "Intellectual"
-        }, {
             "text" : "Create a party theme",
             "bucket": "Dreamer"
         }, {
@@ -169,34 +174,38 @@
         }, {
             "text" : "Make sure there’s enough food for everyone",
             "bucket": "Nurturer"
+        }, {
+            "text" : "Invite a mix of people to ensure good conversation",
+            "bucket": "Intellectual"
+
         }]
     }, {
         "text": "What is your dream car?",
 		"priority": 7,
         "answers": [{
-            "text" : "Something that’s fuel efficient",
-            "bucket": "Intellectual",
-			"image": "assets/images/whichMary/8efficient.jpg"
-        }, {
-            "text" : "Flying car",
-            "bucket": "Dreamer",
-			"image": "assets/images/whichMary/8flying.jpg"
-        }, {
-            "text" : "Motorcycle",
-            "bucket": "Rebel",
-			"image": "assets/images/whichMary/8motorcycle.jpg"
-        }, {
             "text" : "Antique or Classic Car",
             "bucket": "Artist",
-			"image": "assets/images/whichMary/8antique.jpg"
-        }, {
-            "text" : "Something fast!",
-            "bucket": "Trailblazer",
-			"image": "assets/images/whichMary/8fast.jpg"
+            "image": "assets/images/whichMary/8antique.jpg"
         }, {
             "text" : "Something with room for my whole family",
             "bucket": "Nurturer",
-			"image": "assets/images/whichMary/8family.jpg"
+            "image": "assets/images/whichMary/8family.jpg"
+        }, {
+            "text" : "Something that’s fuel efficient",
+            "bucket": "Intellectual",
+            "image": "assets/images/whichMary/8efficient.jpg"
+        }, {
+            "text" : "Something fast!",
+            "bucket": "Trailblazer",
+            "image": "assets/images/whichMary/8fast.jpg"
+        }, {
+            "text" : "Flying car",
+            "bucket": "Dreamer",
+            "image": "assets/images/whichMary/8flying.jpg"
+        }, {
+            "text" : "Motorcycle",
+            "bucket": "Rebel",
+            "image": "assets/images/whichMary/8motorcycle.jpg"
         }]
     }, {
         "text": "Which matters most to you?",
@@ -224,35 +233,35 @@
         "text": "Describe your fashion style.",
 		"priority": 8,
         "answers": [{
-            "text" : "Practical",
-            "bucket": "Intellectual"
+            "text" : "I don’t care what I wear",
+            "bucket": "Rebel"
+        }, {
+            "text" : "Comfortable",
+            "bucket": "Nurturer"
         }, {
             "text" : "Pajamas",
             "bucket": "Dreamer"
         }, {
-            "text" : "I don’t care what I wear",
-            "bucket": "Rebel"
-        }, {
-            "text" : "Trendy",
-            "bucket": "Artist"
-        }, {
             "text" : "Fashion-forward",
             "bucket": "Trailblazer"
         }, {
-            "text" : "Comfortable",
-            "bucket": "Nurturer"
+            "text" : "Practical",
+            "bucket": "Intellectual"
+        }, {
+            "text" : "Trendy",
+            "bucket": "Artist"
         }]
     }, {
     	"text": "Your ideal meal for dinner is...",
 		"priority": 11,
     	"answers": [{
-            "text" : "Well balanced",
-            "bucket": "Intellectual",
-			"image": "assets/images/whichMary/11balanced.jpg"
+            "text" : "My own version of a classic dish",
+            "bucket": "Trailblazer",
+            "image": "assets/images/whichMary/11classic.jpg"
         }, {
-            "text" : "Something I can create  from whatever’s on hand",
-            "bucket": "Dreamer",
-			"image": "assets/images/whichMary/11create.jpg"
+                        "text" : "Comfort food ",
+            "bucket": "Nurturer",
+            "image": "assets/images/whichMary/11comfort.jpg"
         }, {
             "text" : "The weirder the better",
             "bucket": "Rebel",
@@ -262,35 +271,35 @@
             "bucket": "Artist",
 			"image": "assets/images/whichMary/11busy.jpg"
         }, {
-            "text" : "My own version of a classic dish",
-            "bucket": "Trailblazer",
-			"image": "assets/images/whichMary/11classic.jpg"
+            "text" : "Well balanced",
+            "bucket": "Intellectual",
+            "image": "assets/images/whichMary/11balanced.jpg"
         }, {
-            "text" : "Comfort food ",
-            "bucket": "Nurturer",
-			"image": "assets/images/whichMary/11comfort.jpg"
+            "text" : "Something I can create  from whatever’s on hand",
+            "bucket": "Dreamer",
+            "image": "assets/images/whichMary/11create.jpg"
         }]
     }, {
         "text": "You’re lost. What do you do?",
 		"priority": 9,
         "answers": [{
-            "text" : "Use the GPS",
-            "bucket": "Intellectual"
-        }, {
-            "text" : "I don’t care. The possibilities are endless.",
-            "bucket": "Dreamer"
-        }, {
-            "text" : "I know exactly where I’m going.",
-            "bucket": "Rebel"
-        }, {
-            "text" : "I look for signs and follow my intuition.",
-            "bucket": "Artist"
+            "text" : "I ask for directions",
+            "bucket": "Nurturer"
         }, {
             "text" : "I find my own way and make a new path.",
             "bucket": "Trailblazer"
         }, {
-            "text" : "I ask for directions",
-            "bucket": "Nurturer"
+            "text" : "I look for signs and follow my intuition.",
+            "bucket": "Artist"
+        }, {
+            "text" : "I know exactly where I’m going.",
+            "bucket": "Rebel"
+        }, {
+            "text" : "I don’t care. The possibilities are endless.",
+            "bucket": "Dreamer"
+        }, {
+            "text" : "Use the GPS",
+            "bucket": "Intellectual"
         }]
     }],
 	"results": {
