@@ -10,7 +10,7 @@
 	<button ng-click="showPopup = false; back()" class="popupButton">YES</button>
 	<button ng-click="showPopup = false" class="popupButton">NO</button>
 </div>
-<div class="backgroundResults">
+<div class="backgroundResults" ng-class="{backgroundMaryResults: isMary, backgroundRomanticResults: isRomantic}">
 	<div class="resultsDescription">
 		<h2>{{result.title}}</h2>
 		<p>{{result.description}}</p>
