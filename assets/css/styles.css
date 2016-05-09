@@ -650,7 +650,7 @@ button {
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
-/*  animation: pulse 20s infinite;*/
+  animation: pulse 20s infinite;
 }
 
 @keyframes pulse {
