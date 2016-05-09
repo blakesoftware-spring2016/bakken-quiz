@@ -1,26 +1,26 @@
-app.controller('timeoutController', ['$scope', '$location', '$timeout', function($scope, $location, $timeout) {
-
-	$scope.timeoutAfter = 3600000;
+app.controller('timeoutController', function($scope, $location, $timeout) {
+	
+	$scope.timeoutAfter = 360000;
 	$scope.timer;
-
+	
 	$scope.executeOnTimeout = function() {
 		$location.path('/touchBegin');
-		$scope.makeTimer();
+		$scope.createTimer();
 	}
-
-	$scope.makeTimer = function() {
+	
+	$scope.createTimer = function() {
 		timer = $timeout($scope.executeOnTimeout, $scope.timeoutAfter);
 	}
-
+	
 	$scope.resetTimer = function() {
 		$timeout.cancel(timer);
-		$scope.makeTimer();
+		$scope.createTimer();
 	}
-
-	$scope.makeTimer();
-
+	
+	$scope.createTimer();
+	
 	window.onmousemove = $scope.resetTimer;
 	window.onkeydown = $scope.resetTimer;
 	window.onclick = $scope.resetTimer;
-
-}]);
+	
+});
