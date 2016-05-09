@@ -415,7 +415,7 @@
             "target": true
         }]
     }, {
-        "text": "Creativity comes from",
+        "text": "Creativity comes from…",
         "answers": [{
             "text" : "Within",
             "target": true
@@ -424,7 +424,7 @@
             "target": false
         }]
     }, {
-        "text": "Rules are meant to be:",
+        "text": "Rules are meant to be…",
         "answers": [{
             "text" : "Followed",
             "target": false
