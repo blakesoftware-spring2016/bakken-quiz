@@ -508,16 +508,6 @@ input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
 	background: url("../images/shareResults.png");
 	float: left;
 }
-<<<<<<< HEAD
-=======
-
-.backgroundTouchBegin {
-	background-image: url("../images/touchBegin.png");
-	background-size: 1024px 768px;
-	width: 1024px;
-	height: 768px;
-}
->>>>>>> master
 
 /* Popup */
 
