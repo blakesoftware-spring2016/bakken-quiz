@@ -1,12 +1,9 @@
 app.controller('resultsController', function($scope, $location, $routeParams, quizData) {
-	
+
 	// Set correct background
-	if (session_quiz === '0') {
-		$('.backgroundResults').addClass('backgroundMaryResults');
-	} else {
-		$('.backgroundResults').addClass('backgroundRomanticResults');
-	}
-	
+	$scope.isRomantic = session_quiz;
+	$scope.isMary = !($scope.isRomantic);
+
     quizData.then(function(response) {
 		var quizID = session_quiz;
         var quiz = response.data[quizID];
@@ -121,13 +118,13 @@ app.controller('resultsController', function($scope, $location, $routeParams, qu
 			$scope.result = session_results;
 		}
     });
-	
+
     $scope.continue = function() {
 		$location.path('/shareResults');
     };
-	
+
     $scope.back = function() {
 		$location.path('/chooseQuiz');
     };
-	
+
 });
