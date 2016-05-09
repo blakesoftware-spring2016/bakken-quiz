@@ -650,7 +650,7 @@ button {
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px;
-  animation: pulse 20s infinite;
+/*  animation: pulse 20s infinite;*/
 }
 
 @keyframes pulse {
@@ -668,5 +668,32 @@ button {
 .attractText {
     width: 1024px;
     height: 50px;
-    color: beige;
+    color: black;
+}
+
+
+
+.attractText1 {
+    width: 1024px;
+    height: 50px;
+    color: black;
+    position: absolute;
+    top: 688px;
+    left: 390px;
+    font-size: 23px;
+    animation: pulse 5s infinite;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
