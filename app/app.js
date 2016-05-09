@@ -40,11 +40,6 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: 'descriptionController'
 	});
 	
-	$routeProvider.when('/sentConfirmation', {
-		templateUrl: 'app/templates/sentConfirmation.html',
-		controller: 'sentConfirmationController'
-	});
-	
 	$routeProvider.otherwise({
 		redirectTo: '/touchBegin'
 	});
