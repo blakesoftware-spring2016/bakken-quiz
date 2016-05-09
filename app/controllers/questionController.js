@@ -3,21 +3,16 @@ app.controller('questionController', function($scope, $location, $routeParams, q
 	// Set correct background
 	$scope.isMary = false;
 	$scope.isRomantic = false;
-	if ($routeParams.quizID === '0') {
+	if (session_quiz == 0) {
 		// $(".questionContainer").addClass("backgroundMaryQuestion");
 		$scope.isMary = true;
 		$scope.classToAddToNumberDiv = "maryText";
-		$scope.romanticStyleClass = "";
-		if ($routeParams.questionID === "3") {
-			$scope.isOverflow = true;
-		}
 	} else {
 		// $(".questionContainer").addClass("backgroundRomanticQuestion");
 		$scope.isRomantic = true;
 		$scope.classToAddToNumberDiv = "romanticText";
-		$scope.romanticStyleClass = "romanticStyle";
 	}
-	
+
 	quizData.then(function(response) {
 		// Get parameters from route
 		$scope.quizID = session_quiz;
