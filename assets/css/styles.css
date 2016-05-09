@@ -25,6 +25,10 @@ html, body {
 	src: url('../fonts/SourceSansPro-Bold.ttf');
 }
 
+.view {
+	position: absolute;
+}
+
 /* Navigation buttons */
 
 .buttonContainer {
@@ -634,4 +638,28 @@ button {
 
 .navButton {
 	width: 146px;
+}
+
+
+
+/* Animations CSS */
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.view.ng-enter {
+	animation: fadeIn 0.3s linear;
+	z-index: 9999;
+}
+
+.view.ng-leave {
+	animation: fadeOut 0.1s linear;
+	animation-delay: 0.3s;
 }
