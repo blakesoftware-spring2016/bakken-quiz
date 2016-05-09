@@ -96,10 +96,21 @@ button {
 	border: 3px solid white;
 	font-size: 20px;
 	position: relative;
+  transition: box-shadow 0.4s ease-out;
 }
+
 
 .answer.romanticStyle {
 	margin: 10px;
+}
+
+.overimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  top: 0;
 }
 
 .answerImage {
@@ -109,7 +120,6 @@ button {
 	z-index: 5;
   left: 0;
   top: 0;
-
 }
 
 .answerText {
@@ -124,11 +134,15 @@ button {
 	flex-direction: column;
 	text-align: center;
 	font-size: 22px;
+  text-shadow: 3px 4px 10px #000;
 }
 
 .selected {
-	background: white;
-	color: black;
+	/*background: white;
+	color: black;*/
+  box-shadow: inset 0 0 0 12px tomato;
+  transition: box-shadow 0.4s ease-out;
+  border-color: tomato;
 }
 
 .buttonContainer {
@@ -560,7 +574,6 @@ input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
 	padding-right: 75px;
 	padding-top: 60px;
 	height: 411px;
-	/* It's possible I am wrong, but I was under the impression we had decided to make popups fully opaque.  I will ask about this tomorrow, but I think it looks godawful if you can see text through it Prev value: 0.85*/
 	background: rgba(255,255,255, 1);
 	position: absolute;
 	margin-left: 138px;
@@ -570,7 +583,8 @@ input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
 .popup13Text {
 	font-size: 55px;
 	color: rgb(65,94,142);
-	margin-top: 40px;
+	margin-top: 80px;
+  margin-bottom: 120px;
 }
 
 .popup13Helper {
