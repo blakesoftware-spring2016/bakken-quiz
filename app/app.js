@@ -4,7 +4,9 @@ app.factory('quizData', function($http) {
 	return $http.get('app/questions.json');
 });
 
+var session_results = {};
 var session_answers = {};
+var session_quiz = 0;
 
 app.config(['$routeProvider', function($routeProvider) {
 	
@@ -18,23 +20,24 @@ app.config(['$routeProvider', function($routeProvider) {
 		controller: 'shareResultsController'
 	});
 	
-	$routeProvider.when('/results/:quizID', {
+	$routeProvider.when('/results', {
 		templateUrl: 'app/templates/results.html',
 		controller: 'resultsController'
 	});
 	
-	$routeProvider.when('/question/:quizID/:questionID', {
+	$routeProvider.when('/question/:questionID', {
 		templateUrl: 'app/templates/question.html',
 		controller: 'questionController'
 	});
 	
 	$routeProvider.when('/chooseQuiz', {
-		templateUrl: 'app/templates/chooseQuiz.html'
+		templateUrl: 'app/templates/chooseQuiz.html',
+		controller: 'chooseQuizController'
 	});
 	
-	$routeProvider.when('/quizDescription/:quizID', {
-		templateUrl: 'app/templates/quizDescription.html',
-		controller: 'quizDescriptionController'
+	$routeProvider.when('/description', {
+		templateUrl: 'app/templates/description.html',
+		controller: 'descriptionController'
 	});
 	
 	$routeProvider.when('/sentConfirmation', {

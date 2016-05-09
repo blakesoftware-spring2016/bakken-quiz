@@ -1,284 +1,296 @@
 [{
     "title": "Which Mary are You?",
 	"type": "multi",
+	"short_description": "Mary Shelley had many sides to her personality. Take the quiz to see which Mary you're most like!",
 	"description": "A teenage runaway and young mother, Mary Shelley was an author known as the mother of science fiction. But she also was a dreamer, nurturer, artist, intellectual, rebel, and trailblazer. Who are you?",
 	"questions": [{
 	    "text": "What is your dream job?",
+		"priority": 3,
 	    "answers": [{
-	            "text" : "Professor",
-	            "buckets": ["Intellectual"]
-	        }, {
-	            "text" : "Astronaut",
-	            "buckets": ["Dreamer"]
-	        }, {
-	            "text" : "Job? Who needs a job?",
-	            "buckets": ["Rebel"]
-	        }, {
-	            "text" : "Graphic Designer",
-	            "buckets": ["Artist"]
-	        }, {
-	            "text" : "Inventor",
-	            "buckets": ["Trailblazer"]
-	        }, {
-	            "text" : "Day care Provider",
-	            "buckets": ["Nurturer"]
-	    }]
+            "text" : "Professor",
+            "bucket": "Intellectual"
+        }, {
+            "text" : "Astronaut",
+            "bucket": "Dreamer"
+        }, {
+            "text" : "Job? Who needs a job?",
+            "bucket": "Rebel"
+        }, {
+            "text" : "Graphic Designer",
+            "bucket": "Artist"
+        }, {
+            "text" : "Inventor",
+            "bucket": "Trailblazer"
+        }, {
+            "text" : "Day care Provider",
+            "bucket": "Nurturer"
+    	}]
 	}, {
         "text": "Where would you like to go on vacation? What kind of vacation?",
+		"priority": 6,
         "answers": [{
             "text" : "Learning more about the ancient world in Rome",
-            "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000061002134_Large.jpg"
+            "bucket": "Intellectual",
+			"image": "assets/images/whichMary/2rome.jpg"
         }, {
             "text" : "Disney World",
-            "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000038897192_Large.jpg"
+            "bucket": "Dreamer",
+			"image": "assets/images/whichMary/2disney.jpg"
         }, {
             "text" : "Wherever life takes me",
-            "buckets": ["Rebel"]
+            "bucket": "Rebel"
         }, {
             "text" : "Visiting the Louvre in Paris",
-            "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000051920866_Large.jpg"
+            "bucket": "Artist",
+			"image": "assets/images/whichMary/2louvre.jpg"
         }, {
             "text" : "Exploring Antarctica",
-            "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000002571916_Medium.jpg"
+            "bucket": "Trailblazer",
+			"image": "assets/images/whichMary/2antarctica.jpg"
         }, {
             "text" : "Camping in a national park ",
-            "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/2_iStock_000060146962_Large.jpg"
+            "bucket": "Nurturer",
+			"image": "assets/images/whichMary/2camping.jpg"
         }]
     }, {
         "text": "My favorite kind of music is...",
+		"priority": 2,
         "answers": [{
             "text" : "Classical",
-            "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000078233527_Large.jpg"
+            "bucket": "Intellectual",
+			"image": "assets/images/whichMary/3classical.jpg"
         }, {
             "text" : "Film Score",
-            "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000072359709_Large.jpg"
+            "bucket": "Dreamer",
+			"image": "assets/images/whichMary/3film.jpg"
         }, {
             "text" : "Punk Rock",
-            "buckets": ["Rebel"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000054264106_Large.jpg "
+            "bucket": "Rebel",
+			"image": "assets/images/whichMary/3punk.jpg"
         }, {
             "text" : "That which inspires me",
-            "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000038417188_Large.jpg"
+            "bucket": "Artist",
+			"image": "assets/images/whichMary/3inspires.jpg"
         }, {
             "text" : "My own compositions",
-            "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/3_Music_Compositions_RW.jpg"
+            "bucket": "Trailblazer",
+			"image": "assets/images/whichMary/3myOwn.jpg"
         }, {
             "text" : "Folk",
-            "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000085470625_Large.jpg"
+            "bucket": "Nurturer",
+			"image": "assets/images/whichMary/3folk.jpg"
         }]
     }, {
         "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
+		"priority": 10,
         "answers": [{
-            "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000077290515_Large.jpg"
+            "bucket": "Intellectual",
+			"image": "assets/images/whichMary/4book.jpg"
         }, {
-            "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000018812047_Large.jpg"
+            "bucket": "Dreamer",
+			"image": "assets/images/whichMary/4hammock.jpg"
         }, {
             "text" : "Boat. Nothing can keep me here!",
-            "buckets": ["Rebel"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000039557368_Large.jpg"
+            "bucket": "Rebel",
+			"image": "assets/images/whichMary/4boat.jpg"
         }, {
-            "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000066744447_Large.jpg"
+            "bucket": "Artist",
+			"image": "assets/images/whichMary/4art.jpg"
         }, {
             "text" : "A flag to plant on my newly discovered island!",
-            "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/3_iStock_000085470625_Large.jpg"
+            "bucket": "Trailblazer"
         }, {
             "text" : "A friend or pet to keep me company",
-            "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/4_iStock_000025560371_Large.jpg"
+            "bucket": "Nurturer",
+			"image": "assets/images/whichMary/4pet.jpg"
         }]
     }, {
 	    "text": "Who would you most like to have dinner with?",
+		"priority": 4,
 	    "answers": [{
             "text" : "Stephen Hawking ",
-            "buckets": ["Intellectual"]
+            "bucket": "Intellectual"
         }, {
             "text" : "John Lennon",
-            "buckets": ["Dreamer"]
+            "bucket": "Dreamer"
         }, {
             "text" : "James Dean",
-            "buckets": ["Rebel"]
+            "bucket": "Rebel"
         }, {
             "text" : "Pablo Picasso",
-            "buckets": ["Artist"]
+            "bucket": "Artist"
         }, {
             "text" : "Mary Shelley ",
-            "buckets": ["Trailblazer"]
+            "bucket": "Trailblazer"
         }, {
             "text" : "Jane Goodall",
-            "buckets": ["Nurturer"]
+            "bucket": "Nurturer"
         }]
     }, {
         "text": "Which word would your friends use to describe you?",
+		"priority": 1,
         "answers": [{
             "text" : "Smart",
-            "buckets": ["Intellectual"]
+            "bucket": "Intellectual"
         }, {
             "text" : "Idealistic",
-            "buckets": ["Dreamer"]
+            "bucket": "Dreamer"
         }, {
             "text" : "Free Spirited",
-            "buckets": ["Rebel"]
+            "bucket": "Rebel"
         }, {
             "text" : "Creative",
-            "buckets": ["Artist"]
+            "bucket": "Artist"
         }, {
             "text" : "Bold",
-            "buckets": ["Trailblazer"]
+            "bucket": "Trailblazer"
         }, {
             "text" : "Caring",
-            "buckets": ["Nurturer"]
+            "bucket": "Nurturer"
         }]
     }, {
         "text": "When hosting a party, you...",
+		"priority": 5,
         "answers": [{
             "text" : "Invite a mix of people to ensure good conversation",
-            "buckets": ["Intellectual"]
+            "bucket": "Intellectual"
         }, {
             "text" : "Create a party theme",
-            "buckets": ["Dreamer"]
+            "bucket": "Dreamer"
         }, {
             "text" : "I’m crashing someone else’s party",
-            "buckets": ["Rebel"]
+            "bucket": "Rebel"
         }, {
             "text" : "Develop an awesome playlist",
-            "buckets": ["Artist"]
+            "bucket": "Artist"
         }, {
             "text" : "Start the conga line",
-            "buckets": ["Trailblazer"]
+            "bucket": "Trailblazer"
         }, {
             "text" : "Make sure there’s enough food for everyone",
-            "buckets": ["Nurturer"]
+            "bucket": "Nurturer"
         }]
     }, {
         "text": "What is your dream car?",
+		"priority": 7,
         "answers": [{
             "text" : "Something that’s fuel efficient",
-            "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000040936556_Illustration.jpg"
+            "bucket": "Intellectual",
+			"image": "assets/images/whichMary/8efficient.jpg"
         }, {
             "text" : "Flying car",
-            "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000040348198_Illustration.jpg"
+            "bucket": "Dreamer",
+			"image": "assets/images/whichMary/8flying.jpg"
         }, {
             "text" : "Motorcycle",
-            "buckets": ["Rebel"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000027759681_Large.jpg"
+            "bucket": "Rebel",
+			"image": "assets/images/whichMary/8motorcycle.jpg"
         }, {
             "text" : "Antique or Classic Car",
-            "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000046155402_Large.jpg"
+            "bucket": "Artist",
+			"image": "assets/images/whichMary/8antique.jpg"
         }, {
             "text" : "Something fast!",
-            "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000064278079_Large.jpg"
+            "bucket": "Trailblazer",
+			"image": "assets/images/whichMary/8fast.jpg"
         }, {
             "text" : "Something with room for my whole family",
-            "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/8_iStock_000007832768_Large.jpg"
+            "bucket": "Nurturer",
+			"image": "assets/images/whichMary/8family.jpg"
         }]
     }, {
-        "text": "What matters most to you?",
+        "text": "Which matters most to you?",
+		"priority": 0,
         "answers": [{
             "text" : "Ideas",
-            "buckets": ["Intellectual"]
+            "bucket": "Intellectual"
         }, {
             "text" : "Dreams",
-            "buckets": ["Dreamer"]
+            "bucket": "Dreamer"
         }, {
             "text" : "Freedom",
-            "buckets": ["Rebel"]
+            "bucket": "Rebel"
         }, {
             "text" : "Creativity",
-            "buckets": ["Artist"]
+            "bucket": "Artist"
         }, {
             "text" : "Discovery",
-            "buckets": ["Trailblazer"]
+            "bucket": "Trailblazer"
         }, {
             "text" : "Family",
-            "buckets": ["Nurturer"]
+            "bucket": "Nurturer"
         }]
     }, {
         "text": "Describe your fashion style.",
+		"priority": 8,
         "answers": [{
             "text" : "Practical",
-            "buckets": ["Intellectual"]
+            "bucket": "Intellectual"
         }, {
             "text" : "Pajamas",
-            "buckets": ["Dreamer"]
+            "bucket": "Dreamer"
         }, {
             "text" : "I don’t care what I wear",
-            "buckets": ["Rebel"]
+            "bucket": "Rebel"
         }, {
             "text" : "Trendy",
-            "buckets": ["Artist"]
+            "bucket": "Artist"
         }, {
             "text" : "Fashion-forward",
-            "buckets": ["Trailblazer"]
+            "bucket": "Trailblazer"
         }, {
             "text" : "Comfortable",
-            "buckets": ["Nurturer"]
+            "bucket": "Nurturer"
         }]
     }, {
     	"text": "Your ideal meal for dinner is...",
+		"priority": 11,
     	"answers": [{
             "text" : "Well balanced",
-            "buckets": ["Intellectual"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000070093865_Large.jpg"
+            "bucket": "Intellectual",
+			"image": "assets/images/whichMary/11balanced.jpg"
         }, {
             "text" : "Something I can create  from whatever’s on hand",
-            "buckets": ["Dreamer"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000076795251_Large.jpg"
+            "bucket": "Dreamer",
+			"image": "assets/images/whichMary/11create.jpg"
         }, {
             "text" : "The weirder the better",
-            "buckets": ["Rebel"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000067570009_Medium.jpg"
+            "bucket": "Rebel",
+			"image": "assets/images/whichMary/11weird.jpg"
         },{
             "text" : "I’m too busy to eat",
-            "buckets": ["Artist"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000033887876_Large.jpg"
+            "bucket": "Artist",
+			"image": "assets/images/whichMary/11busy.jpg"
         }, {
             "text" : "My own version of a classic dish",
-            "buckets": ["Trailblazer"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000004284326_Large.jpg"
+            "bucket": "Trailblazer",
+			"image": "assets/images/whichMary/11classic.jpg"
         }, {
             "text" : "Comfort food ",
-            "buckets": ["Nurturer"],
-			"image": "assets/images/5A_2WhichMary/11_iStock_000003274487_Large.jpg"
+            "bucket": "Nurturer",
+			"image": "assets/images/whichMary/11comfort.jpg"
         }]
     }, {
         "text": "You’re lost. What do you do?",
+		"priority": 9,
         "answers": [{
             "text" : "Use the GPS",
-            "buckets": ["Intellectual"]
+            "bucket": "Intellectual"
         }, {
             "text" : "I don’t care. The possibilities are endless.",
-            "buckets": ["Dreamer"]
+            "bucket": "Dreamer"
         }, {
             "text" : "I know exactly where I’m going.",
-            "buckets": ["Rebel"]
+            "bucket": "Rebel"
         }, {
             "text" : "I look for signs and follow my intuition.",
-            "buckets": ["Artist"]
+            "bucket": "Artist"
         }, {
             "text" : "I find my own way and make a new path.",
-            "buckets": ["Trailblazer"]
+            "bucket": "Trailblazer"
         }, {
             "text" : "I ask for directions",
-            "buckets": ["Nurturer"]
+            "bucket": "Nurturer"
         }]
     }],
 	"results": {
@@ -294,7 +306,7 @@
 		},
 		"Rebel": {
 			"title": "You're a rebel!",
-			"description": "Like Mary, you don’  t conform to established traditions or conventions. You are progressive. Although this sometimes gets you into trouble, you have strong opinions and aren’t afraid to express them."
+			"description": "Like Mary, you don’t conform to established traditions or conventions. You are progressive. Although this sometimes gets you into trouble, you have strong opinions and aren’t afraid to express them."
 		},
 		"Artist": {
 			"title": "You're an artist!",
@@ -309,50 +321,51 @@
 		"Nurturer": {
 			"title": "You're a nurturer!",
 			"description": "Like Mary, you have great compassion and empathy for those around you. You create a supportive and encouraging environment for others to flourish and thrive. Although, sometimes this means your needs take a back seat to theirs.",
-			"quote": "MY BELOVED FRIEND I waited with the greatest anxiety for your letter. You are well, and that assurance has restored some peace to me."
+			"quote": "“MY BELOVED FRIEND I waited with the greatest anxiety for your letter. You are well, and that assurance has restored some peace to me.” –Mary Shelley"
 		}
 	}
 }, {
     "title": "Are You A Romantic?",
 	"type": "bool",
+	"short_description": "Mary came from an era referred to as The Romantic Period. Take the quiz to see how much of a romantic you are!",
 	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18thand early 19th centuries. It came about as a reaction to Neoclassicism, prevalent in the previous century. Are you a Romantic?",
     "questions": [{
         "text": "Where would you like to live?",
         "answers": [{
             "target": false,
-			"image": "assets/images/5A_1Romantic/1_iStock_000066963861_XXXLarge.jpg"
+			"image": "assets/images/romantic/1city.jpg"
         }, {
             "target": true,
-			"image": "assets/images/5A_1Romantic/1_iStock_000026433153_Double.jpg"
+			"image": "assets/images/romantic/1country.jpg"
         }]
     }, {
         "text": "Are you a night owl or an early bird?",
         "answers": [{
             "target": true,
-			"image": "assets/images/5A_1Romantic/2_iStock_000016355424_Medium.jpg"
+			"image": "assets/images/romantic/2nightOwl.jpg"
         }, {
             "target": false,
-			"image": "assets/images/5A_1Romantic/12_iStock_000015778971_XXXLarge rev.jpg"
+			"image": "assets/images/romantic/2earlyBird.jpg"
         }]
     }, {
         "text": "Which picture looks most like your bedroom?",
         "answers": [{
             "target": false,
-			"image": "assets/images/5A_1Romantic/2_iStock_000078990241_XXXLarge.jpg"
+			"image": "assets/images/romantic/3clean.jpg"
         }, {
             "target": true,
-			"image": "assets/images/5A_1Romantic/2_iStock_000011378059_Large.jpg"
+			"image": "assets/images/romantic/3dirty.jpg"
         }]
     }, {
         "text": "The pursuit of knowledge should be about:",
         "answers": [{
             "text" : "Looking for facts",
             "target": false,
-			"image": "assets/images/5A_1Romantic/7_iStock_000046864396_Large.jpg"
+			"image": "assets/images/romantic/4fact.jpg"
         }, {
             "text" : "Searching for hidden truth",
             "target": true,
-			"image": "assets/images/5A_1Romantic/7_iStock_000046866516_Large.jpg "
+			"image": "assets/images/romantic/4truth.jpg"
         }]
     }, {
         "text": "It’s a critical game and your team is behind. What do you do?",
@@ -368,16 +381,16 @@
         "answers": [{
             "text" : "Choose one that will lead to a secure career path",
             "target": false,
-			"image": "assets/images/5A_1Romantic/4_iStock_000019951335_Large.jpg"
+			"image": "assets/images/romantic/6career.jpg"
         }, {
-            "text" : "Follow your passion ",
+            "text" : "Follow your passion",
             "target": true,
-			"image": "assets/images/5A_1Romantic/4_iStock_000024026920_Large.jpg"
+			"image": "assets/images/romantic/6passion.jpg"
         }]
     }, {
         "text": "You have a slumber party with friends. What do you do?",
         "answers": [{
-            "text" : "Invent ghost stories and share them face paint and put on a play",
+            "text" : "Invent and share ghost stories, face paint and put on a play",
             "target": true
         }, {
             "text" : "Play board games",
@@ -415,11 +428,11 @@
         "answers": [{
             "text" : "Write in your journal",
             "target": true,
-			"image": "assets/images/5A_1Romantic/9_iStock_000060928544_Large.jpg"
+			"image": "assets/images/romantic/11journal.jpg"
         }, {
         	"text" : "Talk to your friends",
             "target": false,
-			"image": "assets/images/5A_1Romantic/9_iStock_000058524006_Large.jpg"
+			"image": "assets/images/romantic/11friends.jpg"
         }]
     }, {
         "text": "You’re shopping for a new car. You…",

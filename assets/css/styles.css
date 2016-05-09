@@ -9,6 +9,10 @@ html, body {
 	overflow: hidden;
 }
 
+button {
+	text-transform: uppercase;
+}
+
 /* Fonts */
 
 @font-face {
@@ -103,6 +107,8 @@ html, body {
 	height: 100%;
 	position: absolute;
 	z-index: 5;
+  left: 0;
+  top: 0;
 	
 }
 
@@ -206,6 +212,43 @@ html, body {
 .romanticText {
 	color: #595959;
 }
+
+/* Choose Quiz Page */
+
+.chooseQuizContainer {
+	width: 1024px;
+	height: 768px;
+	float: left;
+	background: url("../images/ChooseQuiz.png");
+}
+
+.description {
+	width: 50%;
+	height: 100%;
+	padding: 270px 50px 150px 50px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.description h2 {
+	margin: 0;
+	font-size: 40px;
+}
+
+.description p {
+	flex-grow: 1;
+	font-size: 24px;
+}
+
+.description button {
+	margin: auto;
+	align-self: flex-end;
+}
+
 /* MISCELLANEOUS THINGS THAT NEED TO BE ORGANIZED */
 
 
@@ -335,115 +378,123 @@ button {
   margin-top: 50px;
 }
 
-.shareResultsForm {
-	position: relative;
-	width: 70%;
-	top: 19%;
-	left: 501px;
-	transform: translateX(-50%);
+.quote {
+	font-style: italic;
 }
 
-label {
-  font-size: 20px;
-  color: white;
+/* Share Results */
+
+.shareResultsForm {
+	width: 700px;
+	margin: 160px auto 0 auto;
+	box-sizing: border-box;
+}
+
+.inputContainer {
+	width: 100%;
+	height: 96px;
+	float: left;
 }
 
 input {
-  margin-top: 20px;
-  margin-bottom: 20px;
+	width: 100%;
+	height: 60px;
+	padding: 5px 15px;
 	border: none;
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.8);
-  width: 100%;
-  height: 54px;
-	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
-  font-size: 26px;
-  padding: 5px;
-	padding-left: 15px;
-  color: #475f95;
-	box-shadow: none;
 	outline: none;
+	float: left;
+	box-sizing: border-box;
+	background: rgba(255,255,255, 0.8);
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+	font-size: 26px;
+	color: #475f95;
 }
 
-
-.shareResultsDescription {
-	position: relative;
-	width: 70%;
-	top: 19%;
-	left: 501px;
-	transform: translateX(-50%);
-}
-
-
-::-webkit-input-placeholder {
-   /*color: #475f95;*/
+input::-webkit-input-placeholder {
    color: rgba(65,94,142, 0.5);
 }
 
-
-.contentShareResultsForm {
-  padding-left: 20px;
-  padding-top: 40px;
-}
-
-input.ng-invalid.ng-dirty {
-  border: 1px solid red;
+input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
+	border-bottom: 3px solid tomato;
 }
 
 .errorText {
-  position: absolute;
-  color: red;
+	width: 100%;
+	height: 36px;
+	margin-top: 4px;
+	float: left;
+	color: white;
+	box-sizing: border-box;
 }
 
+.shareResultsDescription {
+	width: 100%;
+	float: left;
+	color: white;
+	font-size: 18px;
+}
+
+.shareResultsButtonContainer {
+	width: 100%;
+	margin-top: 36px;
+	float: left;
+}
+
+#sendResultsButton {
+	float: right;
+}
+
+/* Backgrounds */
+
 .backgroundChooseQuiz {
-  background-image: url("../images/ChooseQuiz.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
+	background-image: url("../images/ChooseQuiz.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
 }
 
 .backgroundMaryQuestion {
-  background-image: url("../images/maryQuestion.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-  margin: 0 auto -100px;
+	background-image: url("../images/maryQuestion.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
 }
 
 .backgroundRomanticQuestion {
-  background-image: url("../images/romQuestion.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-  margin: 0 auto -100px;
+	background-image: url("../images/romQuestion.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
 }
 
 .backgroundRomanticResults {
-  background-image: url("../images/romanticResults.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-  margin: 0 auto -90px;
+	background-image: url("../images/resultsRomantic.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -90px;
 }
 
 .backgroundMaryResults {
-  background-image: url("../images/maryQuestion.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-  margin: 0 auto -90px;
+	background-image: url("../images/resultsMary.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -90px;
 }
 
-.backgroundSummaryMary {
-  background-image: url("../images/summary.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-  margin: 0 auto -100px;
+.backgroundMaryDescription {
+	background-image: url("../images/summary.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
 }
 
 /* Will need to happen eventually, but no image for it is currently available */
-.backgroundSummaryRomantic {
+.backgroundRomanticDescription {
 	background-image: url("../images/romanticDescription.png");
 	background-size: 1024px 768px;
 	width: 1024px;
@@ -452,13 +503,23 @@ input.ng-invalid.ng-dirty {
 }
 
 .backgroundShareResults {
-  background-image: url("../images/shareResults.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-  margin: 0 auto -100px;
-
+	width: 1024px;
+	height: 768px;
+	background: url("../images/shareResults.png");
+	float: left;
 }
+<<<<<<< HEAD
+=======
+
+.backgroundTouchBegin {
+	background-image: url("../images/touchBegin.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+}
+>>>>>>> master
+
+/* Popup */
 
 .modalheader {
     width: 50px;
@@ -494,16 +555,43 @@ input.ng-invalid.ng-dirty {
   color: rgb(65,94,142);
 }
 
+.popup13 {
+	text-align: center;
+	z-index: 1002;
+	width: 594px;
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-top: 60px;
+	height: 411px;
+	/* It's possible I am wrong, but I was under the impression we had decided to make popups fully opaque.  I will ask about this tomorrow, but I think it looks godawful if you can see text through it Prev value: 0.85*/
+	background: rgba(255,255,255, 1);
+	position: absolute;
+	margin-left: 138px;
+	margin-top: 147px;
+}
+
+.popup13Text {
+	font-size: 55px;
+	color: rgb(65,94,142);
+	margin-top: 40px;
+}
+
+.popup13Helper {
+	font-size: 25px;
+	color: rgb(65,94,142);
+	margin-bottom: 20px;
+}
+
 .popupButton {
-  background-color: rgba(255,255,255, 0);
-  border: 2px solid rgb(65,94,142);
-  color: rgb(65,94,142);
-  width: 188px;
-  height: 50px;
-  font-size: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 50px;
+	background-color: rgba(255,255,255, 0);
+	border: 2px solid rgb(65,94,142);
+	color: rgb(65,94,142);
+	width: 188px;
+	height: 50px;
+	font-size: 30px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 50px;
 }
 
 .popupShareButton {
@@ -527,16 +615,15 @@ input.ng-invalid.ng-dirty {
 .quizDescNav {
 	width: 458px;
 	display: flex;                   /* establish flex container */
-  flex-direction: row;             /* default value; can be omitted */
-  flex-wrap: nowrap;               /* default value; can be omitted */
-  justify-content: space-between;
+	flex-direction: row;             /* default value; can be omitted */
+	flex-wrap: nowrap;               /* default value; can be omitted */
+	justify-content: space-between;
 	margin: 0 auto;
 }
 
 .quizDescNav:first-of-type {
 	margin-right: 50px;
 }
-
 
 button {
 	width: 204px;
@@ -551,20 +638,6 @@ button {
 	color: white;
 	outline: none;
 }
-
-
-.shareResultsButtonContainer {
-	position: absolute;
-	bottom: 28px;
-	right: 0;
-	padding-right: 5%;
-}
-
-
-#sendResultsButton {
-	margin-left: 18px;
-}
-
 
 .navButton {
 	width: 146px;

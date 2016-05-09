@@ -1,10 +1,9 @@
 {
 	"name": "bakken-quiz",
 	"devDependencies": {
-		"babel-core": "6.7.2",
-	},
-	"scripts": {
-		"build": "npm install && sdakfj"
+		"body-parser": "1.15.0",
+		"express": "4.13.4",
+		"nodemailer": "2.3.2"
 	},
 	"engines": {
 		"node": ">=0.10.0"

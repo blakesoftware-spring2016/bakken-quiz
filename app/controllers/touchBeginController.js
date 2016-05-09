@@ -1,7 +1,7 @@
-app.controller('touchBeginController', ['$scope','$location', function($scope, $location) {
+app.controller('touchBeginController', function($scope, $location) {
 
-	$scope.buttonClick = function() {
+	$scope.next = function() {
 		$location.path('/chooseQuiz');
 	};
 
-}]);
+});
