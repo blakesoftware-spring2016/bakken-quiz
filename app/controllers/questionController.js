@@ -1,4 +1,4 @@
-app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData, $uibModal) {
+app.controller('questionController', function($scope, $location, $routeParams, quizData) {
 
 	// Set correct background
 	$scope.isMary = false;
@@ -17,12 +17,10 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		$scope.classToAddToNumberDiv = "romanticText";
 		$scope.romanticStyleClass = "romanticStyle";
 	}
-
-	$scope.currentQuiz =
-
+	
 	quizData.then(function(response) {
 		// Get parameters from route
-		$scope.quizID = $routeParams.quizID;
+		$scope.quizID = session_quiz;
 		$scope.questionID = $routeParams.questionID;
 		// Make all data associated with the current quiz available to the template
 		$scope.quiz = response.data[$scope.quizID];
@@ -34,18 +32,25 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 	$scope.next = function() {
 		// As always, Angular's syntax is terrible...but it kinda works!
 		if ($scope.questionID == $scope.questions.length - 1) {
-            $location.path('/results/' + String($scope.quizID));
+            $location.path('/results');
         } else {
-            $location.path('/question/' + String($scope.quizID) + '/' + String(++$scope.questionID));
+            $location.path('/question/' + String(++$scope.questionID));
         }
     };
 
+	$scope.menu = function() {
+		$scope.showPopup = true;
+		$scope.popupType = 'quit';
+	};
+
 	$scope.back = function() {
+		// If on question one, prompt the user that their data will be deleted
 		if ($scope.questionID == 0) {
-			$location.path('/quizDescription/' + String($scope.quizID));
+			$scope.showPopup = true;
+			$scope.popupType = 'back';
 		} else {
-			$location.path('/question/' + String($scope.quizID) + '/' + String(--$scope.questionID));
-		};
+			$location.path('/question/' + String(--$scope.questionID));
+		}
 	};
 
 	$scope.isSelected = function($index) {
@@ -57,24 +62,12 @@ app.controller("questionController", ['$scope','$location', '$routeParams', 'qui
 		session_answers[$scope.questionID] = $index;
 	};
 
-	$scope.continue = function() {
-		$location.path('/chooseQuiz');
-	}
-
-    $scope.open = function() {
-        var modalInstance = $uibModal.open({
-            animation: true,
-            templateUrl: 'app/templates/popupContent.html',
-            controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
-				$scope.popupTitle = 'Are you sure you want to quit?';
-				$scope.confirm = 'Yes';
-				$scope.back = 'No';
-				$scope.dismiss = function(value) {
-        			$uibModalInstance.close(value);
-				};
-			}],
-            size: 'lg'
-        });
+	$scope.quit = function() {
+		if ($scope.popupType === 'back') {
+			$location.path('/description');
+		} else {
+			$location.path('/chooseQuiz');
+		}
 	};
 
-}]);
+});
