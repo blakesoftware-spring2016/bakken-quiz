@@ -124,6 +124,7 @@ button {
 	z-index: 5;
   left: 0;
   top: 0;
+	object-fit: cover;
 }
 
 .answerText {
