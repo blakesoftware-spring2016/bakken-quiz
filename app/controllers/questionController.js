@@ -1,17 +1,8 @@
 app.controller('questionController', function($scope, $location, $routeParams, quizData) {
 
-	// Set correct background
-	$scope.isMary = false;
-	$scope.isRomantic = false;
-	if (session_quiz == 0) {
-		// $(".questionContainer").addClass("backgroundMaryQuestion");
-		$scope.isMary = true;
-		$scope.classToAddToNumberDiv = "maryText";
-	} else {
-		// $(".questionContainer").addClass("backgroundRomanticQuestion");
-		$scope.isRomantic = true;
-		$scope.classToAddToNumberDiv = "romanticText";
-	}
+	// Set correct styling
+	$scope.isRomantic = session_quiz;
+	$scope.isMary = !($scope.isRomantic);
 
 	quizData.then(function(response) {
 		// Get parameters from route

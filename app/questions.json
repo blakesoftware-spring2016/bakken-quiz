@@ -88,7 +88,7 @@
 
         }]
     }, {
-        "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
+        "text": "You’re stuck on a deserted island. What one thing do you bring?",
 		"priority": 10,
         "answers": [{
             "text" : "A friend or pet to keep me company",
