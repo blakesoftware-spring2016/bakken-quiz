@@ -368,11 +368,9 @@
     }, {
         "text": "The pursuit of knowledge should be about:",
         "answers": [{
-            "text" : "Looking for facts",
             "target": false,
 			"image": "assets/images/romantic/4fact.jpg"
         }, {
-            "text" : "Searching for hidden truth",
             "target": true,
 			"image": "assets/images/romantic/4truth.jpg"
         }]
