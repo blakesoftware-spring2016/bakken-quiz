@@ -29,6 +29,10 @@ button {
 	src: url('../fonts/SourceSansPro-Bold.ttf');
 }
 
+.view {
+	position: absolute;
+}
+
 /* Navigation buttons */
 
 .buttonContainer {
@@ -668,10 +672,12 @@ button {
     to {opacity: 0;}
 }
 
-.ng-enter {
-	animation: 0.5s ease-in-out fadeIn;
+.view.ng-enter {
+	animation: fadeIn 0.3s linear;
+	z-index: 9999;
 }
 
-.ng-leave {
-	animation: 0.5s ease-in-out fadeOut;
+.view.ng-leave {
+	animation: fadeOut 0.1s linear;
+	animation-delay: 0.3s;
 }
