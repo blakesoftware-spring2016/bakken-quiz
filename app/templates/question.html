@@ -11,7 +11,8 @@
 			ng-repeat="answer in answers track by $index"
 			ng-class="{selected: isSelected($index)}"
 			ng-click="select($index)">
-			<img class="answerImage" ng-src="{{answer.image}}" />
+			<div class="overimg" ng-class="{selected: isSelected($index)}"> </div>
+			<img class="answerImage" ng-src="{{answer.image}}"/>
 			<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
 		</div>
 	</div>
