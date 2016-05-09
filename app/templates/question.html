@@ -9,11 +9,11 @@
     <div class="answerContainer" ng-class="romanticStyle: isRomantic">
         <div class="answer"
 			ng-repeat="answer in answers track by $index"
-			ng-class="{selected: isSelected($index), romanticStyle: isRomantic}"
+			ng-class="{romanticStyle: isRomantic}"
 			ng-click="select($index)">
-			<div class="overimg" ng-class="{selected: isSelected($index)}"> </div>
-			<img class="answerImage" ng-src="{{answer.image}}"/>
+			<img class="answerImage" ng-if="answer.image" ng-src="{{answer.image}}"/>
 			<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
+			<div class="answerBorder" ng-class="{selected: isSelected($index)}"></div>
 		</div>
 	</div>
 	<div class="buttonContainer" ng-class="romanticStyle: isRomantic">
