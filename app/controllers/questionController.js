@@ -1,20 +1,24 @@
 app.controller("questionController", ['$scope','$location', '$routeParams', 'quizData', function($scope, $location, $routeParams, quizData, $uibModal) {
 
 	// Set correct background
+	$scope.isMary = false;
+	$scope.isRomantic = false;
 	if ($routeParams.quizID === '0') {
 		// $(".questionContainer").addClass("backgroundMaryQuestion");
-		$scope.questionBackground = "backgroundMaryQuestion";
+		$scope.isMary = true;
 		$scope.classToAddToNumberDiv = "maryText";
 		$scope.romanticStyleClass = "";
 		if ($routeParams.questionID === "3") {
-			$scope.questionOverflowClass = "overflow";
+			$scope.isOverflow = true;
 		}
 	} else {
 		// $(".questionContainer").addClass("backgroundRomanticQuestion");
-		$scope.questionBackground = "backgroundRomanticQuestion";
+		$scope.isRomantic = true;
 		$scope.classToAddToNumberDiv = "romanticText";
 		$scope.romanticStyleClass = "romanticStyle";
 	}
+
+	$scope.currentQuiz =
 
 	quizData.then(function(response) {
 		// Get parameters from route
