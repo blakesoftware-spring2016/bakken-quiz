@@ -488,6 +488,8 @@ input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
 	background: url("../images/shareResults.png");
 	float: left;
 }
+<<<<<<< HEAD
+=======
 
 .backgroundTouchBegin {
 	background-image: url("../images/touchBegin.png");
@@ -495,6 +497,7 @@ input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
 	width: 1024px;
 	height: 768px;
 }
+>>>>>>> master
 
 /* Popup */
 
@@ -614,6 +617,61 @@ button {
 
 .navButton {
 	width: 146px;
+}
+
+/* Touch to begin animation */
+
+.backgroundTouchBegin {
+  background-image: url("../images/touchBegin.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+  animation: pulse 20s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.attractText {
+    width: 1024px;
+    height: 50px;
+    color: black;
+}
+
+
+
+.attractText1 {
+    width: 1024px;
+    height: 50px;
+    color: black;
+    position: absolute;
+    top: 688px;
+    left: 390px;
+    font-size: 23px;
+    animation: pulse 5s infinite;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* Page Transitions */
