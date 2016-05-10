@@ -623,6 +623,11 @@ button {
 	-webkit-animation-timing-function: linear;
 }
 
+.attractText {
+	animation: pulse 20s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
 #crossfade img.top {
     position: absolute;
     left:0;
@@ -642,36 +647,11 @@ button {
     100% {opacity: 1;}
 }
 
-.attractTextContainer{
-    position: absolute;
-    top: 150px;
-    width: 1024px;
-    height: 400px;
-    
-}
-.attractText {
-	animation: pulse 20s infinite;
-	-webkit-animation-timing-function: linear;
-}
-
 .attractText:nth-child(1) {
-	-webkit-animation-delay: 2s;
-}
-
-.attractText:nth-child(2) {
-    -webkit-animation-delay: 4s;
-}
-
-.attractText:nth-child(3) {
-    -webkit-animation-delay: 6s;
-}
-
-.attractText:nth-child(4) {
-    -webkit-animation-delay: 8s;
+	-webkit-animation-delay: 4s;
 }
 
 .attractText {
-    margin-top: 50px;
     width: 1024px;
     height: 50px;
     color: black;
