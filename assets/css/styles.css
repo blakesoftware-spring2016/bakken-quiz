@@ -621,46 +621,27 @@ button {
 
 /* Touch to begin animation */
 
-/*
-.backgroundTouchBegin {
-  background-image: url("../images/touchBegin.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-  animation: pulse 20s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-*/
-
 #crossfade {
     position:absolute;
     width: 1024px;
     height: 768px;
 }
 
-#crossfade img {
+#crossfade img.top {
     position: absolute;
     left:0;
+    top: 0;
     opacity: 1;
-    -webkit-transition: opacity 1s ease-in-out;
-    animation: pulse 20s infinite;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 50s;
 }
 
-#crossfade img.top:hover {
-    opacity:0;
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
 }
-
 
 .attractText {
     width: 1024px;
