@@ -635,6 +635,7 @@ button {
 
 /* Touch to begin animation */
 
+/*
 .backgroundTouchBegin {
   background-image: url("../images/touchBegin.png");
   background-size: 1024px 768px;
@@ -654,9 +655,28 @@ button {
         opacity: 1;
     }
 }
+*/
 
 .attractText {
     width: 1024px;
     height: 50px;
     color: beige;
+}
+
+#crossfade {
+    position:absolute;
+    width: 1024px;
+    height: 768px;
+}
+
+#crossfade img {
+    position: absolute;
+    left:0;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    animation: pulse 20s infinite;
+}
+
+#crossfade img.top:hover {
+    opacity:0;
 }
