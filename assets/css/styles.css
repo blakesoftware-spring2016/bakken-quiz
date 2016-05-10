@@ -649,14 +649,17 @@ button {
     top: 0;
     opacity: 1;
     -webkit-animation-name: fade;
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 50s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 30s;
 }
 
 @-webkit-keyframes fade {
     0% {opacity: 0;}
-    80% {opacity: 1;}
-    100% {opacity: 0;}
+    48% {opacity: 0;}
+    52% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 .attractText:nth-child(1) {
