@@ -9,10 +9,6 @@ html, body {
 	overflow: hidden;
 }
 
-button {
-	text-transform: uppercase;
-}
-
 /* Fonts */
 
 @font-face {
@@ -29,10 +25,6 @@ button {
 	src: url('../fonts/SourceSansPro-Bold.ttf');
 }
 
-.view {
-	position: absolute;
-}
-
 /* Navigation buttons */
 
 .buttonContainer {
@@ -46,36 +38,27 @@ button {
 .questionContainer {
 	width: 1024px;
 	height: 768px;
+	color: white;
 }
 
 .question {
-	width: 900px;
-	height: 100px;
-	margin-top: 110px;
-	margin-left: 62px;
+	width: 100%;
+	height: 60px;
+	margin: 120px 0 10px 0;
+	padding: 0 50px;
+	box-sizing: border-box;
 	float: left;
-	color: white;
+	text-align: center;
+	line-height: 60px;
 	font-size: 32px;
 	font-weight: bold;
-	text-align: center;
-	line-height: 100px;
-}
-
-.question.romanticStyle {
-	margin-top: 132px;
-	margin-bottom: 23px;
-}
-
-.question.overflow {
-	line-height: normal;
-	margin-top: 124px;
-	margin-bottom: -14px;
 }
 
 .answerContainer {
-	width: 750px;
+	width: 100%;
 	height: 360px;
 	margin: auto;
+	padding: 0 100px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -83,38 +66,14 @@ button {
 	box-sizing: border-box;
 }
 
-.answerContainer.romanticStyle {
-	width: 770px;
-	height: 270px;
-	margin-bottom: 67px;
-}
-
 .answer {
 	flex-grow: 1;
 	flex-basis: 200px;
-	margin: 6px;
+	margin: 10px;
 	justify-content: space-between;
-	text-align: center;
-	color: white;
-	background: rgba(0,0,0, 0.3);
-	border: 3px solid white;
+	background: rgba(0, 0, 0, 0.3);
 	font-size: 20px;
 	position: relative;
-  transition: box-shadow 0.4s ease-out;
-}
-
-
-.answer.romanticStyle {
-	margin: 10px;
-}
-
-.overimg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 6;
-  left: 0;
-  top: 0;
 }
 
 .answerImage {
@@ -122,8 +81,8 @@ button {
 	height: 100%;
 	position: absolute;
 	z-index: 5;
-  left: 0;
-  top: 0;
+	left: 0;
+	top: 0;
 	object-fit: cover;
 }
 
@@ -137,27 +96,31 @@ button {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	text-shadow: 0 0 10px black;
 	text-align: center;
 	font-size: 22px;
-  text-shadow: 3px 4px 10px #000;
+}
+
+.answerBorder {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 15;
+	left: 0;
+	top: 0;
+	box-shadow: inset 0 0 0 3px white;
+	transition: all ease 0.3s;
 }
 
 .selected {
-	/*background: white;
-	color: black;*/
-  box-shadow: inset 0 0 0 12px tomato;
-  transition: box-shadow 0.4s ease-out;
-  border-color: tomato;
+	box-shadow: inset 0 0 0 10px coral;
 }
 
 .buttonContainer {
-	width: 738px;
-	margin: 20px auto 0 auto;
+	width: 100%;
+	margin: 20px 0;
+	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
-}
-
-.buttonContainer.romanticStyle {
-	width: 750px;
 }
 
 /* Progress Bar */
@@ -190,8 +153,6 @@ button {
     flex-grow: 1;
 	background: #eef0f4;
 	align-self: center;
-    /*background-color: #eef0f4;
-    box-shadow: 0 0 5px 0.5px #eef0f4;*/
 }
 
 .progressPoint {
@@ -224,11 +185,11 @@ button {
 	font-weight: bold;
 }
 
-.maryText {
+.maryNumber {
 	color: #4b6a9b;
 }
 
-.romanticText {
+.romanticNumber {
 	color: #595959;
 }
 
@@ -333,7 +294,7 @@ button {
 }
 
 button {
-		font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
 }
 
 .quizDescription {
@@ -543,18 +504,17 @@ input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
 }
 
 .popupNew {
-  text-align: center;
-  z-index: 1002;
-  width: 444px;
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-top: 60px;
-  height: 411px;
-	/* It's possible I am wrong, but I was under the impression we had decided to make popups fully opaque.  I will ask about this tomorrow, but I think it looks godawful if you can see text through it Prev value: 0.85*/
-  background: rgba(255,255,255, 1);
-  position: absolute;
-  margin-left: 138px;
-  margin-top: 147px;
+	text-align: center;
+	z-index: 1002;
+	width: 444px;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 60px;
+	height: 411px;
+	background: white;
+	position: absolute;
+	margin-left: 138px;
+	margin-top: 147px;
 }
 
 .popupBackground {
@@ -630,9 +590,7 @@ input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
 
 .quizDescNav {
 	width: 458px;
-	display: flex;                   /* establish flex container */
-	flex-direction: row;             /* default value; can be omitted */
-	flex-wrap: nowrap;               /* default value; can be omitted */
+	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
 }
@@ -650,7 +608,6 @@ button {
 	padding: 0;
 	font-size: 20px;
 	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
-	font-weight: 600;
 	color: white;
 	outline: none;
 }
@@ -659,9 +616,11 @@ button {
 	width: 146px;
 }
 
+/* Page Transitions */
 
-
-/* Animations CSS */
+.view {
+	position: absolute;
+}
 
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -674,11 +633,11 @@ button {
 }
 
 .view.ng-enter {
-	animation: fadeIn 0.3s linear;
-	z-index: 9999;
+	animation: fadeIn 0.4s ease;
+	animation-fill-mode: both;
 }
 
 .view.ng-leave {
-	animation: fadeOut 0.1s linear;
-	animation-delay: 0.3s;
+	animation: fadeOut 0.4s ease;
+	animation-fill-mode: both;
 }

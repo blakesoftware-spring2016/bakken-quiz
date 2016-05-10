@@ -1,12 +1,12 @@
 var app = angular.module('quizApp', ['ngRoute','ngAnimate']);
 
-app.factory('quizData', function($http) {
-	return $http.get('app/questions.json');
-});
-
 var session_results = {};
 var session_answers = {};
 var session_quiz = 0;
+
+app.factory('quizData', function($http) {
+	return $http.get('app/questions.json');
+});
 
 app.config(['$routeProvider', function($routeProvider) {
 	
@@ -38,11 +38,6 @@ app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/description', {
 		templateUrl: 'app/templates/description.html',
 		controller: 'descriptionController'
-	});
-	
-	$routeProvider.when('/sentConfirmation', {
-		templateUrl: 'app/templates/sentConfirmation.html',
-		controller: 'sentConfirmationController'
 	});
 	
 	$routeProvider.otherwise({
