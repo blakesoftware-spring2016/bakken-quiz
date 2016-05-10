@@ -326,7 +326,7 @@ button {
 	top: 150px;
 	position: relative;
 	box-sizing: border-box;
-	font-size: 20px;
+	font-size: 25px;
 	color: white;
 	overflow-y: auto;
 }
@@ -388,6 +388,7 @@ input {
 	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
 	font-size: 26px;
 	color: #475f95;
+  box-shadow: inset 0px 0px 4px 4px rgba(0,0,0,0.2);
 }
 
 input::-webkit-input-placeholder {
