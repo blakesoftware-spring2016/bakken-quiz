@@ -1,11 +1,7 @@
 app.controller('questionController', function($scope, $location, $routeParams, quizData) {
 	
-	// Set correct background
-	if (session_quiz == 0) {
-		$scope.isMary = true;
-	} else {
-		$scope.isRomantic = true;
-	}
+	$scope.isMary = (session_quiz == 0) ? true : false;
+	$scope.isRomantic = !$scope.isMary;
 	
 	quizData.then(function(response) {
 		// Get parameters from route

@@ -49,6 +49,8 @@ html, body {
 	width: 100%;
 	height: 60px;
 	margin: 120px 0 10px 0;
+	padding: 0 50px;
+	box-sizing: border-box;
 	float: left;
 	text-align: center;
 	line-height: 60px;
@@ -633,11 +635,11 @@ button {
 }
 
 .view.ng-enter {
-	animation: fadeIn 0.5s ease;
+	animation: fadeIn 0.4s ease;
 	animation-fill-mode: both;
 }
 
 .view.ng-leave {
-	animation: fadeOut 0.5s ease;
+	animation: fadeOut 0.4s ease;
 	animation-fill-mode: both;
 }
