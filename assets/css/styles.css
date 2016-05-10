@@ -677,6 +677,7 @@ button {
     top: 688px;
     left: 390px;
     font-size: 23px;
+    font-family: "Source Sans Pro";
     animation: pulse 5s infinite;
 }
 
