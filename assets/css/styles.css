@@ -488,8 +488,6 @@ input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
 	background: url("../images/shareResults.png");
 	float: left;
 }
-<<<<<<< HEAD
-=======
 
 .backgroundTouchBegin {
 	background-image: url("../images/touchBegin.png");
@@ -497,7 +495,6 @@ input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
 	width: 1024px;
 	height: 768px;
 }
->>>>>>> master
 
 /* Popup */
 
@@ -647,8 +644,6 @@ button {
     color: black;
 }
 
-
-
 .attractText1 {
     width: 1024px;
     height: 50px;
@@ -659,8 +654,6 @@ button {
     font-size: 23px;
     animation: pulse 5s infinite;
 }
-
-
 
 @keyframes pulse {
     0% {
@@ -697,6 +690,6 @@ button {
 
 .view.ng-leave {
 	animation: fadeOut 0.4s ease;
-	animation-delay: 0.4s;
+	animation-delay: 0.2s;
 	animation-fill-mode: both;
 }
