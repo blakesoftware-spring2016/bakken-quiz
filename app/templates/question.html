@@ -1,21 +1,21 @@
 <div ng-show="showPopup" class="popupBackground" ng-click="showPopup = false"> </div>
 <div ng-show="showPopup" class="popupNew">
     <p class="popupText"> Are you sure you want to quit?</p>
-    <button ng-click="showPopup = false; quit()" class="popupButton">YES</button>
-	<button ng-click="showPopup = false" class="popupButton">NO</button>
+    <button ng-click="showPopup = false; quit()" class="popupButton">Yes</button>
+	<button ng-click="showPopup = false" class="popupButton">No</button>
 </div>
-<div class="questionContainer {{questionBackground}}">
-    <div class="question {{romanticStyleClass}} {{questionOverflowClass}}">{{question.text}}</div>
-    <div class="answerContainer {{romanticStyleClass}}">
-        <div class="answer {{romanticStyleClass}}"
+<div class="questionContainer" ng-class="{backgroundMaryQuestion: isMary, backgroundRomanticQuestion: isRomantic}">
+    <div class="question">{{question.text}}</div>
+    <div class="answerContainer">
+        <div class="answer"
 			ng-repeat="answer in answers track by $index"
-			ng-class="{selected: isSelected($index)}"
 			ng-click="select($index)">
-			<img class="answerImage" ng-src="{{answer.image}}" />
+			<img class="answerImage" ng-if="answer.image" ng-src="{{answer.image}}"/>
 			<div class="answerText" ng-if="answer.text">{{answer.text}}</div>
+			<div class="answerBorder" ng-class="{selected: isSelected($index)}"></div>
 		</div>
 	</div>
-	<div class="buttonContainer {{romanticStyleClass}}">
+	<div class="buttonContainer">
 		<button class="navButton" id="backButton" ng-click="back()">Back</button>
 		<button class="navButton" id="menuButton" ng-click="menu()">Menu</button>
 		<button class="navButton" id="nextButton" ng-click="next()">Next</button>
@@ -24,7 +24,7 @@
         <img class="leftBracket" src="assets/images/leftBracket.png">
 		<div class="progressBar">
 			<div class="progressLine" ng-repeat-start="question in questions track by $index"></div>
-			<div class="numberDiv {{classToAddToNumberDiv}}" ng-if="$index == questionID">{{$index + 1}}/{{questions.length}}</div>
+			<div class="numberDiv" ng-class="{maryNumber: isMary, romanticNumber: isRomantic}" ng-if="$index == questionID">{{$index + 1}}/{{questions.length}}</div>
 			<div class="progressPoint" ng-class="{questionPoint: $index == questionID}" ng-repeat-end></div>
 			<div class="progressLine"></div>
 		</div>

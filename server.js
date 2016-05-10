@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 // Setup the Express server
 const express = require('express')
@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer')
 
 const app = express()
 
-app.use(body_parser.json());
+app.use(body_parser.json())
 app.use(body_parser.urlencoded({extended: true}))
 
 // Serve all static assets... i.e., the entire app
@@ -21,13 +21,13 @@ app.post('/shareResults', (req, res) => {
 		return
 	}
 	// Create reusable transporter object using the default SMTP transport
-	let transporter = nodemailer.createTransport('smtps://maryshelley.bakken%40gmail.com:hello123world@smtp.gmail.com');
+	let transporter = nodemailer.createTransport('smtps://maryshelley.bakken%40gmail.com:hello123world@smtp.gmail.com')
 	// Setup e-mail data with unicode symbols
-	let html = req.body.description;
-	let text = req.body.description;
+	let html = req.body.description
+	let text = req.body.description
 	if (req.body.quote) {
-		html += '<br /><br /><i>' + req.body.quote + '</i>';
-		text += '\n\n' + req.body.quote;
+		html += '<br /><br /><i>' + req.body.quote + '</i>'
+		text += '\n\n' + req.body.quote
 	}
 	let options = {
 		from: '"The Bakken Museum" <maryshelley.bakken@gmail.com>',
