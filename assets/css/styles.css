@@ -394,7 +394,7 @@ input::-webkit-input-placeholder {
    color: rgba(65,94,142, 0.5);
 }
 
-input.ng-invalid.ng-dirty, input.ng-invalid-required.ng-dirty {
+input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
 	border-bottom: 3px solid tomato;
 }
 
@@ -697,5 +697,6 @@ button {
 
 .view.ng-leave {
 	animation: fadeOut 0.4s ease;
+	animation-delay: 0.4s;
 	animation-fill-mode: both;
 }
