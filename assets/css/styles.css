@@ -488,8 +488,6 @@ input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
 	background: url("../images/shareResults.png");
 	float: left;
 }
-<<<<<<< HEAD
-=======
 
 .backgroundTouchBegin {
 	background-image: url("../images/touchBegin.png");
@@ -497,7 +495,6 @@ input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
 	width: 1024px;
 	height: 768px;
 }
->>>>>>> origin/animations
 
 /* Popup */
 
@@ -627,6 +624,25 @@ button {
     height: 768px;
 }
 
+.backgroundTouchBegin {
+	background-image: url("../images/touchBegin.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	animation: pulse 20s infinite;
+	background-image: url("../images/touchBegin.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	animation: pulse 20s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.attractText {
+	animation: pulse 20s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
 #crossfade img.top {
     position: absolute;
     left:0;
@@ -641,6 +657,10 @@ button {
     0% {opacity: 0;}
     80% {opacity: 1;}
     100% {opacity: 0;}
+}
+
+.attractText:nth-child(1) {
+	-webkit-animation-delay: 4s;
 }
 
 .attractText {
