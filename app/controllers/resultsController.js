@@ -12,8 +12,8 @@ app.controller('resultsController', function($scope, $location, $routeParams, qu
 		// Exit out of calculation to prevent errors
 		if (Object.keys(session_answers).length === 0) {
 			session_results = {
-				title: 'INSERT TITLE FOR EASTER EGG HERE',
-				description: 'INSERT DESCRIPTION FOR EASTER EGG HERE'
+				title: "We couldn't figure you out!",
+				description: "Maybe because you didn't answer any of the questions..."
 			};
 			// Make results available to the template
 			$scope.result = session_results;
