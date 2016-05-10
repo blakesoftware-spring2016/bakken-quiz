@@ -28,6 +28,13 @@ app.controller('shareResultsController', function($scope, $location, quizData, $
 			// Show the popup
 			$scope.showPopup = true;
 		}
+		// If there was any error before sending, make all the fields dirty
+		// to display the errors in case the user didn't enter any text
+		else {
+			angular.forEach($scope.shareResultsForm.$error.required, function(field) {
+			    field.$setDirty();
+			});
+		}
 	};
     
     $scope.back = function(event) {
