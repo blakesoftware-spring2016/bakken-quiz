@@ -489,13 +489,6 @@ input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
 	float: left;
 }
 
-.backgroundTouchBegin {
-	background-image: url("../images/touchBegin.png");
-	background-size: 1024px 768px;
-	width: 1024px;
-	height: 768px;
-}
-
 /* Popup */
 
 .modalheader {
@@ -625,16 +618,8 @@ button {
 }
 
 .backgroundTouchBegin {
-	background-image: url("../images/touchBegin.png");
-	background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
-	animation: pulse 20s infinite;
-	background-image: url("../images/touchBegin.png");
-	background-size: 1024px 768px;
-	width: 1024px;
-	height: 768px;
-	animation: pulse 20s infinite;
 	-webkit-animation-timing-function: linear;
 }
 
