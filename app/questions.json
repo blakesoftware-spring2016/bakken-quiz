@@ -88,7 +88,7 @@
 
         }]
     }, {
-        "text": "You’re stuck on a deserted island and can bring one thing with you. What is it?",
+        "text": "You’re stuck on a deserted island. What one item do you bring?",
 		"priority": 10,
         "answers": [{
             "text" : "A friend or pet to keep me company",
@@ -337,7 +337,7 @@
     "title": "Are You A Romantic?",
 	"type": "bool",
 	"short_description": "Mary came from an era referred to as The Romantic Period. Take the quiz to see how much of a romantic you are!",
-	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18thand early 19th centuries. It came about as a reaction to Neoclassicism, prevalent in the previous century. Are you a Romantic?",
+	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18th and early 19th centuries. It came about as a reaction to Neoclassicism, prevalent in the previous century. Are you a Romantic?",
     "questions": [{
         "text": "Where would you like to live?",
         "answers": [{
@@ -368,11 +368,9 @@
     }, {
         "text": "The pursuit of knowledge should be about:",
         "answers": [{
-            "text" : "Looking for facts",
             "target": false,
 			"image": "assets/images/romantic/4fact.jpg"
         }, {
-            "text" : "Searching for hidden truth",
             "target": true,
 			"image": "assets/images/romantic/4truth.jpg"
         }]
@@ -415,7 +413,7 @@
             "target": true
         }]
     }, {
-        "text": "Creativity comes from",
+        "text": "Creativity comes from…",
         "answers": [{
             "text" : "Within",
             "target": true
@@ -424,7 +422,7 @@
             "target": false
         }]
     }, {
-        "text": "Rules are meant to be:",
+        "text": "Rules are meant to be…",
         "answers": [{
             "text" : "Followed",
             "target": false
