@@ -2,7 +2,7 @@
     "title": "Which Mary are You?",
 	"type": "multi",
 	"short_description": "Mary Shelley had many sides to her personality. Take the quiz to see which Mary you're most like!",
-	"description": "Often called the mother of science fiction, author Mary Shelley was a teenage runaway, a young mother, and the daughter of po litical radicals. She was a dreamer, a nurturer, an artist, an intellectual, a rebel and a trailblazer. Which version of Mary are you most like? ",
+	"description": "Often called the mother of science fiction, author Mary Shelley was a teenage runaway, a young mother, and the daughter of po litical radicals. She was a dreamer, a nurturer, an artist, an intellectual, a rebel and a trailblazer. Which version of Mary are you most like?",
 	"questions": [{
 	    "text": "What is your dream job?",
 		"priority": 3,
@@ -39,7 +39,7 @@
             "bucket": "Artist",
             "image": "assets/images/whichMary/2louvre.jpg"
         }, {
-            "text" : "Camping in a national park ",
+            "text" : "Camping in a national park",
             "bucket": "Nurturer",
             "image": "assets/images/whichMary/2camping.jpg"
         }, {
@@ -77,7 +77,7 @@
             "bucket": "Rebel",
             "image": "assets/images/whichMary/3punk.jpg"
         }, {
-            "text" : "That which inspires me",
+            "text" : "Inspirational",
             "bucket": "Artist",
             "image": "assets/images/whichMary/3inspires.jpg"
 
@@ -85,7 +85,6 @@
             "text" : "My own compositions",
             "bucket": "Trailblazer",
             "image": "assets/images/whichMary/3myOwn.jpg"
-
         }]
     }, {
         "text": "You’re stuck on a deserted island. What one item do you bring?",
@@ -95,7 +94,7 @@
             "bucket": "Nurturer",
             "image": "assets/images/whichMary/4pet.jpg"
         }, {
-                        "text" : "Boat. Nothing can keep me here!",
+            "text" : "Boat. Nothing can keep me here!",
             "bucket": "Rebel",
             "image": "assets/images/whichMary/4boat.jpg"
         }, {
@@ -115,10 +114,10 @@
 	    "text": "Which one of these people would you most like to have dinner with?",
 		"priority": 4,
 	    "answers": [{
-            "text" : "Sally Ride ",
+            "text" : "Sally Ride",
             "bucket": "Trailblazer"
         }, {
-            "text" : "Stephen Hawking ",
+            "text" : "Stephen Hawking",
             "bucket": "Intellectual"
 
         }, {
@@ -275,7 +274,7 @@
             "bucket": "Intellectual",
             "image": "assets/images/whichMary/11balanced.jpg"
         }, {
-            "text" : "Something I can create  from whatever’s on hand",
+            "text" : "Something I can create from whatever’s on hand",
             "bucket": "Dreamer",
             "image": "assets/images/whichMary/11create.jpg"
         }]
@@ -337,7 +336,7 @@
     "title": "Are You A Romantic?",
 	"type": "bool",
 	"short_description": "Mary came from an era referred to as The Romantic Period. Take the quiz to see how much of a romantic you are!",
-	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18thand early 19th centuries. The Romantics were rebelling against Neoclassicism, prevalent in the previous century. Are you a Romantic?",
+	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18th and early 19th centuries. The Romantics were rebelling against Neoclassicism, prevalent in the previous century. Are you a Romantic?",
     "questions": [{
         "text": "Where would you like to live?",
         "answers": [{
