@@ -728,7 +728,6 @@ button {
 	animation-fill-mode: both;
 }
 
-<<<<<<< HEAD
 .fade.ng-hide {
   opacity: 0;
 }
@@ -764,5 +763,3 @@ button {
   transition: all linear 350ms;
 }
 
-=======
->>>>>>> master
