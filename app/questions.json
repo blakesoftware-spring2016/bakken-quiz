@@ -112,7 +112,7 @@
             "image": "assets/images/whichMary/4book.jpg"
         }]
     }, {
-	    "text": "Which one of these people would you most like to have dinner with?",
+	    "text": "Who would you most like to have dinner with?",
 		"priority": 4,
 	    "answers": [{
             "text" : "Sally Ride, first American female astronaut",
