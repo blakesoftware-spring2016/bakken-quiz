@@ -9,11 +9,9 @@
 	    "answers": [{
             "text" : "Job? Who needs a job?",
             "bucket": "Rebel"
-
         }, {
             "text" : "Day care Provider",
             "bucket": "Nurturer"
-
         }, {
             "text" : "Professor",
             "bucket": "Intellectual"
@@ -114,7 +112,7 @@
             "image": "assets/images/whichMary/4book.jpg"
         }]
     }, {
-	    "text": "Which one of these people would you most like to have dinner with?",
+	    "text": "Who would you most like to have dinner with?",
 		"priority": 4,
 	    "answers": [{
             "text" : "Sally Ride",
