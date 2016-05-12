@@ -490,13 +490,6 @@ input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
 	float: left;
 }
 
-.backgroundTouchBegin {
-	background-image: url("../images/touchBegin.png");
-	background-size: 1024px 768px;
-	width: 1024px;
-	height: 768px;
-}
-
 /* Popup */
 
 .modalheader {
@@ -619,27 +612,67 @@ button {
 
 /* Touch to begin animation */
 
-.backgroundTouchBegin {
-  background-image: url("../images/touchBegin.png");
-  background-size: 1024px 768px;
-  width: 1024px;
-  height: 768px;
-  animation: pulse 20s infinite;
+#crossfade {
+    position:absolute;
+    width: 1024px;
+    height: 768px;
 }
 
-@keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.backgroundTouchBegin {
+	width: 1024px;
+	height: 768px;
+	-webkit-animation-timing-function: linear;
+}
+
+#crossfade img.top {
+    position: absolute;
+    left:0;
+    top: 0;
+    opacity: 1;
+    -webkit-animation-name: fade;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 30s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    48% {opacity: 0;}
+    52% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.attractTextContainer{
+    position: absolute;
+    top: 150px;
+    width: 1024px;
+    height: 400px;
+    
+}
+.attractText {
+	animation: pulse 20s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.attractText:nth-child(1) {
+	-webkit-animation-delay: 2s;
+}
+
+.attractText:nth-child(2) {
+    -webkit-animation-delay: 4s;
+}
+
+.attractText:nth-child(3) {
+    -webkit-animation-delay: 6s;
+}
+
+.attractText:nth-child(4) {
+    -webkit-animation-delay: 8s;
 }
 
 .attractText {
+    margin-top: 50px;
     width: 1024px;
     height: 50px;
     color: black;
@@ -647,11 +680,12 @@ button {
 
 .attractText1 {
     height: 50px;
-    color: black;
+    color: white;
     position: absolute;
     top: 688px;
     left: 390px;
     font-size: 23px;
+    font-family: "Source Sans Pro";
     animation: pulse 5s infinite;
 }
 
@@ -694,6 +728,7 @@ button {
 	animation-fill-mode: both;
 }
 
+<<<<<<< HEAD
 .fade.ng-hide {
   opacity: 0;
 }
@@ -729,3 +764,5 @@ button {
   transition: all linear 350ms;
 }
 
+=======
+>>>>>>> master
