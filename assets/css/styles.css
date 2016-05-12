@@ -96,7 +96,7 @@ html, body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	text-shadow: 0 0 10px black;
+	text-shadow: 2px 2px 10px black;
 	text-align: center;
 	font-size: 22px;
 }
@@ -693,3 +693,39 @@ button {
 	animation-delay: 0.2s;
 	animation-fill-mode: both;
 }
+
+.fade.ng-hide {
+  opacity: 0;
+}
+
+.fade.ng-hide-remove,
+.fade.ng-hide-add {
+  display: block !important;
+}
+
+.fade.ng-hide-remove {
+  transition: all linear 350ms;
+}
+
+.fade.ng-hide-add {
+  transition-delay: 1000ms;
+  transition: all linear 350ms;
+}
+
+.fadebackground.ng-hide {
+  opacity: 0;
+}
+
+.fadebackground.ng-hide-remove,
+.fadebackground.ng-hide-add {
+  display: block !important;
+}
+
+.fadebackground.ng-hide-remove {
+  transition: all linear 50ms;
+}
+
+.fadebackground.ng-hide-add {
+  transition: all linear 350ms;
+}
+

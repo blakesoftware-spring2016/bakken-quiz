@@ -95,19 +95,22 @@
             "bucket": "Nurturer",
             "image": "assets/images/whichMary/4pet.jpg"
         }, {
-                        "text" : "Boat. Nothing can keep me here!",
+            "text" : "Boat. Nothing can keep me here!",
             "bucket": "Rebel",
             "image": "assets/images/whichMary/4boat.jpg"
         }, {
+            "text" : "A hammock",
             "bucket": "Dreamer",
             "image": "assets/images/whichMary/4hammock.jpg"
         }, {
             "text" : "A flag to plant on my newly discovered island!",
             "bucket": "Trailblazer"
         }, {
+            "text" : "A sketchpad to draw in",
             "bucket": "Artist",
             "image": "assets/images/whichMary/4art.jpg"
         }, {
+            "text" : "A book to read",
             "bucket": "Intellectual",
             "image": "assets/images/whichMary/4book.jpg"
         }]
