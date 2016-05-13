@@ -1,10 +1,13 @@
 app.controller('shareResultsController', function($scope, $location, quizData, $http) {
 	
+	$scope.submitted = false;
+	
 	$scope.checkEmails = function() {
 		$scope.emailsMatch = ($scope.email === $scope.emailCheck) ? true : false;
 	};
 	
 	$scope.send = function() {
+		$scope.submitted = true;
 		// Verify the form is valid before sending
 		if ($scope.shareResultsForm.$valid && $scope.emailsMatch) {
 			// Send a POST request to the server to send the email
@@ -27,13 +30,6 @@ app.controller('shareResultsController', function($scope, $location, quizData, $
 			});
 			// Show the popup
 			$scope.showPopup = true;
-		}
-		// If there was any error before sending, make all the fields dirty
-		// to display the errors in case the user didn't enter any text
-		else {
-			angular.forEach($scope.shareResultsForm.$error.required, function(field) {
-			    field.$setDirty();
-			});
 		}
 	};
     
