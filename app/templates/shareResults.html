@@ -23,7 +23,8 @@
 			<input type="text" name="emailCheck" ng-model="emailCheck" ng-change="checkEmails()" required autocomplete="off" placeholder="Confirm Email Address" ng-class="{validationError: !emailsMatch}" />
 			<div ng-show="!emailsMatch && shareResultsForm.emailCheck.$dirty" class="errorText">Emails do not match</div>
 		</div>
-		<div class="shareResultsDescription">The Bakken Musem will use this information to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		<div class="shareResultsDescription">Why do we collect this information?</div>
+		<div class="shareResultsDescription">The Bakken places very high value on the safety and security of your private information. This information will be used only to respond to your request to email the results of your quiz and to include in that email an opportuntiy to register to receive ongoing communications of interest to you about The Bakken and our programs.</div>
 		<div class="shareResultsButtonContainer">
 			<button id="backToResultsButton" ng-click="back()" formnovalidate>Back to Results</button>
 			<button id="sendResultsButton" ng-click="send()" formnovalidate>Send</button>
