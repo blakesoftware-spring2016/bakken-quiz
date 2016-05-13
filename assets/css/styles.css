@@ -122,6 +122,8 @@ html, body {
 	margin: 20px 0;
 	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
+  
+  
 }
 
 /* Progress Bar */
@@ -604,6 +606,15 @@ button {
 	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
 	color: white;
 	outline: none;
+}
+
+button:active {
+	background-color: white;
+	color: #4b6a9b;
+}
+
+.navButton:active {
+
 }
 
 .navButton {
