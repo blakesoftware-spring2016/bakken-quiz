@@ -366,13 +366,13 @@
 			"image": "assets/images/romantic/3dirty.jpg"
         }]
     }, {
-        "text": "The pursuit of knowledge should be about...",
+        "text": "You're enjoying a good book. What kind of book is it?",
         "answers": [{
-            "target": false,
-			"image": "assets/images/romantic/4fact.jpg"
+            "text": "Adventure",
+            "target": false
         }, {
-            "target": true,
-			"image": "assets/images/romantic/4truth.jpg"
+            "text": "Biography",
+            "target": true
         }]
     }, {
         "text": "It’s a critical game and your team is behind. What do you do?",
