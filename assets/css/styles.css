@@ -613,6 +613,12 @@ button:active {
 	color: #4b6a9b;
 }
 
+romanticButton:active {
+	background-color: white;
+	color: #595959;
+}
+
+
 .navButton:active {
 
 }
