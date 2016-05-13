@@ -122,8 +122,8 @@ html, body {
 	margin: 20px 0;
 	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
-  
-  
+
+
 }
 
 /* Progress Bar */
@@ -613,7 +613,7 @@ button:active {
 	color: #4b6a9b;
 }
 
-romanticButton:active {
+.romanticButton:active {
 	background-color: white;
 	color: #595959;
 }
@@ -665,7 +665,7 @@ romanticButton:active {
     top: 150px;
     width: 1024px;
     height: 400px;
-    
+
 }
 .attractText {
 	animation: pulse 20s infinite;
