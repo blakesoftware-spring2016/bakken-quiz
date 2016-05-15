@@ -366,7 +366,7 @@ button {
 
 .shareResultsForm {
 	width: 700px;
-	margin: 160px auto 0 auto;
+	margin: 140px auto 0 auto;
 	box-sizing: border-box;
 }
 
@@ -415,9 +415,18 @@ input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
 	font-size: 18px;
 }
 
+.shareResultsHeader {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+
 .shareResultsButtonContainer {
 	width: 100%;
-	margin-top: 36px;
+	margin-top: 20px;
 	float: left;
 }
 
