@@ -40,12 +40,11 @@ app.controller('resultsController', function($scope, $location, $routeParams, qu
 			var result_index = Math.floor(percentage * quiz.results.length);
 			// If the percentage is 1, the array index gets screwed up...so fix it
 			if (percentage === 1) result_index--;
-			var result = quiz.results[result_index];
 			// So... now we know the result!
 			// Make it available to the template
 			$scope.result = {
-				title: result.title,
-				description: result.description
+				title: 'You\'re ' + String(Math.round(percentage * 100)) + '% ' + quiz.result_target + '!',
+				description: quiz.results[result_index]
 			};
 			session_results = $scope.result;
 		}

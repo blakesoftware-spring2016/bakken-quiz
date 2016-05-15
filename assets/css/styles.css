@@ -122,6 +122,8 @@ html, body {
 	margin: 20px 0;
 	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
+  
+  
 }
 
 /* Progress Bar */
@@ -388,15 +390,15 @@ input {
 	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
 	font-size: 26px;
 	color: #475f95;
-  box-shadow: inset 0px 0px 4px 4px rgba(0,0,0,0.2);
+	box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 input::-webkit-input-placeholder {
    color: rgba(65,94,142, 0.5);
 }
 
-input.ng-invalid.ng-dirty, input.ng-dirty.validationError {
-	border-bottom: 3px solid tomato;
+input.ng-invalid.showError, input.emailCheckError {
+	border-bottom: 3px solid #8a1538;
 }
 
 .errorText {
@@ -615,6 +617,15 @@ button {
 	outline: none;
 }
 
+button:active {
+	background-color: white;
+	color: #4b6a9b;
+}
+
+.navButton:active {
+
+}
+
 .navButton {
 	width: 146px;
 }
@@ -771,4 +782,3 @@ button {
 .fadebackground.ng-hide-add {
   transition: all linear 350ms;
 }
-
