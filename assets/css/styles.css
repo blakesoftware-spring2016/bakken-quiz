@@ -449,22 +449,6 @@ input.ng-invalid.showError, input.emailCheckError {
 
 /* Backgrounds */
 
-.maryBackgroundShareResults {
-    background-image: url("../images/maryShareResultsBackground.png");
-	background-size: 1024px 768px;
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
-.romanticBackgroundShareResults {
-    background-image: url("../images/romanticShareResultsBackground.png");
-	background-size: 1024px 768px;
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
 .backgroundChooseQuiz {
 	background-image: url("../images/ChooseQuiz.png");
 	background-size: 1024px 768px;
@@ -524,6 +508,22 @@ input.ng-invalid.showError, input.emailCheckError {
 .backgroundShareResults {
 	width: 1024px;
 	height: 768px;
+}
+
+.maryBackgroundShareResults {
+    background-image: url("../images/maryShareResultsBackground.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
+}
+
+.romanticBackgroundShareResults {
+    background-image: url("../images/romanticShareResultsBackground.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
 }
 
 /* Popup */
