@@ -1,7 +1,7 @@
 <div ng-show="agePopup" class="popupBackground fadebackground" ng-click="agePopup = false"> </div>
 <div ng-show="agePopup" class="popup13 fade">
 	<p class="popup13Text">Are you 13 years or older?</p>
-	<button ng-click="agePopup = false; continue()" class="popupButton">Yes</button>
+	<button ng-click="continue()" class="popupButton">Yes</button>
 	<button ng-click="agePopup = false" class="popupButton">No</button>
 </div>
 <div ng-show="showPopup" class="popupBackground fadebackground" ng-click="showPopup = false"></div>
@@ -18,6 +18,6 @@
 	</div>
 </div>
 <div class="resultsButtonContainer">
-	<button type="button" id="shareResultsButton" ng-click="agePopup = true">Share results</button>
-	<button type="button" id="anotherQuizButton" ng-click="showPopup = true">Take another quiz</button>
+	<button type="button" id="shareResultsButton" ng-click="agePopup = true">Share Results</button>
+	<button type="button" id="anotherQuizButton" ng-click="showPopup = true">Take Another Quiz</button>
 </div>
