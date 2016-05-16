@@ -16,9 +16,9 @@
 		</div>
 	</div>
 	<div class="buttonContainer">
-		<button ng-class="romanticButton: true" class="navButton" id="backButton" ng-click="back()">Back</button>
-		<button ng-class="romanticButton: true" class="navButton" id="menuButton" ng-click="menu()">Take Another Quiz</button>
-		<button ng-class="romanticButton: true" class="navButton" id="nextButton" ng-click="next()">Next</button>
+		<button ng-class="{romanticButton: isRomantic}" class="navButton" id="backButton" ng-click="back()">Back</button>
+		<button ng-class="{romanticButton: isRomantic}" class="navButton" id="menuButton" ng-click="menu()">Take Another Quiz</button>
+		<button ng-class="{romanticButton: isRomantic}" class="navButton" id="nextButton" ng-click="next()">Next</button>
 	</div>
 	<div class="progressContainer">
         <img class="leftBracket" src="assets/images/leftBracket.png">
@@ -31,3 +31,4 @@
 		<img class="rightBracket" src="assets/images/rightBracket.png">
 	</div>
 </div>
+`````````````````````````````````````````
