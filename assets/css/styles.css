@@ -133,8 +133,8 @@ html, body {
 	margin: 20px 0;
 	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
-  
-  
+
+
 }
 
 /* Progress Bar */
@@ -516,7 +516,6 @@ input.ng-invalid.showError, input.emailCheckError {
 
 .modalheader {
     width: 50px;
-    font-family
 }
 
 .popupNew {
@@ -633,6 +632,12 @@ button:active {
 	color: #4b6a9b;
 }
 
+.romanticButton:active {
+	background-color: white;
+	color: #595959;
+}
+
+
 .navButton:active {
 
 }
@@ -679,7 +684,7 @@ button:active {
     top: 150px;
     width: 1024px;
     height: 400px;
-    
+
 }
 .attractText {
 	animation: pulse 20s infinite;
