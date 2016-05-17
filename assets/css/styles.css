@@ -334,6 +334,7 @@ button {
 	width: 100%;
 	height: 480px;
 	padding: 0 60px;
+	float: left;
 	top: 150px;
 	position: relative;
 	box-sizing: border-box;
@@ -462,14 +463,14 @@ input.showError {
 	background-image: url("../images/resultsRomantic.png");
 	width: 1024px;
 	height: 768px;
-	margin: 0 auto -90px;
+	margin: 0 auto -100px;
 }
 
 .backgroundMaryResults {
 	background-image: url("../images/resultsMary.png");
 	width: 1024px;
 	height: 768px;
-	margin: 0 auto -90px;
+	margin: 0 auto -100px;
 }
 
 .backgroundMaryDescription {
