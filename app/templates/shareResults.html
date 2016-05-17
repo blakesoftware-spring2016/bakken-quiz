@@ -4,22 +4,23 @@
 	<button ng-click="showPopup = false; back()" class="popupShareButton">Back to Results</button>
 	<button ng-click="showPopup = false; chooseQuiz()" class="popupShareButton">Take Another Quiz</button>
 </div>
-<div class="backgroundShareResults">
+<div ng-class="{maryBackgroundShareResults: isMary, romanticBackgroundShareResults: isRomantic}">
 	<form name="shareResultsForm" class="shareResultsForm">
 		<div class="inputContainer">
-			<input type="email" name="email" ng-model="email" ng-change="checkEmails()" required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)" ng-class="{showError: submitted}" />
+			<input type="email" name="email" ng-model="email" ng-change="checkEmails()" required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)"
+				ng-class="{showError: submitted && (shareResultsForm.email.$error.email || shareResultsForm.email.$error.required)}" />
 			<div ng-show="shareResultsForm.email.$error.required && submitted" class="errorText">Email is required</div>
 			<div ng-show="shareResultsForm.email.$error.email && submitted" class="errorText">Invalid email address</div>
 		</div>
 		<div class="inputContainer">
-			<input type="text" name="emailCheck" ng-model="emailCheck" ng-change="checkEmails()" required autocomplete="off" placeholder="Confirm Email Address" ng-class="{emailCheckError: !emailsMatch && submitted}" />
+			<input type="text" name="emailCheck" ng-model="emailCheck" ng-change="checkEmails()" required autocomplete="off" placeholder="Confirm Email Address"
+				ng-class="{showError: submitted && !emailsMatch}" />
 			<div ng-show="!emailsMatch && submitted" class="errorText">Emails do not match</div>
 		</div>
-		<div class="shareResultsDescription"><b>Why do we collect this information?</b> The Bakken places very high value on the safety and security of your private information. This information will be used only to respond to your request to email the results of your quiz and to include in that email an opportuntiy to register to receive ongoing communications of interest to you about The Bakken and our programs.
-		</div>
 		<div class="shareResultsButtonContainer">
-			<button id="backToResultsButton" ng-click="back()">Back to Results</button>
-			<button id="sendResultsButton" ng-click="send()">Send</button>
+			<button ng-class="{romanticButton: isRomantic}" id="backToResultsButton" ng-click="back()">Back to Results</button>
+			<button ng-class="{romanticButton: isRomantic}" id="sendResultsButton" ng-click="send()">Send</button>
 		</div>
+		<div class="shareResultsDescription"><b>Why do we collect this information?</b> The Bakken places very high value on the safety and security of your private information. This information will be used only to respond to your request to email the results of your quiz and to include in that email an opportuntiy to register to receive ongoing communications of interest to you about The Bakken and our programs.</div>
 	</form>
 </div>
