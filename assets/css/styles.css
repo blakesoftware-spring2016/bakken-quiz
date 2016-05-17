@@ -133,8 +133,8 @@ html, body {
 	margin: 20px 0;
 	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
-  
-  
+
+
 }
 
 /* Progress Bar */
@@ -508,15 +508,28 @@ input.ng-invalid.showError, input.emailCheckError {
 .backgroundShareResults {
 	width: 1024px;
 	height: 768px;
-	background: url("../images/shareResults.png");
-	float: left;
+}
+
+.maryBackgroundShareResults {
+    background-image: url("../images/maryShareResultsBackground.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
+}
+
+.romanticBackgroundShareResults {
+    background-image: url("../images/romanticShareResultsBackground.png");
+	background-size: 1024px 768px;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto -100px;
 }
 
 /* Popup */
 
 .modalheader {
     width: 50px;
-    font-family
 }
 
 .popupNew {
@@ -633,6 +646,12 @@ button:active {
 	color: #4b6a9b;
 }
 
+.romanticButton:active {
+	background-color: white;
+	color: #595959;
+}
+
+
 .navButton:active {
 
 }
@@ -664,14 +683,14 @@ button:active {
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    -webkit-animation-duration: 30s;
+    -webkit-animation-duration: 8s;
 }
 
 @-webkit-keyframes fade {
-    0% {opacity: 0;}
-    48% {opacity: 0;}
-    52% {opacity: 1;}
-    100% {opacity: 1;}
+    0% {opacity: 1;}
+    47% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
 }
 
 .attractTextContainer{
@@ -679,27 +698,27 @@ button:active {
     top: 150px;
     width: 1024px;
     height: 400px;
-    
+
 }
 .attractText {
-	animation: pulse 20s infinite;
+	animation: pulse 8s infinite;
 	-webkit-animation-timing-function: linear;
 }
 
 .attractText:nth-child(1) {
-	-webkit-animation-delay: 2s;
+	-webkit-animation-delay: 1s;
 }
 
 .attractText:nth-child(2) {
-    -webkit-animation-delay: 4s;
+    -webkit-animation-delay: 2.5s;
 }
 
 .attractText:nth-child(3) {
-    -webkit-animation-delay: 6s;
+    -webkit-animation-delay: 4s;
 }
 
 .attractText:nth-child(4) {
-    -webkit-animation-delay: 8s;
+    -webkit-animation-delay: 5.5s;
 }
 
 .attractText {
@@ -717,7 +736,7 @@ button:active {
     left: 390px;
     font-size: 23px;
     font-family: "Source Sans Pro";
-    animation: pulse 5s infinite;
+    animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
