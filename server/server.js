@@ -2,6 +2,7 @@
 
 // Setup the Express server
 const fs = require('fs')
+const path = require('path')
 const express = require('express')
 const body_parser = require('body-parser')
 const node_mailer = require('nodemailer')
@@ -78,7 +79,12 @@ app.post('/shareResults', (req, res) => {
 
 // Handle 404 errors
 app.use((req, res, next) => {
-	res.status(404).sendFile(__dirname + '/../index.html')
+	res.status(404).sendFile(path.resolve(__dirname + '/../index.html'))
+})
+
+// Handle 500 errors
+app.use((error, req, res, next) => {
+	res.status(500).send('Something broke! (500: Internal Server Error)')
 })
 
 // Start the Express server
