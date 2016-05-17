@@ -18,8 +18,8 @@
 			<div ng-show="!emailsMatch && submitted" class="errorText">Emails do not match</div>
 		</div>
 		<div class="shareResultsButtonContainer">
-			<button id="backToResultsButton" ng-click="back()">Back to Results</button>
-			<button id="sendResultsButton" ng-click="send()">Send</button>
+			<button ng-class="{romanticButton: isRomantic}" id="backToResultsButton" ng-click="back()">Back to Results</button>
+			<button ng-class="{romanticButton: isRomantic}" id="sendResultsButton" ng-click="send()">Send</button>
 		</div>
 		<div class="shareResultsDescription"><b>Why do we collect this information?</b> The Bakken places very high value on the safety and security of your private information. This information will be used only to respond to your request to email the results of your quiz and to include in that email an opportuntiy to register to receive ongoing communications of interest to you about The Bakken and our programs.</div>
 	</form>
