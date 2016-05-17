@@ -77,6 +77,39 @@ app.post('/shareResults', (req, res) => {
 	})
 })
 
+app.get('/preloadImages', (req, res) => {
+
+    var imageUrls = imagesInDirectory('../assets/images');
+    imageUrls = imageUrls.map(function(url) {
+    	return url.slice(3); // Remove the ../
+    });
+
+    res.send(imageUrls);
+});
+
+function imagesInDirectory(dir) {
+
+    var results = [];
+
+    fs.readdirSync(dir).forEach(function(file) {
+
+        file = dir + '/' + file;
+        var stat = fs.statSync(file);
+
+        if (stat && stat.isDirectory()) {
+            results = results.concat(imagesInDirectory(file));
+        } 
+        else {
+        	if (file.endsWith('.png') || file.endsWith('.jpg') || file.endsWith('.jpeg')) {
+        		results.push(file);
+        	}
+        }
+
+    });
+
+    return results;
+}
+
 // Handle 404 errors
 app.use((req, res, next) => {
 	res.status(404).sendFile(path.resolve(__dirname + '/../index.html'))
