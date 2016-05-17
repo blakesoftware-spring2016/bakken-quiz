@@ -102,15 +102,14 @@ html, body {
 }
 
 .captions {
-  line-height: 98%;
-  padding-bottom: 8px;
-  bottom: 0;
-  z-index: 14;
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  background-color: rgba(0,0,0, 0.5);
-
+	line-height: 98%;
+	padding-bottom: 8px;
+	bottom: 0;
+	z-index: 14;
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,0,0, 0.5);
 }
 
 .answerBorder {
@@ -133,8 +132,6 @@ html, body {
 	margin: 20px 0;
 	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
-
-
 }
 
 /* Progress Bar */
@@ -153,19 +150,21 @@ html, body {
 .progressBar {
 	width: calc(100% - (35px * 2));
     height: 49px;
+	padding: 0 1.4px;
 	float: left;
 	display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 0.5px;
     box-sizing: border-box;
 }
 
 .progressLine {
-	height: 3.5px;
+	margin-top: 1px;
 	float: left;
+	box-sizing: border-box;
     flex-grow: 1;
 	background: #eef0f4;
+	box-shadow: 0 0 0.4px 1.8px #eef0f4;
 	align-self: center;
 }
 
@@ -192,7 +191,7 @@ html, body {
 	margin-left: calc(-40px + (24px / 2));
 	margin-top: 34px;
 	position: absolute;
-    background: #eef0f4;
+    background: #FEFEFE;
     line-height: 40px;
 	text-align: center;
 	font-size: 26px;
@@ -245,7 +244,6 @@ html, body {
 
 /* MISCELLANEOUS THINGS THAT NEED TO BE ORGANIZED */
 
-
 .chooseButton {
 	width: 160px;
 	height: 90px;
@@ -254,7 +252,6 @@ html, body {
 	border: 1px solid;
 	font-size: 20px;
 }
-
 
 .maryDescription {
 	width: 40%;
@@ -328,7 +325,7 @@ button {
 }
 
 #anotherQuizButton {
-  float: right;
+	float: right;
 }
 
 /* Results page */
@@ -340,26 +337,24 @@ button {
 	top: 150px;
 	position: relative;
 	box-sizing: border-box;
-	font-size: 25px;
+	font-size: 24px;
 	color: white;
-	overflow-y: auto;
 }
 
 #shareResultsButton {
-  float: right;
-  margin-left: 18px;
+	float: right;
+	margin-left: 18px;
 }
 
 .resultsButtonContainer {
-  width: 95%;
-  padding-right: 5%;
-  height: 90px;
-
+	width: 95%;
+	padding-right: 5%;
+	height: 90px;
 }
 
 .sentButtonContainer {
-  width: 360px;
-  margin: auto;
+	width: 360px;
+	margin: auto;
 }
 
 .sentButtonContainer button {
@@ -368,7 +363,7 @@ button {
 }
 
 #menuButton {
-  width: 186px;
+	width: 186px;
 }
 
 .quote {
@@ -379,8 +374,8 @@ button {
 
 .shareResultsForm {
 	width: 700px;
-	margin: 0 auto 0 auto;
-  padding-top: 140px;
+	margin: 0 auto;
+	padding-top: 160px;
 	box-sizing: border-box;
 }
 
@@ -409,7 +404,7 @@ input::-webkit-input-placeholder {
    color: rgba(65,94,142, 0.5);
 }
 
-input.ng-invalid.showError, input.emailCheckError {
+input.showError {
 	border-bottom: 3px solid #8a1538;
 }
 
@@ -422,26 +417,17 @@ input.ng-invalid.showError, input.emailCheckError {
 	box-sizing: border-box;
 }
 
-.shareResultsDescription {
-	width: 100%;
-	float: left;
-	color: white;
-	font-size: 18px;
-}
-
-.shareResultsHeader {
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 22px;
-  margin-bottom: 5px;
-}
-
-
 .shareResultsButtonContainer {
 	width: 100%;
-	margin-top: 20px;
 	float: left;
+}
+
+.shareResultsDescription {
+	width: 100%;
+	margin-top: 36px;
+	float: left;
+	color: white;
+	font-size: 16px;
 }
 
 #sendResultsButton {
@@ -467,7 +453,6 @@ input.ng-invalid.showError, input.emailCheckError {
 
 .backgroundRomanticQuestion {
 	background-image: url("../images/romQuestion.png");
-	background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
@@ -475,7 +460,6 @@ input.ng-invalid.showError, input.emailCheckError {
 
 .backgroundRomanticResults {
 	background-image: url("../images/resultsRomantic.png");
-	background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -90px;
@@ -483,7 +467,6 @@ input.ng-invalid.showError, input.emailCheckError {
 
 .backgroundMaryResults {
 	background-image: url("../images/resultsMary.png");
-	background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -90px;
@@ -491,13 +474,11 @@ input.ng-invalid.showError, input.emailCheckError {
 
 .backgroundMaryDescription {
 	background-image: url("../images/summary.png");
-	background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
 }
 
-/* Will need to happen eventually, but no image for it is currently available */
 .backgroundRomanticDescription {
 	background-image: url("../images/romanticDescription.png");
 	background-size: 1024px 768px;
@@ -506,17 +487,14 @@ input.ng-invalid.showError, input.emailCheckError {
 	margin: 0 auto -100px;
 }
 
-
 .maryBackgroundShareResults {
-  background-image: url("../images/maryShareResultsBackground.png");
-  background-size: 1024px 768px;
+	background-image: url("../images/maryShareResultsBackground.png");
 	width: 1024px;
 	height: 768px;
 }
 
 .romanticBackgroundShareResults {
-  background-image: url("../images/romanticShareResultsBackground.png");
-	background-size: 1024px 768px;
+	background-image: url("../images/romanticShareResultsBackground.png");
 	width: 1024px;
 	height: 768px;
 }
@@ -542,17 +520,17 @@ input.ng-invalid.showError, input.emailCheckError {
 }
 
 .popupBackground {
-  z-index: 1001;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0, 0.7);
-  position: absolute;
+	z-index: 1001;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.7);
+	position: absolute;
 }
 
 .popupText {
-  font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
-  font-size: 60px;
-  color: rgb(65,94,142);
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+	font-size: 60px;
+	color: rgb(65,94,142);
 }
 
 .popup13 {
@@ -573,7 +551,7 @@ input.ng-invalid.showError, input.emailCheckError {
 	font-size: 55px;
 	color: rgb(65,94,142);
 	margin-top: 80px;
-  margin-bottom: 120px;
+	margin-bottom: 120px;
 }
 
 .popup13Helper {
@@ -595,15 +573,15 @@ input.ng-invalid.showError, input.emailCheckError {
 }
 
 .popupShareButton {
-  background-color: rgba(255,255,255, 0);
-  border: 2px solid rgb(65,94,142);
-  color: rgb(65,94,142);
-  width: 188px;
-  height: 50px;
-  font-size: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 50px;
+	background-color: rgba(255,255,255, 0);
+	border: 2px solid rgb(65,94,142);
+	color: rgb(65,94,142);
+	width: 188px;
+	height: 50px;
+	font-size: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 50px;
 }
 
 .quizDescNav button {
@@ -644,11 +622,6 @@ button:active {
 .romanticButton:active {
 	background-color: white;
 	color: #595959;
-}
-
-
-.navButton:active {
-
 }
 
 .navButton {
@@ -753,7 +726,7 @@ button:active {
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
+from {opacity: 0;}
     to {opacity: 1;}
 }
 
@@ -774,36 +747,34 @@ button:active {
 }
 
 .fade.ng-hide {
-  opacity: 0;
+	opacity: 0;
 }
 
-.fade.ng-hide-remove,
-.fade.ng-hide-add {
-  display: block !important;
+.fade.ng-hide-remove, .fade.ng-hide-add {
+	display: block !important;
 }
 
 .fade.ng-hide-remove {
-  transition: all linear 350ms;
+	transition: all linear 350ms;
 }
 
 .fade.ng-hide-add {
-  transition-delay: 1000ms;
-  transition: all linear 350ms;
+	transition-delay: 1000ms;
+	transition: all linear 350ms;
 }
 
 .fadebackground.ng-hide {
-  opacity: 0;
+	opacity: 0;
 }
 
-.fadebackground.ng-hide-remove,
-.fadebackground.ng-hide-add {
-  display: block !important;
+.fadebackground.ng-hide-remove, .fadebackground.ng-hide-add {
+	display: block !important;
 }
 
 .fadebackground.ng-hide-remove {
-  transition: all linear 50ms;
+	transition: all linear 50ms;
 }
 
 .fadebackground.ng-hide-add {
-  transition: all linear 350ms;
+	transition: all linear 350ms;
 }
