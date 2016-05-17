@@ -379,7 +379,8 @@ button {
 
 .shareResultsForm {
 	width: 700px;
-	margin: 140px auto 0 auto;
+	margin: 0 auto 0 auto;
+  padding-top: 140px;
 	box-sizing: border-box;
 }
 
@@ -505,25 +506,19 @@ input.ng-invalid.showError, input.emailCheckError {
 	margin: 0 auto -100px;
 }
 
-.backgroundShareResults {
-	width: 1024px;
-	height: 768px;
-}
 
 .maryBackgroundShareResults {
-    background-image: url("../images/maryShareResultsBackground.png");
-	background-size: 1024px 768px;
+  background-image: url("../images/maryShareResultsBackground.png");
+  background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
-	margin: 0 auto -100px;
 }
 
 .romanticBackgroundShareResults {
-    background-image: url("../images/romanticShareResultsBackground.png");
+  background-image: url("../images/romanticShareResultsBackground.png");
 	background-size: 1024px 768px;
 	width: 1024px;
 	height: 768px;
-	margin: 0 auto -100px;
 }
 
 /* Popup */
