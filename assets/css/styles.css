@@ -150,19 +150,21 @@ html, body {
 .progressBar {
 	width: calc(100% - (35px * 2));
     height: 49px;
+	padding: 0 1.4px;
 	float: left;
 	display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 0.5px;
     box-sizing: border-box;
 }
 
 .progressLine {
-	height: 3.5px;
+	margin-top: 1px;
 	float: left;
+	box-sizing: border-box;
     flex-grow: 1;
 	background: #eef0f4;
+	box-shadow: 0 0 0.4px 1.8px #eef0f4;
 	align-self: center;
 }
 
@@ -189,7 +191,7 @@ html, body {
 	margin-left: calc(-40px + (24px / 2));
 	margin-top: 34px;
 	position: absolute;
-    background: #eef0f4;
+    background: #FEFEFE;
     line-height: 40px;
 	text-align: center;
 	font-size: 26px;
