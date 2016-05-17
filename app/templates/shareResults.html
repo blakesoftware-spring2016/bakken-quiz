@@ -4,7 +4,7 @@
 	<button ng-click="showPopup = false; back()" class="popupShareButton">Back to Results</button>
 	<button ng-click="showPopup = false; chooseQuiz()" class="popupShareButton">Take Another Quiz</button>
 </div>
-<div class="backgroundShareResults">
+<div ng-class="{maryBackgroundShareResults: isMary, romanticBackgroundShareResults: isRomantic}">
 	<form name="shareResultsForm" class="shareResultsForm">
 		<div class="inputContainer">
 			<input type="email" name="email" ng-model="email" ng-change="checkEmails()" required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)" ng-class="{showError: submitted}" />

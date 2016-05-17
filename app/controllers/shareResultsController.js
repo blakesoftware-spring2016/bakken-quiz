@@ -1,5 +1,8 @@
 app.controller('shareResultsController', function($scope, $location, quizData, $http) {
 	
+    $scope.isRomantic = session_quiz;
+	$scope.isMary = !($scope.isRomantic);
+    
 	$scope.submitted = false;
 	
 	$scope.checkEmails = function() {
