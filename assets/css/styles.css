@@ -657,8 +657,8 @@ button:active {
 
 @-webkit-keyframes fade {
     0% {opacity: 1;}
-    47% {opacity: 1;}
-    53% {opacity: 0;}
+    45% {opacity: 1;}
+    55% {opacity: 0;}
     100% {opacity: 0;}
 }
 
