@@ -652,7 +652,7 @@ button:active {
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    -webkit-animation-duration: 8s;
+    -webkit-animation-duration: 6s;
 }
 
 @-webkit-keyframes fade {
@@ -667,34 +667,71 @@ button:active {
     top: 150px;
     width: 1024px;
     height: 400px;
-
 }
+
+.attractText .blueTextFade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .attractText {
-	animation: pulse 8s infinite;
+    position: relative;
+	animation: pulse 6s infinite;
 	-webkit-animation-timing-function: linear;
 }
 
 .attractText:nth-child(1) {
-	-webkit-animation-delay: 1s;
+	-webkit-animation-delay: 0.5s;
 }
 
 .attractText:nth-child(2) {
-    -webkit-animation-delay: 2.5s;
+    -webkit-animation-delay: 2s;
 }
 
 .attractText:nth-child(3) {
-    -webkit-animation-delay: 4s;
+    -webkit-animation-delay: 3.5s;
 }
 
 .attractText:nth-child(4) {
-    -webkit-animation-delay: 5.5s;
+    -webkit-animation-delay: 5s;
 }
 
 .attractText {
     margin-top: 50px;
     width: 1024px;
     height: 50px;
-    color: black;
+}
+
+.attractText img.blueTextFade {
+    -webkit-animation-name: bluetextfade;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes bluetextfade {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    51% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.attractText img.greyTextFade {
+    -webkit-animation-name: greytextfade;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes greytextfade {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    51% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 .attractText1 {
