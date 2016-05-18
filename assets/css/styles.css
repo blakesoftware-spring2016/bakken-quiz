@@ -742,19 +742,15 @@ button:active {
     left: 390px;
     font-size: 23px;
     font-family: "Source Sans Pro";
-    animation: pulse 3s infinite;
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 /* Page Transitions */
