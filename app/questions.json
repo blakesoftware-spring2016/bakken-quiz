@@ -282,7 +282,7 @@
         "text": "You’re lost. What do you do?",
 		"priority": 9,
         "answers": [{
-            "text" : "I ask for directions",
+            "text" : "I ask for directions.",
             "bucket": "Nurturer"
         }, {
             "text" : "I find my own way and make a new path.",
