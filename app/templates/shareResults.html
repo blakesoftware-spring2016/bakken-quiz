@@ -8,13 +8,15 @@
 	<form name="shareResultsForm" class="shareResultsForm">
 		<div class="inputContainer">
 			<input type="email" name="email" ng-model="email" ng-change="checkEmails()" required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)"
-				ng-class="{showError: submitted && (shareResultsForm.email.$error.email || shareResultsForm.email.$error.required)}" />
+				ng-class="{showError: submitted && (shareResultsForm.email.$error.email || shareResultsForm.email.$error.required)}"
+				ng-keypress="emailEnter($event)" />
 			<div ng-show="shareResultsForm.email.$error.required && submitted" class="errorText">Email is required</div>
 			<div ng-show="shareResultsForm.email.$error.email && submitted" class="errorText">Invalid email address</div>
 		</div>
 		<div class="inputContainer">
 			<input type="text" name="emailCheck" ng-model="emailCheck" ng-change="checkEmails()" required autocomplete="off" placeholder="Confirm Email Address"
-				ng-class="{showError: submitted && !emailsMatch}" />
+				ng-class="{showError: submitted && !emailsMatch}"
+				ng-keypress="emailCheckEnter($event)" />
 			<div ng-show="!emailsMatch && submitted" class="errorText">Emails do not match</div>
 		</div>
 		<div class="shareResultsButtonContainer">
