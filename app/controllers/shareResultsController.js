@@ -24,6 +24,10 @@ app.controller('shareResultsController', function($scope, $location, quizData, $
 			}, function(error) {
 				console.log(error);
 			});
+			// Before showing the popup (but after the request is sent), clear form data
+			// to solve an issue where a user could close the popup and click send repeatedly to spam email
+			$scope.email = '';
+			$scope.emailCheck = '';
 			// Show the popup
 			$scope.showPopup = true;
 		}

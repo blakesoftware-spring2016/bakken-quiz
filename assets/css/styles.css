@@ -334,6 +334,7 @@ button {
 	width: 100%;
 	height: 480px;
 	padding: 0 60px;
+	float: left;
 	top: 150px;
 	position: relative;
 	box-sizing: border-box;
@@ -462,14 +463,14 @@ input.showError {
 	background-image: url("../images/resultsRomantic.png");
 	width: 1024px;
 	height: 768px;
-	margin: 0 auto -90px;
+	margin: 0 auto -100px;
 }
 
 .backgroundMaryResults {
 	background-image: url("../images/resultsMary.png");
 	width: 1024px;
 	height: 768px;
-	margin: 0 auto -90px;
+	margin: 0 auto -100px;
 }
 
 .backgroundMaryDescription {
@@ -651,13 +652,13 @@ button:active {
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    -webkit-animation-duration: 8s;
+    -webkit-animation-duration: 6s;
 }
 
 @-webkit-keyframes fade {
     0% {opacity: 1;}
-    47% {opacity: 1;}
-    53% {opacity: 0;}
+    45% {opacity: 1;}
+    55% {opacity: 0;}
     100% {opacity: 0;}
 }
 
@@ -666,34 +667,71 @@ button:active {
     top: 150px;
     width: 1024px;
     height: 400px;
-
 }
+
+.attractText .blueTextFade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .attractText {
-	animation: pulse 8s infinite;
+    position: relative;
+	animation: pulse 6s infinite;
 	-webkit-animation-timing-function: linear;
 }
 
 .attractText:nth-child(1) {
-	-webkit-animation-delay: 1s;
+	-webkit-animation-delay: 0.5s;
 }
 
 .attractText:nth-child(2) {
-    -webkit-animation-delay: 2.5s;
+    -webkit-animation-delay: 2s;
 }
 
 .attractText:nth-child(3) {
-    -webkit-animation-delay: 4s;
+    -webkit-animation-delay: 3.5s;
 }
 
 .attractText:nth-child(4) {
-    -webkit-animation-delay: 5.5s;
+    -webkit-animation-delay: 5s;
 }
 
 .attractText {
     margin-top: 50px;
     width: 1024px;
     height: 50px;
-    color: black;
+}
+
+.attractText img.blueTextFade {
+    -webkit-animation-name: bluetextfade;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes bluetextfade {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    51% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.attractText img.greyTextFade {
+    -webkit-animation-name: greytextfade;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes greytextfade {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    51% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 .attractText1 {
@@ -704,19 +742,15 @@ button:active {
     left: 390px;
     font-size: 23px;
     font-family: "Source Sans Pro";
-    animation: pulse 3s infinite;
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 /* Page Transitions */

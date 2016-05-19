@@ -45,7 +45,7 @@
             "bucket": "Dreamer",
             "image": "assets/images/whichMary/2disney.jpg"
         }, {
-            "text" : "Learning more about the ancient world in Rome",
+            "text" : "Learning about the ancient world in Rome",
             "bucket": "Intellectual",
             "image": "assets/images/whichMary/2rome.jpg"
         }, {
@@ -54,7 +54,7 @@
 
         }]
     }, {
-        "text": "Your favorite kind of music is...",
+        "text": "Your favorite kind of music is…",
 		"priority": 2,
         "answers": [{
             "text" : "Folk",
@@ -85,33 +85,6 @@
             "image": "assets/images/whichMary/3myOwn.jpg"
         }]
     }, {
-        "text": "You’re stuck on a deserted island. What one item do you bring?",
-		"priority": 10,
-        "answers": [{
-            "text" : "A friend or pet to keep me company",
-            "bucket": "Nurturer",
-            "image": "assets/images/whichMary/4pet.jpg"
-        }, {
-            "text" : "Boat. Nothing can keep me here!",
-            "bucket": "Rebel",
-            "image": "assets/images/whichMary/4boat.jpg"
-        }, {
-            "text" : "A hammock",
-            "bucket": "Dreamer",
-            "image": "assets/images/whichMary/4hammock.jpg"
-        }, {
-            "text" : "A flag to plant on my newly discovered island!",
-            "bucket": "Trailblazer"
-        }, {
-            "text" : "A sketchpad to draw in",
-            "bucket": "Artist",
-            "image": "assets/images/whichMary/4art.jpg"
-        }, {
-            "text" : "A book to read",
-            "bucket": "Intellectual",
-            "image": "assets/images/whichMary/4book.jpg"
-        }]
-    }, {
 	    "text": "Who would you most like to have dinner with?",
 		"priority": 4,
 	    "answers": [{
@@ -132,6 +105,33 @@
         }, {
             "text" : "Pablo Picasso, artist and painter of the early 20th Century",
             "bucket": "Artist"
+        }]
+    }, {
+        "text": "You’re stuck on a deserted island. What one item do you bring?",
+		"priority": 10,
+        "answers": [{
+            "text" : "A friend or pet to keep me company",
+            "bucket": "Nurturer",
+            "image": "assets/images/whichMary/4pet.jpg"
+        }, {
+            "text" : "Boat. Nothing can keep me here!",
+            "bucket": "Rebel",
+            "image": "assets/images/whichMary/4boat.jpg"
+        }, {
+            "text" : "Hammock",
+            "bucket": "Dreamer",
+            "image": "assets/images/whichMary/4hammock.jpg"
+        }, {
+            "text" : "A flag to plant on my newly discovered island!",
+            "bucket": "Trailblazer"
+        }, {
+            "text" : "A sketchpad for drawing",
+            "bucket": "Artist",
+            "image": "assets/images/whichMary/4art.jpg"
+        }, {
+            "text" : "Book to read",
+            "bucket": "Intellectual",
+            "image": "assets/images/whichMary/4book.jpg"
         }]
     }, {
         "text": "Which word would your friends use to describe you?",
@@ -156,13 +156,13 @@
             "bucket": "Nurturer"
         }]
     }, {
-        "text": "When hosting a party, you...",
+        "text": "When hosting a party, you…",
 		"priority": 5,
         "answers": [{
             "text" : "Create a party theme",
             "bucket": "Dreamer"
         }, {
-            "text" : "I’m crashing someone else’s party",
+            "text" : "I’m crashing someone else’s party.",
             "bucket": "Rebel"
         }, {
             "text" : "Develop an awesome playlist",
@@ -244,21 +244,21 @@
             "text" : "Fashion-forward",
             "bucket": "Trailblazer"
         }, {
-            "text" : "Practical",
+            "text" : "Utilitarian",
             "bucket": "Intellectual"
         }, {
-            "text" : "Trendy",
+            "text" : "Eclectic",
             "bucket": "Artist"
         }]
     }, {
-    	"text": "Your ideal meal for dinner is...",
+    	"text": "Your ideal meal for dinner is…",
 		"priority": 11,
     	"answers": [{
-            "text" : "My own version of a classic dish",
-            "bucket": "Trailblazer",
-            "image": "assets/images/whichMary/11classic.jpg"
-        }, {
             "text" : "My own fusion cuisine",
+            "bucket": "Trailblazer",
+            "image": "assets/images/whichMary/11fusion.jpg"
+        }, {
+            "text" : "Comfort Food",
             "bucket": "Nurturer",
             "image": "assets/images/whichMary/11comfort.jpg"
         }, {
@@ -274,7 +274,7 @@
             "bucket": "Intellectual",
             "image": "assets/images/whichMary/11balanced.jpg"
         }, {
-            "text" : "Something I can create from whatever’s on hand",
+            "text" : "Something I can create quickly",
             "bucket": "Dreamer",
             "image": "assets/images/whichMary/11create.jpg"
         }]
@@ -282,7 +282,7 @@
         "text": "You’re lost. What do you do?",
 		"priority": 9,
         "answers": [{
-            "text" : "I ask for directions",
+            "text" : "I ask for directions.",
             "bucket": "Nurturer"
         }, {
             "text" : "I find my own way and make a new path.",
@@ -303,32 +303,32 @@
     }],
 	"results": {
 		"Intellectual": {
-			"title": "You're an intellectual!",
+			"title": "You're an Intellectual!",
 			"description": "Like Mary, you crave information and love learning. You’re reading all the time, always looking for new concepts to grapple with. You enjoy a spirited philosophical debate, even if it drives your friends crazy.",
-			"quote": "“We often...sat up in conversation till the morning light. There was never any lack of subjects, and, grave or gay, we were always interested.” –Mary Shelley"
+			"quote": "“We often…sat up in conversation till the morning light. There was never any lack of subjects, and, grave or gay, we were always interested.” –Mary Shelley"
 		},
 		"Dreamer": {
-			"title": "You're a dreamer!",
+			"title": "You're a Dreamer!",
 			"description": "Like Mary, you spend your time in a world of fantasy. While this sometimes leads to unrealistic goals, you always have an idea in your head or a project in mind.",
 			"quote": "“My dreams were all my own; I accounted for them to nobody; they were my refuge when annoyed—my dearest pleasure when free.” –Mary Shelley"
 		},
 		"Rebel": {
-			"title": "You're a rebel!",
+			"title": "You're a Rebel!",
 			"description": "Like Mary, you don’t conform to established traditions or conventions. You are progressive. Although this sometimes gets you into trouble, you have strong opinions and aren’t afraid to express them.",
-			"quote": "“He would not stoop to shows of humility, nor tame a nature accustomed to taking pride in daring and independence...freedom was the watchword of his heart.” –Mary Shelley"
+			"quote": "“He would not stoop to shows of humility, nor tame a nature accustomed to taking pride in daring and independence…freedom was the watchword of his heart.” –Mary Shelley"
 		},
 		"Artist": {
-			"title": "You're an artist!",
+			"title": "You're an Artist!",
 			"description": "Like Mary, you like to express your feelings through the arts. Maybe you’re a writer like Mary or maybe you’re a musician, actor, or painter. You channel your imagination into creative activities, which are sometimes misunderstood by others. But often, you create a masterpiece!",
 			"quote": "“As a child I scribbled; and my favourite pastime, during the hours given me for recreation, was to ‘write stories.’” –Mary Shelley"
 		},
 		"Trailblazer": {
-			"title": "You're a trailblazer!",
+			"title": "You're a Trailblazer!",
 			"description": "Like Mary, the mother of science fiction, you like to clear your own path for others to follow. You are a pioneer, not afraid to adventure into undiscovered territories. The journey may be risky, but you believe the rewards are worth it.",
-			"quote": "“Invention...does not consist in creating out of void, but out of chaos...Invention consists in the capacity of seizing on the capabilities of a subject, and in the power of moulding and fashioning ideas suggested to it.” –Mary Shelley"
+			"quote": "“Invention…does not consist in creating out of void, but out of chaos…Invention consists in the capacity of seizing on the capabilities of a subject, and in the power of moulding and fashioning ideas suggested to it.” –Mary Shelley"
 		},
 		"Nurturer": {
-			"title": "You're a nurturer!",
+			"title": "You're a Nurturer!",
 			"description": "Like Mary, you have great compassion and empathy for those around you. You create a supportive and encouraging environment for others to flourish and thrive. Sometimes, however, this means your needs take a back seat to theirs.",
 			"quote": "“MY BELOVED FRIEND I waited with the greatest anxiety for your letter. You are well, and that assurance has restored some peace to me.” –Mary Shelley"
 		}
@@ -336,8 +336,8 @@
 }, {
     "title": "Are You A Romantic?",
 	"type": "bool",
-	"short_description": "Mary lived in a time referred to as The Romantic Period. Take the quiz find out how much of a Romantic you are.",
-	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18th and early 19th centuries. The Romantics were rebelling against Neoclassicism, prevalent in the previous century. Are you a Romantic?",
+	"short_description": "Mary Shelley lived in a time referred to as the Romantic Period. Take the quiz to find out how much of a Romantic you are.",
+	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18ᵗʰ and early 19ᵗʰ centuries. The Romantics were rebelling against Neoclassicism, prevalent in the previous century. Are you a Romantic?",
     "questions": [{
         "text": "Where would you like to live?",
         "answers": [{
@@ -366,12 +366,12 @@
 			"image": "assets/images/romantic/3dirty.jpg"
         }]
     }, {
-        "text": "You're enjoying a good book. What kind of book is it?",
+        "text": "What's more important?",
         "answers": [{
-            "text": "Adventure",
+            "text": "Getting the facts right",
             "target": false
         }, {
-            "text": "Biography",
+            "text": "Uncovering higher truths",
             "target": true
         }]
     }, {
@@ -397,7 +397,7 @@
     }, {
         "text": "You have a slumber party with friends. What do you do?",
         "answers": [{
-            "text" : "Invent and share ghost stories, face paint and put on a play",
+            "text" : "Invent and tell ghost stories",
             "target": true
         }, {
             "text" : "Play board games",
@@ -455,8 +455,8 @@
 	"results": [
 		"In Mary’s day you would have been considered a Neoclassicist. Carefully calculating the consequences of your actions before making decisions, you’re strongly influenced by reason. You tend to follow the rules and practice self-control. Neoclassicists strive for realism in art, so you may believe that imitation is the sincerest form of flattery. You respect the past and value tradition. Why reinvent the wheel? In your view, science can explain everything. You view the universe as a giant clock that can be taken apart. This attention to detail comes in handy, but sometimes it causes you to miss the whole story. You respect established principles and institutions and defend liberty and integrity, focusing on what’s best for society over individuals.",
 		"You lean more towards the Neoclassical, with a little Romantic thrown in! You take a logical approach to things, relying on your common sense and intellect, rather than emotion, to make decisions. You usually think of others first. Like many Neoclassicists, you appreciate structure and order. Neoclassicists value tradition, often drawing upon the art and culture of the past. Instead of coming up with new ideas, you might take pre-existing concepts, improving and building on their foundations. When it comes to nature, you view each element individually. Because of this, sometimes you may not see the forest for the trees. You believe that, with hard work, anybody can do anything. As Thomas Edison said, “Genius is 1% inspiration and 99% perspiration.”",
-		"You’re a balance between Romantic and Neoclassical...little bit of both! You may be the most like Mary Shelley, who, although known for being a radical, was also conservative in many ways. While you believe strongly in family and tradition, you aren’t afraid to go it alone or try new things. You appreciate the past but are forward thinking. Details are important to you. Often taking a practical, simplistic approach to things, you are clear headed, thoughtful, and reflective. When considering nature, you try to find unity between the scientific and the organic. Your heart is on the bigger picture, preferring unorthodox solutions to more rules, which often pollute and restrict great minds. People may think you have elements of genius, but you work hard for your accomplishments.",
-		"You lean more towards the Romantic, with an occasional Neoclassical thought! You’re spontaneous and have an intensity for life, something for which Romantics are known. Instead of observing the world, your creativity comes from within. You place a high level of importance on imagination, invention, and experimentation. While you are very independent, this independence can be liberating but also isolating. Some Romantics even see themselves as self-sacrificing outcasts. You have a great appreciation for the arts, such as literature, music, painting, and poetry. Like the Romantics of Mary’s era, you believe in the creative spirit that anyone can be an artist ifthey have the imagination and innate talent. As a Romantic, you seek harmony between body, mind, and soul, while exploring how humanity fits within the framework of the natural word.",
+		"You’re a balance between Romantic and Neoclassical…little bit of both! You may be the most like Mary Shelley, who, although known for being a radical, was also conservative in many ways. While you believe strongly in family and tradition, you aren’t afraid to go it alone or try new things. You appreciate the past but are forward thinking. Details are important to you. Often taking a practical, simplistic approach to things, you are clear headed, thoughtful, and reflective. When considering nature, you try to find unity between the scientific and the organic. Your heart is on the bigger picture, preferring unorthodox solutions to more rules, which often pollute and restrict great minds. People may think you have elements of genius, but you work hard for your accomplishments.",
+		"You lean more towards the Romantic, with an occasional Neoclassical thought! You’re spontaneous and have an intensity for life, something for which Romantics are known. You place a high level of importance on imagination, invention, and experimentation. While you are very independent, this independence can be liberating but also isolating. Some Romantics even see themselves as self-sacrificing outcasts. You have a great appreciation for the arts, such as literature, music, painting, and poetry. Like the Romantics of Mary’s era, you believe in the creative spirit that anyone can be an artist ifthey have the imagination and innate talent. As a Romantic, you seek harmony between body, mind, and soul, while exploring how humanity fits within the framework of the natural word.",
 		"You’re definitely a Romantic! Like the Romantics of Mary’s time, you’re probably influenced by emotion, letting your heart guide your decisions. You might easily identify with and have great empathy for others but spend a lot of time inwardly reflecting on life. Romantics believe that an individual has infinite potential for spiritual and intellectual growth. This acute sensitivity sometimes leads to depression, insecurity, and doubt. Instead of conforming to societal norms, you value originality and innovation. The Romantic view of art is idealistic; it serves a higher purpose. Perhaps your creativity comes from within rather than taking inspiration from others or the outside world. Believing that the universe is more than the sum of its parts, you have a holistic understanding of nature, viewing everything in life as interconnected and organic."
 	]
 }]
