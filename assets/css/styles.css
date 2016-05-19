@@ -652,13 +652,13 @@ button:active {
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-duration: 12s;
 }
 
 @-webkit-keyframes fade {
     0% {opacity: 1;}
-    45% {opacity: 1;}
-    55% {opacity: 0;}
+    48% {opacity: 1;}
+    52% {opacity: 0;}
     100% {opacity: 0;}
 }
 
@@ -706,7 +706,7 @@ button:active {
 
 .attractText img.blueTextFade {
     -webkit-animation-name: bluetextfade;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-duration: 12s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
@@ -721,7 +721,7 @@ button:active {
 
 .attractText img.greyTextFade {
     -webkit-animation-name: greytextfade;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-duration: 12s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
