@@ -66,14 +66,24 @@ html, body {
 	box-sizing: border-box;
 }
 
-.answer {
+.romanticAnswer {
 	flex-grow: 1;
 	flex-basis: 200px;
 	margin: 10px;
 	justify-content: space-between;
-	background: rgba(0, 0, 0, 0.3);
+	background-image: url("../images/romantic/romanticAnswer.jpg");
 	font-size: 20px;
 	position: relative;
+}
+
+.maryAnswer {
+  flex-grow: 1;
+  flex-basis: 200px;
+  margin: 10px;
+  justify-content: space-between;
+  background-image: url("../images/whichMary/maryAnswer.jpg");
+  font-size: 20px;
+  position: relative;
 }
 
 .answerImage {

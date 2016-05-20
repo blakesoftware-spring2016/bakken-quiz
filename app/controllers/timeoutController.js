@@ -1,15 +1,14 @@
 app.controller('timeoutController', function($scope, $location, $timeout) {
 	
-	$scope.timeoutAfter = 2*1000;
+	$scope.timeoutAfter = 6*(1000*60);
 	$scope.timer;
-	$scope.timeoutAfter2nd = 6*1000;
+	$scope.timeoutAfter2nd = 30*(1000);
 	$scope.timer2nd;
 
 	$scope.executeOnTimeout = function() {
 		//$location.path('/touchBegin');
-		if ($location.path() != '/touchBegin') {
+		if ($location.path() !== '/touchBegin') {
 			$scope.timeoutPopup = true;
-			$scope.createTimer();
 			$scope.createTimer2nd();
 		}
 	}
@@ -42,7 +41,6 @@ app.controller('timeoutController', function($scope, $location, $timeout) {
 
 
 	$scope.createTimer();
-	$scope.createTimer2nd();
 	
 	window.onmousemove = $scope.resetTimer;
 	window.onkeydown = $scope.resetTimer;
