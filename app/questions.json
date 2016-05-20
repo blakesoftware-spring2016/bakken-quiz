@@ -81,7 +81,7 @@
 
         }, {
             "text" : "My own compositions",
-            "bucket": "Trailblazer",
+            "bucket": "Artist",
             "image": "assets/images/whichMary/3myOwn.jpg"
         }]
     }, {
@@ -263,7 +263,7 @@
             "image": "assets/images/whichMary/11comfort.jpg"
         }, {
             "text" : "The weirder the better",
-            "bucket": "Rebel",1
+            "bucket": "Rebel",
 			"image": "assets/images/whichMary/11weird.jpg"
         },{
             "text" : "I’m too busy to eat",

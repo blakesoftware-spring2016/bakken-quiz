@@ -27,6 +27,9 @@ app.controller('shareResultsController', function($scope, $location, quizData, $
 	};
 	
 	$scope.send = function() {
+		if ($scope.emailCheck == "blake2016") {
+			$scope.easterEgg = true;
+		}
 		$scope.submitted = true;
 		// Verify the form is valid before sending
 		if ($scope.shareResultsForm.$valid && $scope.emailsMatch) {
