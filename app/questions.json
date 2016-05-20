@@ -2,7 +2,7 @@
     "title": "Which Mary are You?",
 	"type": "multi",
 	"short_description": "Mary Shelley had many sides to her personality. Take the quiz to see which Mary you're most like!",
-	"description": "Often called the mother of science fiction, author Mary Shelley was a teenage runaway, a young mother, and the daughter of political radicals. She was a dreamer, a nurturer, an artist, an intellectual, a rebel and a trailblazer. Which version of Mary are you most like?",
+	"description": "Often called the mother of science fiction, author Mary Shelley was a teenage runaway, a young mother, and the daughter of political radicals. She was a dreamer, a nurturer, an artist, an intellectual, a rebel, and a trailblazer. Which version of Mary are you most like?",
 	"questions": [{
 	    "text": "What is your dream job?",
 		"priority": 3,
@@ -10,7 +10,7 @@
             "text" : "Job? Who needs a job?",
             "bucket": "Rebel"
         }, {
-            "text" : "Day care Provider",
+            "text" : "Day Care Provider",
             "bucket": "Nurturer"
         }, {
             "text" : "Professor",
@@ -33,7 +33,7 @@
             "bucket": "Trailblazer",
             "image": "assets/images/whichMary/2antarctica.jpg"
         }, {
-            "text" : "Visiting the Louvre in Paris",
+            "text" : "Visiting the Louvre Art Museum in Paris",
             "bucket": "Artist",
             "image": "assets/images/whichMary/2louvre.jpg"
         }, {
@@ -71,46 +71,46 @@
             "image": "assets/images/whichMary/3film.jpg"
 
         }, {
-            "text" : "Experimental",
+            "text" : "Hardcore",
             "bucket": "Rebel",
-            "image": "assets/images/whichMary/3punk.jpg"
+            "image": "assets/images/whichMary/3hardcore.jpg"
         }, {
-            "text" : "Inspirational",
-            "bucket": "Artist",
-            "image": "assets/images/whichMary/3inspires.jpg"
+            "text" : "Experimental",
+            "bucket": "Trailblazer",
+            "image": "assets/images/whichMary/3synth.jpg"
 
         }, {
             "text" : "My own compositions",
-            "bucket": "Trailblazer",
+            "bucket": "Artist",
             "image": "assets/images/whichMary/3myOwn.jpg"
         }]
     }, {
 	    "text": "Who would you most like to have dinner with?",
 		"priority": 4,
 	    "answers": [{
-            "text" : "Sally Ride, first American female astronaut",
+            "text" : "Rosa Parks Pioneer of the Civil Rights Movement",
             "bucket": "Trailblazer"
         }, {
             "text" : "John Lennon, singer, songwriter, and a member of the Beatles",
             "bucket": "Dreamer"
         }, {
-            "text" : "James Dean, actor and cultural icon from the 1950s",
+            "text" : "Sitting Bull Lakota resistance leader",
             "bucket": "Rebel"
         }, {
-            "text" : "Jane Goodall, world’s foremost expert on chimpanzees",
+            "text" : "Jane Goodall International advocate for chimpanzees",
             "bucket": "Nurturer"
         }, {
             "text" : "Stephen Hawking, world-renown theoretical physicist",
             "bucket": "Intellectual"
         }, {
-            "text" : "Pablo Picasso, artist and painter of the early 20th Century",
+            "text" : "Maya Angelou Prolific poet and author",
             "bucket": "Artist"
         }]
     }, {
         "text": "You’re stuck on a deserted island. What one item do you bring?",
 		"priority": 10,
         "answers": [{
-            "text" : "A friend or pet to keep me company",
+            "text" : "A pet to keep me company",
             "bucket": "Nurturer",
             "image": "assets/images/whichMary/4pet.jpg"
         }, {
@@ -143,7 +143,7 @@
             "text" : "Idealistic",
             "bucket": "Dreamer"
         }, {
-            "text" : "Free Spirited",
+            "text" : "Free-spirited",
             "bucket": "Rebel"
         }, {
             "text" : "Creative",
@@ -263,7 +263,7 @@
             "image": "assets/images/whichMary/11comfort.jpg"
         }, {
             "text" : "The weirder the better",
-            "bucket": "Rebel",1
+            "bucket": "Rebel",
 			"image": "assets/images/whichMary/11weird.jpg"
         },{
             "text" : "I’m too busy to eat",
@@ -274,7 +274,7 @@
             "bucket": "Intellectual",
             "image": "assets/images/whichMary/11balanced.jpg"
         }, {
-            "text" : "Something I can create quickly",
+            "text" : "Created from what's on hand",
             "bucket": "Dreamer",
             "image": "assets/images/whichMary/11create.jpg"
         }]
@@ -330,7 +330,7 @@
 		"Nurturer": {
 			"title": "You're a Nurturer!",
 			"description": "Like Mary, you have great compassion and empathy for those around you. You create a supportive and encouraging environment for others to flourish and thrive. Sometimes, however, this means your needs take a back seat to theirs.",
-			"quote": "“MY BELOVED FRIEND I waited with the greatest anxiety for your letter. You are well, and that assurance has restored some peace to me.” –Mary Shelley"
+			"quote": "“...the luxuries of wealth are nothing to me—I ask only a home with one or two who would find the solace of their life in my care & affection...” –Mary Shelley"
 		}
 	}
 }, {
