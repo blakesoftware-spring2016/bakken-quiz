@@ -4,6 +4,10 @@
 	<button ng-click="showPopup = false; back()" class="popupShareButton">Back to Results</button>
 	<button ng-click="showPopup = false; chooseQuiz()" class="popupShareButton">Take Another Quiz</button>
 </div>
+<div ng-show="easterEgg" class="popupBackground fade" ng-click="easterEgg = false"></div>
+<div ng-show="easterEgg" ng-click="easterEgg = false" class="popupNew fade">
+	<p class="easterText">Michael Hofstadter, Leo Gerasimov, Tristan Saldanha, Daniel Jing, Connor Sabers, Samira Champlin, Allen Wang, Max Bicanich</p>
+</div>
 <div ng-class="{maryBackgroundShareResults: isMary, romanticBackgroundShareResults: isRomantic}">
 	<form name="shareResultsForm" class="shareResultsForm">
 		<div class="inputContainer">
