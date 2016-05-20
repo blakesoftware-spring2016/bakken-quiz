@@ -9,6 +9,23 @@ app.controller('shareResultsController', function($scope, $location, quizData, $
 		$scope.emailsMatch = ($scope.email === $scope.emailCheck) ? true : false;
 	};
 	
+	// If 'enter' is pressed for the first input field, don't do anything
+	// Fixes a bug where the user would be navigated back to the previous page
+	$scope.emailEnter = function(event) {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+		}
+	};
+	
+	// If 'enter' is pressed within the second input field (email verification),
+	// send the email
+	$scope.emailCheckEnter = function(event) {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+			$scope.send();
+		}
+	};
+	
 	$scope.send = function() {
 		$scope.submitted = true;
 		// Verify the form is valid before sending
