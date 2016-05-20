@@ -245,6 +245,7 @@ html, body {
 .description p {
 	flex-grow: 1;
 	font-size: 24px;
+    width: 420px; 
 }
 
 .description button {
@@ -319,7 +320,7 @@ button {
 }
 
 .quizDescription {
-	width: 564px;
+	width: 570px;
 	font-size: 25px;
 	position: absolute;
 	top: 60%;
