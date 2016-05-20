@@ -8,7 +8,7 @@
 <div class="questionContainer" ng-class="{backgroundMaryQuestion: isMary, backgroundRomanticQuestion: isRomantic}">
     <div class="question">{{question.text}}</div>
     <div class="answerContainer">
-        <div class="answer"
+        <div ng-class="{maryAnswer: isMary, romanticAnswer: isRomantic}"
 			ng-repeat="answer in answers track by $index"
 			ng-click="select($index)">
 			<img class="answerImage" ng-if="answer.image" ng-src="{{answer.image}}"/>
