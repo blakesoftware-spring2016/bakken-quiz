@@ -545,6 +545,12 @@ input.showError {
 	color: rgb(65,94,142);
 }
 
+.easterText {
+  font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+  font-size: 40px;
+  color: rgb(65,94,142);
+}
+
 .popup13 {
 	text-align: center;
 	z-index: 1002;
