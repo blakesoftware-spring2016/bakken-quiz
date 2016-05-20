@@ -245,7 +245,7 @@ html, body {
 .description p {
 	flex-grow: 1;
 	font-size: 24px;
-    width: 420px; 
+    width: 420px;
 }
 
 .description button {
@@ -822,4 +822,10 @@ from {opacity: 0;}
 
 .fadebackground.ng-hide-add {
 	transition: all linear 350ms;
+}
+
+
+h3 {
+	margin-top: 11px;
+	margin-bottom: 7px;
 }
