@@ -337,7 +337,7 @@
     "title": "Are You A Romantic?",
 	"type": "bool",
 	"short_description": "Mary Shelley lived in a time referred to as the Romantic Period. Take the quiz to find out how much of a Romantic you are.",
-	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18ᵗʰ and early 19ᵗʰ centuries. The Romantics were rebelling against Neoclassicism, prevalent in the previous century. Are you a Romantic?",
+	"description": "Many people today think the term “romantic” describes love or affection, but it had a very different meaning in Mary Shelley’s time. Romanticism was a cultural movement of the late 18ᵗʰ and early 19ᵗʰ centuries. The Romantics were rebelling against Neoclassicism, prevalent in the previous century.\nAre you a Romantic?",
     "questions": [{
         "text": "Where would you like to live?",
         "answers": [{

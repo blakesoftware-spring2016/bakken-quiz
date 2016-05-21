@@ -328,6 +328,7 @@ button {
 	transform: translate(-50%, -50%);
 	color: white;
 	text-align: center;
+	white-space: pre-line;
 }
 
 #quitContainer {
