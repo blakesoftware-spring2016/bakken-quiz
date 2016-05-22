@@ -77,13 +77,14 @@ html, body {
 }
 
 .maryAnswer {
-  flex-grow: 1;
-  flex-basis: 200px;
-  margin: 10px;
-  justify-content: space-between;
-  background-image: url("../images/whichMary/maryAnswer.jpg");
-  font-size: 20px;
-  position: relative;
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 10px;
+    justify-content: space-between;
+    background-image: url("../images/whichMary/maryAnswer.jpg");
+    font-size: 20px;
+    position: relative;
+    white-space: pre-line;
 }
 
 .answerImage {
@@ -320,7 +321,7 @@ button {
 }
 
 .quizDescription {
-	width: 570px;
+	width: 550px;
 	font-size: 25px;
 	position: absolute;
 	top: 60%;
@@ -381,6 +382,10 @@ button {
 
 .quote {
 	font-style: italic;
+}
+
+.maryName {
+    font-style: normal;
 }
 
 /* Share Results */
