@@ -1,9 +1,7 @@
-<div class="backgroundSummary {{descriptionBackground}}">
-	<div class="content">
-		<div class="quizDescription">{{quiz.description}}</div>
+<div class="{{descriptionBackground}}">
+	<div class="quizDescription">{{quiz.description}}</div>
+	<div class="quizDescNav">
+		<a href="#/chooseQuiz"><button ng-class="{romanticButton: isRomantic}" id="backButton">Back</button></a>
+		<button ng-class="{romanticButton: isRomantic}" id="nextButton" ng-click="start_quiz()">Play</button>
 	</div>
-</div>
- <div class="quizDescNav">
-	<a href="#/chooseQuiz"><button ng-class="{romanticButton: isRomantic}" id="backButton">Back</button></a>
-	<button ng-class="{romanticButton: isRomantic}" id="nextButton" ng-click="start_quiz()">Play</button>
  </div>

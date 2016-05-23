@@ -9,6 +9,24 @@ html, body {
 	overflow: hidden;
 }
 
+button {
+	width: 204px;
+	height: 62px;
+	border: 3px solid white;
+	background: rgba(0, 0, 0, 0.3);
+	border: 3px solid white;
+	padding: 0;
+	font-size: 20px;
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+	color: white;
+	outline: none;
+}
+
+button:active {
+	background-color: white;
+	color: #4b6a9b;
+}
+
 /* Fonts */
 
 @font-face {
@@ -23,14 +41,6 @@ html, body {
 	font-weight: bold;
 	font-style: normal;
 	src: url('../fonts/SourceSansPro-Bold.ttf');
-}
-
-/* Navigation buttons */
-
-.buttonContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
 
 /* Question page */
@@ -66,24 +76,21 @@ html, body {
 	box-sizing: border-box;
 }
 
-.romanticAnswer {
+.answer {
 	flex-grow: 1;
 	flex-basis: 200px;
 	margin: 10px;
 	justify-content: space-between;
-	background-image: url("../images/romantic/romanticAnswer.jpg");
 	font-size: 20px;
 	position: relative;
 }
 
+.romanticAnswer {
+	background: url("../images/romantic/romanticAnswer.jpg");
+}
+
 .maryAnswer {
-    flex-grow: 1;
-    flex-basis: 200px;
-    margin: 10px;
-    justify-content: space-between;
-    background-image: url("../images/whichMary/maryAnswer.jpg");
-    font-size: 20px;
-    position: relative;
+	background: url("../images/whichMary/maryAnswer.jpg");
 }
 
 .answerImage {
@@ -143,6 +150,9 @@ html, body {
 	margin: 20px 0;
 	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 /* Progress Bar */
@@ -254,6 +264,54 @@ html, body {
 	align-self: flex-end;
 }
 
+/* Quiz description page */
+
+.backgroundMaryDescription {
+	width: 1024px;
+	height: 768px;
+	padding-top: 400px;
+	box-sizing: border-box;
+	background: url("../images/summary.png");
+}
+
+.backgroundRomanticDescription {
+	width: 1024px;
+	height: 768px;
+	padding-top: 400px;
+	box-sizing: border-box;
+	background: url("../images/romanticDescription.png");
+}
+
+.quizDescription {
+	width: 100%;
+	padding: 0 160px;
+	box-sizing: border-box;
+	float: left;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	white-space: pre-line;
+}
+
+.quizDescNav {
+	width: 100%;
+	margin-top: 60px;
+	padding: 0 160px;
+	box-sizing: border-box;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+.romanticButton:active {
+	background-color: white;
+	color: #595959;
+}
+
+.navButton {
+	width: 146px;
+}
+
 /* MISCELLANEOUS THINGS THAT NEED TO BE ORGANIZED */
 
 .chooseButton {
@@ -265,71 +323,9 @@ html, body {
 	font-size: 20px;
 }
 
-.maryDescription {
-	width: 40%;
-	position: absolute;
-	top: 42%;
-	left: 55%;
-	color: white;
-	display: inline-block;
-	text-align: center;
-	margin-top: 0px;
-}
-
-.maryHead {
-	white-space: nowrap;
-	color: white;
-	position: absolute;
-	top: 30%;
-	left: 75%;
-	transform: translateX(-50%);
-	font-size: 40px;
-}
-
-.romanticDescription {
-	width: 40%;
-	position: absolute;
-	top: 42%;
-	left: 5%;
-	color: white;
-	display: inline-block;
-	text-align: center;
-}
-
-.description {
-	font-size: 25px;
-	margin-bottom: 23%;
-	color: white;
-}
-
-.romanticHead {
-	color: white;
-	position: absolute;
-	top: 30%;
-	left: 25%;
-	transform: translateX(-50%);
-	font-size: 40px;
-}
-
 .chooseQuiz {
 	margin: 0 auto;
 	padding: 0;
-}
-
-button {
-	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
-}
-
-.quizDescription {
-	width: 550px;
-	font-size: 25px;
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	text-align: center;
-	white-space: pre-line;
 }
 
 #quitContainer {
@@ -374,10 +370,6 @@ button {
 .sentButtonContainer button {
 	margin-left: 10px;
 	margin-right: 10px;
-}
-
-#menuButton {
-	width: 186px;
 }
 
 .quote {
@@ -461,48 +453,18 @@ input.showError {
 	height: 768px;
 }
 
-.backgroundMaryQuestion {
-	background-image: url("../images/maryQuestion.png");
-	background-size: 1024px 768px;
+.backgroundMaryQuestion, .backgroundMaryResults {
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
+	background: url("../images/resultsMary.png");
 }
 
-.backgroundRomanticQuestion {
-	background-image: url("../images/romQuestion.png");
+.backgroundRomanticQuestion, .backgroundRomanticResults {
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
-}
-
-.backgroundRomanticResults {
-	background-image: url("../images/resultsRomantic.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
-.backgroundMaryResults {
-	background-image: url("../images/resultsMary.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
-.backgroundMaryDescription {
-	background-image: url("../images/summary.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
-.backgroundRomanticDescription {
-	background-image: url("../images/romanticDescription.png");
-	background-size: 1024px 768px;
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
+	background: url("../images/resultsRomantic.png");
 }
 
 .maryBackgroundShareResults {
@@ -623,56 +585,12 @@ input.showError {
 	margin-top: 50px;
 }
 
-.quizDescNav button {
-	padding: 0px;
-	width: 204px;
-	height: 62px;
-}
-
-.quizDescNav {
-	width: 458px;
-	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-}
-
-.quizDescNav:first-of-type {
-	margin-right: 50px;
-}
-
-button {
-	width: 204px;
-	height: 62px;
-	border: 3px solid white;
-	background: rgba(0, 0, 0, 0.3);
-	border: 3px solid white;
-	padding: 0;
-	font-size: 20px;
-	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
-	color: white;
-	outline: none;
-}
-
-button:active {
-	background-color: white;
-	color: #4b6a9b;
-}
-
-.romanticButton:active {
-	background-color: white;
-	color: #595959;
-}
-
-.navButton {
-	width: 146px;
-}
-
-/* Touch to begin animation */
+/* Touch To Begin Animation */
 
 #crossfade {
-    position:absolute;
     width: 1024px;
     height: 768px;
+	position: absolute;
 }
 
 .backgroundTouchBegin {
@@ -850,7 +768,6 @@ from {opacity: 0;}
 .fadebackground.ng-hide-add {
 	transition: all linear 350ms;
 }
-
 
 h3 {
 	margin-top: 11px;
