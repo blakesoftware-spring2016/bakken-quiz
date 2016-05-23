@@ -372,10 +372,6 @@ button:active {
 	margin-right: 10px;
 }
 
-#menuButton {
-	width: 186px;
-}
-
 .quote {
 	font-style: italic;
 }
@@ -457,33 +453,18 @@ input.showError {
 	height: 768px;
 }
 
-.backgroundMaryQuestion {
-	background-image: url("../images/maryQuestion.png");
-	background-size: 1024px 768px;
+.backgroundMaryQuestion, .backgroundMaryResults {
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
+	background: url("../images/resultsMary.png");
 }
 
-.backgroundRomanticQuestion {
-	background-image: url("../images/romQuestion.png");
+.backgroundRomanticQuestion, .backgroundRomanticResults {
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
-}
-
-.backgroundRomanticResults {
-	background-image: url("../images/resultsRomantic.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
-.backgroundMaryResults {
-	background-image: url("../images/resultsMary.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
+	background: url("../images/resultsRomantic.png");
 }
 
 .maryBackgroundShareResults {
