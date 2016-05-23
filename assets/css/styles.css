@@ -9,6 +9,24 @@ html, body {
 	overflow: hidden;
 }
 
+button {
+	width: 204px;
+	height: 62px;
+	border: 3px solid white;
+	background: rgba(0, 0, 0, 0.3);
+	border: 3px solid white;
+	padding: 0;
+	font-size: 20px;
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+	color: white;
+	outline: none;
+}
+
+button:active {
+	background-color: white;
+	color: #4b6a9b;
+}
+
 /* Fonts */
 
 @font-face {
@@ -23,14 +41,6 @@ html, body {
 	font-weight: bold;
 	font-style: normal;
 	src: url('../fonts/SourceSansPro-Bold.ttf');
-}
-
-/* Navigation buttons */
-
-.buttonContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
 
 /* Question page */
@@ -71,9 +81,16 @@ html, body {
 	flex-basis: 200px;
 	margin: 10px;
 	justify-content: space-between;
-	background: rgba(0, 0, 0, 0.3);
 	font-size: 20px;
 	position: relative;
+}
+
+.romanticAnswer {
+	background: url("../images/romantic/romanticAnswer.jpg");
+}
+
+.maryAnswer {
+	background: url("../images/whichMary/maryAnswer.jpg");
 }
 
 .answerImage {
@@ -99,10 +116,11 @@ html, body {
 	text-shadow: 2px 2px 10px black;
 	text-align: center;
 	font-size: 22px;
+	white-space: pre-line;
 }
 
 .captions {
-	line-height: 98%;
+	line-height: 22px;
 	padding-bottom: 8px;
 	bottom: 0;
 	z-index: 14;
@@ -132,6 +150,9 @@ html, body {
 	margin: 20px 0;
 	padding: 0 calc(100px + 10px);
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 /* Progress Bar */
@@ -235,11 +256,60 @@ html, body {
 .description p {
 	flex-grow: 1;
 	font-size: 24px;
+    width: 420px;
 }
 
 .description button {
 	margin: auto;
 	align-self: flex-end;
+}
+
+/* Quiz description page */
+
+.backgroundMaryDescription {
+	width: 1024px;
+	height: 768px;
+	padding-top: 400px;
+	box-sizing: border-box;
+	background: url("../images/summary.png");
+}
+
+.backgroundRomanticDescription {
+	width: 1024px;
+	height: 768px;
+	padding-top: 400px;
+	box-sizing: border-box;
+	background: url("../images/romanticDescription.png");
+}
+
+.quizDescription {
+	width: 100%;
+	padding: 0 160px;
+	box-sizing: border-box;
+	float: left;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	white-space: pre-line;
+}
+
+.quizDescNav {
+	width: 100%;
+	margin-top: 60px;
+	padding: 0 160px;
+	box-sizing: border-box;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+.romanticButton:active {
+	background-color: white;
+	color: #595959;
+}
+
+.navButton {
+	width: 146px;
 }
 
 /* MISCELLANEOUS THINGS THAT NEED TO BE ORGANIZED */
@@ -253,70 +323,9 @@ html, body {
 	font-size: 20px;
 }
 
-.maryDescription {
-	width: 40%;
-	position: absolute;
-	top: 42%;
-	left: 55%;
-	color: white;
-	display: inline-block;
-	text-align: center;
-	margin-top: 0px;
-}
-
-.maryHead {
-	white-space: nowrap;
-	color: white;
-	position: absolute;
-	top: 30%;
-	left: 75%;
-	transform: translateX(-50%);
-	font-size: 40px;
-}
-
-.romanticDescription {
-	width: 40%;
-	position: absolute;
-	top: 42%;
-	left: 5%;
-	color: white;
-	display: inline-block;
-	text-align: center;
-}
-
-.description {
-	font-size: 25px;
-	margin-bottom: 23%;
-	color: white;
-}
-
-.romanticHead {
-	color: white;
-	position: absolute;
-	top: 30%;
-	left: 25%;
-	transform: translateX(-50%);
-	font-size: 40px;
-}
-
 .chooseQuiz {
 	margin: 0 auto;
 	padding: 0;
-}
-
-button {
-	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
-}
-
-.quizDescription {
-	width: 564px;
-	font-size: 25px;
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	text-align: center;
 }
 
 #quitContainer {
@@ -363,12 +372,12 @@ button {
 	margin-right: 10px;
 }
 
-#menuButton {
-	width: 186px;
-}
-
 .quote {
 	font-style: italic;
+}
+
+.maryName {
+    font-style: normal;
 }
 
 /* Share Results */
@@ -444,48 +453,18 @@ input.showError {
 	height: 768px;
 }
 
-.backgroundMaryQuestion {
-	background-image: url("../images/maryQuestion.png");
-	background-size: 1024px 768px;
+.backgroundMaryQuestion, .backgroundMaryResults {
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
+	background: url("../images/resultsMary.png");
 }
 
-.backgroundRomanticQuestion {
-	background-image: url("../images/romQuestion.png");
+.backgroundRomanticQuestion, .backgroundRomanticResults {
 	width: 1024px;
 	height: 768px;
 	margin: 0 auto -100px;
-}
-
-.backgroundRomanticResults {
-	background-image: url("../images/resultsRomantic.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
-.backgroundMaryResults {
-	background-image: url("../images/resultsMary.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
-.backgroundMaryDescription {
-	background-image: url("../images/summary.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
-}
-
-.backgroundRomanticDescription {
-	background-image: url("../images/romanticDescription.png");
-	background-size: 1024px 768px;
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto -100px;
+	background: url("../images/resultsRomantic.png");
 }
 
 .maryBackgroundShareResults {
@@ -523,7 +502,7 @@ input.showError {
 .popupBackground {
 	z-index: 1001;
 	width: 100%;
-	height: 100%;
+	height: 768px;
 	background: rgba(0,0,0, 0.7);
 	position: absolute;
 }
@@ -533,6 +512,7 @@ input.showError {
 	font-size: 60px;
 	color: rgb(65,94,142);
 }
+
 
 .popup13 {
 	text-align: center;
@@ -561,6 +541,26 @@ input.showError {
 	margin-bottom: 20px;
 }
 
+.popupEasterEgg {
+  text-align: center;
+  z-index: 1002;
+  width: 325px;
+  height: 500px;
+  background: white;
+  position: absolute;
+  margin-left: 352px;
+  margin-top: 134px;
+}
+
+.easterText {
+  font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
+  font-size: 40px;
+  color: rgb(65,94,142);
+  width: 325px;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
 .popupButton {
 	background-color: rgba(255,255,255, 0);
 	border: 2px solid rgb(65,94,142);
@@ -585,56 +585,12 @@ input.showError {
 	margin-top: 50px;
 }
 
-.quizDescNav button {
-	padding: 0px;
-	width: 204px;
-	height: 62px;
-}
-
-.quizDescNav {
-	width: 458px;
-	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-}
-
-.quizDescNav:first-of-type {
-	margin-right: 50px;
-}
-
-button {
-	width: 204px;
-	height: 62px;
-	border: 3px solid white;
-	background: rgba(0, 0, 0, 0.3);
-	border: 3px solid white;
-	padding: 0;
-	font-size: 20px;
-	font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
-	color: white;
-	outline: none;
-}
-
-button:active {
-	background-color: white;
-	color: #4b6a9b;
-}
-
-.romanticButton:active {
-	background-color: white;
-	color: #595959;
-}
-
-.navButton {
-	width: 146px;
-}
-
-/* Touch to begin animation */
+/* Touch To Begin Animation */
 
 #crossfade {
-    position:absolute;
     width: 1024px;
     height: 768px;
+	position: absolute;
 }
 
 .backgroundTouchBegin {
@@ -652,13 +608,13 @@ button:active {
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    -webkit-animation-duration: 8s;
+    -webkit-animation-duration: 12s;
 }
 
 @-webkit-keyframes fade {
     0% {opacity: 1;}
-    47% {opacity: 1;}
-    53% {opacity: 0;}
+    48% {opacity: 1;}
+    52% {opacity: 0;}
     100% {opacity: 0;}
 }
 
@@ -667,34 +623,71 @@ button:active {
     top: 150px;
     width: 1024px;
     height: 400px;
-
 }
+
+.attractText .blueTextFade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .attractText {
-	animation: pulse 8s infinite;
+    position: relative;
+	animation: pulse 6s infinite;
 	-webkit-animation-timing-function: linear;
 }
 
 .attractText:nth-child(1) {
-	-webkit-animation-delay: 1s;
+	-webkit-animation-delay: 0.5s;
 }
 
 .attractText:nth-child(2) {
-    -webkit-animation-delay: 2.5s;
+    -webkit-animation-delay: 2s;
 }
 
 .attractText:nth-child(3) {
-    -webkit-animation-delay: 4s;
+    -webkit-animation-delay: 3.5s;
 }
 
 .attractText:nth-child(4) {
-    -webkit-animation-delay: 5.5s;
+    -webkit-animation-delay: 5s;
 }
 
 .attractText {
     margin-top: 50px;
     width: 1024px;
     height: 50px;
-    color: black;
+}
+
+.attractText img.blueTextFade {
+    -webkit-animation-name: bluetextfade;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes bluetextfade {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    51% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.attractText img.greyTextFade {
+    -webkit-animation-name: greytextfade;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes greytextfade {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    51% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 .attractText1 {
@@ -705,19 +698,15 @@ button:active {
     left: 390px;
     font-size: 23px;
     font-family: "Source Sans Pro";
-    animation: pulse 3s infinite;
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 /* Page Transitions */
@@ -778,4 +767,9 @@ from {opacity: 0;}
 
 .fadebackground.ng-hide-add {
 	transition: all linear 350ms;
+}
+
+h3 {
+	margin-top: 11px;
+	margin-bottom: 7px;
 }

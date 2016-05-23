@@ -1,26 +1,32 @@
-<div ng-show="showPopup" class="popupBackground" ng-click="showPopup = false"></div>
-<div ng-show="showPopup" class="popupNew">
+<div ng-show="showPopup" class="popupBackground fadebackground" ng-click="dismiss()"></div>
+<div ng-show="showPopup" class="popupNew fade">
 	<p class="popupText">Your results have been sent!</p>
-	<button ng-click="showPopup = false; back()" class="popupShareButton">Back to Results</button>
-	<button ng-click="showPopup = false; chooseQuiz()" class="popupShareButton">Take Another Quiz</button>
+	<button ng-click="dismiss(); back()" class="popupShareButton">Back to Results</button>
+	<button ng-click="dismiss(); chooseQuiz()" class="popupShareButton">Take Another Quiz</button>
+</div>
+<div ng-show="easterEgg" class="popupBackground fadebackground" ng-click="easterEgg = false"></div>
+<div ng-show="easterEgg" ng-click="easterEgg = false" class="popupEasterEgg fade">
+	<marquee direction="up" class="easterText">Kincaid O'Neil Connor Sabers Samira Champlin Michael Hofstadter Leo Gerasimov Daniel Jing         Tristan Saldanha April Wang            Allen Wang             Max Bicanich</marquee>
 </div>
 <div ng-class="{maryBackgroundShareResults: isMary, romanticBackgroundShareResults: isRomantic}">
 	<form name="shareResultsForm" class="shareResultsForm">
 		<div class="inputContainer">
 			<input type="email" name="email" ng-model="email" ng-change="checkEmails()" required autocomplete="off" placeholder="Enter Valid Email Address (john@example.com)"
-				ng-class="{showError: submitted && (shareResultsForm.email.$error.email || shareResultsForm.email.$error.required)}" />
+				ng-class="{showError: submitted && (shareResultsForm.email.$error.email || shareResultsForm.email.$error.required)}"
+				ng-keypress="emailEnter($event)" />
 			<div ng-show="shareResultsForm.email.$error.required && submitted" class="errorText">Email is required</div>
 			<div ng-show="shareResultsForm.email.$error.email && submitted" class="errorText">Invalid email address</div>
 		</div>
 		<div class="inputContainer">
 			<input type="text" name="emailCheck" ng-model="emailCheck" ng-change="checkEmails()" required autocomplete="off" placeholder="Confirm Email Address"
-				ng-class="{showError: submitted && !emailsMatch}" />
+				ng-class="{showError: submitted && !emailsMatch}"
+				ng-keypress="emailCheckEnter($event)" />
 			<div ng-show="!emailsMatch && submitted" class="errorText">Emails do not match</div>
 		</div>
 		<div class="shareResultsButtonContainer">
 			<button ng-class="{romanticButton: isRomantic}" id="backToResultsButton" ng-click="back()">Back to Results</button>
 			<button ng-class="{romanticButton: isRomantic}" id="sendResultsButton" ng-click="send()">Send</button>
 		</div>
-		<div class="shareResultsDescription"><b>Why do we collect this information?</b> The Bakken places very high value on the safety and security of your private information. This information will be used only to respond to your request to email the results of your quiz and to include in that email an opportuntiy to register to receive ongoing communications of interest to you about The Bakken and our programs.</div>
+		<div class="shareResultsDescription"><h3>Why do we collect this information?</h3> The Bakken places very high value on the safety and security of your private information. This information will be used only to respond to your request to email the results of your quiz and to include in that email an opportuntiy to register to receive ongoing communications of interest to you about The Bakken and our programs.</div>
 	</form>
 </div>

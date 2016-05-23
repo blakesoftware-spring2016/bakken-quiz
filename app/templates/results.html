@@ -14,12 +14,10 @@
 	<div class="resultsDescription">
 		<h2>{{result.title}}</h2>
 		<p>{{result.description}}</p>
-		<p ng-if="result.quote" class="quote">{{result.quote}}</p>
+        <p ng-if="result.quote" class="quote">{{result.quote}}<span class="maryName">—Mary Shelley</span></p>
 	</div>
 </div>
 <div class="resultsButtonContainer">
-
 	<button ng-class="{romanticButton: isRomantic}" type="button" id="shareResultsButton" ng-click="agePopup = true">Share results</button>
 	<button ng-class="{romanticButton: isRomantic}" type="button" id="anotherQuizButton" ng-click="showPopup = true">Take another quiz</button>
-
 </div>
