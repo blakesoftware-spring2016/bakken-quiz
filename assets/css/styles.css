@@ -545,11 +545,11 @@ input.showError {
   text-align: center;
   z-index: 1002;
   width: 325px;
-  height: 500px;
-  background: white;
+  height: 550px;
+  background: blanchedalmond;
   position: absolute;
   margin-left: 352px;
-  margin-top: 134px;
+  margin-top: 109px;
 }
 
 .easterText {
