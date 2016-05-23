@@ -1,8 +1,8 @@
-<div ng-show="showPopup" class="popupBackground fadebackground" ng-click="showPopup = false"></div>
+<div ng-show="showPopup" class="popupBackground fadebackground" ng-click="dismiss()"></div>
 <div ng-show="showPopup" class="popupNew fade">
 	<p class="popupText">Your results have been sent!</p>
-	<button ng-click="showPopup = false; back()" class="popupShareButton">Back to Results</button>
-	<button ng-click="showPopup = false; chooseQuiz()" class="popupShareButton">Take Another Quiz</button>
+	<button ng-click="dismiss(); back()" class="popupShareButton">Back to Results</button>
+	<button ng-click="dismiss(); chooseQuiz()" class="popupShareButton">Take Another Quiz</button>
 </div>
 <div ng-show="easterEgg" class="popupBackground fadebackground" ng-click="easterEgg = false"></div>
 <div ng-show="easterEgg" ng-click="easterEgg = false" class="popupEasterEgg fade">
