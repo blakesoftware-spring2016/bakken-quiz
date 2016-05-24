@@ -27,6 +27,11 @@ button:active {
 	color: #4b6a9b;
 }
 
+.popupButton:active {
+	background-color: rgb(65,94,142);
+	color: white;
+}
+
 /* Fonts */
 
 @font-face {
