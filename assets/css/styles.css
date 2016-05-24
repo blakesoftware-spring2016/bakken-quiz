@@ -269,7 +269,7 @@ button:active {
 .backgroundMaryDescription {
 	width: 1024px;
 	height: 768px;
-	padding-top: 400px;
+	padding-top: 370px;
 	box-sizing: border-box;
 	background: url("../images/summary.png");
 }
@@ -277,7 +277,7 @@ button:active {
 .backgroundRomanticDescription {
 	width: 1024px;
 	height: 768px;
-	padding-top: 400px;
+	padding-top: 342px;
 	box-sizing: border-box;
 	background: url("../images/romanticDescription.png");
 }
@@ -295,7 +295,7 @@ button:active {
 
 .quizDescNav {
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 110px;
 	padding: 0 160px;
 	box-sizing: border-box;
 	float: left;
