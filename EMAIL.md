@@ -18,7 +18,7 @@ Furthermore, depending upon the Bakken's privacy policy, emails sent from the Gm
 
 Each configuration object in the list within `config.json` contains properties (key/value pairs) according to the specifications for `nodemailer`. The documentation can be accessed [here](https://npmjs.com/package/nodemailer).
 
-For reference, below is an example `config.json` file that has a configuration for Office 365 (the first config object), and then Gmail (the second config object). If Office 365 fails, the quiz will fallback to Gmail. If both fail (for instance, if both of the servers were down or the internet was out), the quiz would still function correctly for subsequent emails given the connection was restored, However, the quiz will still prompt the user the email was sent successfully, even if it wasn't. In the example, the email for the Office 365 server is `email@thebakken.org`, and password is set to `password`. While the Office 365 configuration manually sets the port, host domain and other properties, `nodemailer` makes configuration for Gmail much easier, so those don't have to be entered manually (only the `service` property has to be set to `gmail`).
+For reference, below is an example `config.json` file that has a configuration for Office 365 (the first config object), and then Gmail (the second config object). If Office 365 fails, the quiz will fallback to Gmail. If both fail (for instance, if both of the servers were down or the internet was out), the quiz would still function correctly for subsequent emails given the connection was restored, however, the quiz will still prompt the user the email was sent successfully, even if it wasn't. In the example, the email for the Office 365 server is `email@thebakken.org`, and password is set to `password`. While the Office 365 configuration manually sets the port, host domain and other properties, `nodemailer` makes configuration for Gmail much easier, so those don't have to be entered manually (only the `service` property has to be set to `gmail`).
 
 ```
 [
@@ -43,3 +43,7 @@ For reference, below is an example `config.json` file that has a configuration f
 	}
 ]
 ```
+
+## Template
+
+The template for the email is the `template.html` within the `server` directory, and is written in HTML. Changes can be made at any time and will automatically be used in subsequent emails. There are numerous resources online for reference on the HTML syntax.
