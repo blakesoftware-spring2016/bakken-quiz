@@ -493,15 +493,17 @@ input.showError {
 .popupNew {
 	text-align: center;
 	z-index: 1002;
-	width: 444px;
-	padding-left: 150px;
-	padding-right: 150px;
-	padding-top: 60px;
-	height: 411px;
+	width: 748px;
+	height: 474px;
 	background: white;
 	position: absolute;
 	margin-left: 138px;
 	margin-top: 147px;
+}
+
+.popupNew > .popupText {
+	width: 600px;
+	margin: 100px auto 85px auto;
 }
 
 .popupBackground {
