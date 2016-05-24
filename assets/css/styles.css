@@ -27,6 +27,11 @@ button:active {
 	color: #4b6a9b;
 }
 
+.popupButton:active {
+	background-color: rgb(65,94,142);
+	color: white;
+}
+
 /* Fonts */
 
 @font-face {
@@ -488,15 +493,17 @@ input.showError {
 .popupNew {
 	text-align: center;
 	z-index: 1002;
-	width: 444px;
-	padding-left: 150px;
-	padding-right: 150px;
-	padding-top: 60px;
-	height: 411px;
+	width: 748px;
+	height: 474px;
 	background: white;
 	position: absolute;
 	margin-left: 138px;
 	margin-top: 147px;
+}
+
+.popupNew > .popupText {
+	width: 600px;
+	margin: 100px auto 85px auto;
 }
 
 .popupBackground {
@@ -582,7 +589,12 @@ input.showError {
 	font-size: 20px;
 	margin-right: 10px;
 	margin-left: 10px;
-	margin-top: 50px;
+	margin-top: 75px;
+}
+
+.popupNew > .popupShareText {
+	width: 444px;
+	margin-bottom: 0px;
 }
 
 /* Touch To Begin Animation */
