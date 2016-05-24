@@ -589,7 +589,12 @@ input.showError {
 	font-size: 20px;
 	margin-right: 10px;
 	margin-left: 10px;
-	margin-top: 50px;
+	margin-top: 75px;
+}
+
+.popupNew > .popupShareText {
+	width: 444px;
+	margin-bottom: 0px;
 }
 
 /* Touch To Begin Animation */
