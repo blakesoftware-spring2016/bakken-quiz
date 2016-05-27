@@ -379,6 +379,7 @@ button:active {
 
 .quote {
 	font-style: italic;
+	white-space: pre-wrap;
 }
 
 /* Share Results */
