@@ -1,20 +1,20 @@
 <div ng-show="agePopup" class="popupBackground fadebackground" ng-click="agePopup = false"> </div>
 <div ng-show="agePopup" class="popup13 fade">
 	<p class="popup13Text">Are you 13 years or older?</p>
-	<button ng-class="{romanticButton: isRomantic}" ng-click="agePopup = false; continue()" class="popupButton">Yes</button>
-	<button ng-class="{romanticButton: isRomantic}" ng-click="agePopup = false" class="popupButton">No</button>
+	<button ng-click="agePopup = false; continue()" class="popupButton">Yes</button>
+	<button ng-click="agePopup = false" class="popupButton">No</button>
 </div>
 <div ng-show="showPopup" class="popupBackground fadebackground" ng-click="showPopup = false"></div>
 <div ng-show="showPopup" class="popupNew fade">
 	<p class="popupText">Are you sure you want to leave this quiz?</p>
-	<button ng-class="{romanticButton: isRomantic}" ng-click="showPopup = false; back()" class="popupButton">Yes</button>
-	<button ng-class="{romanticButton: isRomantic}" ng-click="showPopup = false" class="popupButton">No</button>
+	<button ng-click="showPopup = false; back()" class="popupButton">Yes</button>
+	<button ng-click="showPopup = false" class="popupButton">No</button>
 </div>
 <div ng-class="{backgroundMaryResults: isMary, backgroundRomanticResults: isRomantic}">
 	<div class="resultsDescription">
 		<h2>{{result.title}}</h2>
 		<p>{{result.description}}</p>
-        <p ng-if="result.quote" class="quote">{{result.quote}}<span class="maryName">—Mary Shelley</span></p>
+        <p ng-if="result.quote" class="quote">{{result.quote}}</p>
 	</div>
 </div>
 <div class="resultsButtonContainer">

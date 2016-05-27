@@ -274,7 +274,7 @@ button:active {
 .backgroundMaryDescription {
 	width: 1024px;
 	height: 768px;
-	padding-top: 400px;
+	padding-top: 370px;
 	box-sizing: border-box;
 	background: url("../images/summary.png");
 }
@@ -282,7 +282,7 @@ button:active {
 .backgroundRomanticDescription {
 	width: 1024px;
 	height: 768px;
-	padding-top: 400px;
+	padding-top: 342px;
 	box-sizing: border-box;
 	background: url("../images/romanticDescription.png");
 }
@@ -300,7 +300,7 @@ button:active {
 
 .quizDescNav {
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 110px;
 	padding: 0 160px;
 	box-sizing: border-box;
 	float: left;
@@ -379,10 +379,7 @@ button:active {
 
 .quote {
 	font-style: italic;
-}
-
-.maryName {
-    font-style: normal;
+	white-space: pre-wrap;
 }
 
 /* Share Results */
@@ -646,24 +643,25 @@ input.showError {
 
 .attractText {
     position: relative;
-	animation: pulse 6s infinite;
+	animation: pulse 16s infinite;
+    opacity: 0;
 	-webkit-animation-timing-function: linear;
 }
 
 .attractText:nth-child(1) {
-	-webkit-animation-delay: 0.5s;
+	-webkit-animation-delay: 0s;
 }
 
 .attractText:nth-child(2) {
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 4s;
 }
 
 .attractText:nth-child(3) {
-    -webkit-animation-delay: 3.5s;
+    -webkit-animation-delay: 8s;
 }
 
 .attractText:nth-child(4) {
-    -webkit-animation-delay: 5s;
+    -webkit-animation-delay: 12s;
 }
 
 .attractText {
@@ -710,16 +708,25 @@ input.showError {
     left: 390px;
     font-size: 23px;
     font-family: "Source Sans Pro";
-    animation: pulse 2s infinite;
+    animation: pulse1 8s infinite;
 }
 
 @keyframes pulse {
-    0% {opacity: 1;}
-    25% {opacity: 1;}
-    50% {opacity: 0;}
-    75% {opacity: 1;}
-    100% {opacity: 1;}
+    0% {opacity: 0;}
+    6.25% {opacity: 1;}
+    18.75% {opacity: 1;}
+    25% {opacity: 0;}
 }
+
+@keyframes pulse1 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+	40% {opacity: 1;}
+	50% {opacity: 1;}
+	60% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+	}
 
 /* Page Transitions */
 
