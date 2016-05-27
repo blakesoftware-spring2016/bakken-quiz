@@ -642,7 +642,8 @@ input.showError {
 
 .attractText {
     position: relative;
-	animation: pulse 20s infinite;
+	animation: pulse 16s infinite;
+    opacity: 0;
 	-webkit-animation-timing-function: linear;
 }
 
@@ -651,15 +652,15 @@ input.showError {
 }
 
 .attractText:nth-child(2) {
-    -webkit-animation-delay: 5s;
+    -webkit-animation-delay: 4s;
 }
 
 .attractText:nth-child(3) {
-    -webkit-animation-delay: 10s;
+    -webkit-animation-delay: 8s;
 }
 
 .attractText:nth-child(4) {
-    -webkit-animation-delay: 15s;
+    -webkit-animation-delay: 12s;
 }
 
 .attractText {
@@ -709,6 +710,13 @@ input.showError {
     animation: pulse1 8s infinite;
 }
 
+@keyframes pulse {
+    0% {opacity: 0;}
+    6.25% {opacity: 1;}
+    18.75% {opacity: 1;}
+    25% {opacity: 0;}
+}
+
 @keyframes pulse1 {
     0% {opacity: 0;}
     20% {opacity: 0;}
@@ -718,18 +726,6 @@ input.showError {
     80% {opacity: 0;}
     100% {opacity: 0;}
 	}
-
-@keyframes pulse {
-    0% {opacity: 0;}
-    25% {opacity: 0;}
-	37.5% {opacity: 0;}
-	43.75% {opacity: 1;}
-    50% {opacity: 1;}
-	56.25% {opacity: 1;}
-	62.5% {opacity: 0;}
-    75% {opacity: 0;}
-    100% {opacity: 0;}
-}
 
 /* Page Transitions */
 
