@@ -43,7 +43,7 @@ app.post('/shareResults', (req, res) => {
 			// Setup the email options and template
 			let template = data.toString()
 			let options = {
-				from: '"The Bakken Museum" <maryshelley.bakken@gmail.com>',
+				from: '"The Bakken Museum" <maryshelley@thebakken.org>',
 				to: req.body.email,
 				subject: req.body.title,
 				html: mustache.render(template, {
