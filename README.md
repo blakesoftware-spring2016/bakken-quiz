@@ -4,7 +4,7 @@
 
 <img src="https://github.com/blakesoftware-spring2016/bakken-quiz/raw/master/screenshot.png" width="600" />
 
-## <a href="http://blakesoftware-spring2016.github.io/bakken-quiz/" target="_blank">Demo</a>
+## <a href="http://blakesoftware-spring2016.github.io/bakken-quiz/#/touchBegin" target="_blank">Demo</a>
 
 Please note: the email sharing functionality isn't available since it necessitates a Node.js instance, and the quiz may not display correctly on some devices, as it's optimized for a 1024x768 touchscreen.
 
