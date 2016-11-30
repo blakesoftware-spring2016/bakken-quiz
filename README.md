@@ -1,6 +1,6 @@
 # Mary Shelley Quiz App
 
-> Created with Angular.js, the Mary Shelley quiz app was designed for the Mary and Her Monster exhibit at the Bakken Museum in Minneapolis, MN.
+> Created with Angular.js, the Mary Shelley quiz app was designed for the *Mary and Her Monster* exhibit at the Bakken Museum in Minneapolis, MN.
 
 <img src="https://github.com/blakesoftware-spring2016/bakken-quiz/raw/master/screenshot.png" width="600" />
 
@@ -10,4 +10,4 @@ Please note: the email sharing functionality isn't available since it necessitat
 
 ## License
 
-All files within `./assets/images` are the property of The Bakken Museum. All other files are licensed under the [MIT](https://github.com/blakesoftware-spring2016/bakken-quiz/raw/master/LICENSE) license.
+All files within `assets/images` are the intellectual property of The Bakken Museum, reproduced here with their permission, while all other files are licensed under the [MIT license](https://github.com/blakesoftware-spring2016/bakken-quiz/raw/master/LICENSE).
