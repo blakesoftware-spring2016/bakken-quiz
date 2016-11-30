@@ -10,4 +10,4 @@ Please note: the email sharing functionality isn't available since it necessitat
 
 ## License
 
-All files within `assets/images` are the intellectual property of The Bakken Museum, reproduced here with their permission, while all other files are licensed under the [MIT license](https://github.com/blakesoftware-spring2016/bakken-quiz/raw/master/LICENSE.md).
+All files within `assets/images` are the intellectual property of The Bakken Museum, reproduced here with their permission, while all other files are licensed under the [MIT license](https://github.com/blakesoftware-spring2016/bakken-quiz/blob/master/LICENSE.md).
