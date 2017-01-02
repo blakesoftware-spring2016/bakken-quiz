@@ -43,7 +43,7 @@ app.post('/shareResults', (req, res) => {
 			// Setup the email options and template
 			let template = data.toString()
 			let options = {
-				from: '"The Bakken Museum" <maryshelley.bakken@gmail.com>',
+				from: '"The Bakken Museum" <maryshelley@thebakken.org>',
 				to: req.body.email,
 				subject: req.body.title,
 				html: mustache.render(template, {
@@ -51,6 +51,12 @@ app.post('/shareResults', (req, res) => {
 				})
 			}
 			var sendEmail = (config_index) => {
+				var config = configs[config_index]
+				if (config.hasOwnProperty('service')) {
+					if (config.service === 'gmail') {
+						options.from = '"The Bakken Museum" <maryshelley.bakken@gmail.com>'
+					}
+				}
 				// Create reusable transporter object using the default SMTP transport
 				let transporter = node_mailer.createTransport(configs[config_index])
 				// Send mail with defined transport object
